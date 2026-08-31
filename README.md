@@ -7,7 +7,7 @@ air-mouse remotes (and other remotes/keyboards) connected to Google TV devices �
 ## Features
 
 - **Remap a button to a different key.** Useful when a remote's hardware
-  sends the wrong keycode for what it's labeled — e.g. a "Channel Up"
+  sends the wrong keycode for what it's labelled — e.g. a "Channel Up"
   button that actually sends `PAGE_UP` instead of `CHANNEL_UP`, so nothing
   listens for it correctly.
 - **Fire a key several times per press.** One button press can inject a
@@ -34,37 +34,46 @@ remote can send a different scancode).
 
 **Remapped to a different key:**
 
-| Scancode | Sends keycode |
-|---|---|
-| 108 | `KEYCODE_DPAD_DOWN` |
-| 105 | `KEYCODE_DPAD_LEFT` |
-| 106 | `KEYCODE_DPAD_RIGHT` |
-| 103 | `KEYCODE_DPAD_UP` |
-| 28 | `KEYCODE_DPAD_CENTER` |
-| 419 | `KEYCODE_GUIDE` |
-| 171 | `KEYCODE_EISU` |
+| Scancode | Sends keycode         |
+|----------|-----------------------|
+| 108      | `KEYCODE_DPAD_DOWN`   |
+| 105      | `KEYCODE_DPAD_LEFT`   |
+| 106      | `KEYCODE_DPAD_RIGHT`  |
+| 103      | `KEYCODE_DPAD_UP`     |
+| 28       | `KEYCODE_DPAD_CENTER` |
+| 419      | `KEYCODE_GUIDE`       |
+| 171      | `KEYCODE_EISU`        |
 
 **Channel Up/Down button, remapped differently depending on what's on screen:**
 
-| Scancode | While the TV app is in the foreground | Everywhere else |
-|---|---|---|
-| 104 | `KEYCODE_CHANNEL_UP` | 5× `KEYCODE_DPAD_UP` burst |
-| 109 | `KEYCODE_CHANNEL_DOWN` | 5× `KEYCODE_DPAD_DOWN` burst |
+| Scancode | While the TV app is in the foreground | Everywhere else              |
+|----------|---------------------------------------|------------------------------|
+| 104      | `KEYCODE_CHANNEL_UP`                  | 5× `KEYCODE_DPAD_UP` burst   |
+| 109      | `KEYCODE_CHANNEL_DOWN`                | 5× `KEYCODE_DPAD_DOWN` burst |
 
 **Fires a key multiple times per press:**
 
-| Scancode | Sends keycode | Times |
-|---|---|---|
-| 60 | `KEYCODE_VOLUME_DOWN` | 3 |
-| 155 | `KEYCODE_VOLUME_UP` | 3 |
+| Scancode | Sends keycode         | Times |
+|----------|-----------------------|-------|
+| 60       | `KEYCODE_VOLUME_DOWN` | 3     |
+| 155      | `KEYCODE_VOLUME_UP`   | 3     |
 
 **Launches an app:**
 
-| Scancode | Launches |
-|---|---|
-| 172 | MX3 Launcher |
-| 418 | YouTube for Android TV |
-| 150 | TV Bro browser |
+| Scancode | Launches                           |
+|----------|------------------------------------|
+| 172      | MX3 Launcher                       |
+| 418      | SmartTube (`app.smarttube.fdroid`) |
+| 150      | TV Bro browser                     |
+
+All three are FOSS — MX3 Launcher is this project's own sibling app,
+`app.smarttube.fdroid` is specifically SmartTube's F-Droid build (a
+separate, distinct package from its non-free Play Store build), and TV
+Bro is open source. None of them are bundled with this app or required
+as a build dependency either way — they're just package names this app
+knows how to launch if present. If a mapped target isn't installed, the
+mapping is simply a no-op (see the "if something isn't working"
+troubleshooting note below).
 
 A button not listed anywhere above passes through completely untouched —
 its original, default behaviour still happens.
@@ -158,4 +167,4 @@ to finish setup.
 
 ## License
 
-GPL-3.0-or-later. See `LICENSE`.
+Unlicense (public domain). See `LICENSE`.

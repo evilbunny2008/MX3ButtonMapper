@@ -1,0 +1,3 @@
+* Code clean-up: removed a genuinely unused Context parameter from the
+  internal key-injection path, and clarified several exception handlers
+  that intentionally don't need the caught exception's details.

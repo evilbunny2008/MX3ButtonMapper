@@ -1,0 +1,7 @@
+* Fixed the F-Droid build failing entirely: the Gradle wrapper
+  (gradlew, gradlew.bat, gradle-wrapper.jar) had been accidentally
+  excluded via .gitignore during an earlier repo clean-up, but F-Droid's
+  build process specifically needs the project's own wrapper present to
+  build with the correct, pinned Gradle version.
+* Reorganized loose design assets (adaptive icon SVGs, app icon) into a
+  dedicated design/ folder instead of sitting in the repo root.

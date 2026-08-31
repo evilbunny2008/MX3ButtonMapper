@@ -1,0 +1,8 @@
+* Channel Up/Down now only remaps while the TV app has focus; falls
+  back to a multi-item D-pad jump everywhere else.
+* Fixed key auto-repeat while held for all keys, not just mapped ones.
+* Fixed a bug where a transient overlay could trigger the wrong remap.
+* More reliable on boot: retries Shizuku connection, launches the
+  mapped launcher app.
+* Shows a dialog if a button's target app isn't installed.
+* Default app mappings are now all FOSS.

@@ -1,0 +1,5 @@
+* Remap a scancode to a different keycode, to a repeated-keycode burst,
+  to a foreground-app-conditional remap, or to launching a specific app.
+* Automatic self-enable of the Accessibility Service via Shizuku on
+  first launch, with retry across boot while Shizuku itself starts up.
+* Attempts to relaunch a configured launcher app on startup.

@@ -1,0 +1,8 @@
+* Added foreground-app-aware remapping: a button can behave differently
+  depending on which app currently has focus.
+* Hardened the Shizuku connection: key events arriving before the
+  privileged process connects are now queued instead of dropped, and a
+  dead process now triggers an automatic re-bind.
+* Fixed a crash-loop shortly after connecting by switching to daemon
+  mode, and fixed stale-process reuse on update by tying the service
+  version to the app's own versionCode.

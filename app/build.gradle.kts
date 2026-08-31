@@ -1,0 +1,146 @@
+// Several AGP Variant API members used below (outputFileName, artifacts.get,
+// onVariants/selector for this variant-configuration style) are still
+// marked @Incubating - meaning they work correctly today but the API
+// surface could change in a future AGP release, not that anything here is
+// broken. This is the standard, conventional way to suppress that specific
+// warning category for the whole build script.
+@file:Suppress("UnstableApiUsage")
+
+import com.android.build.api.artifact.SingleArtifact
+
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.compose)
+}
+
+android {
+    namespace = "com.odiousapps.mx3buttonmapper"
+    compileSdk {
+        version = release(37)
+    }
+
+    buildFeatures {
+        buildConfig = true
+        aidl = true
+    }
+
+    // Required for F-Droid's reproducible-build verification -- without
+    // this, Android's dependency-metadata block gets embedded slightly
+    // differently depending on the exact build environment, which makes
+    // F-Droid's independently-rebuilt APK fail to match byte-for-byte
+    // even when the actual app source is identical.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
+    defaultConfig {
+        applicationId = "com.odiousapps.mx3buttonmapper"
+        minSdk = 26
+        targetSdk = 37
+        versionCode = 27
+        versionName = "0.0.27"
+
+    }
+
+    buildTypes {
+        release {
+            optimization {
+                enable = true
+            }
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    // Not currently hitting any packaging conflict (this project builds
+    // fine without it), but a safe, defensive addition -- generic
+    // signed-JAR exclusions that prevent a common class of packaging
+    // failure if a future dependency addition ever brings in duplicate
+    // META-INF signature files.
+    packaging {
+        resources {
+            excludes += "/META-INF/INDEX.LIST"
+            excludes += "/META-INF/*.SF"
+            excludes += "/META-INF/*.DSA"
+            excludes += "/META-INF/*.RSA"
+        }
+    }
+}
+
+// Renames the release .aab from AGP's default "app-release.aab" to
+// "<appName>-<versionName>.aab", in place, within app/release/ (already
+// gitignored) - which turns out to already be this project's actual bundle
+// output location (confirmed by an AGP validation error naming that exact
+// path as a declared input elsewhere), not a separate custom destination to
+// copy into as originally assumed. Critically, this must run *after* AGP's
+// own internal "produce...BundleIdeListingFile" task, which declares the
+// bundle at its default name as one of its own inputs - renaming (or
+// deleting) it any earlier fails that task's input validation with "file
+// doesn't exist", which is what happened when this was ordered the other
+// way around.
+androidComponents {
+    onVariants(selector().withBuildType("release")) { variant ->
+        val appName = "MX3ButtonMapper"
+        val versionName = variant.outputs.first().versionName
+        val variantNameCapitalized = variant.name.replaceFirstChar { it.uppercase() }
+        val ideListingTaskName = "produce${variantNameCapitalized}BundleIdeListingFile"
+
+        // APK variant outputs support a directly settable filename, unlike
+        // the bundle (AAB) case above - no separate rename/copy task needed.
+        variant.outputs.forEach { output ->
+            output.outputFileName.set("$appName-${versionName.get()}.apk")
+        }
+
+        val renameBundle = tasks.register("renameBundle$variantNameCapitalized") {
+            group = "build"
+            description = "Renames the $variantNameCapitalized .aab in place to $appName-<versionName>.aab"
+            mustRunAfter(ideListingTaskName)
+            doLast {
+                val bundleFile = variant.artifacts.get(SingleArtifact.BUNDLE).get().asFile
+                if (bundleFile.exists()) {
+                    val renamedFile = File(bundleFile.parentFile, "$appName-${versionName.get()}.aab")
+                    bundleFile.copyTo(renamedFile, overwrite = true)
+                    bundleFile.delete()
+                } else {
+                    println("Expected bundle file not found at $bundleFile - skipping rename")
+                }
+            }
+        }
+        // Hooks the rename onto the standard "bundle" task graph, so it also
+        // runs automatically from Android Studio's Build > Generate Signed
+        // App Bundle flow (which invokes bundleRelease directly), not just
+        // when this task is run explicitly by name.
+        afterEvaluate {
+            tasks.named("bundle$variantNameCapitalized") {
+                finalizedBy(renameBundle)
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.graphics)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.tv.foundation)
+    implementation(libs.androidx.tv.material)
+    implementation(libs.shizuku.api)
+    implementation(libs.shizuku.provider)
+}

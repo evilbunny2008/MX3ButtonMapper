@@ -1,0 +1,4 @@
+* Further F-Droid submission metadata clean-up and consolidation
+  following review feedback.
+* Continued reproducible-build refinements to the release build
+  configuration.

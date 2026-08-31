@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MX3 Button Mapper</string>
+    <string name="status_placeholder">Grant Shizuku permission, then enable this service under Accessibility.</string>
+    <string name="open_accessibility_settings">Open Accessibility Settings</string>
+    <string name="accessibility_service_description">Listens for specific hardware button presses and remaps them to another keycode.</string>
+    <string name="app_not_installed_title">App not installed</string>
+    <string name="app_not_installed_message">The app mapped to this button (%1$s) isn\'t installed.</string>
+</resources>

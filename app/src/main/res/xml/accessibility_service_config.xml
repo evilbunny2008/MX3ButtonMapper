@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Key line: android:canRequestFilterKeyEvents="true"
+  This is what allows onKeyEvent() to receive raw key/scancode data system-wide.
+  Without it, the service will never see key events at all.
+
+  Note: no android:packageNames attribute is set here on purpose - omitting
+  it means "filter key events regardless of foreground app". Setting it to
+  an empty string (as an earlier version of this file did) is NOT the same
+  as omitting it - it restricts filtering to zero packages, silently
+  disabling everything.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagRequestFilterKeyEvents|flagReportViewIds"
+    android:canRequestFilterKeyEvents="true"
+    android:canRetrieveWindowContent="false"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="0"
+    />

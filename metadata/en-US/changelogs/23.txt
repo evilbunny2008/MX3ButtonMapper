@@ -1,0 +1,8 @@
+* Enabled release build minification (R8/ProGuard) with a proper
+  proguard-rules.pro, reducing final APK size.
+* Added dependenciesInfo (disables the Play-specific dependency
+  metadata block AGP embeds by default) for F-Droid's
+  reproducible-build verification, since a rebuild from source needs
+  to match byte-for-byte regardless of the exact build environment.
+* Suppressed warnings for AGP Variant API members that are still
+  marked @Incubating but already stable enough to rely on.

@@ -1,0 +1,41 @@
+MX3 Button Mapper remaps hardware buttons on MX3-style air-mouse remotes
+(and other remotes/keyboards) connected to Android TV / Google TV devices.
+
+It works by combining two Android mechanisms:
+
+<ul>
+<li>An Accessibility Service that listens for raw scancodes system-wide and
+can consume (swallow) the original button press.</li>
+<li>Shizuku, used to inject a replacement synthetic keycode or press
+sequence in place of the original one. Shizuku grants this using the
+same shell-level privileges 'adb shell input keyevent' already has, so
+no root is required.</li>
+</ul>
+
+Supported mapping types, configured in source (no in-app UI is required to
+use the default mapping set):
+
+<ul>
+<li>Remap a scancode to a different keycode (e.g. a stray Page Up/Page Down
+button remapped to proper Channel Up/Channel Down).</li>
+<li>Remap a scancode to fire the same keycode multiple times in one press
+(e.g. a single button that sends three Volume Down presses, or a burst
+of D-pad presses to jump multiple items in a list at once).</li>
+<li>Remap a scancode differently depending on which app currently has
+foreground focus (e.g. Channel Up/Down only inside a specific TV app,
+falling back to a different remap everywhere else).</li>
+<li>Launch a specific app directly from a button press.</li>
+</ul>
+
+The app can also enable its own Accessibility Service automatically via
+Shizuku, so there is no need to dig through Settings -> Accessibility by
+hand after installing, and it can attempt to relaunch a chosen launcher
+app on startup.
+
+Note: some optional, user-configured button mappings in the default
+configuration launch specific third-party apps for convenience (e.g.
+jumping straight to a launcher or a video app). As of the current
+version these are all FOSS themselves (see the README for the full,
+current list) -- none are bundled with or required as a build
+dependency of MX3 Button Mapper either way; if a targeted app isn't
+installed, the mapping simply does nothing.

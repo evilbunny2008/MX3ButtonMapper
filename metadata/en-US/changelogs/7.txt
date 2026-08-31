@@ -1,0 +1,6 @@
+* Accessibility-service based scancode capture with Shizuku-backed
+  keycode injection (no root required).
+* Support for remapping a scancode to a different keycode, to a
+  repeated-keycode burst, or to launching a specific app.
+* Automatic self-enable of the Accessibility Service via Shizuku on first
+  launch.
