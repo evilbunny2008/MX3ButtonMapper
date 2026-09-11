@@ -3,7 +3,7 @@
 # already live-verified for the sibling MX3 Launcher project (same
 # developer, same toolchain) -- see that project's README "Version
 # notes" section for how those were originally confirmed.
-agp = "9.3.2"
+agp = "9.4.0"
 kotlin = "2.4.10"
 composeBom = "2026.08.00"
 tvMaterial = "1.1.0"
