@@ -242,6 +242,14 @@ class ButtonMapperService : AccessibilityService() {
         // itself (this service) already auto-starts fine on its own.
         attemptAutoBind()
 
+        // Sends Shizuku's own documented "start via intent" broadcast
+        // first -- attemptAutoBind() above only CONNECTS to an
+        // already-running Shizuku server, it doesn't start one. "Start
+        // on boot" within Shizuku itself has proven unreliable in
+        // testing; this is a more direct, explicit alternative that
+        // doesn't depend on Shizuku's own boot-timing logic at all.
+        sendShizukuStartBroadcast()
+
         // Explicitly launch the mapped launcher app on startup too --
         // separate from (and in addition to) whatever app is set as the
         // device's default Home app. If MX3 Launcher is already the
@@ -286,6 +294,37 @@ class ButtonMapperService : AccessibilityService() {
             Log.w(TAG, "Auto-bind attempt $autoBindAttempts failed", e)
         }
         autoBindHandler.postDelayed({ attemptAutoBind() }, autoBindRetryIntervalMs)
+    }
+
+    /**
+     * Sends Shizuku's documented start intent directly, rather than
+     * relying solely on its own "Start on boot" toggle. Confirmed
+     * directly against Shizuku's actual source (AuthenticatedReceiver.kt
+     * / ManualStartReceiver.kt / the manifest's matching intent-filter):
+     * action "moe.shizuku.privileged.api.START", targeted explicitly at
+     * that package, with the auth token as a string extra named "auth".
+     * A missing/blank token, or Shizuku not being installed at all, both
+     * fail silently here -- this is a best-effort supplement to the
+     * existing retry-based binding above, not something that should ever
+     * block or crash service startup.
+     */
+    private fun sendShizukuStartBroadcast() {
+        val token = ButtonMapperPreferences.getShizukuAuthTokenBlocking(this)
+        if (token.isBlank()) {
+            Log.d(TAG, "No Shizuku auth token configured -- skipping start broadcast, " +
+                "relying on attemptAutoBind()'s retry alone")
+            return
+        }
+        try {
+            val intent = Intent("moe.shizuku.privileged.api.START").apply {
+                setPackage("moe.shizuku.privileged.api")
+                putExtra("auth", token)
+            }
+            sendBroadcast(intent)
+            Log.i(TAG, "Sent Shizuku start broadcast")
+        } catch (e: Throwable) {
+            Log.w(TAG, "Failed to send Shizuku start broadcast", e)
+        }
     }
 
     override fun onKeyEvent(event: KeyEvent): Boolean {

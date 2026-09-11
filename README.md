@@ -150,6 +150,22 @@ when you press one, the button's original, unmapped behaviour happens
 instead (nothing gets silently swallowed) and a notification prompts you
 to finish setup.
 
+### 6. (Optional) Set up the Shizuku auth token for more reliable starts
+
+Shizuku's own "Start on boot" toggle can be unreliable on some devices.
+As a more direct alternative, this app can send Shizuku's documented
+start broadcast itself whenever the accessibility service starts:
+
+1. In the Shizuku app, tap **View intents** (under "Control Shizuku
+   with automation apps").
+2. Copy the full `auth: XXXX` line shown there.
+3. Open MX3 Button Mapper and paste that whole line into the "Shizuku
+   start/stop intent auth token" field, then tap **Save**. The `auth:`
+   prefix is stripped automatically — pasting the full line is fine.
+
+This is stored in this app's own local settings, not committed
+anywhere — it's a real per-install credential.
+
 ## If something isn't working
 
 - **A button does nothing / does its old behaviour instead of the new

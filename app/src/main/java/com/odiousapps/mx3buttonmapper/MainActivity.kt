@@ -11,8 +11,12 @@ import android.os.Looper
 import android.provider.Settings
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 import rikka.shizuku.Shizuku
 
 class MainActivity : AppCompatActivity() {
@@ -38,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                     ShizukuUserServiceBridge.bind()
                     enableAccessibilityServiceViaShizuku()
                     SetupNotifier.cancel(this)
-                    scheduleAutoClose()
+                    scheduleAutoCloseUnlessTokenMissing()
                 } else {
                     Log.w(TAG, "Shizuku permission denied -- key injection won't work until granted")
                 }
@@ -55,6 +59,34 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.openAccessibilitySettingsButton).setOnClickListener {
             startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+        }
+
+        setUpShizukuAuthTokenField()
+    }
+
+    /**
+     * Populates the token field with whatever's already saved (blank on
+     * first run), and wires up Save. The pasted value is the full line
+     * shown on Shizuku's "View intents" screen ("auth: XXXX") -- stripped
+     * down to just the token itself here, so the person can paste that
+     * whole line directly rather than needing to manually edit out the
+     * "auth: " prefix themselves.
+     */
+    private fun setUpShizukuAuthTokenField() {
+        val input = findViewById<EditText>(R.id.shizukuAuthTokenInput)
+        val saveButton = findViewById<Button>(R.id.saveShizukuAuthTokenButton)
+
+        lifecycleScope.launch {
+            input.setText(ButtonMapperPreferences.observeShizukuAuthToken(this@MainActivity).first())
+        }
+
+        saveButton.setOnClickListener {
+            val raw = input.text.toString().trim()
+            val token = raw.removePrefix("auth:").trim()
+            lifecycleScope.launch {
+                ButtonMapperPreferences.setShizukuAuthToken(this@MainActivity, token)
+                Log.i(TAG, "Shizuku auth token saved")
+            }
         }
     }
 
@@ -92,7 +124,7 @@ class MainActivity : AppCompatActivity() {
                     ShizukuUserServiceBridge.bind()
                     enableAccessibilityServiceViaShizuku()
                     SetupNotifier.cancel(this)
-                    scheduleAutoClose()
+                    scheduleAutoCloseUnlessTokenMissing()
                 }
                 else -> {
                     // On Google TV there's no touch UI concern here -- this just
@@ -129,6 +161,25 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
         }, AUTO_CLOSE_DELAY_MS)
+    }
+
+    /**
+     * Only auto-closes if a Shizuku auth token is already saved --
+     * otherwise this would close the window before there's been any
+     * real chance to paste and save one, since AUTO_CLOSE_DELAY_MS is
+     * only 1.5 seconds. Once a token has been saved at least once,
+     * there's nothing new to configure on subsequent launches, so the
+     * normal auto-close behaviour resumes as before.
+     */
+    private fun scheduleAutoCloseUnlessTokenMissing() {
+        lifecycleScope.launch {
+            val token = ButtonMapperPreferences.observeShizukuAuthToken(this@MainActivity).first()
+            if (token.isNotBlank()) {
+                scheduleAutoClose()
+            } else {
+                Log.i(TAG, "No Shizuku auth token saved yet -- staying open so it can be configured")
+            }
+        }
     }
 
     override fun onDestroy() {

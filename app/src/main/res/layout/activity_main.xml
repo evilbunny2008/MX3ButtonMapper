@@ -20,4 +20,25 @@
         android:layout_height="wrap_content"
         android:text="@string/open_accessibility_settings" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="14sp"
+        android:text="@string/shizuku_auth_token_label" />
+
+    <EditText
+        android:id="@+id/shizukuAuthTokenInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/shizuku_auth_token_hint" />
+
+    <Button
+        android:id="@+id/saveShizukuAuthTokenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/save" />
+
 </LinearLayout>

@@ -46,8 +46,8 @@ android {
         applicationId = "com.odiousapps.mx3buttonmapper"
         minSdk = 26
         targetSdk = 37
-        versionCode = 29
-        versionName = "0.0.29"
+        versionCode = 30
+        versionName = "0.0.30"
     }
 
     buildTypes {
@@ -246,4 +246,5 @@ dependencies {
     implementation(libs.androidx.tv.material)
     implementation(libs.shizuku.api)
     implementation(libs.shizuku.provider)
+    implementation(libs.androidx.datastore.preferences)
 }
