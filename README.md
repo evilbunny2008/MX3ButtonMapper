@@ -43,6 +43,7 @@ remote can send a different scancode).
 | 28       | `KEYCODE_DPAD_CENTER`                             |
 | 419      | 4001 (raw, TCL-specific -- see comment in source) |
 | 171      | `KEYCODE_EISU`                                    |
+| 127      | `KEYCODE_MENU`                                    |
 
 **Channel Up/Down button, remapped differently depending on what's on screen:**
 

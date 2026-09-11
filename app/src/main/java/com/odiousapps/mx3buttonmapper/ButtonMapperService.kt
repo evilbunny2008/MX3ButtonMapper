@@ -38,6 +38,14 @@ class ButtonMapperService : AccessibilityService() {
             // mapped to KeyEvent.KEYCODE_GUIDE (172), which worked with
             // the prior TV but does nothing useful on this one.
             419 to 4001,
+            // MX3 Air Mouse's Menu button. Unmapped previously, which
+            // meant it passed through untouched to whatever this
+            // TCL TV's own default handling does for its keycode
+            // (4514, another non-standard TCL-proprietary value) --
+            // opens the TV's own native settings bar instead of
+            // reaching MX3 Launcher's Menu-key App Info feature, which
+            // specifically listens for KEYCODE_MENU.
+            127 to KeyEvent.KEYCODE_MENU,          // 82
             171 to KeyEvent.KEYCODE_EISU,          // 212
             // 60 moved to SCANCODE_TO_REPEATED_KEYCODE below (sends
             // volume down x5 instead of a single KEYCODE_NOTIFICATION press)
