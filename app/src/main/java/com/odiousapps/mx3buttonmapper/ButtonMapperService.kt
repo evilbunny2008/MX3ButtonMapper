@@ -24,7 +24,7 @@ class ButtonMapperService : AccessibilityService() {
         private const val TAG = "ButtonMapperService"
 
         // scanCode -> replacement keyCode. Requires Shizuku/root (see
-        // KeyInjector.kt) since it synthesizes a new input event.
+        // KeyInjector.kt) since it synthesises a new input event.
         private val SCANCODE_TO_KEYCODE: Map<Int, Int> = mapOf(
             108 to KeyEvent.KEYCODE_DPAD_DOWN,    // 20
             105 to KeyEvent.KEYCODE_DPAD_LEFT,     // 21

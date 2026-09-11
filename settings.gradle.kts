@@ -1,5 +1,5 @@
 // dependencyResolutionManagement's repositoriesMode/RepositoriesMode/
-// FAIL_ON_PROJECT_REPOS below are all part of Gradle's centralized
+// FAIL_ON_PROJECT_REPOS below are all part of Gradle's centralised
 // repository declaration feature, still marked @Incubating -- meaning
 // they work correctly today, but the API surface could change in a
 // future Gradle release, not that anything here is broken. Same

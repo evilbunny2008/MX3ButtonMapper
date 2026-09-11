@@ -21,7 +21,7 @@ import rikka.shizuku.Shizuku
  *   2. Root     - simplest to wire up if the device is already rooted.
  *
  * This class tries Shizuku first and falls back to root if Shizuku isn't
- * available/authorized.
+ * available/authorised.
  */
 object KeyInjector {
 
