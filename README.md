@@ -157,11 +157,12 @@ As a more direct alternative, this app can send Shizuku's documented
 start broadcast itself whenever the accessibility service starts:
 
 1. In the Shizuku app, tap **View intents** (under "Control Shizuku
-   with automation apps").
-2. Copy the full `auth: XXXX` line shown there.
-3. Open MX3 Button Mapper and paste that whole line into the "Shizuku
+   with automation apps"), then tap its **Copy** button to copy the
+   `auth: XXXX` line to the clipboard.
+2. Open MX3 Button Mapper and tap **Paste** next to the "Shizuku
    start/stop intent auth token" field, then tap **Save**. The `auth:`
-   prefix is stripped automatically — pasting the full line is fine.
+   prefix is stripped automatically — pasting the full copied line is
+   fine.
 
 This is stored in this app's own local settings, not committed
 anywhere — it's a real per-install credential.

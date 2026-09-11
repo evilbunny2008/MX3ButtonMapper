@@ -9,4 +9,5 @@
     <string name="shizuku_auth_token_label">Shizuku start/stop intent auth token (paste the full \"auth: XXXX\" line from Shizuku\'s View intents screen)</string>
     <string name="shizuku_auth_token_hint">auth: XXXX</string>
     <string name="save">Save</string>
+    <string name="paste">Paste</string>
 </resources>

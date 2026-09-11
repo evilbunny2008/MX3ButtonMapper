@@ -1,7 +1,9 @@
 package com.odiousapps.mx3buttonmapper
 
 import android.Manifest
+import android.content.ClipboardManager
 import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
@@ -12,6 +14,7 @@ import android.provider.Settings
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -66,29 +69,48 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * Populates the token field with whatever's already saved (blank on
-     * first run), and wires up Save. The pasted value is the full line
-     * shown on Shizuku's "View intents" screen ("auth: XXXX") -- stripped
-     * down to just the token itself here, so the person can paste that
-     * whole line directly rather than needing to manually edit out the
-     * "auth: " prefix themselves.
+     * first run), and wires up Paste and Save. The pasted/saved value is
+     * the full line shown on Shizuku's "View intents" screen ("auth:
+     * XXXX") -- stripped down to just the token itself here, so the
+     * person can paste that whole line directly (e.g. via Shizuku's own
+     * Copy button on that screen) rather than needing to manually edit
+     * out the "auth: " prefix themselves.
      */
     private fun setUpShizukuAuthTokenField() {
         val input = findViewById<EditText>(R.id.shizukuAuthTokenInput)
+        val pasteButton = findViewById<Button>(R.id.pasteShizukuAuthTokenButton)
         val saveButton = findViewById<Button>(R.id.saveShizukuAuthTokenButton)
 
         lifecycleScope.launch {
             input.setText(ButtonMapperPreferences.observeShizukuAuthToken(this@MainActivity).first())
         }
 
+        pasteButton.setOnClickListener {
+            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clipText = clipboard.primaryClip
+                ?.takeIf { it.itemCount > 0 }
+                ?.getItemAt(0)
+                ?.coerceToText(this)
+                ?.toString()
+
+            if (clipText.isNullOrBlank()) {
+                Toast.makeText(this, "Clipboard is empty", Toast.LENGTH_SHORT).show()
+            } else {
+                input.setText(stripAuthPrefix(clipText))
+            }
+        }
+
         saveButton.setOnClickListener {
-            val raw = input.text.toString().trim()
-            val token = raw.removePrefix("auth:").trim()
+            val token = stripAuthPrefix(input.text.toString())
             lifecycleScope.launch {
                 ButtonMapperPreferences.setShizukuAuthToken(this@MainActivity, token)
                 Log.i(TAG, "Shizuku auth token saved")
             }
         }
     }
+
+    private fun stripAuthPrefix(raw: String): String =
+        raw.trim().removePrefix("auth:").trim()
 
     /**
      * Uses the same Shizuku privileged process that injects key events to
