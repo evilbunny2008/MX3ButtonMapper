@@ -105,6 +105,12 @@ class MainActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 ButtonMapperPreferences.setShizukuAuthToken(this@MainActivity, token)
                 Log.i(TAG, "Shizuku auth token saved")
+                // Closing here, after the write actually completes, not
+                // immediately when tapped -- finish() would cancel this
+                // coroutine (it's scoped to the activity's own
+                // lifecycle) if called before the suspend call above
+                // returns, risking losing the save entirely.
+                finish()
             }
         }
     }

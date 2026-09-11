@@ -15,8 +15,8 @@ Binaries:
   https://github.com/evilbunny2008/MX3ButtonMapper/releases/download/v%v/MX3ButtonMapper-%v.apk
 
 Builds:
-  - versionName: 0.0.31
-    versionCode: 31
+  - versionName: 0.0.32
+    versionCode: 32
     commit:
     subdir: app
     gradle:
@@ -26,6 +26,6 @@ AllowedAPKSigningKeys: 6e194e3a58ba968613afc235136f63fb845e8aa0d718e70925cac04a9
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.31
-CurrentVersionCode: 31
+CurrentVersion: 0.0.32
+CurrentVersionCode: 32
 
