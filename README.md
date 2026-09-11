@@ -34,15 +34,15 @@ remote can send a different scancode).
 
 **Remapped to a different key:**
 
-| Scancode | Sends keycode         |
-|----------|-----------------------|
-| 108      | `KEYCODE_DPAD_DOWN`   |
-| 105      | `KEYCODE_DPAD_LEFT`   |
-| 106      | `KEYCODE_DPAD_RIGHT`  |
-| 103      | `KEYCODE_DPAD_UP`     |
-| 28       | `KEYCODE_DPAD_CENTER` |
-| 419      | `KEYCODE_GUIDE`       |
-| 171      | `KEYCODE_EISU`        |
+| Scancode | Sends keycode                                     |
+|----------|---------------------------------------------------|
+| 108      | `KEYCODE_DPAD_DOWN`                               |
+| 105      | `KEYCODE_DPAD_LEFT`                               |
+| 106      | `KEYCODE_DPAD_RIGHT`                              |
+| 103      | `KEYCODE_DPAD_UP`                                 |
+| 28       | `KEYCODE_DPAD_CENTER`                             |
+| 419      | 4001 (raw, TCL-specific -- see comment in source) |
+| 171      | `KEYCODE_EISU`                                    |
 
 **Channel Up/Down button, remapped differently depending on what's on screen:**
 

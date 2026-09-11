@@ -31,7 +31,13 @@ class ButtonMapperService : AccessibilityService() {
             106 to KeyEvent.KEYCODE_DPAD_RIGHT,    // 22
             103 to KeyEvent.KEYCODE_DPAD_UP,       // 19
             28 to KeyEvent.KEYCODE_DPAD_CENTER,    // 23
-            419 to KeyEvent.KEYCODE_GUIDE,         // 172
+            // TCL-proprietary keycode, not a standard KeyEvent constant --
+            // this TV expects 4001 specifically for its TV/source button,
+            // confirmed by testing the TCL's own remote directly and
+            // reading back its scancode/keycode via logcat. Previously
+            // mapped to KeyEvent.KEYCODE_GUIDE (172), which worked with
+            // the prior TV but does nothing useful on this one.
+            419 to 4001,
             171 to KeyEvent.KEYCODE_EISU,          // 212
             // 60 moved to SCANCODE_TO_REPEATED_KEYCODE below (sends
             // volume down x5 instead of a single KEYCODE_NOTIFICATION press)
