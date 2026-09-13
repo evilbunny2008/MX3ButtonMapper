@@ -11,6 +11,12 @@ import android.os.SystemClock
 import android.util.Log
 import android.view.KeyEvent
 import android.view.accessibility.AccessibilityEvent
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 /**
  * Listens system-wide for a set of hardware scancodes. Each one is either
@@ -34,9 +40,12 @@ class ButtonMapperService : AccessibilityService() {
             // TCL-proprietary keycode, not a standard KeyEvent constant --
             // this TV expects 4001 specifically for its TV/source button,
             // confirmed by testing the TCL's own remote directly and
-            // reading back its scancode/keycode via logcat. Previously
-            // mapped to KeyEvent.KEYCODE_GUIDE (172), which worked with
-            // the prior TV but does nothing useful on this one.
+            // reading back its scancode/keycode via logcat. This is the
+            // TCL value specifically; overridden for Blaupunkt at the
+            // lookup site below (see the TvBrand check right after
+            // SCANCODE_TO_KEYCODE's lookup), which uses the OLD value
+            // (KeyEvent.KEYCODE_GUIDE, 172) that worked correctly before
+            // switching to a TCL TV.
             419 to 4001,
             // MX3 Air Mouse's Menu button. Unmapped previously, which
             // meant it passed through untouched to whatever this
@@ -205,6 +214,16 @@ class ButtonMapperService : AccessibilityService() {
     @Volatile
     private var currentForegroundPackage: String? = null
 
+    // Updated by the collector started in onServiceConnected(), read by
+    // onKeyEvent() when handling scancode 419 (the MX3 Air Mouse's TV
+    // button) specifically -- see the comment there for why this one
+    // scancode needs a per-TV-brand override at all. Same @Volatile
+    // reasoning as currentForegroundPackage above.
+    @Volatile
+    private var currentTvBrand: TvBrand = TvBrand.TCL
+
+    private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
+
     private var autoBindAttempts = 0
 
     // Retries the auto-bind for a few minutes rather than trying once --
@@ -249,6 +268,15 @@ class ButtonMapperService : AccessibilityService() {
         // testing; this is a more direct, explicit alternative that
         // doesn't depend on Shizuku's own boot-timing logic at all.
         sendShizukuStartBroadcast()
+
+        // Keeps currentTvBrand up to date reactively -- picks up a
+        // change made in MainActivity's settings without needing the
+        // accessibility service itself to be restarted.
+        serviceScope.launch {
+            ButtonMapperPreferences.observeTvBrand(this@ButtonMapperService).collect { brand ->
+                currentTvBrand = brand
+            }
+        }
 
         // Explicitly launch the mapped launcher app on startup too --
         // separate from (and in addition to) whatever app is set as the
@@ -409,7 +437,19 @@ class ButtonMapperService : AccessibilityService() {
             return true
         }
 
-        val replacementKeyCode = SCANCODE_TO_KEYCODE[event.scanCode] ?: return handleUnmappedKey(event)
+        val replacementKeyCode = SCANCODE_TO_KEYCODE[event.scanCode]?.let { mapped ->
+            // Scancode 419 (the MX3 Air Mouse's TV button) needs a
+            // different target keycode depending on which TV is actually
+            // connected -- the map above holds the TCL value (4001, a
+            // TCL-proprietary keycode) as its default; Blaupunkt expects
+            // the older KEYCODE_GUIDE value that worked before switching
+            // TVs. Every other scancode is unaffected by this check.
+            if (event.scanCode == 419 && currentTvBrand == TvBrand.BLAUPUNKT) {
+                KeyEvent.KEYCODE_GUIDE
+            } else {
+                mapped
+            }
+        } ?: return handleUnmappedKey(event)
 
         if (!KeyInjector.isReady()) {
             // Injection isn't ready yet (Shizuku not connected, no root) --
@@ -612,6 +652,7 @@ class ButtonMapperService : AccessibilityService() {
         autoBindHandler.removeCallbacksAndMessages(null)
         repeatedSendHandler.removeCallbacksAndMessages(null)
         activeSyntheticRepeats.clear()
+        serviceScope.cancel()
         super.onDestroy()
     }
 }

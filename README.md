@@ -34,16 +34,21 @@ remote can send a different scancode).
 
 **Remapped to a different key:**
 
-| Scancode | Sends keycode                                     |
-|----------|---------------------------------------------------|
-| 108      | `KEYCODE_DPAD_DOWN`                               |
-| 105      | `KEYCODE_DPAD_LEFT`                               |
-| 106      | `KEYCODE_DPAD_RIGHT`                              |
-| 103      | `KEYCODE_DPAD_UP`                                 |
-| 28       | `KEYCODE_DPAD_CENTER`                             |
-| 419      | 4001 (raw, TCL-specific -- see comment in source) |
-| 171      | `KEYCODE_EISU`                                    |
-| 127      | `KEYCODE_MENU`                                    |
+| Scancode | Sends keycode                                          |
+|----------|--------------------------------------------------------|
+| 108      | `KEYCODE_DPAD_DOWN`                                    |
+| 105      | `KEYCODE_DPAD_LEFT`                                    |
+| 106      | `KEYCODE_DPAD_RIGHT`                                   |
+| 103      | `KEYCODE_DPAD_UP`                                      |
+| 28       | `KEYCODE_DPAD_CENTER`                                  |
+| 419      | 4001 (TCL) or `KEYCODE_GUIDE` (Blaupunkt) -- see below |
+| 171      | `KEYCODE_EISU`                                         |
+| 127      | `KEYCODE_MENU`                                         |
+
+Scancode 419's target keycode depends on the "TV brand" setting in the
+app itself (TCL or Blaupunkt) — different TVs have turned out to expect
+different keycodes for this specific button. Everything else in this
+table is unaffected by that setting.
 
 **Channel Up/Down button, remapped differently depending on what's on screen:**
 

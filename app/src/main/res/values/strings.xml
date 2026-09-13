@@ -10,4 +10,7 @@
     <string name="shizuku_auth_token_hint">auth: XXXX</string>
     <string name="save">Save</string>
     <string name="paste">Paste</string>
+    <string name="tv_brand_label">TV brand (affects the MX3 Air Mouse\'s TV button specifically)</string>
+    <string name="tv_brand_tcl">TCL</string>
+    <string name="tv_brand_blaupunkt">Blaupunkt</string>
 </resources>

@@ -55,4 +55,32 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="14sp"
+        android:text="@string/tv_brand_label" />
+
+    <RadioGroup
+        android:id="@+id/tvBrandRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tvBrandTcl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_brand_tcl" />
+
+        <RadioButton
+            android:id="@+id/tvBrandBlaupunkt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tv_brand_blaupunkt" />
+
+    </RadioGroup>
+
 </LinearLayout>

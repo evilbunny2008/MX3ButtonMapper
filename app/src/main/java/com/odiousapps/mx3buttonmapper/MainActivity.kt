@@ -14,6 +14,7 @@ import android.provider.Settings
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -65,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         setUpShizukuAuthTokenField()
+        setUpTvBrandSelector()
     }
 
     /**
@@ -117,6 +119,36 @@ class MainActivity : AppCompatActivity() {
 
     private fun stripAuthPrefix(raw: String): String =
         raw.trim().removePrefix("auth:").trim()
+
+    /**
+     * A radio selection is itself a complete, deliberate action -- saves
+     * immediately on change, unlike the token field above which needs an
+     * explicit Save since free-text typing has no natural "done" moment
+     * the way choosing a radio option does.
+     */
+    private fun setUpTvBrandSelector() {
+        val radioGroup = findViewById<RadioGroup>(R.id.tvBrandRadioGroup)
+
+        lifecycleScope.launch {
+            val currentBrand = ButtonMapperPreferences.observeTvBrand(this@MainActivity).first()
+            val checkedId = when (currentBrand) {
+                TvBrand.TCL -> R.id.tvBrandTcl
+                TvBrand.BLAUPUNKT -> R.id.tvBrandBlaupunkt
+            }
+            radioGroup.check(checkedId)
+
+            radioGroup.setOnCheckedChangeListener { _, checkedButtonId ->
+                val newBrand = when (checkedButtonId) {
+                    R.id.tvBrandBlaupunkt -> TvBrand.BLAUPUNKT
+                    else -> TvBrand.TCL
+                }
+                lifecycleScope.launch {
+                    ButtonMapperPreferences.setTvBrand(this@MainActivity, newBrand)
+                    Log.i(TAG, "TV brand set to $newBrand")
+                }
+            }
+        }
+    }
 
     /**
      * Uses the same Shizuku privileged process that injects key events to
