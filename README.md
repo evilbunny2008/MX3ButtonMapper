@@ -57,6 +57,11 @@ table is unaffected by that setting.
 | 104      | `KEYCODE_CHANNEL_UP`                  | 5× `KEYCODE_DPAD_UP` burst   |
 | 109      | `KEYCODE_CHANNEL_DOWN`                | 5× `KEYCODE_DPAD_DOWN` burst |
 
+"The TV app" is also determined by the TV brand setting above (TCL:
+`com.tcl.tv`; Blaupunkt: `com.mediatek.wwtv.tvcenter`) -- both values
+confirmed via `adb shell dumpsys window | grep mCurrentFocus` while
+live TV was actually on screen.
+
 **Fires a key multiple times per press:**
 
 | Scancode | Sends keycode         | Times |

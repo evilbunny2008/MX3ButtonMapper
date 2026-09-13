@@ -63,13 +63,30 @@ class ButtonMapperService : AccessibilityService() {
             // add more scanCode -> keyCode pairs here as needed
         )
 
-        // Confirmed via mCurrentFocus while live TV was actually on
-        // screen (com.mediatek.wwtv.tvcenter.nav.TurnkeyUiMainActivity).
-        // If this ever needs re-confirming on a different device, the
-        // same command works generally:
+        // Which package counts as "the TV app" (for the foreground-scoped
+        // Channel Up/Down remap below) depends on which TV is actually
+        // connected. Both values confirmed via mCurrentFocus while live
+        // TV was actually on screen:
+        //   TCL: com.tcl.tv/com.tcl.player.TVActivity
+        //   Blaupunkt: com.mediatek.wwtv.tvcenter.nav.TurnkeyUiMainActivity
+        // Blaupunkt's value predates the switch to a TCL TV -- kept
+        // rather than replaced outright so Channel Up/Down still works
+        // correctly if ever switching back, matching the same per-brand
+        // approach already used for scancode 419's target keycode.
+        // Having both present simultaneously is harmless regardless of
+        // which TV is actually connected -- the lookup is always scoped
+        // to whichever brand is currently selected
+        // (TV_APP_PACKAGE_BY_BRAND[currentTvBrand]), never a check
+        // against every entry, and the other brand's TV app can't be
+        // installed/running on this device anyway (different
+        // manufacturer's proprietary system app, tied to that TV's own
+        // firmware). If either value ever needs re-confirming:
         //   adb shell dumpsys window | grep mCurrentFocus
         // The part before the "/" in the output is the package name.
-        private const val TV_APP_PACKAGE = "com.mediatek.wwtv.tvcenter" // TV Center, confirmed via mCurrentFocus
+        private val TV_APP_PACKAGE_BY_BRAND: Map<TvBrand, String> = mapOf(
+            TvBrand.TCL to "com.tcl.tv",
+            TvBrand.BLAUPUNKT to "com.mediatek.wwtv.tvcenter",
+        )
 
         // scanCode -> (replacement keyCode, package that must currently be
         // in the foreground for the remap to apply). Outside that
@@ -89,7 +106,6 @@ class ButtonMapperService : AccessibilityService() {
             val inForegroundRepeatTimes: Int = 1,
             val outsideForegroundKeyCode: Int,
             val outsideForegroundRepeatTimes: Int = 1,
-            val requiredForegroundPackage: String,
         )
 
         private val SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED: Map<Int, ForegroundScopedRemap> = mapOf(
@@ -105,17 +121,21 @@ class ButtonMapperService : AccessibilityService() {
             // through a long playlist) -- DPAD is part of the mandatory
             // baseline every TV app must support, so this works
             // anywhere, unlike Page Up/Down.
+            //
+            // "Inside the TV app" itself is brand-dependent -- see
+            // isCurrentForegroundTheTvApp() below, not a field on this
+            // data class, since which package counts as "the TV app"
+            // depends on a runtime setting (currentTvBrand), not
+            // something fixed at map-definition time.
             104 to ForegroundScopedRemap(
                 inForegroundKeyCode = KeyEvent.KEYCODE_CHANNEL_UP,      // 166
                 outsideForegroundKeyCode = KeyEvent.KEYCODE_DPAD_UP,    // 19
                 outsideForegroundRepeatTimes = 5,
-                requiredForegroundPackage = TV_APP_PACKAGE,
             ),
             109 to ForegroundScopedRemap(
                 inForegroundKeyCode = KeyEvent.KEYCODE_CHANNEL_DOWN,    // 167
                 outsideForegroundKeyCode = KeyEvent.KEYCODE_DPAD_DOWN,  // 20
                 outsideForegroundRepeatTimes = 5,
-                requiredForegroundPackage = TV_APP_PACKAGE,
             ),
         )
 
@@ -355,6 +375,12 @@ class ButtonMapperService : AccessibilityService() {
         }
     }
 
+    /** Whether the foreground app is "the TV app" for the currently
+     *  selected TV brand -- see TV_APP_PACKAGE_BY_BRAND's comment for
+     *  why this is brand-dependent rather than a fixed package name. */
+    private fun isCurrentForegroundTheTvApp(): Boolean =
+        currentForegroundPackage == TV_APP_PACKAGE_BY_BRAND[currentTvBrand]
+
     override fun onKeyEvent(event: KeyEvent): Boolean {
         Log.d(TAG, "keyCode=${event.keyCode} scanCode=${event.scanCode} repeatCount=${event.repeatCount}")
 
@@ -400,7 +426,7 @@ class ButtonMapperService : AccessibilityService() {
         }
 
         SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED[event.scanCode]?.let { remap ->
-            val inForeground = currentForegroundPackage == remap.requiredForegroundPackage
+            val inForeground = isCurrentForegroundTheTvApp()
             val targetKeyCode = if (inForeground) remap.inForegroundKeyCode else remap.outsideForegroundKeyCode
             val targetRepeatTimes = if (inForeground) remap.inForegroundRepeatTimes else remap.outsideForegroundRepeatTimes
 
