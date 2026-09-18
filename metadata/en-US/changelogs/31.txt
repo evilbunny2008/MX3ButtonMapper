@@ -1,0 +1,3 @@
+* Added a Paste button next to the Shizuku auth token field, reading
+  directly from the clipboard -- pairs with Shizuku's own Copy button
+  on its View intents screen, no ADB or long-press menus needed.

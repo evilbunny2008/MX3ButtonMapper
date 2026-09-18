@@ -1,0 +1,4 @@
+* Added a TV brand setting (TCL or Blaupunkt). Affects the MX3 Air
+  Mouse's TV button specifically, since different TVs expect different
+  keycodes for it -- previously TCL-only, Blaupunkt now works too
+  without needing to edit source and rebuild.

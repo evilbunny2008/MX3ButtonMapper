@@ -1,0 +1,4 @@
+* Fixed Channel Up/Down always doing the 5-item D-pad burst instead of
+  a single channel change, even while actually watching TCL live TV --
+  the foreground-app check now also follows the TV brand setting
+  (com.tcl.tv for TCL, confirmed via mCurrentFocus).

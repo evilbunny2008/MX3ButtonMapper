@@ -1,0 +1,3 @@
+* Fixed the Menu button on the MX3 Air Mouse: was unmapped, so it fell
+  through to this TCL TV's own settings bar instead of reaching MX3
+  Launcher's App Info feature. Now sends KEYCODE_MENU.

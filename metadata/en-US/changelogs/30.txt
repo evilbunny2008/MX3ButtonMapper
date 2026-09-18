@@ -1,0 +1,4 @@
+* Added an optional, more reliable way to start Shizuku: this app can
+  now send Shizuku's own documented start broadcast directly, using an
+  auth token pasted into a new settings field, rather than relying
+  solely on Shizuku's own "Start on boot" toggle.

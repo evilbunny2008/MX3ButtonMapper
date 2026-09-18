@@ -1,0 +1,2 @@
+* Saving the Shizuku auth token now closes the window immediately,
+  rather than waiting for the usual auto-close delay.

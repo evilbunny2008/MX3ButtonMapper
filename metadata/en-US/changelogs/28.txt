@@ -1,0 +1,3 @@
+* Fixed the TV button on the MX3 Air Mouse: was sending
+  KEYCODE_GUIDE, which doesn't do anything useful on newer TCL TVs.
+  Now sends the raw keycode TCL's own remote actually expects.
