@@ -8,8 +8,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.provider.Settings
 import com.odiousapps.mx3buttonmapper.AppLog as Log
 import android.widget.Button
@@ -28,10 +26,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val TAG = "MainActivity"
         private const val SHIZUKU_REQUEST_CODE = 1001
-        private const val AUTO_CLOSE_DELAY_MS = 1500L
     }
-
-    private val mainHandler = Handler(Looper.getMainLooper())
 
     private val notificationPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
@@ -46,7 +41,6 @@ class MainActivity : AppCompatActivity() {
                     ShizukuUserServiceBridge.bind()
                     enableAccessibilityServiceViaShizuku()
                     SetupNotifier.cancel(this)
-                    scheduleAutoCloseUnlessTokenMissing()
                 } else {
                     Log.w(TAG, "Shizuku permission denied -- key injection won't work until granted")
                 }
@@ -87,22 +81,7 @@ class MainActivity : AppCompatActivity() {
             input.setText(ButtonMapperPreferences.observeShizukuAuthToken(this@MainActivity).first())
         }
 
-        // scheduleAutoCloseUnlessTokenMissing() only checks whether a
-        // token has EVER been saved, not whether the person is actively
-        // editing this field right now -- so re-pasting a fresh token
-        // (e.g. replacing a stale/wrong one from an earlier attempt)
-        // still races against the 1.5s auto-close timer armed the moment
-        // Shizuku permission was granted, closing the screen out from
-        // under a slow remote-control paste-and-save. Any interaction
-        // with the field cancels that pending close outright, so once
-        // the person has started editing they always have as long as
-        // they need to finish and tap Save.
-        input.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) mainHandler.removeCallbacksAndMessages(null)
-        }
-
         pasteButton.setOnClickListener {
-            mainHandler.removeCallbacksAndMessages(null)
             val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clipText = clipboard.primaryClip
                 ?.takeIf { it.itemCount > 0 }
@@ -199,7 +178,6 @@ class MainActivity : AppCompatActivity() {
                     ShizukuUserServiceBridge.bind()
                     enableAccessibilityServiceViaShizuku()
                     SetupNotifier.cancel(this)
-                    scheduleAutoCloseUnlessTokenMissing()
                 }
                 else -> {
                     // On Google TV there's no touch UI concern here -- this just
@@ -214,51 +192,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Once setup has succeeded there's no reason for this window to stay
-     * open and rendered -- it's just an empty confirmation screen at that
-     * point. On a device that's already under heavy background load
-     * (chronic ~65 load average observed on this particular TV box,
-     * independent of anything this app does), an extra idle window sitting
-     * around is one more thing competing for the GPU/compositor, and this
-     * app has been the one catching stuck-fence ANRs during exactly that
-     * kind of contention. Closing promptly once there's nothing left to do
-     * here removes us from that picture as much as we reasonably can.
-     *
-     * Delayed slightly rather than closing instantly so the bind/enable
-     * calls above have a moment to actually go out before the window (and
-     * this Activity's Context) disappears.
-     */
-    private fun scheduleAutoClose() {
-        mainHandler.postDelayed({
-            if (!isFinishing) {
-                Log.i(TAG, "Setup complete, auto-closing")
-                finish()
-            }
-        }, AUTO_CLOSE_DELAY_MS)
-    }
-
-    /**
-     * Only auto-closes if a Shizuku auth token is already saved --
-     * otherwise this would close the window before there's been any
-     * real chance to paste and save one, since AUTO_CLOSE_DELAY_MS is
-     * only 1.5 seconds. Once a token has been saved at least once,
-     * there's nothing new to configure on subsequent launches, so the
-     * normal auto-close behaviour resumes as before.
-     */
-    private fun scheduleAutoCloseUnlessTokenMissing() {
-        lifecycleScope.launch {
-            val token = ButtonMapperPreferences.observeShizukuAuthToken(this@MainActivity).first()
-            if (token.isNotBlank()) {
-                scheduleAutoClose()
-            } else {
-                Log.i(TAG, "No Shizuku auth token saved yet -- staying open so it can be configured")
-            }
-        }
-    }
-
     override fun onDestroy() {
-        mainHandler.removeCallbacksAndMessages(null)
         Shizuku.removeRequestPermissionResultListener(permissionListener)
         super.onDestroy()
     }
