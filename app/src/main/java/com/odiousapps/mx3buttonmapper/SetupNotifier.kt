@@ -48,12 +48,12 @@ object SetupNotifier {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
             }
             context.startActivity(intent)
-            android.util.Log.i(TAG, "Opened MainActivity directly to prompt for Shizuku permission")
+            AppLog.i(TAG, "Opened MainActivity directly to prompt for Shizuku permission")
             true
         } catch (e: Exception) {
             // Most likely a background-activity-launch SecurityException on
             // a stricter OEM build -- fall back to the notification instead.
-            android.util.Log.w(TAG, "Direct launch of MainActivity failed, falling back to notification", e)
+            AppLog.w(TAG, "Direct launch of MainActivity failed, falling back to notification", e)
             false
         }
     }

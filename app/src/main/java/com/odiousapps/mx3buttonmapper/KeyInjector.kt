@@ -6,7 +6,8 @@ import android.os.DeadObjectException
 import android.os.Handler
 import android.os.IBinder
 import android.os.Looper
-import android.util.Log
+import android.os.SystemClock
+import com.odiousapps.mx3buttonmapper.AppLog as Log
 import rikka.shizuku.Shizuku
 
 /**
@@ -27,6 +28,13 @@ object KeyInjector {
 
     private const val TAG = "KeyInjector"
 
+    // Only consulted by the root fallback path's sendKeyUp() -- see its
+    // comment for why. The Shizuku path never needs this: it forwards the
+    // real physical down/up timing straight through, so the receiving
+    // app's own long-press timer makes the short/long call itself, same
+    // as it would for a genuine hardware remote.
+    private const val ROOT_FALLBACK_LONG_PRESS_THRESHOLD_MS = 500L
+
     /**
      * True if a working injection path is available right now (Shizuku
      * connected, or root). Call this BEFORE consuming a key event so you
@@ -42,6 +50,57 @@ object KeyInjector {
             sendViaShizuku(keyCode)
         } else if (isRootAvailable()) {
             sendViaRoot(keyCode)
+        } else {
+            Log.w(TAG, "No injection method available -- ask the user to grant Shizuku or root access")
+        }
+    }
+
+
+    /**
+     * Injects just the DOWN half of a press, to be paired with a later
+     * sendKeyUp() call using the SAME downTime once the physical button is
+     * actually released. Together they read as one genuinely held key to
+     * whatever app receives them -- letting that app's own long-press
+     * handling tell a quick tap from a hold by itself, rather than this
+     * app guessing at a different replacement keycode for "held" and
+     * risking whatever that keycode happens to also do elsewhere.
+     *
+     * downTime must be SystemClock.uptimeMillis() captured at the moment
+     * the PHYSICAL button actually went down, and the exact same value
+     * must be passed to the matching sendKeyUp() call -- that's what ties
+     * the two halves together into one coherent gesture.
+     */
+    fun sendKeyDown(keyCode: Int, downTime: Long) {
+        if (isShizukuReady()) {
+            try {
+                ShizukuUserServiceBridge.injectKeyDown(keyCode, downTime)
+            } catch (e: Throwable) {
+                Log.e(TAG, "Shizuku key-down injection failed", e)
+            }
+        } else if (isRootAvailable()) {
+            // Root's `input` shell command has no equivalent to a bare
+            // "key down" -- it only knows how to inject one complete,
+            // atomic press (optionally flagged --longpress, see
+            // sendKeyUp() below). So there's nothing to actually send
+            // here for that path; the whole press is injected in one shot
+            // from sendKeyUp() instead, once the real hold duration is
+            // known.
+            Log.d(TAG, "Root fallback: deferring keyCode=$keyCode injection to sendKeyUp()")
+        } else {
+            Log.w(TAG, "No injection method available -- ask the user to grant Shizuku or root access")
+        }
+    }
+
+    /** The UP half of a press started by a matching sendKeyDown() call. */
+    fun sendKeyUp(keyCode: Int, downTime: Long) {
+        if (isShizukuReady()) {
+            try {
+                ShizukuUserServiceBridge.injectKeyUp(keyCode, downTime)
+            } catch (e: Throwable) {
+                Log.e(TAG, "Shizuku key-up injection failed", e)
+            }
+        } else if (isRootAvailable()) {
+            sendHeldPressViaRoot(keyCode, downTime)
         } else {
             Log.w(TAG, "No injection method available -- ask the user to grant Shizuku or root access")
         }
@@ -99,6 +158,33 @@ object KeyInjector {
             Log.e(TAG, "Root injection failed", e)
         }
     }
+
+    /**
+     * Root fallback for sendKeyUp(): since the `input` shell command can't
+     * stream a live down-then-later-up the way Shizuku's direct
+     * injectInputEvent() call can, this waits until release, measures how
+     * long the button was actually held, and injects ONE atomic event for
+     * the SAME keycode -- never a different one. A plain press if it was
+     * short; one flagged `--longpress` (an `input keyevent` option
+     * supported on Android 13+, which tells the input dispatcher to treat
+     * it as a genuine long press of that same key) if it was held past
+     * ROOT_FALLBACK_LONG_PRESS_THRESHOLD_MS. On older OS versions where
+     * --longpress isn't recognised, this just degrades to a plain press on
+     * release -- still the correct keycode, just without the long-press
+     * flag. Shizuku (tried first, above) doesn't have this limitation.
+     */
+    private fun sendHeldPressViaRoot(keyCode: Int, downTime: Long) {
+        val heldMs = SystemClock.uptimeMillis() - downTime
+        try {
+            if (heldMs >= ROOT_FALLBACK_LONG_PRESS_THRESHOLD_MS) {
+                Runtime.getRuntime().exec(arrayOf("su", "-c", "input keyevent --longpress $keyCode"))
+            } else {
+                Runtime.getRuntime().exec(arrayOf("su", "-c", "input keyevent $keyCode"))
+            }
+        } catch (e: Throwable) {
+            Log.e(TAG, "Root hold injection failed", e)
+        }
+    }
 }
 
 /**
@@ -135,6 +221,8 @@ object ShizukuUserServiceBridge {
     private var rebindScheduled = false
     private var consecutiveRebindFailures = 0
     private val pendingKeyCodes = mutableListOf<Int>()
+    private val pendingKeyDowns = mutableListOf<Pair<Int, Long>>()
+    private val pendingKeyUps = mutableListOf<Pair<Int, Long>>()
     private val pendingComponentEnables = mutableListOf<String>()
     private val mainHandler = Handler(Looper.getMainLooper())
 
@@ -178,6 +266,8 @@ object ShizukuUserServiceBridge {
             consecutiveRebindFailures = 0
             Log.i(TAG, "KeyInjectorUserService connected")
             flushPendingKeyCodes()
+            flushPendingKeyDowns()
+            flushPendingKeyUps()
             flushPendingComponentEnables()
         }
 
@@ -205,6 +295,50 @@ object ShizukuUserServiceBridge {
                     return // leave remaining queued items in place for the next connection
                 } catch (e: Throwable) {
                     Log.e(TAG, "Failed flushing queued keyCode=$code (non-fatal, dropping this one)", e)
+                    iterator.remove()
+                }
+            }
+        }
+    }
+
+    private fun flushPendingKeyDowns() {
+        synchronized(pendingKeyDowns) {
+            if (pendingKeyDowns.isEmpty()) return
+            Log.i(TAG, "Flushing ${pendingKeyDowns.size} queued key-down event(s)")
+            val iterator = pendingKeyDowns.iterator()
+            while (iterator.hasNext()) {
+                val (code, downTime) = iterator.next()
+                try {
+                    service?.injectKeyDown(code, downTime)
+                    iterator.remove()
+                } catch (_: DeadObjectException) {
+                    Log.w(TAG, "Binder died mid-flush on keyDown code=$code -- stopping flush, will retry on rebind")
+                    onBinderDied()
+                    return
+                } catch (e: Throwable) {
+                    Log.e(TAG, "Failed flushing queued keyDown code=$code (non-fatal, dropping this one)", e)
+                    iterator.remove()
+                }
+            }
+        }
+    }
+
+    private fun flushPendingKeyUps() {
+        synchronized(pendingKeyUps) {
+            if (pendingKeyUps.isEmpty()) return
+            Log.i(TAG, "Flushing ${pendingKeyUps.size} queued key-up event(s)")
+            val iterator = pendingKeyUps.iterator()
+            while (iterator.hasNext()) {
+                val (code, downTime) = iterator.next()
+                try {
+                    service?.injectKeyUp(code, downTime)
+                    iterator.remove()
+                } catch (_: DeadObjectException) {
+                    Log.w(TAG, "Binder died mid-flush on keyUp code=$code -- stopping flush, will retry on rebind")
+                    onBinderDied()
+                    return
+                } catch (e: Throwable) {
+                    Log.e(TAG, "Failed flushing queued keyUp code=$code (non-fatal, dropping this one)", e)
                     iterator.remove()
                 }
             }
@@ -310,6 +444,52 @@ object ShizukuUserServiceBridge {
         synchronized(pendingKeyCodes) {
             pendingKeyCodes.add(keyCode)
         }
+    }
+
+    fun injectKeyDown(keyCode: Int, downTime: Long) {
+        val current = service
+        if (current != null) {
+            try {
+                current.injectKeyDown(keyCode, downTime)
+                return
+            } catch (_: DeadObjectException) {
+                Log.w(TAG, "Binder died calling injectKeyDown($keyCode) -- queueing for retry after rebind")
+                synchronized(pendingKeyDowns) { pendingKeyDowns.add(keyCode to downTime) }
+                onBinderDied()
+                return
+            }
+        }
+
+        if (!bindRequested) {
+            Log.w(TAG, "UserService not bound yet -- bind() was never called this session")
+            return
+        }
+
+        Log.w(TAG, "UserService bind in progress but not yet connected -- queueing keyDown code=$keyCode")
+        synchronized(pendingKeyDowns) { pendingKeyDowns.add(keyCode to downTime) }
+    }
+
+    fun injectKeyUp(keyCode: Int, downTime: Long) {
+        val current = service
+        if (current != null) {
+            try {
+                current.injectKeyUp(keyCode, downTime)
+                return
+            } catch (_: DeadObjectException) {
+                Log.w(TAG, "Binder died calling injectKeyUp($keyCode) -- queueing for retry after rebind")
+                synchronized(pendingKeyUps) { pendingKeyUps.add(keyCode to downTime) }
+                onBinderDied()
+                return
+            }
+        }
+
+        if (!bindRequested) {
+            Log.w(TAG, "UserService not bound yet -- bind() was never called this session")
+            return
+        }
+
+        Log.w(TAG, "UserService bind in progress but not yet connected -- queueing keyUp code=$keyCode")
+        synchronized(pendingKeyUps) { pendingKeyUps.add(keyCode to downTime) }
     }
 
     /**

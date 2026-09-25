@@ -97,6 +97,19 @@
                 android:value="Hardware button remapping via accessibility service" />
         </service>
 
+        <!--
+          Pure no-op provider, see FileLogInitProvider.kt's own comment.
+          Its only job is that the platform creates it (and so calls its
+          onCreate()) before any other component in this process, so
+          AppLog has a real log file to write to from the very first line
+          this process ever logs, boot included.
+        -->
+        <provider
+            android:name=".FileLogInitProvider"
+            android:authorities="${applicationId}.loginit"
+            android:exported="false"
+            android:initOrder="100" />
+
         <!-- Required for Shizuku to talk to this app -->
         <provider
             android:name="rikka.shizuku.ShizukuProvider"

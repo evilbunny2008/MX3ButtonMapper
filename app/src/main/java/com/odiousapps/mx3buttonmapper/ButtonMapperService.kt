@@ -8,7 +8,7 @@ import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
-import android.util.Log
+import com.odiousapps.mx3buttonmapper.AppLog as Log
 import android.view.KeyEvent
 import android.view.accessibility.AccessibilityEvent
 import kotlinx.coroutines.CoroutineScope
@@ -30,13 +30,63 @@ class ButtonMapperService : AccessibilityService() {
         private const val TAG = "ButtonMapperService"
 
         // scanCode -> replacement keyCode. Requires Shizuku/root (see
-        // KeyInjector.kt) since it synthesises a new input event.
+        // KeyInjector.kt) since it synthesises a new input event. Only
+        // ever reached for MX3 Air Mouse presses -- isFromMx3AirMouse()'s
+        // gate at the top of onKeyEvent() routes every other device
+        // (i.e. the TV's own remote, whatever transport it's using)
+        // straight to handleUnmappedKey() before this map is even
+        // consulted, so none of this ever touches the TV's own remote.
+        //
+        // D-pad direction scancodes (108/105/106/103 -> DPAD_DOWN/LEFT/
+        // RIGHT/UP): the keyCode VALUE here is identical to what the MX3
+        // already reports on its own -- confirmed via `adb shell
+        // getevent`, its raw scanCode already translates to that same
+        // keyCode by default. But the consume-and-reinject this map
+        // triggers is still needed regardless of the value being a
+        // no-op: confirmed via `adb shell dumpsys input`, Android
+        // classifies the MX3's arrow-key-emitting HID collection as
+        // Sources=KEYBOARD-only/KeyboardType=ALPHABETIC (because it also
+        // advertises a full QWERTY key set), unlike the TV's own
+        // remote's D-pad hardware, which is always
+        // Sources=KEYBOARD|DPAD/NON_ALPHABETIC. Left genuinely
+        // unintercepted, the MX3's raw press carries that ALPHABETIC
+        // classification straight through, and at least two real apps
+        // (SBS On Demand's search screen, Shizuku's own permission
+        // screen) then treat it as "typing in an attached keyboard"
+        // rather than "remote navigation" and refuse to move focus --
+        // confirmed by testing with this app and Shizuku BOTH fully
+        // uninstalled, so it's not something either app's interception
+        // causes, it's the MX3's own OS-level device classification.
+        // Re-injecting through Shizuku (even with the default,
+        // unremarkable VIRTUAL_KEYBOARD device identity used here, not
+        // the MX3's own flagged-as-alphabetic one) sidesteps that for
+        // ordinary navigation -- confirmed working again in Shizuku's
+        // own UI.
+        //
+        // This does NOT fix every case, though: SBS On Demand's search
+        // screen specifically still refuses to release focus even for
+        // this re-injected version (tried harder variants too -- see
+        // git history around 2026-09-26 for the SOURCE_DPAD/device-id-
+        // borrowing attempts that were reverted after also failing
+        // there). Current theory: Android's input dispatcher
+        // unconditionally stamps KeyEvent.FLAG_INJECTED on anything that
+        // goes through InputManager.injectInputEvent(), regardless of
+        // what source/deviceId the event otherwise carries, and SBS's
+        // search screen specifically may be gating on that flag too --
+        // untested/unconfirmed, since there's no way to inject an event
+        // that both fixes the classification AND avoids that flag
+        // without root-level writes straight to a /dev/input device
+        // node, which isn't available on this device.
         private val SCANCODE_TO_KEYCODE: Map<Int, Int> = mapOf(
             108 to KeyEvent.KEYCODE_DPAD_DOWN,    // 20
             105 to KeyEvent.KEYCODE_DPAD_LEFT,     // 21
             106 to KeyEvent.KEYCODE_DPAD_RIGHT,    // 22
             103 to KeyEvent.KEYCODE_DPAD_UP,       // 19
-            28 to KeyEvent.KEYCODE_DPAD_CENTER,    // 23
+            // 28 (OK button) moved to SCANCODE_TO_KEYCODE_HOLD_FORWARDED
+            // below -- it needs its real down/up timing forwarded through
+            // so the TV app can tell a quick tap from a hold itself, not
+            // the same "fire immediately + synthetic-repeat while held"
+            // treatment as the D-pad direction keys.
             // TCL-proprietary keycode, not a standard KeyEvent constant --
             // this TV expects 4001 specifically for its TV/source button,
             // confirmed by testing the TCL's own remote directly and
@@ -160,6 +210,30 @@ class ButtonMapperService : AccessibilityService() {
             155 to Pair(KeyEvent.KEYCODE_VOLUME_UP, 3),
         )
 
+        // scanCode -> keyCode, for buttons where holding vs quickly
+        // tapping means something different to the RECEIVING app, and
+        // that app already knows how to tell the difference itself -- e.g.
+        // the MX3's OK button (scancode 28): on a real TV remote, a quick
+        // press of OK brings up the channel list, while holding it down
+        // brings up the program info overlay, entirely via the TV app's
+        // own long-press handling for DPAD_CENTER.
+        //
+        // Rather than deciding short-vs-long ourselves and picking a
+        // DIFFERENT replacement keycode for "held" (a guess at whatever
+        // keycode happens to show program info, with no guarantee it
+        // doesn't also do something unintended elsewhere), scancodes in
+        // this map get their physical down/up timing forwarded straight
+        // through to the SAME injected keycode: KeyInjector.sendKeyDown()
+        // fires the moment the physical button goes down, and
+        // KeyInjector.sendKeyUp() fires the moment it's actually released.
+        // The receiving app then sees a genuinely held key, just like it
+        // would from real hardware, and its own long-press timer -- the
+        // same one already driving this behaviour for an actual remote --
+        // makes the short/long call itself.
+        private val SCANCODE_TO_KEYCODE_HOLD_FORWARDED: Map<Int, Int> = mapOf(
+            28 to KeyEvent.KEYCODE_DPAD_CENTER,
+        )
+
         // Spacing between each injected press in a repeated-keycode burst.
         // Too fast and some apps/AudioManager's own volume UI can coalesce
         // rapid presses into fewer visible steps; this keeps each one
@@ -216,6 +290,34 @@ class ButtonMapperService : AccessibilityService() {
         private val TRANSIENT_OVERLAY_PACKAGES = setOf(
             "com.android.systemui",
         )
+
+        // Every SCANCODE_TO_* map above exists to work around a quirk of
+        // the MX3 Air Mouse specifically (its own extra buttons, or a
+        // keycode/timing difference from what this TV's software
+        // expects) -- none of it should ever apply to the TV's own
+        // original remote, which already sends exactly the key presses
+        // the TV expects on its own. The problem: scanCode/keyCode alone
+        // can't tell the two apart -- confirmed via `adb shell getevent`
+        // live capture, pressing D-pad Down on each remote in turn -- both
+        // report the identical keyCode=20/scanCode=108 (Linux KEY_DOWN).
+        // What DOES differ is which input device sent the event: the
+        // real remote enumerates as "MTK Smart TV IR Receiver"
+        // (/dev/input/event1 in that same capture), while the MX3 Air
+        // Mouse's 2.4GHz RF dongle enumerates as up to four separate HID
+        // collections all starting with "2.4G Composite Devic" (note:
+        // that's the literal string the dongle's firmware reports --
+        // "Device" truncated -- not a typo here).
+        //
+        // A prefix match is used rather than an exact-string match since
+        // the four collections' full names differ after that shared
+        // prefix ("2.4G Composite Devic", "... System Control", "...
+        // Consumer Control", "... Mouse").
+        //
+        // This is specific to the MX3 Air Mouse unit actually in use --
+        // re-confirm with the same getevent capture if it's ever swapped
+        // for a different model, since a different air mouse could easily
+        // report a different device name.
+        private const val MX3_AIR_MOUSE_DEVICE_NAME_PREFIX = "2.4G Composite Devic"
     }
 
     @Volatile
@@ -226,6 +328,13 @@ class ButtonMapperService : AccessibilityService() {
     // ACTION_UP can cancel the RIGHT one (more than one key could
     // theoretically be held at once) rather than cancelling everything.
     private val activeSyntheticRepeats = mutableMapOf<Int, Runnable>()
+
+    // Backs SCANCODE_TO_KEYCODE_HOLD_FORWARDED: records the
+    // SystemClock.uptimeMillis() each such scancode actually went down at,
+    // so the matching ACTION_UP can pass that same downTime to
+    // KeyInjector.sendKeyUp() -- required so the injected down and up
+    // describe one coherent held gesture rather than two unrelated events.
+    private val holdForwardedDownTimes = mutableMapOf<Int, Long>()
 
     // Updated by onAccessibilityEvent() below, read by onKeyEvent() to
     // decide whether a foreground-scoped remap should apply. Volatile
@@ -266,6 +375,7 @@ class ButtonMapperService : AccessibilityService() {
         Log.i(TAG, "Accessibility service connected -- " +
             "${SCANCODE_TO_KEYCODE.size} keycode mapping(s), " +
             "${SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED.size} foreground-scoped mapping(s), " +
+            "${SCANCODE_TO_KEYCODE_HOLD_FORWARDED.size} hold-forwarded mapping(s), " +
             "${SCANCODE_TO_APP_PACKAGE.size} app-launch mapping(s)")
 
         // onServiceConnected() fires automatically whenever an ENABLED
@@ -368,6 +478,7 @@ class ButtonMapperService : AccessibilityService() {
                 setPackage("moe.shizuku.privileged.api")
                 putExtra("auth", token)
             }
+            Log.i(TAG, "Sending Shizuku start broadcast to ${intent.`package`} (action=${intent.action})")
             sendBroadcast(intent)
             Log.i(TAG, "Sent Shizuku start broadcast")
         } catch (e: Throwable) {
@@ -381,8 +492,28 @@ class ButtonMapperService : AccessibilityService() {
     private fun isCurrentForegroundTheTvApp(): Boolean =
         currentForegroundPackage == TV_APP_PACKAGE_BY_BRAND[currentTvBrand]
 
+    /** See MX3_AIR_MOUSE_DEVICE_NAME_PREFIX's comment for how/why this is
+     *  the only reliable way to tell the MX3 Air Mouse's presses apart
+     *  from the TV's own original remote. */
+    private fun isFromMx3AirMouse(event: KeyEvent): Boolean =
+        event.device?.name?.startsWith(MX3_AIR_MOUSE_DEVICE_NAME_PREFIX) == true
+
     override fun onKeyEvent(event: KeyEvent): Boolean {
-        Log.d(TAG, "keyCode=${event.keyCode} scanCode=${event.scanCode} repeatCount=${event.repeatCount}")
+        Log.d(TAG, "keyCode=${event.keyCode} scanCode=${event.scanCode} " +
+            "repeatCount=${event.repeatCount} device=${event.device?.name}")
+
+        // Every remap below only makes sense for the MX3 Air Mouse -- the
+        // TV's own original remote already sends exactly what the TV
+        // expects and must never be touched. See
+        // MX3_AIR_MOUSE_DEVICE_NAME_PREFIX's comment for why device
+        // identity (not scanCode/keyCode) is what has to gate this.
+        // handleUnmappedKey() still restores synthetic hold-to-repeat for
+        // it (see SYNTHETIC_REPEAT_INITIAL_DELAY_MS for why that's needed
+        // at all) and always passes the real, original event straight
+        // through unconsumed.
+        if (!isFromMx3AirMouse(event)) {
+            return handleUnmappedKey(event)
+        }
 
         // event.repeatCount > 0 means this is an auto-repeat pulse from
         // holding the key down, not a fresh press. This only matters for
@@ -459,6 +590,33 @@ class ButtonMapperService : AccessibilityService() {
                 }
             } else if (event.action == KeyEvent.ACTION_UP && targetRepeatTimes == 1) {
                 stopSyntheticRepeat(event.scanCode)
+            }
+            return true
+        }
+
+        SCANCODE_TO_KEYCODE_HOLD_FORWARDED[event.scanCode]?.let { keyCode ->
+            if (!KeyInjector.isReady()) {
+                if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
+                    Log.w(TAG, "Injection not ready, letting scancode ${event.scanCode} pass through untouched")
+                    SetupNotifier.promptIfNeeded(this)
+                }
+                return super.onKeyEvent(event)
+            }
+
+            if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
+                val downTime = SystemClock.uptimeMillis()
+                holdForwardedDownTimes[event.scanCode] = downTime
+                Log.i(TAG, "Captured scancode ${event.scanCode}, forwarding key-down for keycode $keyCode")
+                KeyInjector.sendKeyDown(keyCode, downTime)
+            } else if (event.action == KeyEvent.ACTION_UP) {
+                // Falls back to "now" if we somehow never saw the matching
+                // ACTION_DOWN (e.g. the service connected mid-press) --
+                // that just means the injected down+up pair reads as a
+                // very short hold, the same safe default as a normal tap.
+                val downTime = holdForwardedDownTimes.remove(event.scanCode) ?: SystemClock.uptimeMillis()
+                Log.i(TAG, "Forwarding key-up for keycode $keyCode " +
+                    "(held ${SystemClock.uptimeMillis() - downTime}ms)")
+                KeyInjector.sendKeyUp(keyCode, downTime)
             }
             return true
         }
@@ -678,6 +836,7 @@ class ButtonMapperService : AccessibilityService() {
         autoBindHandler.removeCallbacksAndMessages(null)
         repeatedSendHandler.removeCallbacksAndMessages(null)
         activeSyntheticRepeats.clear()
+        holdForwardedDownTimes.clear()
         serviceScope.cancel()
         super.onDestroy()
     }

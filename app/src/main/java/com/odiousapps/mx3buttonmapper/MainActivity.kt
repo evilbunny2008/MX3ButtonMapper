@@ -11,7 +11,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
-import android.util.Log
+import com.odiousapps.mx3buttonmapper.AppLog as Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioGroup
@@ -87,7 +87,22 @@ class MainActivity : AppCompatActivity() {
             input.setText(ButtonMapperPreferences.observeShizukuAuthToken(this@MainActivity).first())
         }
 
+        // scheduleAutoCloseUnlessTokenMissing() only checks whether a
+        // token has EVER been saved, not whether the person is actively
+        // editing this field right now -- so re-pasting a fresh token
+        // (e.g. replacing a stale/wrong one from an earlier attempt)
+        // still races against the 1.5s auto-close timer armed the moment
+        // Shizuku permission was granted, closing the screen out from
+        // under a slow remote-control paste-and-save. Any interaction
+        // with the field cancels that pending close outright, so once
+        // the person has started editing they always have as long as
+        // they need to finish and tap Save.
+        input.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) mainHandler.removeCallbacksAndMessages(null)
+        }
+
         pasteButton.setOnClickListener {
+            mainHandler.removeCallbacksAndMessages(null)
             val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clipText = clipboard.primaryClip
                 ?.takeIf { it.itemCount > 0 }

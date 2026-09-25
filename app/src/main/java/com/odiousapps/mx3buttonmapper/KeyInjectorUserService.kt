@@ -1,6 +1,6 @@
 package com.odiousapps.mx3buttonmapper
 
-import android.util.Log
+import com.odiousapps.mx3buttonmapper.AppLog as Log
 import android.view.InputEvent
 import android.view.KeyEvent
 import android.os.SystemClock
@@ -44,6 +44,35 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
             inject(KeyEvent(now, now, KeyEvent.ACTION_DOWN, keyCode, 0))
             inject(KeyEvent(now, now, KeyEvent.ACTION_UP, keyCode, 0))
         } catch (e: Throwable) {
+            Log.e(TAG, "injectKeyEvent($keyCode) failed", e)
+            e.printStackTrace()
+        }
+    }
+
+    /**
+     * Injects just the DOWN half of a press, paired later with
+     * injectKeyUp() using the same downTime -- together they read as one
+     * genuinely HELD key to whatever receives them, letting that app's own
+     * long-press handling (onKeyLongPress()/checkForLongPress()-style
+     * timers, keyed off real elapsed time since ACTION_DOWN) tell a quick
+     * tap from a hold by itself, instead of ButtonMapperService guessing
+     * at a different replacement keycode for "held".
+     */
+    override fun injectKeyDown(keyCode: Int, downTime: Long) {
+        try {
+            inject(KeyEvent(downTime, SystemClock.uptimeMillis(), KeyEvent.ACTION_DOWN, keyCode, 0))
+        } catch (e: Throwable) {
+            Log.e(TAG, "injectKeyDown($keyCode) failed", e)
+            e.printStackTrace()
+        }
+    }
+
+    /** The UP half of a press started by a matching injectKeyDown() call. */
+    override fun injectKeyUp(keyCode: Int, downTime: Long) {
+        try {
+            inject(KeyEvent(downTime, SystemClock.uptimeMillis(), KeyEvent.ACTION_UP, keyCode, 0))
+        } catch (e: Throwable) {
+            Log.e(TAG, "injectKeyUp($keyCode) failed", e)
             e.printStackTrace()
         }
     }
