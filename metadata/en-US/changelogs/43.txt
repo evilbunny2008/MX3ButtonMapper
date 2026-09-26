@@ -1,0 +1,3 @@
+* No functional changes -- internal build-config tweak that silences a
+  harmless NDK strip-tool warning for a couple of bundled native
+  libraries during release builds.
