@@ -1,5 +1,5 @@
 MX3 Button Mapper remaps hardware buttons on MX3-style air-mouse remotes
-(and other remotes/keyboards) connected to Android TV / Google TV devices.
+ connected to Android TV / Google TV devices.
 
 It works by combining two Android mechanisms:
 
