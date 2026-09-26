@@ -1,0 +1,115 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+
+    <path android:pathData="M0,0h320v180h-320z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:angle="315"
+                android:startColor="#2B2F77"
+                android:endColor="#5B4FE0" />
+        </aapt:attr>
+    </path>
+
+    <!--
+      Reuses ic_launcher_foreground.xml's content group unchanged (same
+      108x108-space device+arcs illustration, no text, since the app
+      icon never needed any), just wrapped in an outer transform that
+      scales it up from the 108x108 icon frame to a 140x140 square
+      centred in this 320x180 banner (translate 90,20, scale 140/108)
+      instead of the icon's own 108x108 frame.
+    -->
+    <group
+        android:translateX="90"
+        android:translateY="20"
+        android:scaleX="1.2963"
+        android:scaleY="1.2963">
+
+        <group
+            android:name="content"
+            android:pivotX="292.5"
+            android:pivotY="252.5"
+            android:scaleX="0.19"
+            android:scaleY="0.19"
+            android:translateX="-238.5"
+            android:translateY="-198.5">
+
+            <path
+                android:pathData="M318,118 A92,92 0 0 1 372,196"
+                android:strokeColor="#5CE1E6"
+                android:strokeWidth="10"
+                android:strokeLineCap="round"
+                android:fillColor="#00000000" />
+            <path
+                android:pathData="M300,92 A128,128 0 0 1 384,214"
+                android:strokeColor="#5CE1E6"
+                android:strokeAlpha="0.55"
+                android:strokeWidth="10"
+                android:strokeLineCap="round"
+                android:fillColor="#00000000" />
+
+            <group
+                android:name="device"
+                android:pivotX="256"
+                android:pivotY="268"
+                android:rotation="28">
+
+                <path
+                    android:pathData="M256,118 H278 A34,34 0 0 1 312,152 V384 A34,34 0 0 1 278,418 H256 A34,34 0 0 1 222,384 V152 A34,34 0 0 1 256,118 Z"
+                    android:fillColor="#1D1E24" />
+
+                <path
+                    android:pathData="M248,118 H286 A26,26 0 0 1 312,144 A26,26 0 0 1 286,170 H248 A26,26 0 0 1 222,144 A26,26 0 0 1 248,118 Z"
+                    android:fillColor="#B0B3C0" />
+                <path
+                    android:pathData="M260,144 A7,7 0 1 0 274,144 A7,7 0 1 0 260,144 Z"
+                    android:fillColor="#5CE1E6" />
+
+                <path
+                    android:pathData="M239,180 A7,7 0 0 1 246,187 V393 A7,7 0 0 1 239,400 A7,7 0 0 1 232,393 V187 A7,7 0 0 1 239,180 Z"
+                    android:fillColor="#FFFFFF"
+                    android:fillAlpha="0.06" />
+
+                <path
+                    android:pathData="M233,232 A34,34 0 1 0 301,232 A34,34 0 1 0 233,232 Z"
+                    android:fillColor="#0B0B0E" />
+                <path
+                    android:pathData="M233,232 A34,34 0 1 0 301,232 A34,34 0 1 0 233,232 Z"
+                    android:fillColor="#00000000"
+                    android:strokeColor="#3A3B45"
+                    android:strokeWidth="3" />
+                <path
+                    android:pathData="M258,232 A9,9 0 1 0 276,232 A9,9 0 1 0 258,232 Z"
+                    android:fillColor="#5CE1E6" />
+                <path
+                    android:pathData="M267,208 v12 M267,244 v12 M243,232 h12 M279,232 h12"
+                    android:strokeColor="#54566A"
+                    android:strokeWidth="6"
+                    android:strokeLineCap="round"
+                    android:fillColor="#00000000" />
+
+                <path
+                    android:pathData="M245,296 H257 A7,7 0 0 1 264,303 V307 A7,7 0 0 1 257,314 H245 A7,7 0 0 1 238,307 V303 A7,7 0 0 1 245,296 Z"
+                    android:fillColor="#2E3040" />
+                <path
+                    android:pathData="M277,296 H289 A7,7 0 0 1 296,303 V307 A7,7 0 0 1 289,314 H277 A7,7 0 0 1 270,307 V303 A7,7 0 0 1 277,296 Z"
+                    android:fillColor="#2E3040" />
+
+                <path
+                    android:pathData="M247,330 H287 A7,7 0 0 1 294,337 A7,7 0 0 1 287,344 H247 A7,7 0 0 1 240,337 A7,7 0 0 1 247,330 Z"
+                    android:fillColor="#22232C" />
+                <path
+                    android:pathData="M247,352 H287 A7,7 0 0 1 294,359 A7,7 0 0 1 287,366 H247 A7,7 0 0 1 240,359 A7,7 0 0 1 247,352 Z"
+                    android:fillColor="#22232C" />
+
+                <path
+                    android:pathData="M312,200 A4,4 0 0 1 316,204 V242 A4,4 0 0 1 312,246 A4,4 0 0 1 308,242 V204 A4,4 0 0 1 312,200 Z"
+                    android:fillColor="#0B0B0E" />
+            </group>
+        </group>
+    </group>
+</vector>

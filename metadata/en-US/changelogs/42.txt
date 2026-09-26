@@ -1,0 +1,4 @@
+* Switched the TV banner from raster PNGs to a single scalable vector
+  drawable, reusing the same icon artwork as the app icon itself (no
+  text needed) -- stays crisp at any density instead of relying on
+  fixed-size images.
