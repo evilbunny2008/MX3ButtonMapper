@@ -1,0 +1,3 @@
+* Added a proper TV banner (android:banner in the manifest), so the
+  app now shows its own branded tile in Android TV/Google TV's
+  leanback launcher instead of a generic placeholder.
