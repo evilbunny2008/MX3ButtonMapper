@@ -83,6 +83,13 @@ android {
             excludes += "/META-INF/*.DSA"
             excludes += "/META-INF/*.RSA"
         }
+        jniLibs {
+            // androidx.graphics:graphics-path ships this prebuilt without an NDK strip tool
+            // available to match it, so the strip task can't touch it anyway - telling AGP to
+            // keep its debug symbols outright stops it from trying (and logging the warning).
+            keepDebugSymbols += "**/libandroidx.graphics.path.so"
+            keepDebugSymbols += "**/libdatastore_shared_counter.so"
+        }
     }
 }
 
