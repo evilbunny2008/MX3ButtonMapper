@@ -1,0 +1,3 @@
+* Added on-device diagnostic logging that persists across restarts,
+  to help track down input-handling issues that are hard to catch
+  live with logcat alone.

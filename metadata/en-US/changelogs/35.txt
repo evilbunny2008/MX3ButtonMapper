@@ -1,0 +1,5 @@
+* Fixed button remapping sometimes matching on scancode/keycode alone,
+  which could trigger on the TV's own original remote as well as the
+  MX3 Air Mouse when the two happened to report the same code --
+  remapping is now gated on which input device actually sent the
+  press.

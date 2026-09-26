@@ -1,0 +1,4 @@
+* Fixed the Shizuku setup screen auto-closing while actively editing
+  the auth token field -- any interaction with the field now cancels
+  the pending auto-close, so re-pasting a fresh token no longer races
+  against the timer.

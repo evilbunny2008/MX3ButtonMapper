@@ -1,0 +1,4 @@
+* Fixed the Shizuku setup screen still closing itself automatically a
+  short while after granting permission, even after 38's fix for the
+  field-editing case -- the auto-close is now removed entirely, so the
+  screen only closes when Save is tapped.

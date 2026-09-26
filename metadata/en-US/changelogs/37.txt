@@ -1,0 +1,5 @@
+* Added real press/hold timing forwarding for the MX3 Air Mouse's OK
+  button, so the receiving app's own long-press handling can tell a
+  quick tap from a hold itself -- e.g. bringing up the channel list on
+  a tap vs. program info on a hold -- instead of this app guessing at
+  a separate keycode for "held".
