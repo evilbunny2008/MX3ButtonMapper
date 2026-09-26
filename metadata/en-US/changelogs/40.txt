@@ -1,0 +1,4 @@
+* Declared touchscreen and Android TV leanback support as optional in
+  the manifest, rather than leaving them unstated -- makes the Play
+  Store listing correctly show this app as compatible with Android TV
+  / Google TV devices that have no touchscreen at all.
