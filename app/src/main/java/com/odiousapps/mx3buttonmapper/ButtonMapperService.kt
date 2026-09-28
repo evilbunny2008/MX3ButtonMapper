@@ -200,8 +200,9 @@ class ButtonMapperService : AccessibilityService() {
 
         // scanCode -> package to launch. No Shizuku/root needed -- this is
         // just starting an activity, not injecting synthetic input.
+        // 172 (Home) moved to SCANCODE_TO_TAP_OR_HOLD_FORWARDED below --
+        // see that map's comment for why.
         private val SCANCODE_TO_APP_PACKAGE: Map<Int, String> = mapOf(
-            172 to LAUNCHER_PACKAGE, // MX3 Launcher
             418 to "app.smarttube.fdroid", // SmartTube (F-Droid build)
             150 to "com.phlox.tvwebbrowser", // TV Bro browser
         )
@@ -237,6 +238,48 @@ class ButtonMapperService : AccessibilityService() {
         private val SCANCODE_TO_KEYCODE_HOLD_FORWARDED: Map<Int, Int> = mapOf(
             28 to KeyEvent.KEYCODE_DPAD_CENTER,
         )
+
+        // scanCode -> (package to launch on a quick tap, keyCode to
+        // hold-forward on a genuine hold). Home (172) needs different
+        // handling to OK above: a tap of Home has always explicitly
+        // launched MX3 Launcher directly (launchApp(), bypassing Android's
+        // own Home-app resolution entirely) -- confirmed via `adb shell
+        // cmd package resolve-activity -a android.intent.action.MAIN -c
+        // android.intent.category.HOME` that Google's own launcherx, not
+        // MX3 Launcher, is this TV's actual resolved default Home app, so
+        // simply hold-forwarding a real KEYCODE_HOME the way OK forwards
+        // DPAD_CENTER would silently change what a quick tap does (opens
+        // launcherx instead of MX3 Launcher). That tap behaviour needs to
+        // stay exactly as-is.
+        //
+        // What DOES need to change: previously a hold just re-ran
+        // launchApp() again (throttled by APP_LAUNCH_DEBOUNCE_MS) rather
+        // than reading as one coherent gesture. This map instead makes a
+        // genuine choice ourselves -- unlike OK, where the map above lets
+        // the receiving app tell tap from hold via real timing -- because
+        // here the tap and hold actions are fundamentally different kinds
+        // of thing (an explicit app launch vs. a forwarded keycode), not
+        // just "the same keycode, sent with different timing": held past
+        // TAP_OR_HOLD_THRESHOLD_MS, it forwards a real KEYCODE_HOME
+        // down/up pair instead (downTime backdated to the actual physical
+        // press, so the receiver sees it as already-long the moment it
+        // arrives); released before that threshold, it launches MX3
+        // Launcher exactly as a tap always has.
+        private data class TapOrHoldForwardedRemap(
+            val tapPackage: String,
+            val holdKeyCode: Int,
+        )
+
+        private val SCANCODE_TO_TAP_OR_HOLD_FORWARDED: Map<Int, TapOrHoldForwardedRemap> = mapOf(
+            172 to TapOrHoldForwardedRemap(tapPackage = LAUNCHER_PACKAGE, holdKeyCode = KeyEvent.KEYCODE_HOME),
+        )
+
+        // How long a press has to be held before it counts as a hold
+        // rather than a tap, for SCANCODE_TO_TAP_OR_HOLD_FORWARDED above.
+        // Matches Android's own ViewConfiguration.getLongPressTimeout()
+        // default (500ms) closely enough to feel familiar rather than
+        // picking an arbitrary different value.
+        private const val TAP_OR_HOLD_THRESHOLD_MS = 500L
 
         // Spacing between each injected press in a repeated-keycode burst.
         // Too fast and some apps/AudioManager's own volume UI can coalesce
@@ -339,6 +382,18 @@ class ButtonMapperService : AccessibilityService() {
     // KeyInjector.sendKeyUp() -- required so the injected down and up
     // describe one coherent held gesture rather than two unrelated events.
     private val holdForwardedDownTimes = mutableMapOf<Int, Long>()
+
+    // Backs SCANCODE_TO_TAP_OR_HOLD_FORWARDED. tapOrHoldDownTimes records
+    // when the scancode actually went down (same purpose as
+    // holdForwardedDownTimes above); tapOrHoldTimers holds the pending
+    // "you've now been held long enough to count as a hold" Runnable so
+    // ACTION_UP can cancel it if released early; tapOrHoldIsHolding
+    // records whether that Runnable had already fired by the time
+    // ACTION_UP arrives, i.e. whether this gesture turned out to be a
+    // hold or a tap.
+    private val tapOrHoldDownTimes = mutableMapOf<Int, Long>()
+    private val tapOrHoldTimers = mutableMapOf<Int, Runnable>()
+    private val tapOrHoldIsHolding = mutableMapOf<Int, Boolean>()
 
     // Updated by onAccessibilityEvent() below, read by onKeyEvent() to
     // decide whether a foreground-scoped remap should apply. Volatile
@@ -469,9 +524,10 @@ class ButtonMapperService : AccessibilityService() {
         // just as a deliberate guarantee rather than relying on that
         // setting alone.
         //
-        // IMPORTANT CAVEAT: unlike the Home-button-triggered launch (see
-        // the comment inside launchApp()'s catch block), THIS call has no
-        // real user-interaction backing it -- onServiceConnected() is a
+        // IMPORTANT CAVEAT: unlike a hardware-key-triggered launch (e.g.
+        // scancode 418/150 above, see the comment inside launchApp()'s
+        // catch block), THIS call has no real user-interaction backing it
+        // -- onServiceConnected() is a
         // system lifecycle callback, not something tied to a hardware
         // key event. Android's background-activity-launch restrictions
         // specifically exist to block exactly this pattern -- a
@@ -670,6 +726,47 @@ class ButtonMapperService : AccessibilityService() {
                 Log.i(TAG, "Forwarding key-up for keycode $keyCode " +
                     "(held ${SystemClock.uptimeMillis() - downTime}ms)")
                 KeyInjector.sendKeyUp(keyCode, downTime)
+            }
+            return true
+        }
+
+        SCANCODE_TO_TAP_OR_HOLD_FORWARDED[event.scanCode]?.let { remap ->
+            if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
+                val downTime = SystemClock.uptimeMillis()
+                tapOrHoldDownTimes[event.scanCode] = downTime
+                tapOrHoldIsHolding[event.scanCode] = false
+                val holdRunnable = Runnable {
+                    tapOrHoldIsHolding[event.scanCode] = true
+                    if (KeyInjector.isReady()) {
+                        Log.i(TAG, "scancode ${event.scanCode} held past ${TAP_OR_HOLD_THRESHOLD_MS}ms -- " +
+                            "forwarding key-down for keycode ${remap.holdKeyCode}")
+                        KeyInjector.sendKeyDown(remap.holdKeyCode, downTime)
+                    } else {
+                        Log.w(TAG, "scancode ${event.scanCode} held past threshold but injection isn't " +
+                            "ready -- no long-press effect, same as a plain unmapped hold")
+                    }
+                }
+                tapOrHoldTimers[event.scanCode] = holdRunnable
+                repeatedSendHandler.postDelayed(holdRunnable, TAP_OR_HOLD_THRESHOLD_MS)
+            } else if (event.action == KeyEvent.ACTION_UP) {
+                tapOrHoldTimers.remove(event.scanCode)?.let { repeatedSendHandler.removeCallbacks(it) }
+                val downTime = tapOrHoldDownTimes.remove(event.scanCode) ?: SystemClock.uptimeMillis()
+                val wasHolding = tapOrHoldIsHolding.remove(event.scanCode) == true
+                if (wasHolding) {
+                    if (KeyInjector.isReady()) {
+                        Log.i(TAG, "Forwarding key-up for keycode ${remap.holdKeyCode} " +
+                            "(held ${SystemClock.uptimeMillis() - downTime}ms)")
+                        KeyInjector.sendKeyUp(remap.holdKeyCode, downTime)
+                    }
+                } else {
+                    // Below TAP_OR_HOLD_THRESHOLD_MS -- an ordinary tap.
+                    // Deliberately NOT gated on KeyInjector.isReady(): this
+                    // is a plain startActivity() call, not synthetic
+                    // input, so Home-to-MX3-Launcher keeps working even
+                    // if Shizuku/root is completely unavailable.
+                    Log.i(TAG, "Captured scancode ${event.scanCode}, launching ${remap.tapPackage}")
+                    launchApp(remap.tapPackage)
+                }
             }
             return true
         }
@@ -890,6 +987,9 @@ class ButtonMapperService : AccessibilityService() {
         repeatedSendHandler.removeCallbacksAndMessages(null)
         activeSyntheticRepeats.clear()
         holdForwardedDownTimes.clear()
+        tapOrHoldDownTimes.clear()
+        tapOrHoldTimers.clear() // already cancelled by removeCallbacksAndMessages(null) above
+        tapOrHoldIsHolding.clear()
         serviceScope.cancel()
         if (networkRequested) {
             try {
