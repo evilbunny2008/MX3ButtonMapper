@@ -4,7 +4,7 @@
 
     <uses-feature
         android:name="android.software.leanback"
-        android:required="false" />
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -23,6 +23,29 @@
       runtime-requestable permission, requested once in MainActivity.kt.
     -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+      Normal permission, no runtime prompt - lets ButtonMapperService ask
+      ConnectivityManager for a Wi-Fi network in onServiceConnected(). On
+      this TV (TCL/MediaTek), the Wi-Fi client radio doesn't actually
+      start connecting on its own after a cold boot until something
+      polls it (confirmed via adb: com.android.tv.settings is the
+      requestor that starts ClientModeManager, roughly a minute after
+      boot, only once someone opens the Wi-Fi settings screen). Shizuku
+      waits for a real Wi-Fi connection before it reconnects its own
+      wireless-debugging session, so without this nudge Wi-Fi - and by
+      extension Shizuku and this app's key injection - can stay dead
+      indefinitely after a reboot unless a person manually opens Wi-Fi
+      settings.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+      requestNetwork() itself (not just observing state) throws a
+      SecurityException without this too, confirmed on-device: "was not
+      granted either of these permissions: CHANGE_NETWORK_STATE,
+      WRITE_SETTINGS". Also a normal permission, no runtime prompt.
+    -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <!--
       Without this, ButtonMapperService's resolveLaunchIntent() silently

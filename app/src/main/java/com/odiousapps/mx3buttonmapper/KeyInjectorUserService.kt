@@ -109,6 +109,36 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
     }
 
     /**
+     * Re-grants TCL's proprietary AUTO_START appop for the given package,
+     * the same way `adb shell appops set <pkg> AUTO_START allow` does --
+     * this process is shell UID too, so it has the same standing to flip
+     * another package's appop that adb does. Without this, TCL's
+     * "TclAppBoot" gatekeeper silently blocks that package's services
+     * (bind_service/start_foreground/content_provider) from auto-starting
+     * after a reboot, with no error surfaced anywhere in that package's own
+     * logs -- see the AUTO_START comment on ButtonMapperService's manifest
+     * permissions for the full story.
+     *
+     * AUTO_START defaults to "ignore" again after a full uninstall+reinstall
+     * (confirmed on-device -- an in-place update via `adb install -r`
+     * preserves a prior grant, but uninstall does not), so this is called
+     * every time the UserService connects rather than just once ever: it's
+     * a no-op if already granted, and self-heals the one scenario where a
+     * person redoes this without adb -- reinstalling MX3ButtonMapper and/or
+     * Shizuku fresh, then just opening both apps once like normal.
+     */
+    override fun grantAutoStart(packageName: String) {
+        Log.i(TAG, "grantAutoStart: setting AUTO_START=allow for $packageName")
+        try {
+            shell("appops set $packageName AUTO_START allow")
+            Log.i(TAG, "grantAutoStart: done for $packageName")
+        } catch (e: Throwable) {
+            Log.e(TAG, "grantAutoStart: failed for $packageName", e)
+            e.printStackTrace()
+        }
+    }
+
+    /**
      * Runs a shell command as this process's UID (shell, via Shizuku).
      * `adb shell settings put secure ...` works without any app ever being
      * granted WRITE_SECURE_SETTINGS specifically because the shell UID is

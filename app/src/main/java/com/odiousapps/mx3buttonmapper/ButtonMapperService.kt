@@ -5,6 +5,10 @@ import android.accessibilityservice.AccessibilityServiceInfo
 import android.annotation.SuppressLint
 import android.content.ComponentName
 import android.content.Intent
+import android.net.ConnectivityManager
+import android.net.Network
+import android.net.NetworkCapabilities
+import android.net.NetworkRequest
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
@@ -365,6 +369,50 @@ class ButtonMapperService : AccessibilityService() {
     private val maxAutoBindAttempts = 10
     private val autoBindRetryIntervalMs = 20_000L
 
+    // Set once requestNetwork() below has actually been called, so a
+    // second onServiceConnected() call (accessibility services can be
+    // reconnected without the process dying) doesn't stack up duplicate
+    // callback registrations.
+    private var networkRequested = false
+
+    // Nudges the OS into actually starting the Wi-Fi client radio on
+    // boot, and re-fires the Shizuku bind attempt the moment a network
+    // shows up rather than waiting for the next scheduled poll. See the
+    // ACCESS_NETWORK_STATE permission's comment in AndroidManifest.xml
+    // for why this exists at all: on this TV, Wi-Fi doesn't reconnect on
+    // its own after a cold boot until something (normally the Settings
+    // app) asks for a network, and until Wi-Fi is up Shizuku never
+    // reconnects either, so neither attemptAutoBind()'s retries nor
+    // sendShizukuStartBroadcast() below have anything to succeed against.
+    private val wifiNetworkCallback = object : ConnectivityManager.NetworkCallback() {
+        override fun onAvailable(network: Network) {
+            Log.i(TAG, "Wi-Fi network became available -- retrying Shizuku bind immediately " +
+                "instead of waiting for the next scheduled attempt")
+            autoBindAttempts = 0
+            attemptAutoBind()
+            sendShizukuStartBroadcast()
+        }
+    }
+
+    private fun requestWifiNetworkOnce() {
+        if (networkRequested) return
+        networkRequested = true
+        try {
+            val request = NetworkRequest.Builder()
+                .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
+                .build()
+            getSystemService(ConnectivityManager::class.java)
+                .requestNetwork(request, wifiNetworkCallback)
+            Log.i(TAG, "Requested a Wi-Fi network from ConnectivityManager to nudge the radio " +
+                "into connecting on boot")
+        } catch (e: Throwable) {
+            // Non-fatal -- worst case Wi-Fi still only comes up when
+            // someone opens the TV's Wi-Fi settings screen, same as
+            // before this existed.
+            Log.w(TAG, "requestNetwork() for Wi-Fi failed", e)
+        }
+    }
+
     override fun onServiceConnected() {
         super.onServiceConnected()
         // You can also set these flags programmatically instead of (or in addition to)
@@ -390,6 +438,11 @@ class ButtonMapperService : AccessibilityService() {
         // someone opens the app once, even though the button-remapping
         // itself (this service) already auto-starts fine on its own.
         attemptAutoBind()
+
+        // See requestWifiNetworkOnce()'s comment above for why this is
+        // needed at all -- without it, Wi-Fi (and therefore Shizuku)
+        // can stay down indefinitely after a reboot on this TV.
+        requestWifiNetworkOnce()
 
         // Sends Shizuku's own documented "start via intent" broadcast
         // first -- attemptAutoBind() above only CONNECTS to an
@@ -838,6 +891,18 @@ class ButtonMapperService : AccessibilityService() {
         activeSyntheticRepeats.clear()
         holdForwardedDownTimes.clear()
         serviceScope.cancel()
+        if (networkRequested) {
+            try {
+                getSystemService(ConnectivityManager::class.java)
+                    .unregisterNetworkCallback(wifiNetworkCallback)
+            } catch (e: Throwable) {
+                // Already unregistered, or the callback was never
+                // actually accepted by the system -- either way, nothing
+                // left to clean up.
+                Log.w(TAG, "unregisterNetworkCallback() failed", e)
+            }
+            networkRequested = false
+        }
         super.onDestroy()
     }
 }

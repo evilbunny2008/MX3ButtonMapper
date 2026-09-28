@@ -224,7 +224,15 @@ object ShizukuUserServiceBridge {
     private val pendingKeyDowns = mutableListOf<Pair<Int, Long>>()
     private val pendingKeyUps = mutableListOf<Pair<Int, Long>>()
     private val pendingComponentEnables = mutableListOf<String>()
+    private val pendingAutoStartGrants = mutableListOf<String>()
     private val mainHandler = Handler(Looper.getMainLooper())
+
+    // moe.shizuku.privileged.api's own watchdog/content-provider components
+    // get blocked by the exact same TclAppBoot AUTO_START gate this app's
+    // accessibility service does -- see grantAutoStart()'s comment. Granting
+    // it here too, not just for BuildConfig.APPLICATION_ID, means a person
+    // who reinstalled Shizuku fresh doesn't need a separate adb step for it.
+    private const val SHIZUKU_PACKAGE_NAME = "moe.shizuku.privileged.api"
 
     private val userServiceArgs =
         Shizuku.UserServiceArgs(
@@ -269,6 +277,13 @@ object ShizukuUserServiceBridge {
             flushPendingKeyDowns()
             flushPendingKeyUps()
             flushPendingComponentEnables()
+            flushPendingAutoStartGrants()
+            // Idempotent -- re-asserting an already-granted AUTO_START is a
+            // harmless no-op, and this is the one moment we're guaranteed
+            // to have shell privileges, so it's the right place to
+            // self-heal both packages every time rather than only once.
+            grantAutoStart(BuildConfig.APPLICATION_ID)
+            grantAutoStart(SHIZUKU_PACKAGE_NAME)
         }
 
         override fun onServiceDisconnected(name: ComponentName) {
@@ -362,6 +377,30 @@ object ShizukuUserServiceBridge {
                     return
                 } catch (e: Throwable) {
                     Log.e(TAG, "Failed flushing queued enableAccessibilityService for $componentName " +
+                        "(non-fatal, dropping this one)", e)
+                    iterator.remove()
+                }
+            }
+        }
+    }
+
+    private fun flushPendingAutoStartGrants() {
+        synchronized(pendingAutoStartGrants) {
+            if (pendingAutoStartGrants.isEmpty()) return
+            val iterator = pendingAutoStartGrants.iterator()
+            while (iterator.hasNext()) {
+                val packageName = iterator.next()
+                try {
+                    service?.grantAutoStart(packageName)
+                    Log.i(TAG, "Granted AUTO_START (flushed): $packageName")
+                    iterator.remove()
+                } catch (_: DeadObjectException) {
+                    Log.w(TAG, "Binder died mid-flush on grantAutoStart($packageName) -- " +
+                        "stopping flush, will retry on rebind")
+                    onBinderDied()
+                    return
+                } catch (e: Throwable) {
+                    Log.e(TAG, "Failed flushing queued grantAutoStart for $packageName " +
                         "(non-fatal, dropping this one)", e)
                     iterator.remove()
                 }
@@ -526,6 +565,44 @@ object ShizukuUserServiceBridge {
         Log.w(TAG, "UserService not connected yet -- queueing enableAccessibilityService($componentName)")
         synchronized(pendingComponentEnables) {
             pendingComponentEnables.add(componentName)
+        }
+    }
+
+    /**
+     * Re-grants TCL's AUTO_START appop for packageName via the shell-UID
+     * privileged process -- see grantAutoStart()'s doc comment on
+     * KeyInjectorUserService for the full story on why this exists. Called
+     * for both this app and Shizuku itself every time onServiceConnected
+     * fires above; exposed publicly too in case anything else ever wants to
+     * trigger it on demand (e.g. a manual "fix auto-start" button).
+     */
+    fun grantAutoStart(packageName: String) {
+        val current = service
+        if (current != null) {
+            try {
+                current.grantAutoStart(packageName)
+                Log.i(TAG, "Granted AUTO_START: $packageName")
+                return
+            } catch (_: DeadObjectException) {
+                Log.w(TAG, "Binder died calling grantAutoStart($packageName) -- " +
+                    "queueing for retry after rebind")
+                synchronized(pendingAutoStartGrants) { pendingAutoStartGrants.add(packageName) }
+                onBinderDied()
+                return
+            } catch (e: Throwable) {
+                Log.e(TAG, "grantAutoStart call failed", e)
+                return
+            }
+        }
+
+        if (!bindRequested) {
+            Log.w(TAG, "Cannot grant AUTO_START yet -- bind() was never called this session")
+            return
+        }
+
+        Log.w(TAG, "UserService not connected yet -- queueing grantAutoStart($packageName)")
+        synchronized(pendingAutoStartGrants) {
+            pendingAutoStartGrants.add(packageName)
         }
     }
 }
