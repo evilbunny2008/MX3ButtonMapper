@@ -1,0 +1,4 @@
+* Holding the MX3 remote's Home button now forwards a genuine long-press
+  of Home (matching the OK button's existing hold-forwarding) instead of
+  just re-running the app launch on every hold. A quick tap still opens
+  MX3 Launcher directly exactly as before, even without Shizuku.
