@@ -1,0 +1,5 @@
+* Fix Shizuku (and therefore key injection) sometimes never coming back
+  after a TV reboot, by proactively requesting a Wi-Fi network from
+  ConnectivityManager as soon as the accessibility service starts, and
+  retrying the Shizuku bind immediately once that network shows up
+  instead of only on a fixed 20s poll.

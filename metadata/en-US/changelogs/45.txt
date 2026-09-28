@@ -1,0 +1,5 @@
+* Self-heal TCL's proprietary AUTO_START app-op for both this app and
+  Shizuku via the Shizuku shell-privileged process itself, every time it
+  connects. Previously this required a one-off `adb shell appops set`
+  after any full uninstall/reinstall of either app; now opening both
+  apps once after a fresh install is enough.
