@@ -104,14 +104,13 @@ the original doesn't have. Grab the latest release from
 it (you'll likely need to allow "Install unknown apps" for whatever
 you're installing it with, or briefly disable Play Protect).
 
-> If you already have the *original* Shizuku installed, uninstall it
-> first — the two can't coexist, and if you'd previously paired the
-> original over wireless debugging, un-pair that too.
+If you already have another Shizuku installed and if you'd previously
+paired the over wireless debugging, un-pair that then uninstall it
+first — as the two can't coexist.
 
 ### 2. Turn on Developer options and Wireless debugging
 
-Most Google TV devices don't have a usable USB port for USB debugging, so
-this fork is started over **wireless debugging** instead — no computer
+This fork is started over **wireless debugging** — no computer
 required after the one-time setup below.
 
 1. On the TV: `Settings → About` (sometimes under `System`), then click
