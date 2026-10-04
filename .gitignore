@@ -9,7 +9,4 @@ local.properties
 .cxx
 /gradle/gradle-daemon-jvm.properties
 /build
-/gradle
-/gradlew
-/gradlew.bat
 app/dist
