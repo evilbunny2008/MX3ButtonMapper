@@ -13,4 +13,6 @@
     <string name="tv_brand_label">TV brand (affects the MX3 Air Mouse\'s TV button specifically)</string>
     <string name="tv_brand_tcl" translatable="false">TCL</string>
     <string name="tv_brand_blaupunkt" translatable="false">Blaupunkt</string>
+    <string name="log_key_events_label">Log every key press (for troubleshooting only)</string>
+    <string name="log_remaps_label">Log remapped button presses (for troubleshooting only)</string>
 </resources>

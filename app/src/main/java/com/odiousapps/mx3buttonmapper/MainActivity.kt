@@ -11,12 +11,14 @@ import android.os.Bundle
 import android.provider.Settings
 import com.odiousapps.mx3buttonmapper.AppLog as Log
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import rikka.shizuku.Shizuku
@@ -61,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         setUpShizukuAuthTokenField()
         setUpTvBrandSelector()
+        setUpLogToggles()
     }
 
     /**
@@ -139,6 +142,38 @@ class MainActivity : AppCompatActivity() {
                 lifecycleScope.launch {
                     ButtonMapperPreferences.setTvBrand(this@MainActivity, newBrand)
                     Log.i(TAG, "TV brand set to $newBrand")
+                }
+            }
+        }
+    }
+
+    /** Saves immediately on change, same reasoning as the TV brand radio above. */
+    private fun setUpLogToggles() {
+        bindLogToggle(
+            R.id.logKeyEventsCheckBox, "Key press logging",
+            ButtonMapperPreferences::observeLogKeyEvents, ButtonMapperPreferences::setLogKeyEvents,
+        )
+        bindLogToggle(
+            R.id.logRemapsCheckBox, "Remapped press logging",
+            ButtonMapperPreferences::observeLogRemaps, ButtonMapperPreferences::setLogRemaps,
+        )
+    }
+
+    private fun bindLogToggle(
+        checkBoxId: Int,
+        logName: String,
+        observe: (Context) -> Flow<Boolean>,
+        set: suspend (Context, Boolean) -> Unit,
+    ) {
+        val checkBox = findViewById<CheckBox>(checkBoxId)
+
+        lifecycleScope.launch {
+            checkBox.isChecked = observe(this@MainActivity).first()
+
+            checkBox.setOnCheckedChangeListener { _, isChecked ->
+                lifecycleScope.launch {
+                    set(this@MainActivity, isChecked)
+                    Log.i(TAG, "$logName set to $isChecked")
                 }
             }
         }

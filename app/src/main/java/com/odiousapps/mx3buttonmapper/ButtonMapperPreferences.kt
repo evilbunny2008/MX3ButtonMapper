@@ -3,6 +3,7 @@ package com.odiousapps.mx3buttonmapper
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
@@ -31,6 +32,8 @@ object ButtonMapperPreferences {
 
     private val KEY_SHIZUKU_AUTH_TOKEN = stringPreferencesKey("shizuku_auth_token")
     private val KEY_TV_BRAND = stringPreferencesKey("tv_brand")
+    private val KEY_LOG_KEY_EVENTS = booleanPreferencesKey("log_key_events")
+    private val KEY_LOG_REMAPS = booleanPreferencesKey("log_remaps")
 
     fun observeShizukuAuthToken(context: Context): Flow<String> =
         context.dataStore.data.map { prefs -> prefs[KEY_SHIZUKU_AUTH_TOKEN] ?: "" }
@@ -61,5 +64,26 @@ object ButtonMapperPreferences {
 
     suspend fun setTvBrand(context: Context, brand: TvBrand) {
         context.dataStore.edit { it[KEY_TV_BRAND] = brand.name }
+    }
+
+    // Off by default -- logging every key press (including the TV's own
+    // remote, not just the MX3) to a file on shared storage is only
+    // useful while actively diagnosing a mapping, and otherwise just
+    // amounts to a keylogger sitting on the device.
+    fun observeLogKeyEvents(context: Context): Flow<Boolean> =
+        context.dataStore.data.map { prefs -> prefs[KEY_LOG_KEY_EVENTS] ?: false }
+
+    suspend fun setLogKeyEvents(context: Context, enabled: Boolean) {
+        context.dataStore.edit { it[KEY_LOG_KEY_EVENTS] = enabled }
+    }
+
+    // Also off by default -- narrower than the above (only presses this
+    // app actually remaps, launches or forwards), but still a per-press
+    // trail nobody needs written to disk outside of troubleshooting.
+    fun observeLogRemaps(context: Context): Flow<Boolean> =
+        context.dataStore.data.map { prefs -> prefs[KEY_LOG_REMAPS] ?: false }
+
+    suspend fun setLogRemaps(context: Context, enabled: Boolean) {
+        context.dataStore.edit { it[KEY_LOG_REMAPS] = enabled }
     }
 }

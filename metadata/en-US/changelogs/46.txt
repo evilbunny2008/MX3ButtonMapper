@@ -2,3 +2,7 @@
   of Home (matching the OK button's existing hold-forwarding) instead of
   just re-running the app launch on every hold. A quick tap still opens
   MX3 Launcher directly exactly as before, even without Shizuku.
+* Key press logging is now opt-in, via two new settings that are both
+  off by default -- "Log every key press" (every key, from any remote)
+  and "Log remapped button presses" (only what the MX3's mapped buttons
+  were turned into). Turn them on only while troubleshooting.

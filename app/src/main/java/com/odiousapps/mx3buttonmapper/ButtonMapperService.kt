@@ -410,6 +410,17 @@ class ButtonMapperService : AccessibilityService() {
     @Volatile
     private var currentTvBrand: TvBrand = TvBrand.TCL
 
+    // Mirrors the "Log key presses" setting, kept current by the
+    // collector started in onServiceConnected(). Off until that first
+    // read lands, matching the setting's own off-by-default.
+    @Volatile
+    private var logKeyEvents = false
+
+    // Same idea for the "Log remapped button presses" setting -- see
+    // logRemap() below.
+    @Volatile
+    private var logRemaps = false
+
     private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
 
     private var autoBindAttempts = 0
@@ -515,6 +526,16 @@ class ButtonMapperService : AccessibilityService() {
                 currentTvBrand = brand
             }
         }
+        serviceScope.launch {
+            ButtonMapperPreferences.observeLogKeyEvents(this@ButtonMapperService).collect { enabled ->
+                logKeyEvents = enabled
+            }
+        }
+        serviceScope.launch {
+            ButtonMapperPreferences.observeLogRemaps(this@ButtonMapperService).collect { enabled ->
+                logRemaps = enabled
+            }
+        }
 
         // Explicitly launch the mapped launcher app on startup too --
         // separate from (and in addition to) whatever app is set as the
@@ -607,9 +628,18 @@ class ButtonMapperService : AccessibilityService() {
     private fun isFromMx3AirMouse(event: KeyEvent): Boolean =
         event.device?.name?.startsWith(MX3_AIR_MOUSE_DEVICE_NAME_PREFIX) == true
 
+    /** Per-press "what did this button get turned into" lines -- only
+     *  written when the "Log remapped button presses" setting is on.
+     *  Warnings and errors deliberately bypass this and always log. */
+    private fun logRemap(msg: String) {
+        if (logRemaps) Log.i(TAG, msg)
+    }
+
     override fun onKeyEvent(event: KeyEvent): Boolean {
-        Log.d(TAG, "keyCode=${event.keyCode} scanCode=${event.scanCode} " +
-            "repeatCount=${event.repeatCount} device=${event.device?.name}")
+        if (logKeyEvents) {
+            Log.d(TAG, "keyCode=${event.keyCode} scanCode=${event.scanCode} " +
+                "repeatCount=${event.repeatCount} device=${event.device?.name}")
+        }
 
         // Every remap below only makes sense for the MX3 Air Mouse -- the
         // TV's own original remote already sends exactly what the TV
@@ -637,7 +667,7 @@ class ButtonMapperService : AccessibilityService() {
 
         SCANCODE_TO_APP_PACKAGE[event.scanCode]?.let { packageName ->
             if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
-                Log.i(TAG, "Captured scancode ${event.scanCode}, launching $packageName")
+                logRemap("Captured scancode ${event.scanCode}, launching $packageName")
                 launchApp(packageName)
             }
             // Consume regardless of whether the launch actually succeeded --
@@ -659,7 +689,7 @@ class ButtonMapperService : AccessibilityService() {
             // holding the button shouldn't rapid-fire this repeatedly on
             // top of its own internal x5 burst.
             if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
-                Log.i(TAG, "Captured scancode ${event.scanCode}, sending keycode $keyCode x$times")
+                logRemap("Captured scancode ${event.scanCode}, sending keycode $keyCode x$times")
                 sendRepeatedKeyEvent(keyCode, times)
             }
             return true
@@ -689,7 +719,7 @@ class ButtonMapperService : AccessibilityService() {
             // pulses never arrive once this service is enabled (see
             // SYNTHETIC_REPEAT_INITIAL_DELAY_MS).
             if (event.action == KeyEvent.ACTION_DOWN) {
-                Log.i(TAG, "Captured scancode ${event.scanCode} (foreground=$currentForegroundPackage), " +
+                logRemap("Captured scancode ${event.scanCode} (foreground=$currentForegroundPackage), " +
                     "remapping to keycode $targetKeyCode x$targetRepeatTimes")
                 if (targetRepeatTimes > 1) {
                     sendRepeatedKeyEvent(targetKeyCode, targetRepeatTimes, FOCUS_NAVIGATION_BURST_INTERVAL_MS)
@@ -715,7 +745,7 @@ class ButtonMapperService : AccessibilityService() {
             if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
                 val downTime = SystemClock.uptimeMillis()
                 holdForwardedDownTimes[event.scanCode] = downTime
-                Log.i(TAG, "Captured scancode ${event.scanCode}, forwarding key-down for keycode $keyCode")
+                logRemap("Captured scancode ${event.scanCode}, forwarding key-down for keycode $keyCode")
                 KeyInjector.sendKeyDown(keyCode, downTime)
             } else if (event.action == KeyEvent.ACTION_UP) {
                 // Falls back to "now" if we somehow never saw the matching
@@ -723,7 +753,7 @@ class ButtonMapperService : AccessibilityService() {
                 // that just means the injected down+up pair reads as a
                 // very short hold, the same safe default as a normal tap.
                 val downTime = holdForwardedDownTimes.remove(event.scanCode) ?: SystemClock.uptimeMillis()
-                Log.i(TAG, "Forwarding key-up for keycode $keyCode " +
+                logRemap("Forwarding key-up for keycode $keyCode " +
                     "(held ${SystemClock.uptimeMillis() - downTime}ms)")
                 KeyInjector.sendKeyUp(keyCode, downTime)
             }
@@ -738,7 +768,7 @@ class ButtonMapperService : AccessibilityService() {
                 val holdRunnable = Runnable {
                     tapOrHoldIsHolding[event.scanCode] = true
                     if (KeyInjector.isReady()) {
-                        Log.i(TAG, "scancode ${event.scanCode} held past ${TAP_OR_HOLD_THRESHOLD_MS}ms -- " +
+                        logRemap("scancode ${event.scanCode} held past ${TAP_OR_HOLD_THRESHOLD_MS}ms -- " +
                             "forwarding key-down for keycode ${remap.holdKeyCode}")
                         KeyInjector.sendKeyDown(remap.holdKeyCode, downTime)
                     } else {
@@ -754,7 +784,7 @@ class ButtonMapperService : AccessibilityService() {
                 val wasHolding = tapOrHoldIsHolding.remove(event.scanCode) == true
                 if (wasHolding) {
                     if (KeyInjector.isReady()) {
-                        Log.i(TAG, "Forwarding key-up for keycode ${remap.holdKeyCode} " +
+                        logRemap("Forwarding key-up for keycode ${remap.holdKeyCode} " +
                             "(held ${SystemClock.uptimeMillis() - downTime}ms)")
                         KeyInjector.sendKeyUp(remap.holdKeyCode, downTime)
                     }
@@ -764,7 +794,7 @@ class ButtonMapperService : AccessibilityService() {
                     // is a plain startActivity() call, not synthetic
                     // input, so Home-to-MX3-Launcher keeps working even
                     // if Shizuku/root is completely unavailable.
-                    Log.i(TAG, "Captured scancode ${event.scanCode}, launching ${remap.tapPackage}")
+                    logRemap("Captured scancode ${event.scanCode}, launching ${remap.tapPackage}")
                     launchApp(remap.tapPackage)
                 }
             }
@@ -803,7 +833,7 @@ class ButtonMapperService : AccessibilityService() {
         // while held is driven by our own synthetic-repeat timer instead
         // of relying on repeat pulses that will never actually arrive.
         if (event.action == KeyEvent.ACTION_DOWN) {
-            Log.i(TAG, "Captured scancode ${event.scanCode}, remapping to keycode $replacementKeyCode")
+            logRemap("Captured scancode ${event.scanCode}, remapping to keycode $replacementKeyCode")
             KeyInjector.sendKeyEvent(replacementKeyCode)
             startSyntheticRepeat(event.scanCode, replacementKeyCode)
         } else if (event.action == KeyEvent.ACTION_UP) {
@@ -901,7 +931,7 @@ class ButtonMapperService : AccessibilityService() {
     private fun launchApp(packageName: String) {
         val now = SystemClock.elapsedRealtime()
         if (now - lastAppLaunchAtMs < APP_LAUNCH_DEBOUNCE_MS) {
-            Log.d(TAG, "Skipping launch of $packageName -- inside debounce window")
+            logRemap("Skipping launch of $packageName -- inside debounce window")
             return
         }
         lastAppLaunchAtMs = now

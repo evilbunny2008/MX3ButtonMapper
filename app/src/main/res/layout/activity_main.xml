@@ -83,4 +83,17 @@
 
     </RadioGroup>
 
+    <CheckBox
+        android:id="@+id/logKeyEventsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/log_key_events_label" />
+
+    <CheckBox
+        android:id="@+id/logRemapsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_remaps_label" />
+
 </LinearLayout>
