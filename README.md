@@ -133,30 +133,17 @@ has more detail and screenshots if your TV's menus look different.)
    settings app and scroll down to the **Accessibility** menu item.
 2. Scroll to the bottom of the **Accessibility** screen where you will
    find Shizuku listed and enable it.
-4. Open Shizuku and tap **Pair** — a notification will appear that's used
-   to complete pairing.
-5. Go back into `Settings → Developer options → Wireless debugging`, and
-   tap the **Wireless debugging** row itself (not just its toggle) to
-   open its own sub-screen.
-6. Tap **Pair device with pairing code**.
-7. Enter the code shown in the pairing notification from step 1. You
-   should see a success message once it's paired.
-8. Back in the Shizuku app, tap **Start**.
+4. Open Shizuku and tap **Pairing** — a dialog will appear asking if
+   you want to open **Developer options**, click on that button.
+6. The enable both **USB debugging** and **Wireless debugging**
+7. Then tap **Pair device with pairing code**.
+8. If the **Allow wireless debugging on this network?** click **Allow**,
+   then click **Pair device with pairing code** again.
 
-Full walkthrough with more detail (and what to do if something doesn't
-match what you're seeing) is in the fork's own
-**[setup wiki](https://github.com/thedjchi/Shizuku/wiki/Setup)**.
+All going well Shizuku will now be paired, otherwise try repeating the
+above steps again.
 
-### 4. Turn on "Start on boot" in Shizuku
-
-Without this, you'd need to redo the Start step above every time the TV
-restarts. In the Shizuku app's settings, turn on **Start on boot**. On
-unrooted devices it needs a Wi-Fi connection to come back up after a
-reboot before it can start itself again — this can take a couple of
-minutes after the TV reconnects to Wi-Fi, so don't worry if button
-remapping doesn't work instantly right after a restart.
-
-### 5. Install and open MX3 Button Mapper
+### 4. Install and open MX3 Button Mapper
 
 It'll prompt for Shizuku permission on first launch — accept it. Once
 granted, the app enables its own accessibility service automatically, no
@@ -167,7 +154,7 @@ when you press one, the button's original, unmapped behaviour happens
 instead (nothing gets silently swallowed) and a notification prompts you
 to finish setup.
 
-### 6. (Optional) Set up the Shizuku auth token for more reliable starts
+### 5. (Optional) Set up the Shizuku auth token for more reliable starts
 
 Shizuku's own "Start on boot" toggle can be unreliable on some devices.
 As a more direct alternative, this app can send Shizuku's documented
