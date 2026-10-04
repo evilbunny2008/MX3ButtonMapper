@@ -52,10 +52,10 @@ apacheHttpclient = "4.5.14"
 bouncycastle = "1.86"
 # AGP's commons-compress pulls in commons-lang3 3.16.0, which has an
 # uncontrolled-recursion advisory (CVE-2025-48924) fixed in 3.18.0.
-commonsLang3 = "3.18.0"
+commonsLang3 = "3.21.0"
 # AGP's play-policy/SDK-index tooling pulls in jose4j 0.9.5, which has a
 # denial-of-service advisory (compressed JWE) fixed in 0.9.6.
-jose4j = "0.9.6"
+jose4j = "0.9.7"
 
 [libraries]
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
