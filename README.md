@@ -127,15 +127,21 @@ has more detail and screenshots if your TV's menus look different.)
 
 ### 3. Pair Shizuku over wireless debugging
 
-1. Open Shizuku and tap **Pair** — a notification will appear that's used
+1. You need to allow Shizuku to be an accessibility service, so it can
+   automatically grab the PIN to make setting it up easier. Open the
+   **Accessibility** screen if showing in the quick menu, or open the
+   settings app and scroll down to the **Accessibility** menu item.
+2. Scroll to the bottom of the **Accessibility** screen where you will
+   find Shizuku listed and enable it.
+4. Open Shizuku and tap **Pair** — a notification will appear that's used
    to complete pairing.
-2. Go back into `Settings → Developer options → Wireless debugging`, and
+5. Go back into `Settings → Developer options → Wireless debugging`, and
    tap the **Wireless debugging** row itself (not just its toggle) to
    open its own sub-screen.
-3. Tap **Pair device with pairing code**.
-4. Enter the code shown in the pairing notification from step 1. You
+6. Tap **Pair device with pairing code**.
+7. Enter the code shown in the pairing notification from step 1. You
    should see a success message once it's paired.
-5. Back in the Shizuku app, tap **Start**.
+8. Back in the Shizuku app, tap **Start**.
 
 Full walkthrough with more detail (and what to do if something doesn't
 match what you're seeing) is in the fork's own
