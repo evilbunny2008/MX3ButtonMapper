@@ -15,7 +15,7 @@ tvMaterial = "1.1.0"
 # suggestion rather than treating these as pinned-for-a-reason.
 activityCompose = "1.13.0"
 appcompat = "1.8.0"
-coreKtx = "1.19.0"
+coreKtx = "1.19.1"
 lifecycleRuntimeKtx = "2.11.0"
 # tv-foundation's TvLazyRow/TvLazyColumn/etc are deprecated and folded
 # into standard compose-foundation as of Compose 1.7/1.8 (confirmed
@@ -33,6 +33,29 @@ shizuku = "13.1.5"
 # Reusing the exact same version already live-verified in the sibling
 # MX3 Launcher project.
 datastorePreferences = "1.2.1"
+# Build-time only, never packaged into the APK: AGP pulls in jdom2 2.0.6
+# transitively via jetifier-processor, which is vulnerable to XXE
+# (CVE-2021-33813). Forced up to the fixed release from the root
+# build.gradle.kts's buildscript block. Safe to drop once AGP's own
+# dependency tree no longer resolves anything older than this.
+jdom2 = "2.0.6.1"
+# Same story as jdom2: AGP's sdklib and analytics-library:crash pull in
+# httpmime 4.5.6, whose own POM declares httpclient 4.5.6 (CVE-2020-13956,
+# fixed in 4.5.13). Gradle already resolves httpclient up to 4.5.14 via
+# other AGP modules, but pinning httpmime/httpclient explicitly keeps
+# dependency scanners from flagging the stale declared versions.
+apacheHttpclient = "4.5.14"
+# Same again: AGP resolves Bouncy Castle 1.80.2 (used for APK/bundle
+# signing), which has a critical advisory fixed in 1.85. All three
+# modules are pinned together since BC requires matching versions
+# across bcprov/bcpkix/bcutil.
+bouncycastle = "1.86"
+# AGP's commons-compress pulls in commons-lang3 3.16.0, which has an
+# uncontrolled-recursion advisory (CVE-2025-48924) fixed in 3.18.0.
+commonsLang3 = "3.18.0"
+# AGP's play-policy/SDK-index tooling pulls in jose4j 0.9.5, which has a
+# denial-of-service advisory (compressed JWE) fixed in 0.9.6.
+jose4j = "0.9.6"
 
 [libraries]
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -48,6 +71,14 @@ androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.re
 androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastorePreferences" }
 shizuku-api = { group = "dev.rikka.shizuku", name = "api", version.ref = "shizuku" }
 shizuku-provider = { group = "dev.rikka.shizuku", name = "provider", version.ref = "shizuku" }
+jdom2 = { group = "org.jdom", name = "jdom2", version.ref = "jdom2" }
+apache-httpclient = { group = "org.apache.httpcomponents", name = "httpclient", version.ref = "apacheHttpclient" }
+apache-httpmime = { group = "org.apache.httpcomponents", name = "httpmime", version.ref = "apacheHttpclient" }
+bouncycastle-bcprov = { group = "org.bouncycastle", name = "bcprov-jdk18on", version.ref = "bouncycastle" }
+bouncycastle-bcpkix = { group = "org.bouncycastle", name = "bcpkix-jdk18on", version.ref = "bouncycastle" }
+bouncycastle-bcutil = { group = "org.bouncycastle", name = "bcutil-jdk18on", version.ref = "bouncycastle" }
+apache-commons-lang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commonsLang3" }
+jose4j = { group = "org.bitbucket.b_c", name = "jose4j", version.ref = "jose4j" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
