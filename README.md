@@ -1,8 +1,8 @@
 # MX3 Button Mapper
 
 An Android accessibility service for remapping hardware buttons on MX3-style
-air-mouse remotes (and other remotes/keyboards) connected to Google TV devices —
- buttons that fire the wrong keycode or don't map to anything useful by default.
+air-mouse remotes connected to Google TV devices — buttons that fire the
+wrong keycode or don't map to anything useful by default.
 
 ## Features
 
