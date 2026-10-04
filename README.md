@@ -95,12 +95,12 @@ its original, default behaviour still happens.
 
 ### 1. Install Shizuku
 
-This project uses **[thedjchi's Shizuku fork](https://github.com/thedjchi/Shizuku)**
+This project uses **[my Shizuku fork]([https://github.com/thedjchi/Shizuku](https://github.com/evilbunny2008/Shizuku))**
 rather than the [original Shizuku](https://shizuku.rikka.app/) — it's
-built specifically with Google TV in mind, including a proper "start on
-boot" option that works without a computer, which the original doesn't
-have. Grab the latest release from that fork's
-[Releases page](https://github.com/thedjchi/Shizuku/releases) and install
+built specifically with Google TV in mind, and includes a method to ensure
+it starts on TCL TVs that automatically disable starting on boot, which
+the original doesn't have. Grab the latest release from 
+[the latest releases page](https://github.com/evilbunny2008/Shizuku/releases/latest) and install
 it (you'll likely need to allow "Install unknown apps" for whatever
 you're installing it with, or briefly disable Play Protect).
 
