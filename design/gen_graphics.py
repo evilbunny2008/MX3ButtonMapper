@@ -83,6 +83,27 @@ def tv_banner():
   </g>
 </svg>'''
 
+def launcher_banner():
+    # In-app android:banner (drawable-*/banner.png). Shown at 320x180dp in
+    # the TV launcher row, so no tagline -- it'd be unreadable at that size
+    # -- and the name is set larger than tv_banner()'s.
+    w, h = 1280, 720
+    icon_size = 480
+    icon_x, icon_y = 40, (h - icon_size) / 2
+    scale = icon_size / 512
+    text_x = icon_x + icon_size + 30
+    return f'''<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg">
+  <defs>{DEFS}</defs>
+  <rect x="0" y="0" width="{w}" height="{h}" fill="url(#bg)"/>
+  <circle cx="{icon_x + icon_size/2}" cy="{h/2}" r="320" fill="url(#glow)"/>
+  <g transform="translate({icon_x},{icon_y}) scale({scale})">{DEVICE_GROUP}</g>
+  <g font-family="Liberation Sans, Arial, sans-serif" font-weight="bold" fill="#FFFFFF">
+    <text x="{text_x}" y="{h/2 - 45}" font-size="150">MX3</text>
+    <text x="{text_x}" y="{h/2 + 75}" font-size="88">Button</text>
+    <text x="{text_x}" y="{h/2 + 175}" font-size="88">Mapper</text>
+  </g>
+</svg>'''
+
 def promo_graphic():
     w, h = 180, 120
     icon_size = 96
@@ -139,4 +160,20 @@ for name, (svg, w, h) in targets.items():
     with open(svg_path, "w") as f:
         f.write(svg)
     subprocess.run(["rsvg-convert", "-w", str(w), "-h", str(h), svg_path, "-o", png_path], check=True)
+    print(f"Rendered {png_path}")
+
+# Launcher banner goes straight into the app's res, one PNG per density
+# (320x180dp baseline at mdpi).
+import os
+res = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../app/src/main/res")
+for density, factor in [("mdpi", 1), ("hdpi", 1.5), ("xhdpi", 2), ("xxhdpi", 3), ("xxxhdpi", 4)]:
+    out_dir = os.path.join(res, f"drawable-{density}")
+    os.makedirs(out_dir, exist_ok=True)
+    svg_path = os.path.join(out_dir, "banner.svg.tmp")
+    with open(svg_path, "w") as f:
+        f.write(launcher_banner())
+    png_path = os.path.join(out_dir, "banner.png")
+    subprocess.run(["rsvg-convert", "-w", str(int(320 * factor)), "-h", str(int(180 * factor)),
+                    svg_path, "-o", png_path], check=True)
+    os.remove(svg_path)
     print(f"Rendered {png_path}")

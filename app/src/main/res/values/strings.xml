@@ -7,10 +7,10 @@
     <string name="app_not_installed_title">App not installed</string>
     <string name="app_not_installed_message">The app mapped to this button (%1$s) isn\'t installed.</string>
     <string name="shizuku_auth_token_label">Shizuku start/stop intent auth token (paste the full \"auth: XXXX\" line from Shizuku\'s View intents screen)</string>
-    <string name="shizuku_auth_token_hint">auth: XXXX</string>
+    <string name="shizuku_auth_token_hint" translatable="false">auth: XXXX</string>
     <string name="save">Save</string>
     <string name="paste">Paste</string>
     <string name="tv_brand_label">TV brand (affects the MX3 Air Mouse\'s TV button specifically)</string>
-    <string name="tv_brand_tcl">TCL</string>
-    <string name="tv_brand_blaupunkt">Blaupunkt</string>
+    <string name="tv_brand_tcl" translatable="false">TCL</string>
+    <string name="tv_brand_blaupunkt" translatable="false">Blaupunkt</string>
 </resources>
