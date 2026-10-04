@@ -19,7 +19,9 @@ air-mouse remotes (and other remotes/keyboards) connected to Google TV devices �
 - **No root required.** Uses Shizuku for the parts that need elevated
   privileges (synthetic key injection, and self-enabling the
   accessibility service), running at the same privilege level as
-  `adb shell`.
+  `adb shell`. On rooted devices, if Shizuku isn't connected, key
+  injection falls back to `su` (`input keyevent`) instead, which will
+  prompt your root manager for superuser access.
 - **Self-configuring.** On first launch, once Shizuku permission is
   granted, the app enables its own accessibility service automatically —
   no need to dig through `Settings → Accessibility` by hand.

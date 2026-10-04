@@ -9,7 +9,9 @@ can consume (swallow) the original button press.</li>
 <li>Shizuku, used to inject a replacement synthetic keycode or press
 sequence in place of the original one. Shizuku grants this using the
 same shell-level privileges 'adb shell input keyevent' already has, so
-no root is required.</li>
+no root is required. If Shizuku isn't connected but the device is rooted,
+the app falls back to injecting keys via 'su' instead, and so will ask
+your root manager for superuser access.</li>
 </ul>
 
 Supported mapping types, configured in source (no in-app UI is required to

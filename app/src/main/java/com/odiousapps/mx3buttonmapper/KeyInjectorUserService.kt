@@ -83,7 +83,7 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
             // Read the current list so we don't clobber any other
             // accessibility services (e.g. TalkBack) the user already has
             // enabled.
-            val current = shellOutput("settings get secure enabled_accessibility_services").trim()
+            val current = run("settings", "get", "secure", "enabled_accessibility_services").trim()
             Log.i(TAG, "enableAccessibilityService: read current='$current'")
             val currentServices = current
                 .split(":")
@@ -93,14 +93,14 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
             if (currentServices.add(flattenedComponentName)) {
                 val newValue = currentServices.joinToString(":")
                 Log.i(TAG, "enableAccessibilityService: about to write enabled_accessibility_services='$newValue'")
-                shell("settings put secure enabled_accessibility_services $newValue")
+                exec("settings", "put", "secure", "enabled_accessibility_services", newValue)
                 Log.i(TAG, "enableAccessibilityService: wrote enabled_accessibility_services successfully")
             } else {
                 Log.i(TAG, "enableAccessibilityService: target already present, no write needed")
             }
             // Belt-and-suspenders: also make sure accessibility itself is on.
             Log.i(TAG, "enableAccessibilityService: about to write accessibility_enabled=1")
-            shell("settings put secure accessibility_enabled 1")
+            exec("settings", "put", "secure", "accessibility_enabled", "1")
             Log.i(TAG, "enableAccessibilityService: wrote accessibility_enabled successfully, done")
         } catch (e: Throwable) {
             Log.e(TAG, "enableAccessibilityService: caught exception", e)
@@ -130,7 +130,7 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
     override fun grantAutoStart(packageName: String) {
         Log.i(TAG, "grantAutoStart: setting AUTO_START=allow for $packageName")
         try {
-            shell("appops set $packageName AUTO_START allow")
+            exec("appops", "set", packageName, "AUTO_START", "allow")
             Log.i(TAG, "grantAutoStart: done for $packageName")
         } catch (e: Throwable) {
             Log.e(TAG, "grantAutoStart: failed for $packageName", e)
@@ -139,20 +139,24 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
     }
 
     /**
-     * Runs a shell command as this process's UID (shell, via Shizuku).
+     * Runs a command as this process's UID (shell, via Shizuku).
      * `adb shell settings put secure ...` works without any app ever being
      * granted WRITE_SECURE_SETTINGS specifically because the shell UID is
      * allowed to write secure settings directly through this code path --
      * this process inherits that same allowance.
+     *
+     * Deliberately exec'd as an argv array rather than through `sh -c`:
+     * values like enabled_accessibility_services can contain nested-class
+     * component names (Outer$Inner), which a shell would expand as a
+     * variable and silently corrupt another app's entry.
      */
-    private fun shell(command: String) {
-        val process = Runtime.getRuntime().exec(arrayOf("sh", "-c", command))
+    private fun exec(vararg args: String) {
+        val process = Runtime.getRuntime().exec(args)
         process.waitFor()
     }
 
-    @Suppress("SameParameterValue")
-    private fun shellOutput(command: String): String {
-        val process = Runtime.getRuntime().exec(arrayOf("sh", "-c", command))
+    private fun run(vararg args: String): String {
+        val process = Runtime.getRuntime().exec(args)
         val output = process.inputStream.bufferedReader().readText()
         process.waitFor()
         return output
