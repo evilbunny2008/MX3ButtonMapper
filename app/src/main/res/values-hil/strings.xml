@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Nagapamati sa partikular nga mga pagpindot sang buton sang hardware kag gina-remap ini sa isa pa ka keycode</string>
+	<string name="app_not_installed_message">Ang app nga gin-map sa sini nga buton (%1$s) wala ma-install</string>
+	<string name="app_not_installed_title">Wala ma-install ang app</string>
+	<string name="log_key_events_label">I-log ang tagsa ka pagpindot sang yabi (para sa pag-troubleshoot lamang)</string>
+	<string name="log_remaps_label">Ang pagpindot sang buton nga gin-remap sang log (para sa pag-troubleshoot lamang)</string>
+	<string name="open_accessibility_settings">Buksi ang mga Setting sang Pag-access</string>
+	<string name="paste">Ipapilit</string>
+	<string name="save">Luwa</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (i-paste ang bug-os nga ‘auth: XXXX’ nga linya gikan sa %1$s’s View intents screen)</string>
+	<string name="status_placeholder">Hatagi ang %1$s nga pahanugot, dayon i-enable ini nga serbisyo sa idalom sang Accessibility</string>
+	<string name="tv_brand_label">Ang tatak sang TV (nagaapektar sa %1$s nga buton sang TV sing espesipiko)</string>
+</resources>

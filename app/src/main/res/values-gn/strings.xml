@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ohendu umi botón hardware específico ojepysóva ha omomapa jey ambue teclado-pe</string>
+	<string name="app_not_installed_message">Pe app oñembohapéva ko mboajepyrévape (%1$s) noñemoĩri</string>
+	<string name="app_not_installed_title">App noñeinstaláiva</string>
+	<string name="log_key_events_label">Ehai opaite tecla ojepysóva (oñembohovái hag̃ua apañuãi añoite)</string>
+	<string name="log_remaps_label">Ojepyso botón oñemapa jeýva registro (oñembohovái hag̃ua apañuãi añoite)</string>
+	<string name="open_accessibility_settings">Ojepe’a Accesibilidad Ñemboheko</string>
+	<string name="paste">Pega rehegua</string>
+	<string name="save">Pysyrõ</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (emboja pe línea ‘auth: XXXX’ henyhẽva %1$s pantalla View intents-gui)</string>
+	<string name="status_placeholder">Eme’ẽ %1$s permiso, upéi emboguata ko servicio Accesibilidad guýpe</string>
+	<string name="tv_brand_label">TV marca (ohypýi %1$s TV botón específicamente)</string>
+</resources>

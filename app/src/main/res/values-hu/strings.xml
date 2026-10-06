@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Figyeli az adott hardver gombnyomásait, és átmásolja őket egy másik billentyűkódra</string>
+	<string name="app_not_installed_message">Az ehhez a gombhoz (%1$s) társított alkalmazás nincs telepítve</string>
+	<string name="app_not_installed_title">Az alkalmazás nincs telepítve</string>
+	<string name="log_key_events_label">Minden gombnyomás naplózása (csak hibaelhárítás céljából)</string>
+	<string name="log_remaps_label">Újraképzett gombnyomások naplózása (csak hibaelhárítás céljából)</string>
+	<string name="open_accessibility_settings">Nyissa meg a Kisegítő lehetőségek beállításait</string>
+	<string name="paste">Paszta</string>
+	<string name="save">Megtakarítás</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (illessze be a teljes ‘auth: XXXX’ sort a %1$s Szándékok megtekintése képernyőjéről)</string>
+	<string name="status_placeholder">Adja meg a %1$s engedélyt, majd engedélyezze ezt a szolgáltatást a Kisegítő lehetőségek alatt</string>
+	<string name="tv_brand_label">TV márka (kifejezetten a %1$s TV gombot érinti)</string>
+</resources>

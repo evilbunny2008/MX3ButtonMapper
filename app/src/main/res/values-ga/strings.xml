@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Éisteann le haghaidh brúnna cnaipe crua-earraí ar leith agus athmhaálann sé iad chuig eochairchód eile</string>
+	<string name="app_not_installed_message">Níl an aip atá mapáilte chuig an gcnaipe seo (%1$s) suiteáilte</string>
+	<string name="app_not_installed_title">App gan a bheith suiteáilte</string>
+	<string name="log_key_events_label">Logáil gach preas eochair (le haghaidh fabhtcheartaithe amháin)</string>
+	<string name="log_remaps_label">Brúnna an cnaipe logála athmhaptha (le haghaidh fabhtcheartaithe amháin)</string>
+	<string name="open_accessibility_settings">Oscail Socruithe Inrochtaineachta</string>
+	<string name="paste">Greamaigh</string>
+	<string name="save">Sábháil</string>
+	<string name="shizuku_auth_token_label">%1$s comhartha tosaithe/stop auth intinne (greamaigh an líne iomlán ‘auth: XXXX’ ó scáileán Intinn Amharc %1$s)</string>
+	<string name="status_placeholder">Tabhair cead %1$s, ansin cumasaigh an tseirbhís seo faoi Inrochtaineacht</string>
+	<string name="tv_brand_label">Branda teilifíse (tionchar sonrach ar an gcnaipe teilifíse %1$s)</string>
+</resources>

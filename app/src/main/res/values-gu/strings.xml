@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ચોક્કસ હાર્ડવેર બટન પ્રેસ માટે સાંભળે છે અને તેને બીજા કીકોડ પર ફરીથી મેપ કરે છે</string>
+	<string name="app_not_installed_message">આ બટન (%1$s) પર મેપ કરેલી એપ્લિકેશન ઇન્સ્ટોલ કરેલી નથી</string>
+	<string name="app_not_installed_title">એપ્લિકેશન ઇન્સ્ટોલ કરેલી નથી</string>
+	<string name="log_key_events_label">દરેક કી પ્રેસ લોગ કરો (ફક્ત મુશ્કેલીનિવારણ માટે)</string>
+	<string name="log_remaps_label">લોગ રીમેપ કરેલ બટન દબાવો (ફક્ત મુશ્કેલીનિવારણ માટે)</string>
+	<string name="open_accessibility_settings">ઍક્સેસિબિલિટી સેટિંગ્સ ખોલો</string>
+	<string name="paste">પેસ્ટ કરો</string>
+	<string name="save">સાચવો</string>
+	<string name="shizuku_auth_token_label">%1$s સ્ટાર્ટ/સ્ટોપ ઈન્ટેન્ટ ઓથ ટોકન (%1$s ની વ્યુ ઈન્ટેન્ટ સ્ક્રીન પરથી સંપૂર્ણ ‘auth: XXXX’ લાઈન પેસ્ટ કરો)</string>
+	<string name="status_placeholder">%1$s પરવાનગી આપો, પછી ઍક્સેસિબિલિટી હેઠળ આ સેવાને સક્ષમ કરો</string>
+	<string name="tv_brand_label">ટીવી બ્રાન્ડ (ખાસ કરીને %1$s ટીવી બટનને અસર કરે છે)</string>
+</resources>

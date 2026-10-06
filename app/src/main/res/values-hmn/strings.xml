@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Mloog rau qhov tshwj xeeb hardware khawm nias thiab remap lawv mus rau lwm tus keycode</string>
+	<string name="app_not_installed_message">Lub app tau teeb tsa rau lub pob no (%1$s) tsis tau teeb tsa</string>
+	<string name="app_not_installed_title">App tsis tau nruab</string>
+	<string name="log_key_events_label">Nkag mus rau txhua tus xovxwm tseem ceeb (rau kev daws teeb meem nkaus xwb)</string>
+	<string name="log_remaps_label">Log remapped khawm nias (rau kev daws teeb meem nkaus xwb)</string>
+	<string name="open_accessibility_settings">Qhib Accessibility Settings</string>
+	<string name="paste">Muab tshuaj txhuam</string>
+	<string name="save">Txuag</string>
+	<string name="shizuku_auth_token_label">%1$s pib/stop intent auth token (paste tag nrho ‘auth: XXXX’ kab los ntawm %1$s’s View intents screen)</string>
+	<string name="status_placeholder">Muab %1$s tso cai, tom qab ntawd qhib qhov kev pabcuam no hauv qab Accessibility</string>
+	<string name="tv_brand_label">TV hom ( cuam tshuam rau %1$s TV khawm tshwj xeeb)</string>
+</resources>

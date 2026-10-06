@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Escoita pulsacións de botóns de hardware específicos e reasignalas a outro código de teclas</string>
+	<string name="app_not_installed_message">A aplicación asignada a este botón (%1$s) non está instalada</string>
+	<string name="app_not_installed_title">A aplicación non está instalada</string>
+	<string name="log_key_events_label">Rexistra cada pulsación de tecla (só para solucionar problemas)</string>
+	<string name="log_remaps_label">Rexistrar as pulsacións dos botóns reasignados (só para solucionar problemas)</string>
+	<string name="open_accessibility_settings">Abre Configuración de accesibilidade</string>
+	<string name="paste">Pegar</string>
+	<string name="save">Gardar</string>
+	<string name="shizuku_auth_token_label">Token de autenticación de intención de inicio/parada de %1$s (pega a liña completa ‘auth: XXXX’ da pantalla Ver intencións de %1$s)</string>
+	<string name="status_placeholder">Concede permiso a %1$s e, a continuación, activa este servizo en Accesibilidade</string>
+	<string name="tv_brand_label">Marca de TV (afecta especificamente ao botón de TV %1$s)</string>
+</resources>

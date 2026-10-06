@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Լսում է կոնկրետ ապարատային կոճակների սեղմումները և դրանք վերափոխում այլ ստեղնային կոդի մեջ</string>
+	<string name="app_not_installed_message">Այս կոճակի հետ կապված հավելվածը (%1$s) տեղադրված չէ</string>
+	<string name="app_not_installed_title">Հավելվածը տեղադրված չէ</string>
+	<string name="log_key_events_label">Մուտքագրեք յուրաքանչյուր ստեղնի սեղմում (միայն անսարքությունների վերացման համար)</string>
+	<string name="log_remaps_label">Մատյանների վերահաշվարկված կոճակների սեղմումներ (միայն անսարքությունների վերացման համար)</string>
+	<string name="open_accessibility_settings">Բացեք Մատչելիության կարգավորումները</string>
+	<string name="paste">Կպցնել</string>
+	<string name="save">Պահպանել</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (կպցրեք ամբողջական ‘auth: XXXX’ տողը %1$s ի Դիտել մտադրությունների էկրանից)</string>
+	<string name="status_placeholder">Տրամադրեք %1$s թույլտվություն, այնուհետև միացրեք այս ծառայությունը ‘Մատչելիություն’ բաժնում</string>
+	<string name="tv_brand_label">Հեռուստացույցի ապրանքանիշը (հատկապես ազդում է %1$s հեռուստացույցի կոճակի վրա)</string>
+</resources>

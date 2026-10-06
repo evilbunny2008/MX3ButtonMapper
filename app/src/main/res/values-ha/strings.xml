@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Yana sauraron takamaiman maɓallan maɓallan kayan masarufi kuma ya mayar da su zuwa wata lambar maɓalli</string>
+	<string name="app_not_installed_message">Ka’idar da aka tsara zuwa wannan maɓallin (%1$s) ba a sanya shi ba</string>
+	<string name="app_not_installed_title">Ba a shigar da app ba</string>
+	<string name="log_key_events_label">Shiga kowane latsa maɓalli (don magance matsala kawai)</string>
+	<string name="log_remaps_label">Shiga latsa maɓallin da aka gyara (don magance matsala kawai)</string>
+	<string name="open_accessibility_settings">Buɗe Saitunan Dama</string>
+	<string name="paste">Manna</string>
+	<string name="save">Ajiye</string>
+	<string name="shizuku_auth_token_label">%1$s farawa/tsaida intent auth token (manna cikakken ‘auth: XXXX’ daga allon %1$s’s View intents)</string>
+	<string name="status_placeholder">Ba da izinin %1$s, sannan kunna wannan sabis ɗin ƙarƙashin Samun damar</string>
+	<string name="tv_brand_label">Alamar TV (yana shafar maɓallin %1$s TV musamman)</string>
+</resources>

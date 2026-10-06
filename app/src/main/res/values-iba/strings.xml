@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Mendingka penekan butang perengka ti spesifik lalu ngaga kar baru ngagai kod kunchi bukai</string>
+	<string name="app_not_installed_message">App ti dipeta ngagai butang tu (%1$s) bedau dipasang</string>
+	<string name="app_not_installed_title">App enda dipasang</string>
+	<string name="log_key_events_label">Log tiap kali nekan kunci (kena mutarka penanggul aja)</string>
+	<string name="log_remaps_label">Log nekan butang ti dipeta baru (kena mutarka penanggul aja)</string>
+	<string name="open_accessibility_settings">Buka Atur Aksesibiliti</string>
+	<string name="paste">Tampal</string>
+	<string name="save">Nyelamatka</string>
+	<string name="shizuku_auth_token_label">%1$s token auth niat berengkah/ngetu (tampal baris ‘auth: XXXX’ penuh ari skrin Peda niat %1$s)</string>
+	<string name="status_placeholder">Beri pemendar %1$s, udah nya ngasuh servis tu ba baruh Aksesibiliti</string>
+	<string name="tv_brand_label">Jenama TV (ngeruga butang TV %1$s enggau spesifik)</string>
+</resources>

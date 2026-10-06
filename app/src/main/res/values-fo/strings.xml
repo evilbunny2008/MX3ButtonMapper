@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Lurtar eftir ávísum hardware-knappatrýstum og umkortleggjar tey til eina aðra lyklakotu</string>
+	<string name="app_not_installed_message">Appin, sum er kortleggjað til hendan knøttin (%1$s), er ikki sett upp</string>
+	<string name="app_not_installed_title">App ikki sett upp</string>
+	<string name="log_key_events_label">Logga hvørt knøttrýst (bert til trupulleikaloysnir)</string>
+	<string name="log_remaps_label">Logg umkortleggjað knøttrýst (bert til trupulleikaloysnir)</string>
+	<string name="open_accessibility_settings">Opna atkomuinnstillingar</string>
+	<string name="paste">Líma</string>
+	<string name="save">Bjarga</string>
+	<string name="shizuku_auth_token_label">%1$s byrja/steðga ætlanargóðkenningarmerki (líma alla ‘góðkenningar: XXXX’ linjuna frá Vís ætlanir skermin hjá %1$s)</string>
+	<string name="status_placeholder">Gev %1$s loyvi, ger síðani hesa tænastuna virkna undir Atkomuligheit</string>
+	<string name="tv_brand_label">Sjónvarpsmerki (ávirkar serliga %1$s sjónvarpsknøttin)</string>
+</resources>
