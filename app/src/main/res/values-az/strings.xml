@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Müəyyən aparat düymələrinin basılmasını dinləyir və onları başqa bir açar koduna dəyişdirir</string>
+	<string name="app_not_installed_message">Bu düyməyə uyğunlaşdırılmış proqram (%1$s) quraşdırılmayıb</string>
+	<string name="app_not_installed_title">Proqram quraşdırılmayıb</string>
+	<string name="log_key_events_label">Hər düyməni basdığınızı qeyd edin (yalnız problemlərin aradan qaldırılması üçün)</string>
+	<string name="log_remaps_label">Düymələrin yenidən qurulmuş basışlarını qeyd edin (yalnız problemlərin aradan qaldırılması üçün)</string>
+	<string name="open_accessibility_settings">Əlçatanlıq Parametrlərini açın</string>
+	<string name="paste">Yapışdırın</string>
+	<string name="save">Saxla</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop niyyəti auth nişanı (%1$s ın Baxış niyyətləri ekranından tam ‘auth: XXXX’ xəttini yapışdırın)</string>
+	<string name="status_placeholder">%1$s icazəsi verin, sonra bu xidməti Əlçatımlılıq altında aktivləşdirin</string>
+	<string name="tv_brand_label">TV markası (xüsusilə %1$s TV düyməsini təsir edir)</string>
+</resources>

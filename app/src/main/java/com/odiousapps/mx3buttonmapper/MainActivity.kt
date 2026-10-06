@@ -14,6 +14,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -61,9 +62,25 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
         }
 
+        setUpLabels()
         setUpShizukuAuthTokenField()
         setUpTvBrandSelector()
         setUpLogToggles()
+    }
+
+    /**
+     * Product names (Shizuku, MX3 Air Mouse) live in their own
+     * non-translatable resources and are substituted in here, so
+     * translators can't accidentally localise them.
+     */
+    private fun setUpLabels() {
+        val shizuku = getString(R.string.shizuku_name)
+        findViewById<TextView>(R.id.statusText).text =
+            getString(R.string.status_placeholder, shizuku)
+        findViewById<TextView>(R.id.shizukuAuthTokenLabel).text =
+            getString(R.string.shizuku_auth_token_label, shizuku)
+        findViewById<TextView>(R.id.tvBrandLabel).text =
+            getString(R.string.tv_brand_label, getString(R.string.mx3_remote_name))
     }
 
     /**

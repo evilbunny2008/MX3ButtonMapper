@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Luister vir spesifieke hardeware knoppies druk en hermap dit na ‘n ander sleutelkode</string>
+	<string name="app_not_installed_message">Die toepassing wat na hierdie knoppie gekarteer is (%1$s) is nie geïnstalleer nie</string>
+	<string name="app_not_installed_title">Toepassing nie geïnstalleer nie</string>
+	<string name="log_key_events_label">Teken elke sleuteldruk aan (slegs vir foutsporing)</string>
+	<string name="log_remaps_label">Teken heraangewysde knoppie druk (slegs vir probleemoplossing)</string>
+	<string name="open_accessibility_settings">Maak toeganklikheidinstellings oop</string>
+	<string name="paste">Plak</string>
+	<string name="save">Stoor</string>
+	<string name="shizuku_auth_token_label">%1$s begin/stop voorneme-bekragtiging-token (plak die volle ‘auth: XXXX’-reël vanaf %1$s se Bekyk voorneme-skerm)</string>
+	<string name="status_placeholder">Gee %1$s toestemming en aktiveer dan hierdie diens onder Toeganklikheid</string>
+	<string name="tv_brand_label">TV-handelsmerk (affekteer die %1$s TV-knoppie spesifiek)</string>
+</resources>

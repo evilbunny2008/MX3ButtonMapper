@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">baxsa le harxiweer gubitte xukkutaanam ankacisaanam kee gersi keycode fan ken karta abaanama</string>
+	<string name="app_not_installed_message">Ta butta (%1$s) elle tan appil ma’aban</string>
+	<string name="app_not_installed_title">assabalta makkuminna</string>
+	<string name="log_key_events_label">Kulli fakeenat xukkutaanam (taqabi fidgah dubuk)</string>
+	<string name="log_remaps_label">culma qagitak karta gubi xukko ( taqbi fidga dubuk)</string>
+	<string name="open_accessibility_settings">Fakut tan wadbissoh guddaaqa</string>
+	<string name="paste">Xakbis</string>
+	<string name="save">Wadiyya</string>
+	<string name="shizuku_auth_token_label">%1$s qimmo/soolissoh niyat nummah astooti ( xakbis dudda le ‘ numma: XXXX’ firta %1$s‘ mablah niyat alaalaqa)</string>
+	<string name="status_placeholder">%1$s idini ucuy, tokkeek ta ayfaf gufneh gubat xiqsiisa</string>
+	<string name="tv_brand_label">TV murti migaq (%1$s TV gubi baxsaluk xagah)</string>
+</resources>

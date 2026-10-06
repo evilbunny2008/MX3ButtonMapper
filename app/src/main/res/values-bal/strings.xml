@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">مخصوص ہارڈ ویئر بٹن پریسز ءِ واستہ گوشدار ایت ءُُ آہاں دگہ کی کوڈ ءِ سرا ری میپ کنت۔</string>
+	<string name="app_not_installed_message">اے بٹن (%1$s) ءِ سرا نقشہ کتگیں ایپ انسٹال نہ اِنت۔</string>
+	<string name="app_not_installed_title">ایپ انسٹال نہ بیثہ</string>
+	<string name="log_key_events_label">ہر کلید ءِ پریس ءَ لاگ کن اِت (تہنا دشواری ءِ گیش ءُ گیوار ءِ واستہ)</string>
+	<string name="log_remaps_label">لاگ دوبارہ نقشہ کشیں بٹن ءِ دباؤ (تہنا دشواری ءِ گیش ءُ گیوار ءِ ھاترا)</string>
+	<string name="open_accessibility_settings">رسائی ءِ ترتیب ءَ پچ کن</string>
+	<string name="paste">پیسٹ</string>
+	<string name="save">دیمپان کن</string>
+	<string name="shizuku_auth_token_label">%1$s ءِ بندات / بند ءِ ارادہ ءِ توثیق ٹوکن (%1$s ءِ ارادہ ءِ چارگ ءِ اسکرین ءَ چہ سرجمیں ‘توثیق: XXXX’ ءِ لیکہ ءَ پیسٹ کن)</string>
+	<string name="status_placeholder">%1$s ءِ اجازت ءَ بہ دئے ، پدا اے سروس ءَ رسائی ءِ چیر دستی ءَ فعال بہ کن۔</string>
+	<string name="tv_brand_label">ٹی وی برانڈ (خاص %1$s ٹی وی بٹن ئا را متاثر کنت)</string>
+</resources>

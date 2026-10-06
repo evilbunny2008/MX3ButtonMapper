@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">የተወሰነ የሃርድዌር ቁልፍ ሲጫኑ ያዳምጣል እና ወደ ሌላ የቁልፍ ኮድ ያደርጋቸዋል።</string>
+	<string name="app_not_installed_message">ወደዚህ አዝራር (%1$s) ካርታ የተሰራው መተግበሪያ አልተጫነም።</string>
+	<string name="app_not_installed_title">መተግበሪያ አልተጫነም።</string>
+	<string name="log_key_events_label">እያንዳንዱን ቁልፍ ይጫኑ (ለመላ ፍለጋ ብቻ)</string>
+	<string name="log_remaps_label">የተከለሱ ቁልፎችን ይመዝገቡ (ለመላ ፍለጋ ብቻ)</string>
+	<string name="open_accessibility_settings">የተደራሽነት ቅንብሮችን ክፈት</string>
+	<string name="paste">ለጥፍ</string>
+	<string name="save">አስቀምጥ</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (ሙሉውን ‘auth: XXXX’ መስመር ከ%1$s እይታ እይታ ማያ ለጥፍ)</string>
+	<string name="status_placeholder">የ%1$s ፍቃድ ይስጡ፣ ከዚያ ይህን አገልግሎት በተደራሽነት ያንቁት።</string>
+	<string name="tv_brand_label">የቲቪ ብራንድ (በተለይ የ%1$s ቲቪ አዝራሩን ይነካል)</string>
+</resources>

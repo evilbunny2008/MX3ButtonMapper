@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ditangihon do angka penekanan tombol perangkat keras na tertentu jala dipetahon ma muse tu kode kunci na asing</string>
+	<string name="app_not_installed_message">Aplikasi na dipetahon tu tombol on (%1$s) ndang dipasang</string>
+	<string name="app_not_installed_title">Aplikasi dang dipasang</string>
+	<string name="log_key_events_label">Log setiap tekan tombol (holan untuk pemecahan masalah)</string>
+	<string name="log_remaps_label">Log dipetakan ulang tombol menekan (holan untuk pemecahan masalah)</string>
+	<string name="open_accessibility_settings">Buka ma Pengaturan Aksesibilitas</string>
+	<string name="paste">Tempel</string>
+	<string name="save">Manimpan</string>
+	<string name="shizuku_auth_token_label">Token otenitas niat mamungka/mansohot %1$s (tempelhon baris ‘otentikasi: XXXX’ lengkap sian layar Lihat niat %1$s)</string>
+	<string name="status_placeholder">Lehon ma izin %1$s, dung i aktifhon ma layanan on di toru ni Aksesibilitas</string>
+	<string name="tv_brand_label">Merek TV (mempengaruhi tombol TV %1$s secara khusus)</string>
+</resources>

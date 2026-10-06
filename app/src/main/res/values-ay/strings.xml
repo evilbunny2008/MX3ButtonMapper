@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Hardware específico botón ukar ch’allt’atanakap ist’i ukat yaqha teclado ukar wasitat mapap uñt’ayi</string>
+	<string name="app_not_installed_message">Aka botón (%1$s) ukar mapeat app ukax janiw instalatäkiti</string>
+	<string name="app_not_installed_title">App ukax janiw instalatäkiti</string>
+	<string name="log_key_events_label">Sapa tecla ukxa qillqt’aña (jan walt’awinaka askichañatakiki)</string>
+	<string name="log_remaps_label">Log remapped botón ukar ch’iqt’aña (jan walt’awinak askichañatakiki)</string>
+	<string name="open_accessibility_settings">Jisk’a Accesibilidad ukan utt’ayata</string>
+	<string name="paste">Ukaxa mä juk’a pachanakwa lurasi</string>
+	<string name="save">Imaña</string>
+	<string name="shizuku_auth_token_label">%1$s qallta/sayt’añ amtäwi chiqañchawi chimpu (‘auth: XXXX’ chimpu phuqhat %1$s’s View intents pantallat lip’kataña)</string>
+	<string name="status_placeholder">%1$s permiso churañamawa, ukatxa aka servicio ukarux Accesibilidad ukan ch’amanchañamawa</string>
+	<string name="tv_brand_label">TV marka (%1$s TV botón ukarux chiqaparuw jan walt’ayi)</string>
+</resources>

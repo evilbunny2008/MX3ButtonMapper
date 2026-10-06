@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">নিৰ্দিষ্ট হাৰ্ডৱেৰ বুটাম টিপৰ বাবে শুনে আৰু সিহতক অন্য কিকোডলৈ পুনৰ মেপ কৰে।</string>
+	<string name="app_not_installed_message">এই বুটামত মেপ কৰা এপটো (%1$s) ইনষ্টল কৰা হোৱা নাই৷</string>
+	<string name="app_not_installed_title">App ইনষ্টল কৰা হোৱা নাই</string>
+	<string name="log_key_events_label">প্ৰতিটো চাবি টিপিলে লগ কৰক (কেৱল সমস্যা সমাধানৰ বাবে)</string>
+	<string name="log_remaps_label">লগ পুনৰ মেপ কৰা বুটাম টিপে (কেৱল সমস্যা সমাধানৰ বাবে)</string>
+	<string name="open_accessibility_settings">অভিগম্যতা সংহতিসমূহ খোলক</string>
+	<string name="paste">পেষ্ট কৰক</string>
+	<string name="save">সঞ্চয় কৰা</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (%1$s’s View intents পৰ্দাৰ পৰা সম্পূৰ্ণ ‘auth: XXXX’ শাৰী পেষ্ট কৰক)</string>
+	<string name="status_placeholder">%1$s অনুমতি দিয়ক, তাৰ পিছত অভিগম্যতাৰ অন্তৰ্গত এই সেৱা সামৰ্থবান কৰক ।</string>
+	<string name="tv_brand_label">টিভি ব্ৰেণ্ড (%1$s টিভি বুটামক বিশেষভাৱে প্ৰভাৱিত কৰে)</string>
+</resources>

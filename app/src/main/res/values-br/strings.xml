@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Selaou a ra ar pouezadennoù war boutonoù resis hag adkas anezho war ur c’hod alc’hwez all</string>
+	<string name="app_not_installed_message">N’eo ket staliet an arload staget ouzh ar bouton-mañ (%1$s)</string>
+	<string name="app_not_installed_title">N’eo ket bet staliet an arload</string>
+	<string name="log_key_events_label">Enrollañ pep pouezadenn war ar stokell (evit diskoulmañ kudennoù hepken)</string>
+	<string name="log_remaps_label">Pouezañ war bouton adkartennaouet ar marilh (evit diskoulmañ kudennoù hepken)</string>
+	<string name="open_accessibility_settings">Digeriñ arventennoù an aesaat</string>
+	<string name="paste">Pegañ</string>
+	<string name="save">Saveteiñ</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (pegañ al linenn ‘auth: XXXX’ klok diwar skramm Gwelet intentoù %1$s)</string>
+	<string name="status_placeholder">Roit an aotre da %1$s, ha gweredekait ar servij-mañ dindan Aesaat</string>
+	<string name="tv_brand_label">Merk ar skinwel (a efed war an afell skinwel %1$s dreist-holl)</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Tie hardware button pɔtee bi a wobɛmia na ɔsan de kɔ keycode foforo so</string>
+	<string name="app_not_installed_message">App a wɔayɛ no map wɔ saa bɔtn yi so (%1$s) no nnyɛ instɔlehyɛn</string>
+	<string name="app_not_installed_title">App no ​​nnyɛ instɔlehyɛn</string>
+	<string name="log_key_events_label">Log safoa biara a wobɛmia (sɛ wopɛ sɛ wusiesie ɔhaw nkutoo)</string>
+	<string name="log_remaps_label">Log remapped button mia (ma ɔhaw ahorow ano aduru nkutoo)</string>
+	<string name="open_accessibility_settings">Bue Nsiesiei a Ɛfa Nneɛma a Wɔde Kɔ Ho</string>
+	<string name="paste">Paste a wɔde hyɛ mu</string>
+	<string name="save">Kora</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (fa ‘auth: XXXX’ line no nyinaa fi %1$s’s View intents screen no so)</string>
+	<string name="status_placeholder">Ma %1$s kwan, afei ma saa dwumadie yi nyɛ adwuma wɔ Accessibility ase</string>
+	<string name="tv_brand_label">TV brand (ɛka %1$s TV bɔtn no pɔtee)</string>
+</resources>

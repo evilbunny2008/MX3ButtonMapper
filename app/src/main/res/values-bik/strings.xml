@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Nagdadangog para sa mga partikular na pagpindot sa buton kan hardware asin pig-remap sinda sa ibang keycode</string>
+	<string name="app_not_installed_message">An app na naka-mapa sa buton na ini (%1$s) dai naka-install</string>
+	<string name="app_not_installed_title">Dai na-install an app</string>
+	<string name="log_key_events_label">I-log an kada pagpindot kan key (para sa pag-troubleshoot sana)</string>
+	<string name="log_remaps_label">Mga pagpindot sa buton na pig-remap kan log (para sa pag-troubleshoot sana)</string>
+	<string name="open_accessibility_settings">Buksan an mga Setting nin Pag-access</string>
+	<string name="paste">Idikit</string>
+	<string name="save">Magtipon</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (i-paste an bilog na ‘auth: XXXX’ na linya gikan sa %1$s’s View intents screen)</string>
+	<string name="status_placeholder">Magtao nin permiso sa %1$s, dangan i-enable an serbisyong ini sa irarom kan Accessibility</string>
+	<string name="tv_brand_label">Tatak nin TV (partikularmenteng nakakaapektar sa %1$s na buton nin TV)</string>
+</resources>

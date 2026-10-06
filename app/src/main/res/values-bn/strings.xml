@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">নির্দিষ্ট হার্ডওয়্যার বোতাম প্রেসের জন্য শোনে এবং সেগুলিকে অন্য কীকোডে রিম্যাপ করে।</string>
+	<string name="app_not_installed_message">এই বোতামে ম্যাপ করা অ্যাপটি (%1$s) ইনস্টল করা নেই।</string>
+	<string name="app_not_installed_title">অ্যাপ ইনস্টল করা হয়নি</string>
+	<string name="log_key_events_label">প্রতিটি কী প্রেস লগ করুন (শুধুমাত্র সমস্যা সমাধানের জন্য)</string>
+	<string name="log_remaps_label">লগ রিম্যাপ করা বোতাম টিপে (শুধুমাত্র সমস্যা সমাধানের জন্য)</string>
+	<string name="open_accessibility_settings">অ্যাক্সেসিবিলিটি সেটিংস খুলুন</string>
+	<string name="paste">পেস্ট করুন</string>
+	<string name="save">সংরক্ষণ করুন</string>
+	<string name="shizuku_auth_token_label">%1$s স্টার্ট/স্টপ ইন্টেন্ট প্রমাণীকরণ টোকেন (%1$s এর ভিউ ইন্টেন্ট স্ক্রীন থেকে সম্পূর্ণ ‘auth: XXXX’ লাইন পেস্ট করুন)</string>
+	<string name="status_placeholder">%1$s অনুমতি দিন, তারপর অ্যাক্সেসযোগ্যতার অধীনে এই পরিষেবাটি সক্ষম করুন৷</string>
+	<string name="tv_brand_label">টিভি ব্র্যান্ড (বিশেষভাবে %1$s টিভি বোতামকে প্রভাবিত করে)</string>
+</resources>

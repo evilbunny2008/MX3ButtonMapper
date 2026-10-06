@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">A bɛ butɔni butɔni kɛrɛnkɛrɛnnenw lamɛn ani k’u karti kokura ka taa keycode wɛrɛ la</string>
+	<string name="app_not_installed_message">Application min kartilen don nin butɔni in kan (%1$s) o ma sigi sen kan</string>
+	<string name="app_not_installed_title">App ma installé</string>
+	<string name="log_key_events_label">Log butɔn digilen bɛɛ (gɛlɛyaw ɲɛnabɔli dɔrɔn kama)</string>
+	<string name="log_remaps_label">Log remapped button digilen (gɛlɛyaw ɲɛnabɔli dɔrɔn kama)</string>
+	<string name="open_accessibility_settings">Da wuli ka se ka doncogo labɛn</string>
+	<string name="paste">Paste</string>
+	<string name="save">Ka mara</string>
+	<string name="shizuku_auth_token_label">%1$s daminɛ/dabila ŋaniya tiɲɛni taamasiyɛn (‘auth: XXXX’ layini dafalen nɔrɔ ka bɔ %1$s ka laɲiniw lajɛ ekran kan)</string>
+	<string name="status_placeholder">%1$s ka yamaruya di, o kɔfɛ, i ka nin baara in kɛ Accessibility jukɔrɔ</string>
+	<string name="tv_brand_label">Telewisɔn taamasiyɛn (a bɛ nɔ bila %1$s telewisɔn butɔni na kɛrɛnkɛrɛnnenya la)</string>
+</resources>

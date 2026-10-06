@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">དམིགས་བསལ་གྱི་མཐུན་རྐྱེན་མཐེབ་གནོན་ལ་ཉན་ནས་དེ་དག་ལྡེ་མིག་གཞན་ཞིག་ལ་སླར་ཡང་ས་ཁྲ་བཟོས།</string>
+	<string name="app_not_installed_message">མཐེབ་འདི་ལ་ས་ཁྲ་བཟོས་པའི་མཉེན་ཆས་(%1$s)དེ་སྒྲིག་འཇུག་བྱས་མེད།</string>
+	<string name="app_not_installed_title">App སྒྲིག་འཇུག་བྱས་མེད།</string>
+	<string name="log_key_events_label">མཐེབ་གཞོང་རེ་རེར་ཐོ་འགོད་བྱེད་དགོས། (དཀའ་ངལ་སེལ་ཆེད་ཁོ་ན)</string>
+	<string name="log_remaps_label">དྲན་ཐོ་བསྐྱར་དུ་ས་ཁྲ་བཟོས་པའི་མཐེབ་མནན་པ་(དཀའ་ངལ་སེལ་ཆེད་ཁོ་ན)</string>
+	<string name="open_accessibility_settings">འཛུལ་སྤྱོད་སྒྲིག་སྟངས་ཁ་ཕྱེ་བ།</string>
+	<string name="paste">སྦྱར་བ།</string>
+	<string name="save">སྐྱོབ་པ</string>
+	<string name="shizuku_auth_token_label">%1$s འགོ་འཛུགས/བཀག་པའི་དམིགས་ཡུལ་བདེན་དཔང་རྟགས་མཚན་ (%1$s ཡི་དམིགས་ཡུལ་ལྟ་བའི་གསལ་གཞི་ནས་‘བདེན་དཔང་: XXXX’ གྲལ་ཐིག་ཆ་ཚང་སྦྱར་དགོས།)</string>
+	<string name="status_placeholder">%1$s ཆོག་མཆན་སྤྲོད་རྗེས་ཞབས་ཞུ་འདི་འཛུལ་སྤྱོད་འོག་ལྕོགས་ཅན་བཟོས།</string>
+	<string name="tv_brand_label">བརྙན་འཕྲིན་ཚོང་རྟགས། (དམིགས་བསལ་གྱི་%1$sབརྙན་འཕྲིན་མཐེབ་ལ་ཤུགས་རྐྱེན་ཐེབས་པ)</string>
+</resources>
