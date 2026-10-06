@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Hört auf bestimmte Hardware-Tastendrücke und ordnet sie einem anderen Tastencode zu</string>
+	<string name="app_not_installed_message">Die dieser Schaltfläche zugeordnete App (%1$s) ist nicht installiert</string>
+	<string name="app_not_installed_title">App nicht installiert</string>
+	<string name="log_key_events_label">Protokollieren Sie jeden Tastendruck (nur zur Fehlerbehebung)</string>
+	<string name="log_remaps_label">Neu zugeordnete Tastendrücke protokollieren (nur zur Fehlerbehebung)</string>
+	<string name="open_accessibility_settings">Öffnen Sie die Barrierefreiheitseinstellungen</string>
+	<string name="paste">Paste</string>
+	<string name="save">Speichern</string>
+	<string name="shizuku_auth_token_label">%1$s Start-/Stopp-Intent-Authentifizierungstoken (fügen Sie die vollständige Zeile ‘auth: XXXX’ aus dem Bildschirm ‘Intents anzeigen’ von %1$s ein)</string>
+	<string name="status_placeholder">Erteilen Sie %1$s die Berechtigung und aktivieren Sie dann diesen Dienst unter Barrierefreiheit</string>
+	<string name="tv_brand_label">TV-Marke (betrifft speziell die TV-Schaltfläche %1$s)</string>
+</resources>

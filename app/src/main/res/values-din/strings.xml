@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Piŋ ë thëm de thëm de thëm de thëm ku dhuk keek në keycode dɛ̈t</string>
+	<string name="app_not_installed_message">App cï tääu në ye thëm kënë yic (%1$s) akëc tääu thïn</string>
+	<string name="app_not_installed_title">App akëc tääu thïn</string>
+	<string name="log_key_events_label">Tääu ë thok ëbɛ̈n (në këde gël de kä rɛc yetök)</string>
+	<string name="log_remaps_label">Tääu ë button cï dhuɔ̈kciëën (në këde kä rɛc ye röt looi yetök)</string>
+	<string name="open_accessibility_settings">Liep Käke Yök</string>
+	<string name="paste">Gääu</string>
+	<string name="save">Kony</string>
+	<string name="shizuku_auth_token_label">%1$s jɔɔk/kɔ̈ɔ̈c ë kë wïc ë thööŋ (tääu ë ‘gɛ̈t ë thööŋ: XXXX’ ëbɛ̈n tënë %1$s‘ Tïŋ ë thööŋ ë thööŋ)</string>
+	<string name="status_placeholder">Gäm %1$s puɔ̈l, ku jal luɔi kënë puɔ̈l tɔ̈u ë Yök</string>
+	<string name="tv_brand_label">Kë ye nyuɔɔth TV (acï %1$s TV ye tääu thïn riɔ̈ɔ̈k)</string>
+</resources>

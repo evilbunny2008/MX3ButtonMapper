@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ЛадоьгӀу билггалчу аппаратан кнопкашна тӀе а тоьхна, уьш кхечу клавишин коде юха карта хӀоттадо</string>
+	<string name="app_not_installed_message">Оцу кнопкина тӀе карта хӀоттийна программа (%1$s) дӀахӀоттийна яц</string>
+	<string name="app_not_installed_title">Апп дӀа ца йиллина</string>
+	<string name="log_key_events_label">ХӀора клавиша тӀе хьажа (некъаш дӀадаха бен)</string>
+	<string name="log_remaps_label">Журнал хийца кнопка тӀе хьажар (некъаш дӀадаха бен)</string>
+	<string name="open_accessibility_settings">Схьайиллина тӀекхачаран параметраш</string>
+	<string name="paste">ДӀакхета</string>
+	<string name="save">Ӏалашдан</string>
+	<string name="shizuku_auth_token_label">%1$s дӀадолор/сацадар Ӏалашонан аутентификацин токен (%1$s’s хьажа Ӏалашонаш экран тӀера дуьззина ‘auth: XXXX’ могӀа дӀатоха)</string>
+	<string name="status_placeholder">%1$s бакъо ло, тӀаккха хӀара сервис дӀахӀоттае ТӀекхачаран меттигехь</string>
+	<string name="tv_brand_label">Телевизоран бренд (%1$s телевизоран кнопкина леррина Ӏаткъам бо)</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Hardware-botoi zehatzen sakatzeak entzuten ditu eta beste gako-kode batera mapeatzen ditu</string>
+	<string name="app_not_installed_message">Botoi honi mapatutako aplikazioa (%1$s) ez dago instalatuta</string>
+	<string name="app_not_installed_title">Aplikazioa ez dago instalatuta</string>
+	<string name="log_key_events_label">Erregistratu tekla sakatzean (arazoak konpontzeko soilik)</string>
+	<string name="log_remaps_label">Erregistratu berriro mapatutako botoien sakatzeak (arazoak konpontzeko soilik)</string>
+	<string name="open_accessibility_settings">Ireki Irisgarritasun ezarpenak</string>
+	<string name="paste">Itsatsi</string>
+	<string name="save">Gorde</string>
+	<string name="shizuku_auth_token_label">%1$s hasteko/gelditzeko asmoaren autentifikazio-tokena (itsatsi %1$s en Ikusi asmoak pantailako ‘auth: XXXX’ lerro osoa)</string>
+	<string name="status_placeholder">Eman %1$s baimena, eta gaitu zerbitzu hau Erabilerraztasuna atalean</string>
+	<string name="tv_brand_label">Telebista marka (%1$s TV botoiari eragiten dio bereziki)</string>
+</resources>

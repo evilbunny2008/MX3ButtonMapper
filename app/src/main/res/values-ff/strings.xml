@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Heɗto toɓɓe butoŋ hardware keeriiɗo e remaps ɗum e keycode goɗɗo</string>
+	<string name="app_not_installed_message">App kartoŋaaɗo e ooɗoo butoŋ (%1$s) udditaaka</string>
+	<string name="app_not_installed_title">App oo waɗaaka</string>
+	<string name="log_key_events_label">Log kala toɓɓere toɓɓere (ngam safrude caɗeele tan)</string>
+	<string name="log_remaps_label">Log remapped butoŋ toɓɓooje (ngam safrude caɗeele tan)</string>
+	<string name="open_accessibility_settings">Uddit Cuɓe Keɓe</string>
+	<string name="paste">Ɓoorno-ɗaa</string>
+	<string name="save">Hisugo</string>
+	<string name="shizuku_auth_token_label">%1$s fuɗɗoraade/dartaade maande auth anniya (jokkondira e doggol ‘auth: XXXX’ timmungol gila e ekran Yiyngo anniyaaji %1$s)</string>
+	<string name="status_placeholder">Hokku %1$s yamiroore, caggal ɗuum softin ndee sarwiis e les Heɓde</string>
+	<string name="tv_brand_label">Marque TV (ina toɗɗii butoŋ TV %1$s teeŋti noon)</string>
+</resources>

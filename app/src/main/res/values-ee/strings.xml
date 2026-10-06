@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Eɖoa to hardware ƒe abɔta tɔxɛ aɖewo teti eye wògbugbɔa wo ɖona ɖe keycode bubu dzi</string>
+	<string name="app_not_installed_message">Womeɖo dɔwɔnu si woɖo ɖe abɔti sia dzi (%1$s) o</string>
+	<string name="app_not_installed_title">Womeɖo app la ɖe wò kɔmpiuta dzi o</string>
+	<string name="log_key_events_label">Ŋlɔ safui ɖesiaɖe si nèzi (hena kuxiwo gbɔ kpɔkpɔ ɖeɖeko)</string>
+	<string name="log_remaps_label">Log remapped button te (hena kuxiwo gbɔ kpɔkpɔ ɖeɖeko)</string>
+	<string name="open_accessibility_settings">Ʋu Mɔnukpɔkpɔ ƒe Ðoɖowo</string>
+	<string name="paste">Kpe ɖe eŋu</string>
+	<string name="save">Dzrae ɖo</string>
+	<string name="shizuku_auth_token_label">%1$s ƒe gɔmedzedze/dzudzɔ tameɖoɖo ƒe nyateƒetoto ƒe dzesi (tsɔ ‘auth: XXXX’ fli bliboa tso %1$s ƒe View intents screen dzi)</string>
+	<string name="status_placeholder">Na mɔɖeɖe %1$s, emegbe nàwɔ dɔ sia le Mɔɖeɖe te</string>
+	<string name="tv_brand_label">TV ƒe dzesi (ekpɔa ŋusẽ ɖe %1$s TV ƒe dzesi dzi koŋ)</string>
+</resources>

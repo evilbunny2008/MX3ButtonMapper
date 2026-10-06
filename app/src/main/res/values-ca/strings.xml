@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Escolta les pressions específiques de botons de maquinari i les reasigna a un altre codi de tecla</string>
+	<string name="app_not_installed_message">L’aplicació assignada a aquest botó (%1$s) no està instal·lada</string>
+	<string name="app_not_installed_title">L’aplicació no està instal·lada</string>
+	<string name="log_key_events_label">Registre cada tecla que prem (només per a la resolució de problemes)</string>
+	<string name="log_remaps_label">Registra les pulsacions dels botons reasignats (només per a la resolució de problemes)</string>
+	<string name="open_accessibility_settings">Obriu la configuració d’accessibilitat</string>
+	<string name="paste">Enganxa</string>
+	<string name="save">Desa</string>
+	<string name="shizuku_auth_token_label">Indicador d’autenticació d’intenció d’inici/aturada de %1$s (enganxeu la línia completa ‘auth: XXXX’ de la pantalla Mostra les intencions de %1$s)</string>
+	<string name="status_placeholder">Doneu permís a %1$s i, a continuació, activeu aquest servei a Accessibilitat</string>
+	<string name="tv_brand_label">Marca de televisió (afecta específicament el botó de TV %1$s)</string>
+</resources>

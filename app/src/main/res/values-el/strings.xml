@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ακούει συγκεκριμένα πατήματα κουμπιών υλικού και τα αντιστοιχίζει ξανά σε έναν άλλο κωδικό κλειδιού</string>
+	<string name="app_not_installed_message">Η εφαρμογή που αντιστοιχεί σε αυτό το κουμπί (%1$s) δεν έχει εγκατασταθεί</string>
+	<string name="app_not_installed_title">Η εφαρμογή δεν έχει εγκατασταθεί</string>
+	<string name="log_key_events_label">Καταγραφή κάθε πάτημα πλήκτρων (μόνο για αντιμετώπιση προβλημάτων)</string>
+	<string name="log_remaps_label">Πιέσεις κουμπιών που έχουν αντιστοιχιστεί ξανά στο αρχείο καταγραφής (μόνο για αντιμετώπιση προβλημάτων)</string>
+	<string name="open_accessibility_settings">Ανοίξτε τις Ρυθμίσεις προσβασιμότητας</string>
+	<string name="paste">Πάστα</string>
+	<string name="save">Εκτός</string>
+	<string name="shizuku_auth_token_label">%1$s διακριτικό ελέγχου πρόθεσης έναρξης/διακοπής (επικολλήστε την πλήρη γραμμή ‘auth: XXXX’ από την οθόνη Προβολή προθέσεων του %1$s)</string>
+	<string name="status_placeholder">Εκχωρήστε άδεια %1$s και, στη συνέχεια, ενεργοποιήστε αυτήν την υπηρεσία στην περιοχή Προσβασιμότητα</string>
+	<string name="tv_brand_label">Επωνυμία τηλεόρασης (επηρεάζει ειδικά το κουμπί τηλεόρασης %1$s)</string>
+</resources>

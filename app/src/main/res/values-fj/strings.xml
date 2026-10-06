@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Vakarorogo ki na tabana ni ibulukau ni iyaya vakatabakidua ka remaps ira ki na dua tale na keycode</string>
+	<string name="app_not_installed_message">Na app mapetaki ki na ibulukau oqo (%1$s) e sega ni vakacurumi</string>
+	<string name="app_not_installed_title">App sega ni vakacurumi</string>
+	<string name="log_key_events_label">Log na ki kece ni tabaka (me baleta na leqa ga)</string>
+	<string name="log_remaps_label">Log remapped na ibulukau ni tabana (me baleta na kena wali ga na leqa)</string>
+	<string name="open_accessibility_settings">Dolava na ituvatuva ni rawa-ka</string>
+	<string name="paste">Vakabira</string>
+	<string name="save">Maroroi</string>
+	<string name="shizuku_auth_token_label">%1$s tekivu / muduka na inaki auth ivakatakilakila (vakabira na taucoko ni ‘vakadeitaki: XXXX’ laini mai na %1$s ni Raica na inaki ni sikirini)</string>
+	<string name="status_placeholder">Solia na veivakadonui ni %1$s, qai vakatara na veiqaravi oqo ena ruku ni Rawa ni curu</string>
+</resources>

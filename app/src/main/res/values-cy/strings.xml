@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Yn gwrando am wasgiau botwm caledwedd penodol ac yn eu hailfapio i god bysell arall</string>
+	<string name="app_not_installed_message">Nid yw’r ap sydd wedi’i fapio i’r botwm hwn (%1$s) wedi’i osod</string>
+	<string name="app_not_installed_title">Ap heb ei osod</string>
+	<string name="log_key_events_label">Logio pob gwasg allweddol (ar gyfer datrys problemau yn unig)</string>
+	<string name="log_remaps_label">Pwysau botwm log wedi’u hail-fapio (ar gyfer datrys problemau yn unig)</string>
+	<string name="open_accessibility_settings">Gosodiadau Hygyrchedd Agored</string>
+	<string name="paste">Gludo</string>
+	<string name="save">Arbed</string>
+	<string name="shizuku_auth_token_label">Tocyn cychwyn/stop bwriad %1$s (pasiwch y llinell ‘auth: XXXX’ lawn o sgrin Gweld bwriadau %1$s)</string>
+	<string name="status_placeholder">Rhowch ganiatâd %1$s, yna galluogwch y gwasanaeth hwn o dan Hygyrchedd</string>
+	<string name="tv_brand_label">Brand teledu (yn effeithio ar y botwm teledu %1$s yn benodol)</string>
+</resources>
