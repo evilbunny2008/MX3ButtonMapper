@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">निश्चित हार्डवेयर बटन त्यूसा न्यँ अले उकियात मेगु कीकोडय् हानं म्याप या ।</string>
+	<string name="app_not_installed_message">थुगु बटनय् म्याप यानातःगु एप (%1$s) इन्स्टल मजूनि</string>
+	<string name="app_not_installed_title">एप इन्स्टल मजूनि</string>
+	<string name="log_key_events_label">प्रत्येक की थियाः लग या (समस्या समाधानया निंतिं जक)</string>
+	<string name="log_remaps_label">लग रिम्याप बटन प्रेस (समस्या समाधानया निंतिं जक)</string>
+	<string name="open_accessibility_settings">पहुँच सेटिङ्ग चायेकि ।</string>
+	<string name="paste">तिकि</string>
+	<string name="save">लेंके</string>
+	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टप इन्टेन्ट आथ टोकन (%1$s या भ्यू इन्टेन्ट स्क्रिनं पूवंक ‘अथ: XXXX’ लाइन पेस्ट यानादिसँ)</string>
+	<string name="status_placeholder">%1$s उजं ब्यु, अले थुगु सेवायात पहुँचया अन्तर्गत सक्षम या ।</string>
+	<string name="tv_brand_label">टिभि ब्रान्डं (विशेष यानाः %1$s टिभि बटनयात लिच्वः लाकी)</string>
+</resources>

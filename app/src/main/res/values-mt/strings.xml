@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Jisma‘ għal presses speċifiċi tal-buttuna tal-ħardwer u jerġa’ jimappjahom għal keycode ieħor</string>
+	<string name="app_not_installed_message">L-app mmappjata għal din il-buttuna (%1$s) mhix installata</string>
+	<string name="app_not_installed_title">App mhux installata</string>
+	<string name="log_key_events_label">Log kull agħfas taċ-ċavetta (għal issolvi l-problemi biss)</string>
+	<string name="log_remaps_label">Iggloggja l-għafijiet tal-buttuni mmappjati mill-ġdid (għal issolvi l-problemi biss)</string>
+	<string name="open_accessibility_settings">Iftaħ Settings ta‘ Aċċessibilità</string>
+	<string name="paste">Pejst</string>
+	<string name="save">Ħlief</string>
+	<string name="shizuku_auth_token_label">%1$s token tal-awtentikazzjoni tal-intenzjoni tal-bidu/tal-waqfien (pejst il-linja sħiħa ‘auth: XXXX’ mill-iskrin Ara l-intenzjonijiet ta‘ %1$s)</string>
+	<string name="status_placeholder">Agħti permess %1$s, imbagħad attiva dan is-servizz taħt Aċċessibilità</string>
+	<string name="tv_brand_label">Il-marka tat-TV (taffettwa l-buttuna tat-TV %1$s speċifikament)</string>
+</resources>

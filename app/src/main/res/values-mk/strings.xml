@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Слуша за специфични притискања на хардверските копчиња и ги пресликува на друг клучен код</string>
+	<string name="app_not_installed_message">Апликацијата мапирана на ова копче (%1$s) не е инсталирана</string>
+	<string name="app_not_installed_title">Апликацијата не е инсталирана</string>
+	<string name="log_key_events_label">Пријавете го секое притискање на копче (само за решавање проблеми)</string>
+	<string name="log_remaps_label">Притискање на копчињата со премапирани дневници (само за решавање проблеми)</string>
+	<string name="open_accessibility_settings">Отворете ги поставките за пристапност</string>
+	<string name="paste">Вметни</string>
+	<string name="save">Зачувај</string>
+	<string name="shizuku_auth_token_label">%1$s токен за проверка на намери за почеток/стоп (залепете ја целосната линија ‘автоматизам: XXXX’ од екранот со намери за преглед на %1$s)</string>
+	<string name="status_placeholder">Дозволете %1$s дозвола, а потоа овозможете ја оваа услуга во Пристапност</string>
+	<string name="tv_brand_label">Марка на ТВ (конкретно влијае на копчето за ТВ %1$s)</string>
+</resources>

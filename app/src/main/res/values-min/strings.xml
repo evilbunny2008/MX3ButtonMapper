@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Mandangakan untuak manekan tombol perangkat keras tatantu dan mametakannyo baliak ka kode kunci lain</string>
+	<string name="app_not_installed_message">Aplikasi nan dipetakan ka tombol ko (%1$s) alun dipasang</string>
+	<string name="app_not_installed_title">Aplikasi alun dipasang</string>
+	<string name="log_key_events_label">Catat satiok takan tombol (untuak panyalasaian masalah sajo)</string>
+	<string name="log_remaps_label">Log dipetakan ulang tekanan tombol (untuak panyalasaian masalah sajo)</string>
+	<string name="open_accessibility_settings">Buka Pangaturan Aksesibilitas</string>
+	<string name="paste">Tempelkan</string>
+	<string name="save">Simpan</string>
+	<string name="shizuku_auth_token_label">Token auth niaik mulai/baranti %1$s (tempelkan barih ‘auth: XXXX’ panuah dari layar Liek niaik %1$s)</string>
+	<string name="status_placeholder">Agiah izin %1$s, kamudian aktifkan layanan ko di bawah Aksesibilitas</string>
+	<string name="tv_brand_label">Merek TV (mampangaruahi tombol TV %1$s sacaro khusus)</string>
+</resources>

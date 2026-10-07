@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Lytter etter spesifikke maskinvareknapptrykk og tilordner dem til en annen nøkkelkode</string>
+	<string name="app_not_installed_message">Appen som er tilordnet denne knappen (%1$s) er ikke installert</string>
+	<string name="app_not_installed_title">Appen er ikke installert</string>
+	<string name="log_key_events_label">Logg hvert tastetrykk (kun for feilsøking)</string>
+	<string name="log_remaps_label">Logg omdefinerte knappetrykk (kun for feilsøking)</string>
+	<string name="open_accessibility_settings">Åpne Tilgjengelighetsinnstillinger</string>
+	<string name="paste">Lim inn</string>
+	<string name="save">Spare</string>
+	<string name="shizuku_auth_token_label">%1$s start/stopp intentautentiseringstoken (lim inn hele ‘auth: XXXX’-linjen fra %1$s sin Vis intents-skjerm)</string>
+	<string name="status_placeholder">Gi %1$s tillatelse, og aktiver deretter denne tjenesten under Tilgjengelighet</string>
+	<string name="tv_brand_label">TV-merke (påvirker %1$s TV-knappen spesifikt)</string>
+</resources>

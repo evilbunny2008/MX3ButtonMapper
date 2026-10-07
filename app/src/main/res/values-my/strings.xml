@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">သတ်မှတ်ထားသော ဟာ့ဒ်ဝဲခလုတ်များကို နှိပ်ပြီး ၎င်းတို့ကို အခြားသော့ကုဒ်သို့ ပြန်လည်ပုံဖော်သည်။</string>
+	<string name="app_not_installed_message">ဤခလုတ် (%1$s) တွင် မြေပုံဆွဲထားသောအက်ပ်ကို ထည့်သွင်းမထားပါ။</string>
+	<string name="app_not_installed_title">အက်ပ်ကို ထည့်သွင်းမထားပါ။</string>
+	<string name="log_key_events_label">သော့နှိပ်တိုင်းကို မှတ်တမ်းတင်ပါ (ပြဿနာဖြေရှင်းခြင်းအတွက်သာ)</string>
+	<string name="log_remaps_label">မှတ်တမ်းပြန်လည်ပုံဖော်ထားသော ခလုတ်များကို နှိပ်ခြင်း (ပြဿနာဖြေရှင်းခြင်းအတွက်သာ)</string>
+	<string name="open_accessibility_settings">အများသုံးစွဲနိုင်မှု ဆက်တင်များကို ဖွင့်ပါ။</string>
+	<string name="paste">ငါးပိ</string>
+	<string name="save">သိမ်းဆည်းပါ။</string>
+	<string name="shizuku_auth_token_label">%1$s ၏ %1$s ၏ View intents မျက်နှာပြင်မှ ‘auth: XXXX’ စာကြောင်းအပြည့်အစုံကို ကူးထည့်ပါ)</string>
+	<string name="status_placeholder">%1$s ခွင့်ပြုချက်ပေးပြီးနောက် ဤဝန်ဆောင်မှုကို သုံးစွဲနိုင်မှုအောက်တွင် ဖွင့်ပါ။</string>
+	<string name="tv_brand_label">တီဗီအမှတ်တံဆိပ် (အထူးသဖြင့် %1$s TV ခလုတ်ကို ထိခိုက်သည်)</string>
+</resources>
