@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Nalangngere tombol perangkat keras tertentu na tekan siagang na peta poleang mange ri kode kunci maraeng</string>
+	<string name="app_not_installed_message">Aplikasi yang dipetakan ke tombol ini (%1$s) tidak dipasang</string>
+	<string name="app_not_installed_title">App tena nipasang</string>
+	<string name="log_key_events_label">Log tunggala tombol ni tekan (untuk troubleshooting bawang)</string>
+	<string name="log_remaps_label">Log remapped tombol tekan (untuk troubleshooting bawang)</string>
+	<string name="open_accessibility_settings">Bukai pangaturanna aksesibilitas</string>
+	<string name="paste">Tempel</string>
+	<string name="save">Ammoli</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (paste the full ‘auth: XXXX’ line from %1$s’s View intents screen)</string>
+	<string name="status_placeholder">sarei %1$s ijin, nampa aktifkan anne layanan ri yawa aksesibilitas</string>
+	<string name="tv_brand_label">Merek TV (na pengaruhi %1$s tombol TV secara khusus)</string>
+</resources>

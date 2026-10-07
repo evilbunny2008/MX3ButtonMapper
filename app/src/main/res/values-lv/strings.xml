@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Klausās konkrētu aparatūras pogu nospiešanu un pārveido tos ar citu taustiņu</string>
+	<string name="app_not_installed_message">Ar šo pogu (%1$s) piesaistītā lietotne nav instalēta</string>
+	<string name="app_not_installed_title">Lietotne nav instalēta</string>
+	<string name="log_key_events_label">Reģistrējiet katru taustiņu nospiešanu (tikai problēmu novēršanai)</string>
+	<string name="log_remaps_label">Reģistrējiet pārkartotās pogas nospiešanu (tikai problēmu novēršanai)</string>
+	<string name="open_accessibility_settings">Atveriet Pieejamības iestatījumus</string>
+	<string name="paste">Ielīmēt</string>
+	<string name="save">Saglabāt</string>
+	<string name="shizuku_auth_token_label">%1$s sākuma/beigšanas nolūka autentifikācijas pilnvara (ielīmējiet pilnu rindiņu ‘auth: XXXX’ no %1$s ekrāna Skatīt nolūkus)</string>
+	<string name="status_placeholder">Piešķiriet %1$s atļauju un pēc tam iespējojiet šo pakalpojumu sadaļā Pieejamība</string>
+	<string name="tv_brand_label">TV zīmols (ietekmē īpaši TV pogu %1$s)</string>
+</resources>

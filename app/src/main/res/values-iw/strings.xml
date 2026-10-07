@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">מקשיב ללחיצות ספציפיות על כפתורי חומרה וממפה אותן מחדש לקוד מפתח אחר</string>
+	<string name="app_not_installed_message">האפליקציה הממופת ללחצן זה (%1$s) אינה מותקנת</string>
+	<string name="app_not_installed_title">האפליקציה לא מותקנת</string>
+	<string name="log_key_events_label">רישום כל לחיצה על מקש (לפתרון בעיות בלבד)</string>
+	<string name="log_remaps_label">יומן לחיצות על כפתורים שסומנו מחדש (לפתרון בעיות בלבד)</string>
+	<string name="open_accessibility_settings">פתח את הגדרות נגישות</string>
+	<string name="paste">לְהַדבִּיק</string>
+	<string name="save">לְהַצִיל</string>
+	<string name="shizuku_auth_token_label">%1$s התחל/הפסק כוונות אישור (הדבק את השורה המלאה ‘auth: XXXX’ ממסך התצוגה של כוונות של %1$s)</string>
+	<string name="status_placeholder">הענק הרשאה ל %1$s ולאחר מכן הפעל את השירות הזה תחת נגישות</string>
+	<string name="tv_brand_label">מותג הטלוויזיה (משפיע באופן ספציפי על לחצן הטלוויזיה %1$s)</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ຟັງ​ການ​ກົດ​ປຸ່ມ​ຮາດ​ແວ​ສະ​ເພາະ​ແລະ remap ໃຫ້​ເຂົາ​ເຈົ້າ​ເປັນ​ລະ​ຫັດ​ອື່ນ​</string>
+	<string name="app_not_installed_message">ແອັບທີ່ຕັ້ງໃສ່ປຸ່ມນີ້ (%1$s) ບໍ່ໄດ້ຖືກຕິດຕັ້ງ</string>
+	<string name="app_not_installed_title">ບໍ່ໄດ້ຕິດຕັ້ງແອັບ</string>
+	<string name="log_key_events_label">ບັນທຶກທຸກການກົດປຸ່ມ (ເພື່ອແກ້ໄຂບັນຫາເທົ່ານັ້ນ)</string>
+	<string name="log_remaps_label">ການກົດປຸ່ມ remapped ບັນທຶກ (ສໍາລັບການແກ້ໄຂບັນຫາເທົ່ານັ້ນ)</string>
+	<string name="open_accessibility_settings">ເປີດການຕັ້ງຄ່າການຊ່ວຍເຂົ້າເຖິງ</string>
+	<string name="paste">ວາງ</string>
+	<string name="save">ບັນທຶກ</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (ວາງແຖວເຕັມ ‘auth: XXXX’ ຈາກ %1$s’s View intent screen)</string>
+	<string name="status_placeholder">ໃຫ້ການອະນຸຍາດ %1$s, ຈາກນັ້ນເປີດໃຊ້ບໍລິການນີ້ພາຍໃຕ້ການຊ່ວຍເຂົ້າເຖິງ</string>
+	<string name="tv_brand_label">ຍີ່ຫໍ້ໂທລະພາບ (ມີຜົນກະທົບກັບປຸ່ມໂທລະພາບ %1$s ໂດຍສະເພາະ)</string>
+</resources>

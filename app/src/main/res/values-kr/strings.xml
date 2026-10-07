@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Hardware taganasbe buttonnzə rattəgə-a kuru waltə sandiya keycode gadero kalakcin</string>
+	<string name="app_not_installed_message">App do button adəro təkkənadə (%1$s) təkkənyi</string>
+	<string name="app_not_installed_title">App yikǝnyi</string>
+	<string name="log_key_events_label">Suwuram ndasowoso ruwotə (kazəyiya galtə bas nankaro)</string>
+	<string name="log_remaps_label">Log waltə mapped button dəga rattəgə (kazəyiya galtə bas nankaro)</string>
+	<string name="open_accessibility_settings">Settings Fandoye Katə</string>
+	<string name="paste">Ndǝpkǝ</string>
+	<string name="save">Gənatə</string>
+	<string name="shizuku_auth_token_label">%1$s baditə/datə nyiya auth tokenbe (‘auth: XXXX’ lai sammaso %1$sbe screen nyiyabe wune)</string>
+	<string name="status_placeholder">Izin %1$s ye cin, daji sabis adǝga yita gattǝgǝne cidiya Accessibilityben</string>
+	<string name="tv_brand_label">Jili TVbe (%1$s boton TVbedəga lejin)</string>
+</resources>

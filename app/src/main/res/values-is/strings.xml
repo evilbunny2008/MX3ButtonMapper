@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Hlustar eftir því að ýta á sérstakar vélbúnaðarhnappa og endurvarpar þeim í annan lyklakóða</string>
+	<string name="app_not_installed_message">Forritið sem var varpað á þennan hnapp (%1$s) er ekki uppsett</string>
+	<string name="app_not_installed_title">App ekki uppsett</string>
+	<string name="log_key_events_label">Skráðu hverja takka sem ýtt er á (aðeins fyrir bilanaleit)</string>
+	<string name="log_remaps_label">Skrá endurmerkt hnappapressa (aðeins fyrir bilanaleit)</string>
+	<string name="open_accessibility_settings">Opnaðu aðgengisstillingar</string>
+	<string name="paste">Líma</string>
+	<string name="save">Vista</string>
+	<string name="shizuku_auth_token_label">%1$s upphaf/stöðvun ásetnings auðkenningarlykis (límdu alla ‘auth: XXXX’ línuna af skjánum Skoða fyrirætlanir %1$s)</string>
+	<string name="status_placeholder">Veittu %1$s leyfi og virkjaðu síðan þessa þjónustu undir Aðgengi</string>
+	<string name="tv_brand_label">Sjónvarpsmerki (hefur sérstaklega áhrif á %1$s sjónvarpshnappinn)</string>
+</resources>

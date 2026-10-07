@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">特定のハードウェア ボタンの押下をリッスンし、別のキーコードに再マッピングします。</string>
+	<string name="app_not_installed_message">このボタンにマップされたアプリ (%1$s) はインストールされていません</string>
+	<string name="app_not_installed_title">アプリがインストールされていません</string>
+	<string name="log_key_events_label">すべてのキー押下をログに記録します (トラブルシューティングのみ)</string>
+	<string name="log_remaps_label">再マップされたボタン押下をログに記録します (トラブルシューティングのみ)</string>
+	<string name="open_accessibility_settings">アクセシビリティ設定を開く</string>
+	<string name="paste">ペースト</string>
+	<string name="save">保存</string>
+	<string name="shizuku_auth_token_label">%1$s の開始/停止インテント認証トークン (%1$s の [インテントの表示] 画面から完全な「auth: XXXX」行を貼り付けます)</string>
+	<string name="status_placeholder">%1$s 権限を付与し、アクセシビリティでこのサービスを有効にしてください</string>
+	<string name="tv_brand_label">TV ブランド (特に %1$s TV ボタンに影響します)</string>
+</resources>

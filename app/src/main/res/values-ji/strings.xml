@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ליסאַנז פֿאַר ספּעציפיש ייַזנוואַרג קנעפּל פּרעסעס און רימאַפּס זיי צו אן אנדער קייקאָדע</string>
+	<string name="app_not_installed_message">די אַפּ מאַפּט צו דעם קנעפּל (%1$s) איז נישט אינסטאַלירן</string>
+	<string name="app_not_installed_title">אַפּ איז נישט אינסטאַלירן</string>
+	<string name="log_key_events_label">קלאָץ יעדער שליסל דריקן (בלויז פֿאַר טראָובלעשאָאָטינג)</string>
+	<string name="log_remaps_label">קלאָץ רימאַפּט קנעפּל דריקט (בלויז פֿאַר טראָובלעשאָאָטינג)</string>
+	<string name="open_accessibility_settings">עפֿענען אַקסעסאַביליטי סעטטינגס</string>
+	<string name="paste">פּאַפּ</string>
+	<string name="save">היט</string>
+	<string name="shizuku_auth_token_label">%1$s אָנהייב/סטאַפּ ינטענט אָוץ סימען (פּאַפּ די פול ‘אַוט: XXXX’ שורה פון %1$s ס View ינטענץ פאַרשטעלן)</string>
+	<string name="status_placeholder">געבן %1$s דערלויבעניש, און געבן דעם דינסט אונטער אַקסעסאַביליטי</string>
+	<string name="tv_brand_label">טעלעוויזיע סאָרט (אַפעקץ ספּאַסיפיקלי די %1$s טעלעוויזיע קנעפּל)</string>
+</resources>

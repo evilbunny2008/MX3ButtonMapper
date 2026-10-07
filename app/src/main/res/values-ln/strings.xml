@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ayokaka kofina bouton matériel spécifique mpe azongeli cartographie na yango na code clavier mosusu</string>
+	<string name="app_not_installed_message">Application oyo esalemi na carte na bouton oyo (%1$s) e installé te</string>
+	<string name="app_not_installed_title">App installé te</string>
+	<string name="log_key_events_label">Kokoma na registre nyonso ya kofina touche (mpo na kosilisa mikakatano kaka)</string>
+	<string name="log_remaps_label">Kofina bouton remapped ya journal (mpo na kosilisa mikakatano kaka)</string>
+	<string name="open_accessibility_settings">Fungola Paramètres ya Accessibilité</string>
+	<string name="paste">Kosala coller</string>
+	<string name="save">Kobikisa</string>
+	<string name="shizuku_auth_token_label">%1$s elembo ya bondimi ya mokano ya kobanda/kotelemisa (kokanga molongo mobimba ya ‘bondimi: XXXX’ uta na écran ya %1$s’s View intents)</string>
+	<string name="status_placeholder">Pesa %1$s ndingisa, sima fungola service oyo na se ya Accessibilité</string>
+	<string name="tv_brand_label">Marque ya TV (e affectaka bouton ya TV ya %1$s spécifiquement)</string>
+</resources>

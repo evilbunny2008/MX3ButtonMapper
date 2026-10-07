@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ej roñjake kin jet hardware ko rej dāpij button ko im bar kōjepļaaktok ñan bar juon keycode</string>
+	<string name="app_not_installed_message">App eo kar kōmmane ñan button in (%1$s) ejjab install</string>
+</resources>

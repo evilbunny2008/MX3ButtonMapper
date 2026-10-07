@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Белгілі бір аппараттық түйме басылғанын тыңдайды және оларды басқа кілт кодымен салыстырады</string>
+	<string name="app_not_installed_message">Осы түймемен салыстырылған қолданба (%1$s) орнатылмаған</string>
+	<string name="app_not_installed_title">Қолданба орнатылмаған</string>
+	<string name="log_key_events_label">Әрбір пернені басқан кезде журналға (тек ақаулықтарды жою үшін)</string>
+	<string name="log_remaps_label">Түймені басуларды тіркеу (тек ақаулықтарды жою үшін)</string>
+	<string name="open_accessibility_settings">Арнайы мүмкіндіктер параметрлерін ашыңыз</string>
+	<string name="paste">Қою</string>
+	<string name="save">Сақтау</string>
+	<string name="shizuku_auth_token_label">%1$s бастау/тоқтату ниетінің аутентификация таңбалауышы (толық ‘auth: XXXX’ жолын %1$s көру ниеттері экранынан қойыңыз)</string>
+	<string name="status_placeholder">%1$s рұқсатын беріңіз, содан кейін бұл қызметті ‘Арнайы мүмкіндіктер’ бөлімінде қосыңыз</string>
+	<string name="tv_brand_label">Теледидар бренді (арнайы %1$s теледидар түймесіне әсер етеді)</string>
+</resources>

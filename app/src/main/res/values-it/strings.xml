@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ascolta la pressione di pulsanti hardware specifici e li riassocia a un altro codice chiave</string>
+	<string name="app_not_installed_message">L’app associata a questo pulsante (%1$s) non è installata</string>
+	<string name="app_not_installed_title">Applicazione non installata</string>
+	<string name="log_key_events_label">Registra ogni pressione di un tasto (solo per la risoluzione dei problemi)</string>
+	<string name="log_remaps_label">Registra le pressioni dei pulsanti rimappati (solo per la risoluzione dei problemi)</string>
+	<string name="open_accessibility_settings">Apri Impostazioni di accessibilità</string>
+	<string name="paste">Impasto</string>
+	<string name="save">Salva</string>
+	<string name="shizuku_auth_token_label">%1$s avvia/arresta token di autenticazione intento (incolla l’intera riga ‘auth: XXXX’ dalla schermata Visualizza intenti di %1$s)</string>
+	<string name="status_placeholder">Concedi l’autorizzazione %1$s, quindi abilita questo servizio in Accessibilità</string>
+	<string name="tv_brand_label">Marchio TV (interessa specificamente il pulsante TV %1$s)</string>
+</resources>

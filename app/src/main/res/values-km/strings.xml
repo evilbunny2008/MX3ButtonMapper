@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ស្តាប់​ការ​ចុច​ប៊ូតុង​ផ្នែក​រឹង​ជាក់លាក់ ហើយ​ដាក់​ពួកវា​ទៅ​កូដ​សោ​ផ្សេង​ទៀត។</string>
+	<string name="app_not_installed_message">កម្មវិធីដែលបានផ្គូផ្គងទៅនឹងប៊ូតុងនេះ (%1$s) មិនត្រូវបានដំឡើងទេ។</string>
+	<string name="app_not_installed_title">កម្មវិធីមិនត្រូវបានដំឡើងទេ។</string>
+	<string name="log_key_events_label">កត់ត្រារាល់ការចុចគ្រាប់ចុច (សម្រាប់តែការដោះស្រាយបញ្ហា)</string>
+	<string name="log_remaps_label">ការ​ចុច​ប៊ូតុង​ដែល​បាន​កំណត់​ត្រា​ឡើងវិញ (សម្រាប់​តែ​ការ​ដោះស្រាយ​បញ្ហា)</string>
+	<string name="open_accessibility_settings">បើកការកំណត់ភាពងាយស្រួល</string>
+	<string name="paste">បិទភ្ជាប់</string>
+	<string name="save">រក្សាទុក</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (បិទភ្ជាប់បន្ទាត់ ‘auth: XXXX’ ពេញលេញពី %1$s’s View intents screen)</string>
+	<string name="status_placeholder">ផ្តល់ការអនុញ្ញាត %1$s បន្ទាប់មកបើកសេវាកម្មនេះនៅក្រោមមធ្យោបាយងាយស្រួល</string>
+	<string name="tv_brand_label">ម៉ាកទូរទស្សន៍ (ប៉ះពាល់ដល់ប៊ូតុងទូរទស្សន៍ %1$s ជាពិសេស)</string>
+</resources>
