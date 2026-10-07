@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Dhiibbaa qaree haardwaaraa murtaa’e dhaggeeffatee gara koodii furtuu biraatti irra deebi’ee kaartaa</string>
+	<string name="app_not_installed_message">Appiin gara qaree kanaatti kaartaan (%1$s) hin fe’amne</string>
+	<string name="app_not_installed_title">Appiin hin fe’amne</string>
+	<string name="log_key_events_label">Furtuu dhiibuu hunda galmeessi (rakkina furuuf qofa)</string>
+	<string name="log_remaps_label">Dhiibbaa qaree irra deebi’amee kaartaa galmee (rakkina furuuf qofa)</string>
+	<string name="open_accessibility_settings">Sajoo Dhaqqabummaa Banaa</string>
+	<string name="paste">Maxxansi</string>
+	<string name="save">Qusachuu</string>
+	<string name="shizuku_auth_token_label">%1$s mallattoo mirkaneessuu yaada jalqabaa/dhaabbachuu (sarara guutuu ‘auth: XXXX’ %1$s’s View intents screen irraa maxxansi)</string>
+	<string name="status_placeholder">Hayyama %1$s kenni, sana booda tajaajila kana Dhaqqabummaa jalatti dandeessisi</string>
+	<string name="tv_brand_label">Maqaa TV (button TV %1$s addatti dhiibbaa qaba)</string>
+</resources>

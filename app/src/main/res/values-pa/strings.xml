@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ਖਾਸ ਹਾਰਡਵੇਅਰ ਬਟਨ ਦਬਾਉਣ ਲਈ ਸੁਣਦਾ ਹੈ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਕਿਸੇ ਹੋਰ ਕੀਕੋਡ ਨਾਲ ਰੀਮੈਪ ਕਰਦਾ ਹੈ</string>
+	<string name="app_not_installed_message">ਇਸ ਬਟਨ (%1$s) ਨਾਲ ਮੈਪ ਕੀਤੀ ਐਪ ਸਥਾਪਤ ਨਹੀਂ ਹੈ</string>
+	<string name="app_not_installed_title">ਐਪ ਸਥਾਪਤ ਨਹੀਂ ਹੈ</string>
+	<string name="log_key_events_label">ਹਰ ਕੁੰਜੀ ਦਬਾਓ (ਸਿਰਫ ਸਮੱਸਿਆ ਨਿਪਟਾਰੇ ਲਈ) ਲੌਗ ਕਰੋ</string>
+	<string name="log_remaps_label">ਲੌਗ ਰੀਮੈਪ ਕੀਤੇ ਬਟਨ ਦਬਾਓ (ਸਿਰਫ ਸਮੱਸਿਆ ਨਿਪਟਾਰੇ ਲਈ)</string>
+	<string name="open_accessibility_settings">ਪਹੁੰਚਯੋਗਤਾ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ</string>
+	<string name="paste">ਪੇਸਟ ਕਰੋ</string>
+	<string name="save">ਸੇਵ ਕਰੋ</string>
+	<string name="shizuku_auth_token_label">%1$s ਸਟਾਰਟ/ਸਟਾਪ ਇਰਾਦਾ ਪ੍ਰਮਾਣੀਕਰਨ ਟੋਕਨ (%1$s ਦੇ ਵਿਊ ਇਰਾਦੇ ਸਕ੍ਰੀਨ ਤੋਂ ਪੂਰੀ ‘auth: XXXX’ ਲਾਈਨ ਪੇਸਟ ਕਰੋ)</string>
+	<string name="status_placeholder">%1$s ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ, ਫਿਰ ਪਹੁੰਚਯੋਗਤਾ ਦੇ ਅਧੀਨ ਇਸ ਸੇਵਾ ਨੂੰ ਚਾਲੂ ਕਰੋ</string>
+	<string name="tv_brand_label">ਟੀਵੀ ਬ੍ਰਾਂਡ (ਖਾਸ ਤੌਰ ‘ਤੇ %1$s ਟੀਵੀ ਬਟਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦਾ ਹੈ)</string>
+</resources>

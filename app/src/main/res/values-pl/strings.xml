@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Nasłuchuje naciśnięć konkretnych przycisków sprzętowych i przypisuje je do innego kodu klawisza</string>
+	<string name="app_not_installed_message">Aplikacja przypisana do tego przycisku (%1$s) nie jest zainstalowana</string>
+	<string name="app_not_installed_title">Aplikacja nie jest zainstalowana</string>
+	<string name="log_key_events_label">Rejestruj każde naciśnięcie klawisza (tylko w celu rozwiązywania problemów)</string>
+	<string name="log_remaps_label">Rejestruj ponownie przypisane naciśnięcia przycisków (tylko w celu rozwiązywania problemów)</string>
+	<string name="open_accessibility_settings">Otwórz Ustawienia dostępności</string>
+	<string name="paste">Pasta</string>
+</resources>

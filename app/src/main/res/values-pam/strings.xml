@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">makiramdam kareng partikular a hardware button a pindutan at i-remap nala keng aliwang keycode</string>
+	<string name="app_not_installed_message">Ing app a maka-map kening button (%1$s) ali ya maka-install</string>
+	<string name="app_not_installed_title">E ya maka-install ing app</string>
+	<string name="log_key_events_label">I-log ing balang pindutan a key (para mu keng pamag-troubleshoot)</string>
+	<string name="log_remaps_label">Pindutan me ing log remapped button (para keng troubleshoot mu)</string>
+	<string name="open_accessibility_settings">buklat me ing accessibility settings</string>
+	<string name="paste">Idikit</string>
+	<string name="save">Ligtas</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (i-paste ing buong ‘auth: XXXX’ line ibat keng %1$s’s View intents screen)</string>
+	<string name="status_placeholder">Dinan meng permisyun ing %1$s, kaybat i-enable me ining serbisyung iti lalam ning Accessibility</string>
+	<string name="tv_brand_label">TV brand (makaapektu ya keng %1$s TV button)</string>
+</resources>

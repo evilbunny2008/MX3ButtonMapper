@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ondengel ed saray espisipikon hardware button ya pindoten tan i-remap to iratan ed sananey ya keycode</string>
+	<string name="app_not_installed_message">Say app ya aka-map ed sayan button (%1$s) et ag-aka-install</string>
+	<string name="app_not_installed_title">Ag-aka-install so app</string>
+	<string name="log_key_events_label">I-log so kada panpindot na key (parad troubleshoot labat)</string>
+	<string name="log_remaps_label">Say log remapped button ya pindoten (parad troubleshoot labat)</string>
+	<string name="open_accessibility_settings">Lukasan so Accessibility Settings</string>
+	<string name="paste">Ipeket</string>
+	<string name="save">Iliktar</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (i-paste so interon ‘auth: XXXX’ ya linya manlapud %1$s’s View intents screen)</string>
+	<string name="status_placeholder">Iter so %1$s ya permiso, insan i-enable iyan serbisyo ed silong na Accessibility</string>
+	<string name="tv_brand_label">Tatak na TV (makaapekto ed %1$s TV button ya espisipiko)</string>
+</resources>

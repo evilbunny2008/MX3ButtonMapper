@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ନିର୍ଦ୍ଦିଷ୍ଟ ହାର୍ଡୱେର୍ ବଟନ୍ ପ୍ରେସ୍ ପାଇଁ ଶୁଣେ ଏବଂ ସେମାନଙ୍କୁ ଅନ୍ୟ ଏକ କି-କୋଡ୍ ରେ ରିମାପ୍ କରେ |</string>
+	<string name="app_not_installed_message">ଏହି ବଟନ୍ ସହିତ ମ୍ୟାପ୍ ହୋଇଥିବା ଆପ୍ (%1$s) ସଂସ୍ଥାପିତ ହୋଇନାହିଁ |</string>
+	<string name="app_not_installed_title">ଆପ୍ ସଂସ୍ଥାପିତ ହୋଇନାହିଁ |</string>
+	<string name="log_key_events_label">ପ୍ରତ୍ୟେକ କୀ ପ୍ରେସ୍ ଲଗ୍ କରନ୍ତୁ (କେବଳ ତ୍ରୁଟି ନିବାରଣ ପାଇଁ)</string>
+	<string name="log_remaps_label">ଲଗ୍ ରିମାପ୍ ହୋଇଥିବା ବଟନ୍ ପ୍ରେସ୍ (କେବଳ ତ୍ରୁଟି ନିବାରଣ ପାଇଁ)</string>
+	<string name="open_accessibility_settings">ଆକ୍ସେସିବିଲିଟି ସେଟିଂସମୂହ ଖୋଲନ୍ତୁ |</string>
+	<string name="paste">ଲେପନ କରନ୍ତୁ |</string>
+	<string name="save">ସଞ୍ଚୟ କରନ୍ତୁ |</string>
+	<string name="shizuku_auth_token_label">%1$s ଆରମ୍ଭ / ବନ୍ଦ ଉଦ୍ଦେଶ୍ୟ auth ଟୋକେନ୍ (%1$s ର ଦର୍ଶନ ଇଣ୍ଟେଣ୍ଟସ୍ ସ୍କ୍ରିନରୁ ସମ୍ପୂର୍ଣ୍ଣ ‘auth: XXXX’ ରେଖା ଲେପନ କରନ୍ତୁ)</string>
+	<string name="status_placeholder">%1$s ଅନୁମତି ଦିଅନ୍ତୁ, ତାପରେ ଆକ୍ସେସିବିଲିଟି ଅଧୀନରେ ଏହି ସେବାକୁ ସକ୍ଷମ କରନ୍ତୁ |</string>
+	<string name="tv_brand_label">ଟିଭି ବ୍ରାଣ୍ଡ (ବିଶେଷ ଭାବରେ%1$s ଟିଭି ବଟନ୍ କୁ ପ୍ରଭାବିତ କରେ)</string>
+</resources>
