@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Escuta pressionamentos de botões de hardware específicos e os remapeia para outro código-chave</string>
+</resources>
