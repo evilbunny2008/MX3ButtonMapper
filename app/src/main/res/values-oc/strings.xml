@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Escota las pressions de boton de maquinari especifics e las remapa a un autre còde de clau</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Imamvera makiyi achinsinsi akanikizidwira ndikuziyikanso ku kiyibodi ina</string>
+	<string name="app_not_installed_message">Pulogalamu yojambulidwa ku batani ili (%1$s) sinayikepo</string>
+	<string name="app_not_installed_title">Pulogalamu sinayikidwe</string>
+	<string name="log_key_events_label">Lowetsani makiyi aliwonse (pongothetsa mavuto okha)</string>
+	<string name="log_remaps_label">Dinani mabatani olembedwanso (pongothetsa mavuto okha)</string>
+	<string name="open_accessibility_settings">Tsegulani Zikhazikiko Zofikira</string>
+	<string name="paste">Matani</string>
+	<string name="save">Sungani</string>
+	<string name="shizuku_auth_token_label">%1$s yoyambira/yimitsani chizindikiro cha intent auth (imitsani mzere wonse wa ‘auth: XXXX’ kuchokera pa skrini ya %1$s’s View intents)</string>
+	<string name="status_placeholder">Perekani chilolezo cha %1$s, kenako yatsani sevisiyi pansi pa Kufikika</string>
+	<string name="tv_brand_label">Mtundu wa TV (zimakhudza %1$s makamaka batani la TV)</string>
+</resources>

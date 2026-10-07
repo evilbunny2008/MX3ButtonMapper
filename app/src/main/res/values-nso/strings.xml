@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">O theeletša go tobetšwa ga konope ya hardware ye e itšego gomme a di mmapa gape go khoutu ye nngwe ya dinotlelo</string>
+	<string name="app_not_installed_message">Sedirišwa seo se beakantšwego go konope ye (%1$s) ga se ya tsenywa</string>
+	<string name="app_not_installed_title">App ga se ya hlomamisa</string>
+	<string name="log_key_events_label">Log tobetsa e nngwe le e nngwe ya senotlelo (bakeng sa tharollo ya mathata feela)</string>
+	<string name="log_remaps_label">Log remapped konopo tobetsa (bakeng sa tharollo ya mathata feela)</string>
+	<string name="open_accessibility_settings">Bula Dipeakanyo tša Phihlelelo</string>
+	<string name="paste">Kgomaretša</string>
+	<string name="save">Boloka</string>
+	<string name="shizuku_auth_token_label">%1$s thoma/emisa maikemišetšo auth letšoao (kgomaretša ‘auth: XXXX’ mola ka botlalo go tšwa go %1$s’s View intents skrine)</string>
+	<string name="status_placeholder">Fana ka tumelelo ya %1$s, ke moka o kgontšhe tirelo ye ka fase ga Phihlelelo</string>
+	<string name="tv_brand_label">TV cha (e ama konopo ya TV ya %1$s ka ho toba)</string>
+</resources>
