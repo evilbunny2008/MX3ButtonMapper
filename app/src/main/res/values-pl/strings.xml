@@ -7,4 +7,8 @@
 	<string name="log_remaps_label">Rejestruj ponownie przypisane naciśnięcia przycisków (tylko w celu rozwiązywania problemów)</string>
 	<string name="open_accessibility_settings">Otwórz Ustawienia dostępności</string>
 	<string name="paste">Pasta</string>
+	<string name="save">Ratować</string>
+	<string name="shizuku_auth_token_label">Token autoryzacji intencji rozpoczęcia/zatrzymania %1$s (wklej pełną linię ‘auth: XXXX’ z ekranu Wyświetl intencje %1$s)</string>
+	<string name="status_placeholder">Przyznaj uprawnienia %1$s, a następnie włącz tę usługę w obszarze Dostępność</string>
+	<string name="tv_brand_label">Marka telewizora (wpływa szczególnie na przycisk TV %1$s)</string>
 </resources>
