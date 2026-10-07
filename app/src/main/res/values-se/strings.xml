@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Gullada dihto rusttegiid nuppástusaid ja ođđasit kárte daid nuppi čujuhuskodii</string>
+	<string name="app_not_installed_message">Áppa mii lea kártejuvvon dán nuppástussii (%1$s) ii leat installerejuvvon</string>
+	<string name="app_not_installed_title">Áppa ii leat installerejuvvon</string>
+	<string name="log_key_events_label">Loga juohke nuppi deaddima (dušše vealaheami várás)</string>
+	<string name="log_remaps_label">Loga ođđasit kártejuvvon nuppástusaid (dušše vealaheami várás)</string>
+	<string name="open_accessibility_settings">Rahpat beassanvejolašvuođaid</string>
+	<string name="paste">Liibmet</string>
+	<string name="save">Seastit</string>
+	<string name="shizuku_auth_token_label">%1$s álgo/stop intent auth-token (liibmet olles ‘auth: XXXX’-linjjá %1$s View intents-čájáhusas)</string>
+	<string name="status_placeholder">Atte %1$s lobi, de álggahit dán bálvalusa Oadjebasvuođa vuolde</string>
+	<string name="tv_brand_label">TV-mearka (váikkuha erenoamážit %1$s TV-boalu)</string>
+</resources>

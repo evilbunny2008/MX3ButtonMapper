@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ka a ungwa akaa a i gber sha ikyav i hardware la, maa a hide a nger a sha keycode ugen</string>
+	<string name="app_not_installed_message">App u i ver sha button ne (%1$s) la ngu a mshi ga</string>
+	<string name="app_not_installed_title">I wa app ne ker ga</string>
+	<string name="log_key_events_label">Log hanma key u u kende cii (sha u sôron zayol tseegh)</string>
+	<string name="log_remaps_label">Log remapped button u kighir (sha u sôron zayol tseegh)</string>
+	<string name="open_accessibility_settings">Bugh akaa a eren tom a mi</string>
+	<string name="paste">Paste</string>
+	<string name="save">Ver</string>
+	<string name="shizuku_auth_token_label">%1$s hii/mkur ikyav i tesen ér or nan ngu a ian i eren kwagh u nan soo la (nger ‘auth: XXXX’ la cii sha %1$s’s View intents screen)</string>
+	<string name="status_placeholder">Na %1$s ian, nahan er tom ne sha ikyev i Accessibility</string>
+	<string name="tv_brand_label">Ikyav i TV (ka i bende a button u TV u %1$s la jighilii)</string>
+</resources>

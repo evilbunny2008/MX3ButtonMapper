@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Ulalela kucindzetelwa kwenkinobho letsite ye-hardware bese uyayibeka kabusha kulenye ikhodi yekhiye</string>
+	<string name="app_not_installed_message">I-app lekhonjiswe kulenkinobho (%1$s) ayifakwa</string>
+	<string name="app_not_installed_title">I-app ayifakwa</string>
+	<string name="log_key_events_label">Loga njalo ngekucindzetela inkinobho (yekusombulula tinkinga kuphela)</string>
+	<string name="log_remaps_label">Log remapped inkinobho kucindzetela (kucatulula tinkinga kuphela)</string>
+	<string name="open_accessibility_settings">Vula Tilungiselelo Tekufinyeleleka</string>
+	<string name="paste">Namatsisela</string>
+	<string name="save">Gcina</string>
+	<string name="shizuku_auth_token_label">%1$s kucala/kumisa inhloso ye-auth ithokheni (namatsisela umugca lophelele ‘we-auth: XXXX’ kusuka ku %1$s’s Buka tinhloso tesikrini)</string>
+	<string name="status_placeholder">Niketa imvume ye %1$s, bese unika emandla lesevisi ngaphansi kwekufinyeleleka</string>
+	<string name="tv_brand_label">Umkhicito we-TV (utsintsa inkinobho ye-TV ye %1$s ngco)</string>
+</resources>

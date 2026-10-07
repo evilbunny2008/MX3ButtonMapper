@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Počúva stlačenia konkrétnych hardvérových tlačidiel a premapuje ich na iný kľúčový kód</string>
+	<string name="app_not_installed_message">Aplikácia priradená k tomuto tlačidlu (%1$s) nie je nainštalovaná</string>
+	<string name="app_not_installed_title">Aplikácia nie je nainštalovaná</string>
+	<string name="log_key_events_label">Zaznamenajte každé stlačenie klávesu (iba na riešenie problémov)</string>
+	<string name="log_remaps_label">Zaznamenať premapované stlačenia tlačidla (iba na riešenie problémov)</string>
+	<string name="open_accessibility_settings">Otvorte Nastavenia zjednodušenia ovládania</string>
+	<string name="paste">Vložiť</string>
+	<string name="save">Uložiť</string>
+	<string name="shizuku_auth_token_label">%1$s štart/stop autorizačný token zámeru (prilepte celý riadok ‘auth: XXXX’ z obrazovky Zobraziť zámery %1$s)</string>
+	<string name="status_placeholder">Udeľte povolenie %1$s a potom túto službu povoľte v časti Dostupnosť</string>
+	<string name="tv_brand_label">Značka televízora (konkrétne ovplyvňuje tlačidlo televízora %1$s)</string>
+</resources>

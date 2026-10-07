@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Inoteerera kune chaiyo hardware mabhatani anodzvanya uye anoadzosera kune imwe kiyi kodhi</string>
+	<string name="app_not_installed_message">Iyo app ine bhatani rino (%1$s) haina kuiswa</string>
+	<string name="app_not_installed_title">App haina kuiswa</string>
+	<string name="log_key_events_label">Rodha kiyi yega yega (yekugadzirisa chete)</string>
+	<string name="log_remaps_label">Log remapped mabhatani anodzvanya (yekugadzirisa chete)</string>
+	<string name="open_accessibility_settings">Vhura Zvirongwa zveKuwanika</string>
+	<string name="paste">Paste</string>
+	<string name="save">Sevha</string>
+	<string name="shizuku_auth_token_label">%1$s tanga/misa chiratidzo chechokwadi chevavariro (namira mutsara uzere we’chinyorwa: XXXX‘ kubva pa%1$s’s Sikirini yezvinangwa)</string>
+	<string name="status_placeholder">Ipa %1$s mvumo, wobva wagonesa sevhisi iyi pasi peKuwanikwa</string>
+	<string name="tv_brand_label">Chiratidziro cheTV (chinonyanya kukanganisa %1$s bhatani reTV)</string>
+</resources>

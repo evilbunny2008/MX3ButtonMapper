@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ฟังการกดปุ่มฮาร์ดแวร์เฉพาะและทำการแมปใหม่เป็นรหัสคีย์อื่น</string>
+	<string name="app_not_installed_message">ไม่ได้ติดตั้งแอปที่แมปกับปุ่มนี้ (%1$s)</string>
+	<string name="app_not_installed_title">ไม่ได้ติดตั้งแอป</string>
+	<string name="log_key_events_label">บันทึกการกดปุ่มทุกครั้ง (สำหรับการแก้ไขปัญหาเท่านั้น)</string>
+	<string name="log_remaps_label">บันทึกการกดปุ่มที่แมปใหม่ (สำหรับการแก้ไขปัญหาเท่านั้น)</string>
+	<string name="open_accessibility_settings">เปิดการตั้งค่าการเข้าถึง</string>
+	<string name="paste">แปะ</string>
+	<string name="save">บันทึก</string>
+	<string name="shizuku_auth_token_label">โทเค็นการรับรองความถูกต้องเริ่มต้น/หยุด %1$s (วางบรรทัด ‘auth: XXXX’ เต็มจากหน้าจอ View Intents ของ %1$s)</string>
+	<string name="status_placeholder">ให้สิทธิ์ %1$s จากนั้นเปิดใช้งานบริการนี้ภายใต้การเข้าถึง</string>
+	<string name="tv_brand_label">แบรนด์ทีวี (ส่งผลต่อปุ่มทีวี %1$s โดยเฉพาะ)</string>
+</resources>

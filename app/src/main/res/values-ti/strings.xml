@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">ፍሉይ ናይ ሃርድዌር መጠወቒ ምጽቃጥ ይሰምዕን ናብ ካልእ ቁልፊ ኮድ ዳግማይ ይምድቦን።</string>
+	<string name="app_not_installed_message">እቲ ናብ’ዚ መጠወቒ’ዚ ዝተመዝገበ ኣፕ (%1$s) ኣይተተኸለን</string>
+	<string name="app_not_installed_title">ኣፕ ኣይተተኸለን</string>
+	<string name="log_key_events_label">ነፍሲ ወከፍ ምጽቃጥ መፍትሕ ምዝገባ (ንፍታሕ ጸገማት ጥራይ)</string>
+	<string name="log_remaps_label">ሎግ ዳግማይ ካርታ ዝተቐመጠ መጠወቒ ምጽቃጥ (ንፍታሕ ጸገማት ጥራይ)</string>
+	<string name="open_accessibility_settings">ቅጥዕታት ተበጻሕነት ክፉት።</string>
+	<string name="paste">ምልጣፍ</string>
+	<string name="save">ምቑጣብ</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (ምሉእ መስመር ‘auth: XXXX’ ካብ %1$s’s View intents screen ምልጣፍ)</string>
+	<string name="status_placeholder">%1$s ፍቓድ ሃቦ፣ ድሕሪኡ ነዚ ኣገልግሎት ኣብ ትሕቲ ተበጻሕነት ኣንቅሖ</string>
+	<string name="tv_brand_label">ምልክት ቲቪ (ብፍሉይ ነቲ %1$s መጠወቒ ቲቪ ይጸልዎ)</string>
+</resources>

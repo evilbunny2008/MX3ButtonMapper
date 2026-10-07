@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Umva ibyuma byihariye bya bouton ikanda hanyuma ubisubiremo kurundi rufunguzo</string>
+	<string name="app_not_installed_message">Porogaramu yashizwe kuri iyi buto (%1$s) ntabwo yashyizweho</string>
+	<string name="app_not_installed_title">Porogaramu ntabwo yashyizweho</string>
+	<string name="log_key_events_label">Andika buri kanda kanda (kubikemura gusa)</string>
+	<string name="log_remaps_label">Kanda buto yakuweho kanda (kubikemura gusa)</string>
+	<string name="open_accessibility_settings">Fungura Igenamiterere</string>
+	<string name="paste">Shyira</string>
+	<string name="save">Bika</string>
+	<string name="shizuku_auth_token_label">%1$s gutangira / guhagarika umugambi wa auth token (andika umurongo wuzuye ‘auth: XXXX’ uhereye kuri%1$s’s View intents ecran)</string>
+	<string name="status_placeholder">Tanga%1$s uruhushya, hanyuma ushoboze iyi serivisi munsi ya Accessibility</string>
+	<string name="tv_brand_label">Ikirangantego cya TV (kigira ingaruka kuri%1$s ya TV)</string>
+</resources>

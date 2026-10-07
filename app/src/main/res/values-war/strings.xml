@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Namati ha espisipiko nga mga pagpindot han buton han hardware ngan ginmamapa utro ito ha iba nga keycode</string>
+	<string name="app_not_installed_message">An app nga gin-mapa hini nga buton (%1$s) waray igbutang</string>
+	<string name="app_not_installed_title">Waray pa igbutang an app</string>
+	<string name="log_key_events_label">I-log an kada pagpindot han yawi (para la han pagsulbad han problema)</string>
+	<string name="log_remaps_label">Log nga ginmapa utro nga mga pagpindot han buton (para la han pagsulbad han mga problema)</string>
+	<string name="open_accessibility_settings">Abrihi an Mga Pag-agi han Pag-akses</string>
+	<string name="paste">Idukot</string>
+	<string name="save">Pagtipig</string>
+	<string name="shizuku_auth_token_label">%1$s pagtikang / pag-undang han panuyo nga pag-usisa nga tigaman (idukot an bug-os nga ‘pag-uyon: XXXX’ nga linya tikang ha %1$s ‘s Kitaa an mga panuyo nga screen)</string>
+	<string name="status_placeholder">Ihatag hin pagtugot hin %1$s, katapos paandar ini nga serbisyo ha ilarom han Pag-akses</string>
+	<string name="tv_brand_label">TV nga tatak (nakaapekto sa%1$s TV nga buton partikular)</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">குறிப்பிட்ட வன்பொருள் பொத்தான்களை அழுத்துவதைக் கேட்டு அவற்றை மற்றொரு கீகோடுக்கு மாற்றுகிறது</string>
+	<string name="app_not_installed_message">இந்தப் பொத்தானில் (%1$s) பொருத்தப்பட்ட ஆப்ஸ் நிறுவப்படவில்லை</string>
+	<string name="app_not_installed_title">பயன்பாடு நிறுவப்படவில்லை</string>
+	<string name="log_key_events_label">ஒவ்வொரு விசை அழுத்தத்தையும் பதிவு செய்யவும் (சிக்கல் தீர்க்க மட்டும்)</string>
+	<string name="log_remaps_label">மறுவடிவமைக்கப்பட்ட பொத்தான் அழுத்தங்களை பதிவு செய்யவும் (சரிசெய்தலுக்கு மட்டும்)</string>
+	<string name="open_accessibility_settings">அணுகல்தன்மை அமைப்புகளைத் திறக்கவும்</string>
+	<string name="paste">ஒட்டவும்</string>
+	<string name="save">சேமிக்கவும்</string>
+	<string name="shizuku_auth_token_label">%1$s ஸ்டார்ட்/ஸ்டாப் இன்டென்ட் அங்கீகார டோக்கன் (%1$s இன் வியூ இன்டென்ட்ஸ் திரையில் இருந்து முழு ‘அங்கீகாரம்: XXXX’ வரியை ஒட்டவும்)</string>
+	<string name="status_placeholder">%1$s அனுமதியை வழங்கவும், பின்னர் அணுகல்தன்மையின் கீழ் இந்த சேவையை இயக்கவும்</string>
+	<string name="tv_brand_label">டிவி பிராண்ட் (குறிப்பாக %1$s டிவி பட்டனைப் பாதிக்கிறது)</string>
+</resources>

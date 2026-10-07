@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="accessibility_service_description">Escuta pressionamentos de botões de hardware específicos e os remapeia para outro código-chave</string>
+	<string name="app_not_installed_message">O aplicativo mapeado para este botão (%1$s) não está instalado</string>
+	<string name="app_not_installed_title">Aplicativo não instalado</string>
+	<string name="log_key_events_label">Registrar cada pressionamento de tecla (somente para solução de problemas)</string>
+	<string name="log_remaps_label">Registrar pressionamentos de botão remapeados (somente para solução de problemas)</string>
+	<string name="open_accessibility_settings">Abra as configurações de acessibilidade</string>
+	<string name="paste">Colar</string>
+	<string name="save">Salvar</string>
+	<string name="shizuku_auth_token_label">Token de autenticação de intenção de início/parada %1$s (cole a linha completa ‘auth: XXXX’ da tela Visualizar intenções de %1$s)</string>
+	<string name="status_placeholder">Conceda permissão a %1$s e ative este serviço em Acessibilidade</string>
+	<string name="tv_brand_label">Marca da TV (afeta especificamente o botão TV %1$s)</string>
 </resources>

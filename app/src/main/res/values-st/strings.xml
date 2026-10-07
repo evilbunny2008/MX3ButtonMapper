@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">E mamela likonopo tse itseng tsa hardware ebe e li khutlisetsa ho keycode e ‘ngoe</string>
+	<string name="app_not_installed_message">Sesebelisoa se ‘mapeng ho konopo ena (%1$s) ha se ea kengoa</string>
+	<string name="app_not_installed_title">Sesebelisoa ha sea kengoa</string>
+	<string name="log_key_events_label">Tobetsa konopo e ‘ngoe le e ’ngoe (bakeng sa ho rarolla mathata feela)</string>
+	<string name="log_remaps_label">Tobetsa konopo ea remapped (bakeng sa ho rarolla mathata feela)</string>
+	<string name="open_accessibility_settings">Bula Litlhophiso tsa phihlello</string>
+	<string name="paste">Beha</string>
+	<string name="save">Boloka</string>
+	<string name="shizuku_auth_token_label">%1$s qala/emisa letshwao la bopaki ba maikemisetso (beha molaetsa o felletseng wa ‘bouth: XXXX’ ho tswa skrineng sa %1$s’s View intents)</string>
+	<string name="status_placeholder">Fana ka tumello ea %1$s, ‘me u lumelle tšebeletso ena tlas’a Kenyelletso</string>
+	<string name="tv_brand_label">Letšoao la TV (ka ho khetheha le ama konopo ea %1$s TV)</string>
+</resources>

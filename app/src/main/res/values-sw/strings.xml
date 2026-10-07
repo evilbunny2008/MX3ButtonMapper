@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Husikiza mibofyo ya vitufe mahususi vya maunzi na kuziweka kwenye msimbo mwingine muhimu</string>
+	<string name="app_not_installed_message">Programu iliyopangwa kwa kitufe hiki (%1$s) haijasakinishwa</string>
+	<string name="app_not_installed_title">Programu haijasakinishwa</string>
+	<string name="log_key_events_label">Ingia kila ubonyezo wa kitufe (kwa utatuzi tu)</string>
+	<string name="log_remaps_label">Vibonyezo vya vibonye vya vitufe vilivyowekwa alama upya (kwa utatuzi wa matatizo pekee)</string>
+	<string name="open_accessibility_settings">Fungua Mipangilio ya Ufikivu</string>
+	<string name="paste">Bandika</string>
+	<string name="save">Hifadhi</string>
+	<string name="shizuku_auth_token_label">%1$s tokeni ya uthibitishaji wa kuratibu anza/sitisha (bandika laini kamili ya ‘auth: XXXX’ kutoka skrini ya %1$s ya View intents)</string>
+	<string name="status_placeholder">Mpe %1$s ruhusa, kisha uwashe huduma hii chini ya Ufikivu</string>
+	<string name="tv_brand_label">Chapa ya TV (inaathiri kitufe cha TV cha %1$s haswa)</string>
+</resources>

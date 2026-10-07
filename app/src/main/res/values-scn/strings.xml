@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Asculta spicìfici primi di pulsanti hardware e li rimappa a n’autru còdici di chiavi</string>
+	<string name="app_not_installed_message">L’app mappata a stu buttuni (%1$s) nun è stallata</string>
+	<string name="app_not_installed_title">L’app nun è stallata</string>
+	<string name="log_key_events_label">Arrigistra ogni tastu (sulu pâ risoluzzioni di prubblemi)</string>
+	<string name="log_remaps_label">Primi dî pulsanti rimappati dû registru (sulu pâ risoluzzioni dî prubblemi)</string>
+	<string name="open_accessibility_settings">Apri li paràmitri di l’accissibbilità</string>
+	<string name="paste">Incolla</string>
+	<string name="save">Sarbari</string>
+	<string name="shizuku_auth_token_label">Token di autenticazzioni di l’intinzioni di partenza/arrestu di %1$s (incolla la riga cumpleta ‘autenticazzioni: XXXX’ dâ schermata Visualizza l’intinzioni di %1$s)</string>
+	<string name="status_placeholder">Cuncedi lu pirmissu di %1$s, poi attiva stu sirvizziu sutta Accissibbilità</string>
+	<string name="tv_brand_label">Marca TV (nfruenza spicificamenti lu buttuni TV %1$s)</string>
+</resources>

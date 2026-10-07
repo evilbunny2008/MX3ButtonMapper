@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">مخصوص ہارڈویئر بٹن دبانے کے لیے سنتا ہے اور انہیں دوسرے کی کوڈ پر دوبارہ بناتا ہے۔</string>
+	<string name="app_not_installed_message">اس بٹن (%1$s) پر میپ کردہ ایپ انسٹال نہیں ہے۔</string>
+	<string name="app_not_installed_title">ایپ انسٹال نہیں ہے۔</string>
+	<string name="log_key_events_label">ہر کلید کو دبائیں لاگ کریں (صرف ٹربل شوٹنگ کے لیے)</string>
+	<string name="log_remaps_label">لاگ ری میپ شدہ بٹن دبائیں (صرف ٹربل شوٹنگ کے لیے)</string>
+	<string name="open_accessibility_settings">رسائی کی ترتیبات کھولیں۔</string>
+	<string name="paste">چسپاں کریں۔</string>
+	<string name="save">محفوظ کریں۔</string>
+	<string name="shizuku_auth_token_label">%1$s اسٹارٹ/اسٹاپ انٹینٹ تصنیف ٹوکن (%1$s کی View intents اسکرین سے مکمل ‘auth: XXXX’ لائن پیسٹ کریں)</string>
+	<string name="status_placeholder">%1$s کو اجازت دیں، پھر ایکسیسبیلٹی کے تحت اس سروس کو فعال کریں۔</string>
+	<string name="tv_brand_label">TV برانڈ (خاص طور پر %1$s TV بٹن کو متاثر کرتا ہے)</string>
+</resources>

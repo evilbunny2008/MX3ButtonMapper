@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">A yeke mä ambeni mbilimbili bouton ti hardware na a yeke kiri ti sara carte ni na mbeni code ti clé nde</string>
+	<string name="app_not_installed_message">Application so a sara na carte ti bouton so (%1$s) ayeke dä pëpe</string>
+	<string name="app_not_installed_title">Application ni ayeke dä pëpe</string>
+	<string name="log_key_events_label">Enregistré a-clé oko oko kue so mo pika (gi ti leke akpale)</string>
+	<string name="log_remaps_label">Log remapped bouton presses (gi ti leke akpale)</string>
+	<string name="open_accessibility_settings">Zia Paramètre ti warango ye</string>
+	<string name="paste">Coller</string>
+	<string name="save">Bata</string>
+	<string name="shizuku_auth_token_label">%1$s token ti auth ti tongo nda/ti hunzingo (zia ‘auth: XXXX’ kue na ndo ti écran ti %1$s ti bâ a-intent)</string>
+	<string name="status_placeholder">Mû lege na %1$s, na pekoni zi kusala so na gbe ti Accessibilité</string>
+	<string name="tv_brand_label">Marque ti télé (a yeke sara ngangu na ndo ti %1$s bouton ti télé mbilimbili)</string>
+</resources>

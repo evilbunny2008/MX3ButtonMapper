@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Uyarin específico hardware botón ñit’iykunata chaymanta wak teclado kaqman wakmanta mapa ruwan</string>
+	<string name="app_not_installed_message">Kay ñit’inaman mapasqa ruwana (%1$s) mana churasqachu</string>
+	<string name="app_not_installed_title">App mana churasqachu</string>
+	<string name="log_key_events_label">Sapa llave ñit’iypi qillqay (sasachakuy allichayllapaq)</string>
+	<string name="log_remaps_label">Qillqa musuqmanta mapasqa ñit’inakuna (sasachakuy allichayllapaq)</string>
+	<string name="open_accessibility_settings">Kichasqa Yaykuna Ajustes</string>
+	<string name="paste">K’askachiy</string>
+	<string name="save">Waqaychay</string>
+	<string name="shizuku_auth_token_label">%1$s qallariy/sayachiy intent auth token (%1$s’s qhaway intents pantallamanta hunt’asqa ‘auth: XXXX’ chiruta k’askachiy)</string>
+	<string name="status_placeholder">%1$s atiyta quy, chaymanta kay yanapakuyta Yaykuna atiy kaqpi atichiy</string>
+	<string name="tv_brand_label">TV marka (%1$s TV ñit’inata específicamente afectan)</string>
+</resources>

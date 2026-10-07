@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Posluša določene pritiske gumbov strojne opreme in jih preslika v drugo kodo tipk</string>
+	<string name="app_not_installed_message">Aplikacija, preslikana na ta gumb (%1$s), ni nameščena</string>
+	<string name="app_not_installed_title">Aplikacija ni nameščena</string>
+	<string name="log_key_events_label">Beleži vsak pritisk tipke (samo za odpravljanje težav)</string>
+	<string name="log_remaps_label">Beleži pritiske preslikanih gumbov (samo za odpravljanje težav)</string>
+	<string name="open_accessibility_settings">Odprite nastavitve dostopnosti</string>
+	<string name="paste">Prilepi</string>
+	<string name="save">Shrani</string>
+	<string name="shizuku_auth_token_label">%1$s start/stop intent auth žeton (prilepite celotno vrstico ‘auth: XXXX’ z zaslona %1$s’s View intents)</string>
+	<string name="status_placeholder">Dodelite %1$s dovoljenje, nato omogočite to storitev pod možnostmi za ljudi s posebnimi potrebami</string>
+	<string name="tv_brand_label">Blagovna znamka televizorja (še posebej vpliva na gumb %1$s TV)</string>
+</resources>

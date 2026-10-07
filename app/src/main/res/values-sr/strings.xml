@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Слуша притисак на одређене хардверске тастере и пресликава их на други код тастера</string>
+	<string name="app_not_installed_message">Апликација мапирана на ово дугме (%1$s) није инсталирана</string>
+	<string name="app_not_installed_title">Апликација није инсталирана</string>
+	<string name="log_key_events_label">Забележите сваки притисак на тастер (само за решавање проблема)</string>
+	<string name="log_remaps_label">Евидентирај поновно мапиране притиске на дугме (само за решавање проблема)</string>
+	<string name="open_accessibility_settings">Отворите Подешавања приступачности</string>
+	<string name="paste">Залепите</string>
+	<string name="save">Сачувај</string>
+	<string name="shizuku_auth_token_label">%1$s токен за потврду намере почетка/заустављања (налепите цео ред ‘аутх: КСКСКСКС’ са екрана %1$s Приказ намера)</string>
+	<string name="status_placeholder">Дајте дозволу %1$s, а затим омогућите ову услугу под Приступачност</string>
+	<string name="tv_brand_label">ТВ бренд (посебно утиче на дугме за ТВ %1$s)</string>
+</resources>

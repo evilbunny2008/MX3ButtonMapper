@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Belirli donanım düğmelerine basılmasını dinler ve bunları başka bir tuş koduyla yeniden eşler</string>
+	<string name="app_not_installed_message">Bu düğmeyle eşlenen uygulama (%1$s) yüklü değil</string>
+	<string name="app_not_installed_title">Uygulama yüklü değil</string>
+	<string name="log_key_events_label">Her tuşa basışınızı günlüğe kaydedin (yalnızca sorun giderme için)</string>
+	<string name="log_remaps_label">Yeniden eşlenen düğmeye basma işlemlerini günlüğe kaydedin (yalnızca sorun giderme için)</string>
+	<string name="open_accessibility_settings">Erişilebilirlik Ayarlarını Aç</string>
+	<string name="paste">Yapıştır</string>
+	<string name="save">Kaydetmek</string>
+	<string name="shizuku_auth_token_label">%1$s başlatma/durdurma amacı kimlik doğrulama jetonunu (%1$s’in Amaçları Görüntüle ekranından ‘auth: XXXX’ satırının tamamını yapıştırın)</string>
+	<string name="status_placeholder">%1$s’a izin verin, ardından Erişilebilirlik altında bu hizmeti etkinleştirin</string>
+	<string name="tv_brand_label">TV markası (özellikle %1$s TV düğmesini etkiler)</string>
+</resources>

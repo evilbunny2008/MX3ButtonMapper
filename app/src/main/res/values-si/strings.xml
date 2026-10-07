@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">නිශ්චිත දෘඪාංග බොත්තම් එබීම සඳහා සවන් දී ඒවා වෙනත් යතුරු කේතයකට නැවත සකස් කරයි</string>
+	<string name="app_not_installed_message">මෙම බොත්තමට සිතියම්ගත කළ යෙදුම (%1$s) ස්ථාපනය කර නැත</string>
+	<string name="app_not_installed_title">යෙදුම ස්ථාපනය කර නැත</string>
+	<string name="log_key_events_label">සෑම යතුරු එබීමකටම ලොග් වන්න (දෝෂ නිරාකරණය සඳහා පමණි)</string>
+	<string name="log_remaps_label">ලොග් නැවත සකස් කරන ලද බොත්තම් එබීම් (දෝශ නිරාකරණය සඳහා පමණි)</string>
+	<string name="open_accessibility_settings">ප්‍රවේශ්‍යතා සැකසීම් විවෘත කරන්න</string>
+	<string name="paste">අලවන්න</string>
+	<string name="save">සුරකින්න</string>
+	<string name="shizuku_auth_token_label">%1$s ආරම්භක/නැවතුම් අභිප්‍රාය සත්‍යාපන ටෝකනය (%1$sගේ View intents තිරයෙන් සම්පූර්ණ ‘auth: XXXX’ පේළිය අලවන්න)</string>
+	<string name="status_placeholder">%1$s අවසරය ලබා දෙන්න, ඉන්පසු ප්‍රවේශ්‍යතාව යටතේ මෙම සේවාව සබල කරන්න</string>
+	<string name="tv_brand_label">TV සන්නාමය (%1$s TV බොත්තමට විශේෂයෙන් බලපායි)</string>
+</resources>
