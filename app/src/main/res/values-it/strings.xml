@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Registra ogni pressione di un tasto (solo per la risoluzione dei problemi)</string>
 	<string name="log_remaps_label">Registra le pressioni dei pulsanti rimappati (solo per la risoluzione dei problemi)</string>
 	<string name="open_accessibility_settings">Apri Impostazioni di accessibilità</string>
-	<string name="paste">Impasto</string>
+	<string name="paste">Incolla</string>
 	<string name="save">Salva</string>
 	<string name="shizuku_auth_token_label">%1$s avvia/arresta token di autenticazione intento (incolla l’intera riga ‘auth: XXXX’ dalla schermata Visualizza intenti di %1$s)</string>
 	<string name="status_placeholder">Concedi l’autorizzazione %1$s, quindi abilita questo servizio in Accessibilità</string>

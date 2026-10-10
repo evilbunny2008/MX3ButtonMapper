@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Geli badhanka la kharibadeeyay (kaliya cilad-raadinta)</string>
 	<string name="open_accessibility_settings">Fur Dejinta Helitaanka</string>
 	<string name="paste">Ku dheji</string>
-	<string name="save">Badbaadin</string>
+	<string name="save">Kaydi</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (ku dheji khadka ‘auth: XXXX’ oo buuxa %1$s ee View intents screen)</string>
 	<string name="status_placeholder">Sii %1$s ogolaanshaha, ka dibna awood u geli adeegan hoos gelitaanka</string>
 	<string name="tv_brand_label">Summada TV-ga (waxay si gaar ah u saamaysaa badhanka %1$s TV)</string>

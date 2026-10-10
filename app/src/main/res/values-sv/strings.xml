@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Logga varje knapptryckning (endast för felsökning)</string>
 	<string name="log_remaps_label">Logga ommappade knapptryckningar (endast för felsökning)</string>
 	<string name="open_accessibility_settings">Öppna Tillgänglighetsinställningar</string>
-	<string name="paste">Klistra</string>
+	<string name="paste">Klistra in</string>
 	<string name="save">Spara</string>
 	<string name="shizuku_auth_token_label">%1$s start/stopp avsiktsauktoriseringstoken (klistra in hela ‘auth: XXXX’-raden från %1$s skärm Visa avsikter)</string>
 	<string name="status_placeholder">Ge %1$s behörighet och aktivera sedan tjänsten under Tillgänglighet</string>

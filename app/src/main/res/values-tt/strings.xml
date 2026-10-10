@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Keyәрбер төймәгә басыгыз (проблемаларны чишү өчен)</string>
 	<string name="log_remaps_label">Күчерелгән төймә төймәләренә басыгыз (проблемаларны чишү өчен)</string>
 	<string name="open_accessibility_settings">Ачык мөмкинлек көйләүләре</string>
-	<string name="paste">Паста</string>
+	<string name="paste">Кую</string>
 	<string name="save">Саклагыз</string>
 	<string name="shizuku_auth_token_label">%1$s башлау / туктату нияте автор токены (тулы ‘auth: XXXX’ сызыгын%1$s карау ниятләре экраныннан ябыштырыгыз)</string>
 	<string name="status_placeholder">%1$s рөхсәт бирегез, аннары бу хезмәтне мөмкинлек астында эшләгез</string>

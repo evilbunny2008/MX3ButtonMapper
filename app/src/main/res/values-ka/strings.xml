@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">ყოველი ღილაკის დაჭერის ჟურნალი (მხოლოდ პრობლემების მოსაგვარებლად)</string>
 	<string name="log_remaps_label">ღილაკების ხელახალი დაჭერა ჟურნალში (მხოლოდ პრობლემების მოსაგვარებლად)</string>
 	<string name="open_accessibility_settings">გახსენით ხელმისაწვდომობის პარამეტრები</string>
-	<string name="paste">პასტა</string>
+	<string name="paste">ჩასმა</string>
 	<string name="save">შენახვა</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth ჟეტონი (ჩასვით სრული ‘auth: XXXX’ ხაზი %1$s ის View intents ეკრანიდან)</string>
 	<string name="status_placeholder">მიანიჭეთ %1$s ნებართვა, შემდეგ ჩართეთ ეს სერვისი ხელმისაწვდომობის ქვეშ</string>

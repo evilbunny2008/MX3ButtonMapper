@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Logg omdefinerte knappetrykk (kun for feilsøking)</string>
 	<string name="open_accessibility_settings">Åpne Tilgjengelighetsinnstillinger</string>
 	<string name="paste">Lim inn</string>
-	<string name="save">Spare</string>
+	<string name="save">Lagre</string>
 	<string name="shizuku_auth_token_label">%1$s start/stopp intentautentiseringstoken (lim inn hele ‘auth: XXXX’-linjen fra %1$s sin Vis intents-skjerm)</string>
 	<string name="status_placeholder">Gi %1$s tillatelse, og aktiver deretter denne tjenesten under Tilgjengelighet</string>
 	<string name="tv_brand_label">TV-merke (påvirker %1$s TV-knappen spesifikt)</string>

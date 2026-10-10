@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">ߟߊ߬sߐ߬ߘߐ߲߬ߠߌ߲ ߟߊ߬ߓߍ߲߬ߢߐ߲߰ߡߦߊ߬ߘߊ ߘߊߦߟߍ߬</string>
 	<string name="paste">ߣߘߐߟߌ</string>
 	<string name="save">ߡߙߊ߬</string>
-	<string name="shizuku_auth_token_label">%1$s ߘߊߡߌߘߊ/ߟߊߟߐ߬ߟߌ ߢߌߣߌ߲ߠߌ߲ ߕߎ߬ߢߊ߬ߒ߬ߕߋ߬ߦߊ߬ߟߌ ߕߐ߰ߡߊ߬sߙߋ (sߙߋߦߊߟߌ: XXXX‘ sߐ߲ߞߐ ߘߝߊߣߍ߲ ߣߘߐ߫ ߞߊ߬ ߓߐ߫ %1$s ߢߌߣߌ߲ߞߏ ߦߌ߬ߘߊ߬ ߥߟߊ߬ߓߊ ߘߐ߫)</string>
+	<string name="shizuku_auth_token_label">%1$s ߘߊߡߌߘߊ/ߟߊߟߐ߬ߟߌ ߢߌߣߌ߲ߠߌ߲ ߕߎ߬ߢߊ߬ߒ߬ߕߋ߬ߦߊ߬ߟߌ ߕߐ߰ߡߊ߬sߙߋ (‘auth: XXXX’ sߐ߲ߞߐ ߘߝߊߣߍ߲ ߣߘߐ߫ ߞߊ߬ ߓߐ߫ %1$s ߢߌߣߌ߲ߞߏ ߦߌ߬ߘߊ߬ ߥߟߊ߬ߓߊ ߘߐ߫)</string>
 	<string name="status_placeholder">%1$s ߘߌ߬ߢߍ߬ ߘߌ߫߸ ߏ߬ ߞߐ߫ ߞߊ߬ ߗߋߢߊߟߌ ߣߌ߲߬ ߓߌ߬ߟߴߊ߬ ߟߊ߫ ߟߊ߬sߐ߬ߘߐ߲߬ߠߌ߲ ߞߘߐ߫</string>
 	<string name="tv_brand_label">ߖߌ߬ߦߊ߬ߞߊ߲ ߖߊ߬ߥߏ߬ ߕߐ߰ߡߊ߬sߙߋ (ߊ߬ ߦߴߊ߬ ߣߐ߬ߕߏ߫ ߟߊ߫ ߖߌ߬ߦߊ߬ߞߊ߲ ߞߘߎ %1$s ߟߊ߫ ߞߙߍߞߙߍߓߟߏߡߊ߬)</string>
 </resources>

@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">سجل الضغط على الزر المعاد تعيينه (لاستكشاف الأخطاء وإصلاحها فقط)</string>
 	<string name="open_accessibility_settings">افتح إعدادات إمكانية الوصول</string>
 	<string name="paste">لصق</string>
-	<string name="save">يحفظ</string>
+	<string name="save">حفظ</string>
 	<string name="shizuku_auth_token_label">%1$s رمز مصادقة البداية/الإيقاف (الصق سطر ‘auth: XXXX’ بالكامل من شاشة عرض النوايا في %1$s)</string>
 	<string name="status_placeholder">قم بمنح الإذن %1$s، ثم قم بتمكين هذه الخدمة ضمن إمكانية الوصول</string>
 	<string name="tv_brand_label">العلامة التجارية للتلفزيون (تؤثر على زر التلفزيون %1$s على وجه التحديد)</string>

@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Log a h-uile prìomh phreas (airson fuasgladh dhuilgheadasan a-mhàin)</string>
 	<string name="log_remaps_label">Brùth putan ath-mhapa air log (airson fuasgladh cheistean a-mhàin)</string>
 	<string name="open_accessibility_settings">Fosgail roghainnean ruigsinneachd</string>
-	<string name="paste">Paste</string>
+	<string name="paste">Cuir ann</string>
 	<string name="save">Sàbhail</string>
 	<string name="shizuku_auth_token_label">%1$s toiseach/stad rùn ùghdar tòcan (cuir a-steach an loidhne slàn ‘auth: XXXX’ o sgrion rùintean View %1$s)</string>
 	<string name="status_placeholder">Thoir cead %1$s, an uairsin cuir an comas an t-seirbheis seo fo Ruigsinneachd</string>

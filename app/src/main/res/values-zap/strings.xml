@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Bixheleʼ Configuración de accesibilidad</string>
 	<string name="paste">Bicaa</string>
 	<string name="save">Rapa bueltu</string>
-	<string name="shizuku_auth_token_label">%1$s bizulú/bicueeza token de autenticación de intención (bicaa guidubi línea ‘autenticación: XXXX’ ni nuu lu pantalla %1$s‘ Ver intenciones)</string>
+	<string name="shizuku_auth_token_label">%1$s bizulú/bicueeza token de autenticación de intención (bicaa guidubi línea ‘auth: XXXX’ ni nuu lu pantalla %1$s‘ Ver intenciones)</string>
 	<string name="status_placeholder">Bidii permisu %1$s, despué biʼniʼ activar serviciu riʼ lu Accesibilidad</string>
 	<string name="tv_brand_label">Marca de televisión (ni runi afectar botón %1$s de televisión específicamente)</string>
 </resources>

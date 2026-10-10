@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">監聽特定的硬體按鈕按下並將其重新映射到另一個鍵碼</string>
-	<string name="app_not_installed_message">映射到此按鈕 (%1$s) 的應用程式未安裝</string>
-	<string name="app_not_installed_title">應用程式未安裝</string>
-	<string name="log_key_events_label">記錄每次按鍵（僅用於故障排除）</string>
-	<string name="log_remaps_label">記錄重新映射的按鈕按下情況（僅用於故障排除）</string>
-	<string name="open_accessibility_settings">開啟輔助使用設定</string>
-	<string name="paste">貼上</string>
-	<string name="save">節省</string>
-	<string name="shizuku_auth_token_label">%1$s 啟動/停止意圖身份驗證令牌（從 %1$s 的「查看意圖」畫面貼上完整的「auth: XXXX」行）</string>
-	<string name="status_placeholder">授予 %1$s 權限，然後在「輔助功能」下啟用此服務</string>
-	<string name="tv_brand_label">電視品牌（特別影響 %1$s 電視按鈕）</string>
+	<string name="accessibility_service_description">监听特定硬件按钮的按下操作，并将其重新映射为另一个按键代码</string>
+	<string name="app_not_installed_message">映射到此按钮的应用（%1$s）未安装</string>
+	<string name="app_not_installed_title">应用未安装</string>
+	<string name="log_key_events_label">记录每次按键（仅用于故障排除）</string>
+	<string name="log_remaps_label">记录重新映射的按钮按下操作（仅用于故障排除）</string>
+	<string name="open_accessibility_settings">打开无障碍设置</string>
+	<string name="paste">粘贴</string>
+	<string name="save">保存</string>
+	<string name="shizuku_auth_token_label">%1$s 启动/停止 Intent 的验证令牌（从 %1$s 的“查看 Intent”界面粘贴完整的“auth: XXXX”行）</string>
+	<string name="status_placeholder">授予 %1$s 权限，然后在“无障碍”中启用此服务</string>
+	<string name="tv_brand_label">电视品牌（专门影响 %1$s 的电视按钮）</string>
 </resources>

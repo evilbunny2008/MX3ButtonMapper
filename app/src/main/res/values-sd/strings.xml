@@ -7,8 +7,8 @@
 	<string name="log_remaps_label">لاگ ريمپ ٿيل بٽڻ دٻايو (صرف مسئلو حل ڪرڻ لاءِ)</string>
 	<string name="open_accessibility_settings">رسائي سيٽنگون کوليو</string>
 	<string name="paste">پيسٽ</string>
-	<string name="save">بچايو</string>
-	<string name="shizuku_auth_token_label">%1$s شروع/اسٽاپ انٽيٽ آٿ ٽوڪن (پيسٽ ڪريو مڪمل ‘Auth: XXXX’ لائن %1$s جي View intents اسڪرين مان)</string>
+	<string name="save">محفوظ ڪريو</string>
+	<string name="shizuku_auth_token_label">%1$s شروع/اسٽاپ انٽيٽ آٿ ٽوڪن (پيسٽ ڪريو مڪمل ‘auth: XXXX’ لائن %1$s جي View intents اسڪرين مان)</string>
 	<string name="status_placeholder">%1$s جي اجازت ڏيو، پوءِ ھن سروس کي رسائي جي تحت فعال ڪريو</string>
 	<string name="tv_brand_label">ٽي وي برانڊ (خاص طور تي %1$s ٽي وي بٽڻ کي متاثر ڪري ٿو)</string>
 </resources>

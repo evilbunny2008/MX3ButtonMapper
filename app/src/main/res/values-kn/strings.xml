@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">ಪ್ರವೇಶಿಸುವಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
 	<string name="paste">ಅಂಟಿಸಿ</string>
 	<string name="save">ಉಳಿಸಿ</string>
-	<string name="shizuku_auth_token_label">%1$s ಪ್ರಾರಂಭ/ನಿಲುಗಡೆ ಇಂಟೆಂಟ್ ದೃಢೀಕರಣ ಟೋಕನ್ (%1$s ನ ವೀಕ್ಷಣೆ ಉದ್ದೇಶಗಳ ಪರದೆಯಿಂದ ಪೂರ್ಣ ‘ದೃಢೀಕರಣ: XXXX’ ಸಾಲನ್ನು ಅಂಟಿಸಿ)</string>
+	<string name="shizuku_auth_token_label">%1$s ಪ್ರಾರಂಭ/ನಿಲುಗಡೆ ಇಂಟೆಂಟ್ ದೃಢೀಕರಣ ಟೋಕನ್ (%1$s ನ ವೀಕ್ಷಣೆ ಉದ್ದೇಶಗಳ ಪರದೆಯಿಂದ ಪೂರ್ಣ ‘auth: XXXX’ ಸಾಲನ್ನು ಅಂಟಿಸಿ)</string>
 	<string name="status_placeholder">%1$s ಗೆ ಅನುಮತಿ ನೀಡಿ, ನಂತರ ಪ್ರವೇಶಿಸುವಿಕೆ ಅಡಿಯಲ್ಲಿ ಈ ಸೇವೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
 	<string name="tv_brand_label">ಟಿವಿ ಬ್ರ್ಯಾಂಡ್ (ನಿರ್ದಿಷ್ಟವಾಗಿ %1$s ಟಿವಿ ಬಟನ್ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ)</string>
 </resources>

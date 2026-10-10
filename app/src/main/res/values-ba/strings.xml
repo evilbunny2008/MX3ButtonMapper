@@ -7,8 +7,8 @@
 	<string name="log_remaps_label">Журнал перекартографированный төймәгә баҫыу (тик проблемаларҙы хәл итеү өсөн)</string>
 	<string name="open_accessibility_settings">Ҡулланыу мөмкинлеге параметрҙарын асыу</string>
 	<string name="paste">Йәбештереү</string>
-	<string name="save">Ҡотҡарырға</string>
-	<string name="shizuku_auth_token_label">%1$s башлау/туҡтатыу ниәте аутентификация маркеры (йәбештереү өсөн тулы ‘аутентификация: XXXX’ юл %1$s&amp;#8217;s ниәттәрҙе ҡарау экранында)</string>
+	<string name="save">Һаҡлау</string>
+	<string name="shizuku_auth_token_label">%1$s башлау/туҡтатыу ниәте аутентификация маркеры (йәбештереү өсөн тулы ‘auth: XXXX’ юл %1$s’s ниәттәрҙе ҡарау экранында)</string>
 	<string name="status_placeholder">%1$s рөхсәт бирегеҙ, һуңынан был хеҙмәтте Ҡулланыу мөмкинлеге аҫтында асығыҙ</string>
 	<string name="tv_brand_label">Телевизор бренды (тәьҫир итә%1$s телевизор төймәһе махсус)</string>
 </resources>

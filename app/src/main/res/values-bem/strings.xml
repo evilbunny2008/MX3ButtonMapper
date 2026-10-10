@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Isuleni Imitantikile ya Kufikako</string>
 	<string name="paste">Ukupaka</string>
 	<string name="save">Ukusunga</string>
-	<string name="shizuku_auth_token_label">%1$s ukutendeka/ukuleka ukufwaya ukushininkisha (bikeni umutande onse uwa ‘ukushininkisha: XXXX’ ukufuma pa %1$s’s Moneni ukufwaya ukufwaya)</string>
+	<string name="shizuku_auth_token_label">%1$s ukutendeka/ukuleka ukufwaya ukushininkisha (bikeni umutande onse uwa ‘auth: XXXX’ ukufuma pa %1$s’s Moneni ukufwaya ukufwaya)</string>
 	<string name="status_placeholder">Peela %1$s insambu, lyena suminishe iyi imilimo pe samba lya Kufikapo</string>
 	<string name="tv_brand_label">Icilangililo ca TV (cikuma %1$s batani lya TV mu kulungatika)</string>
 </resources>

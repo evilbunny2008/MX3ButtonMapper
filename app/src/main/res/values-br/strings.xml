@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Pouezañ war bouton adkartennaouet ar marilh (evit diskoulmañ kudennoù hepken)</string>
 	<string name="open_accessibility_settings">Digeriñ arventennoù an aesaat</string>
 	<string name="paste">Pegañ</string>
-	<string name="save">Saveteiñ</string>
+	<string name="save">Enrollañ</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (pegañ al linenn ‘auth: XXXX’ klok diwar skramm Gwelet intentoù %1$s)</string>
 	<string name="status_placeholder">Roit an aotre da %1$s, ha gweredekait ar servij-mañ dindan Aesaat</string>
 	<string name="tv_brand_label">Merk ar skinwel (a efed war an afell skinwel %1$s dreist-holl)</string>

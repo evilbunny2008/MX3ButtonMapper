@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Vula amasethingi wokufinyeleleka</string>
 	<string name="paste">Namathisela</string>
 	<string name="save">Onga</string>
-	<string name="shizuku_auth_token_label">Ithokheni ye %1$s yokuthoma/yokujama (namathisela umugqa opheleleko ‘ukuqinisekisa: XXXX’ ukusuka esikrinini se %1$s’s View intents)</string>
+	<string name="shizuku_auth_token_label">Ithokheni ye %1$s yokuthoma/yokujama (namathisela umugqa opheleleko ‘auth: XXXX’ ukusuka esikrinini se %1$s’s View intents)</string>
 	<string name="status_placeholder">Nikela imvumo ye %1$s, bese uvumela isevisi le ngaphasi kokufinyeleleka</string>
 	<string name="tv_brand_label">Umhlobo we-TV (uthinta ibhathini ye-TV ye %1$s ngokukhethekileko)</string>
 </resources>

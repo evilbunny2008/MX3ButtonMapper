@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">लॉग रिमैप कएल गेल बटन दबाउ (केवल समस्या निवारण लेल)</string>
 	<string name="open_accessibility_settings">सुलभता सेटिंग्स खोलू</string>
 	<string name="paste">पेस्ट करू</string>
-	<string name="save">बचाउ</string>
+	<string name="save">सहेजें</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth टोकन (%1$s’s View intents स्क्रीन सँ पूरा ‘auth: XXXX’ लाइन पेस्ट करू)</string>
 	<string name="status_placeholder">%1$s अनुमति दिअ, फेर एक्सेसबिलिटी क अंतर्गत एहि सेवा केँ सक्षम करू</string>
 	<string name="tv_brand_label">टीवी ब्रांड (%1$s टीवी बटन कए विशेष रूप स प्रभावित करैत अछि)</string>

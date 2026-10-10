@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Shiga kowane latsa maɓalli (don magance matsala kawai)</string>
 	<string name="log_remaps_label">Shiga latsa maɓallin da aka gyara (don magance matsala kawai)</string>
 	<string name="open_accessibility_settings">Buɗe Saitunan Dama</string>
-	<string name="paste">Manna</string>
+	<string name="paste">Liƙa</string>
 	<string name="save">Ajiye</string>
 	<string name="shizuku_auth_token_label">%1$s farawa/tsaida intent auth token (manna cikakken ‘auth: XXXX’ daga allon %1$s’s View intents)</string>
 	<string name="status_placeholder">Ba da izinin %1$s, sannan kunna wannan sabis ɗin ƙarƙashin Samun damar</string>

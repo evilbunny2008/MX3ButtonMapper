@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">लग रिम्याप गरिएको बटन थिच्नुहोस् (समस्या निवारणको लागि मात्र)</string>
 	<string name="open_accessibility_settings">पहुँच सेटिङहरू खोल्नुहोस्</string>
 	<string name="paste">टाँस्नुहोस्</string>
-	<string name="save">बचत गर्नुहोस्</string>
+	<string name="save">सुरक्षित गर्नुहोस्</string>
 	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टप इंटेन्ट प्रमाणीकरण टोकन (%1$s को भ्यू इन्टेन्ट स्क्रिनबाट पूरा ‘auth: XXXX’ लाइन टाँस्नुहोस्)</string>
 	<string name="status_placeholder">%1$s अनुमति दिनुहोस्, त्यसपछि पहुँच अन्तर्गत यो सेवा सक्षम गर्नुहोस्</string>
 	<string name="tv_brand_label">टिभी ब्रान्ड (विशेष गरी %1$s टिभी बटनलाई असर गर्छ)</string>

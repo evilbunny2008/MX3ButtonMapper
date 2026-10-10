@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Log gentildelte knaptryk (kun til fejlfinding)</string>
 	<string name="open_accessibility_settings">Åbn Tilgængelighedsindstillinger</string>
 	<string name="paste">Indsæt</string>
-	<string name="save">Spare</string>
+	<string name="save">Gem</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop hensigtsgodkendelsestoken (indsæt hele ‘auth: XXXX’ linjen fra %1$s’s skærmbillede Vis hensigter)</string>
 	<string name="status_placeholder">Giv %1$s tilladelse, og aktiver derefter denne tjeneste under Tilgængelighed</string>
 	<string name="tv_brand_label">Tv-mærke (påvirker specifikt %1$s tv-knappen)</string>

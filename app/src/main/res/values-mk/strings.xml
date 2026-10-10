@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Отворете ги поставките за пристапност</string>
 	<string name="paste">Вметни</string>
 	<string name="save">Зачувај</string>
-	<string name="shizuku_auth_token_label">%1$s токен за проверка на намери за почеток/стоп (залепете ја целосната линија ‘автоматизам: XXXX’ од екранот со намери за преглед на %1$s)</string>
+	<string name="shizuku_auth_token_label">%1$s токен за проверка на намери за почеток/стоп (залепете ја целосната линија ‘auth: XXXX’ од екранот со намери за преглед на %1$s)</string>
 	<string name="status_placeholder">Дозволете %1$s дозвола, а потоа овозможете ја оваа услуга во Пристапност</string>
 	<string name="tv_brand_label">Марка на ТВ (конкретно влијае на копчето за ТВ %1$s)</string>
 </resources>

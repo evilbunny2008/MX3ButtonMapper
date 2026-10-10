@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">עפֿענען אַקסעסאַביליטי סעטטינגס</string>
 	<string name="paste">פּאַפּ</string>
 	<string name="save">היט</string>
-	<string name="shizuku_auth_token_label">%1$s אָנהייב/סטאַפּ ינטענט אָוץ סימען (פּאַפּ די פול ‘אַוט: XXXX’ שורה פון %1$s ס View ינטענץ פאַרשטעלן)</string>
+	<string name="shizuku_auth_token_label">%1$s אָנהייב/סטאַפּ ינטענט אָוץ סימען (פּאַפּ די פול ‘auth: XXXX’ שורה פון %1$s ס View ינטענץ פאַרשטעלן)</string>
 	<string name="status_placeholder">געבן %1$s דערלויבעניש, און געבן דעם דינסט אונטער אַקסעסאַביליטי</string>
 	<string name="tv_brand_label">טעלעוויזיע סאָרט (אַפעקץ ספּאַסיפיקלי די %1$s טעלעוויזיע קנעפּל)</string>
 </resources>

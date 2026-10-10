@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Primimentu di boton remap di log (pa solushoná problema so)</string>
 	<string name="open_accessibility_settings">Habri Konfigurashon di Aksesibilidat</string>
 	<string name="paste">Pega</string>
-	<string name="save">Reskatá</string>
+	<string name="save">Warda</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (pega e liña kompleto ‘auth: XXXX’ for di %1$s su View intents pantaya)</string>
 	<string name="status_placeholder">Duna %1$s pèrmit, despues aktivá e servisio aki bou di Aksesibilidat</string>
 	<string name="tv_brand_label">Marka di televishon (ta afektá e boton di televishon %1$s spesífikamente)</string>

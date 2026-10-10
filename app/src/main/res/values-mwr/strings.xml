@@ -7,8 +7,8 @@
 	<string name="log_remaps_label">लॉग रीमैप करियोड़ो बटण दबाओ (केवल समस्या निवारण रै वास्तै)</string>
 	<string name="open_accessibility_settings">सुलभता री सेटिंग्स खोलो</string>
 	<string name="paste">पेस्ट करो</string>
-	<string name="save">बचावणो</string>
-	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टॉप इंटेंट ऑथ टोकन (%1$s री व्यू इंटेंट स्क्रीन सूं पूरी ‘ऑथ: XXXX’ लाइन पेस्ट करो)</string>
+	<string name="save">सहेजें</string>
+	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टॉप इंटेंट ऑथ टोकन (%1$s री व्यू इंटेंट स्क्रीन सूं पूरी ‘auth: XXXX’ लाइन पेस्ट करो)</string>
 	<string name="status_placeholder">%1$s री अनुमति देवो, फेर सुगम्यता रै तहत इण सेवा नै सक्षम करो</string>
 	<string name="tv_brand_label">टीवी ब्रांड (%1$s टीवी बटण नै खास तौर सूं प्रभावित करै है)</string>
 </resources>

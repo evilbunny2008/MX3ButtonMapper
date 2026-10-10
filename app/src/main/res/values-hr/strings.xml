@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Bilježi ponovno mapirane pritiske gumba (samo za rješavanje problema)</string>
 	<string name="open_accessibility_settings">Otvorite Postavke pristupačnosti</string>
 	<string name="paste">Zalijepiti</string>
-	<string name="save">Uštedjeti</string>
+	<string name="save">Spremi</string>
 	<string name="shizuku_auth_token_label">Token autentifikacije namjere pokretanja/zaustavljanja %1$s (zalijepite cijeli redak ‘auth: XXXX’ sa zaslona Prikaz namjera %1$s)</string>
 	<string name="status_placeholder">Dajte %1$s dopuštenje, a zatim omogućite ovu uslugu pod Pristupačnost</string>
 	<string name="tv_brand_label">Robna marka TV-a (konkretno utječe na gumb %1$s TV)</string>

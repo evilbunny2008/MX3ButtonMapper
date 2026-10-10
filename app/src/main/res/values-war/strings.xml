@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Abrihi an Mga Pag-agi han Pag-akses</string>
 	<string name="paste">Idukot</string>
 	<string name="save">Pagtipig</string>
-	<string name="shizuku_auth_token_label">%1$s pagtikang / pag-undang han panuyo nga pag-usisa nga tigaman (idukot an bug-os nga ‘pag-uyon: XXXX’ nga linya tikang ha %1$s ‘s Kitaa an mga panuyo nga screen)</string>
+	<string name="shizuku_auth_token_label">%1$s pagtikang / pag-undang han panuyo nga pag-usisa nga tigaman (idukot an bug-os nga ‘auth: XXXX’ nga linya tikang ha %1$s ‘s Kitaa an mga panuyo nga screen)</string>
 	<string name="status_placeholder">Ihatag hin pagtugot hin %1$s, katapos paandar ini nga serbisyo ha ilarom han Pag-akses</string>
 	<string name="tv_brand_label">TV nga tatak (nakaapekto sa%1$s TV nga buton partikular)</string>
 </resources>

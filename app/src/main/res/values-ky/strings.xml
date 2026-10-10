@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Ар бир баскычты басуу журналына кириңиз (маселелерди чечүү үчүн гана)</string>
 	<string name="log_remaps_label">Ремаланган баскыч басуулар журналы (маселелерди оңдоо үчүн гана)</string>
 	<string name="open_accessibility_settings">Атайын мүмкүнчүлүктөр жөндөөлөрүн ачыңыз</string>
-	<string name="paste">Паста</string>
+	<string name="paste">Чаптоо</string>
 	<string name="save">Сактоо</string>
 	<string name="shizuku_auth_token_label">%1$s баштоо/токтоо ниетинин аутентификация белгисин (%1$s’тин ниеттерди көрүү экранынан толук ‘auth: XXXX’ сабын чаптаңыз)</string>
 	<string name="status_placeholder">%1$s уруксатын бериңиз, андан соң бул кызматты Атайын мүмкүнчүлүктөр бөлүмүндө иштетиңиз</string>

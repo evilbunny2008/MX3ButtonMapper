@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">رسائی ءِ ترتیب ءَ پچ کن</string>
 	<string name="paste">پیسٹ</string>
 	<string name="save">دیمپان کن</string>
-	<string name="shizuku_auth_token_label">%1$s ءِ بندات / بند ءِ ارادہ ءِ توثیق ٹوکن (%1$s ءِ ارادہ ءِ چارگ ءِ اسکرین ءَ چہ سرجمیں ‘توثیق: XXXX’ ءِ لیکہ ءَ پیسٹ کن)</string>
+	<string name="shizuku_auth_token_label">%1$s ءِ بندات / بند ءِ ارادہ ءِ توثیق ٹوکن (%1$s ءِ ارادہ ءِ چارگ ءِ اسکرین ءَ چہ سرجمیں ‘auth: XXXX’ ءِ لیکہ ءَ پیسٹ کن)</string>
 	<string name="status_placeholder">%1$s ءِ اجازت ءَ بہ دئے ، پدا اے سروس ءَ رسائی ءِ چیر دستی ءَ فعال بہ کن۔</string>
 	<string name="tv_brand_label">ٹی وی برانڈ (خاص %1$s ٹی وی بٹن ئا را متاثر کنت)</string>
 </resources>

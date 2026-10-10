@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">पहुँच सेटिङ्ग चायेकि ।</string>
 	<string name="paste">तिकि</string>
 	<string name="save">लेंके</string>
-	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टप इन्टेन्ट आथ टोकन (%1$s या भ्यू इन्टेन्ट स्क्रिनं पूवंक ‘अथ: XXXX’ लाइन पेस्ट यानादिसँ)</string>
+	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टप इन्टेन्ट आथ टोकन (%1$s या भ्यू इन्टेन्ट स्क्रिनं पूवंक ‘auth: XXXX’ लाइन पेस्ट यानादिसँ)</string>
 	<string name="status_placeholder">%1$s उजं ब्यु, अले थुगु सेवायात पहुँचया अन्तर्गत सक्षम या ।</string>
 	<string name="tv_brand_label">टिभि ब्रान्डं (विशेष यानाः %1$s टिभि बटनयात लिच्वः लाकी)</string>
 </resources>

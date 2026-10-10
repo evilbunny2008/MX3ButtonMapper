@@ -6,7 +6,7 @@
 	<string name="log_key_events_label">Zaznamenat každé stisknutí klávesy (pouze pro řešení problémů)</string>
 	<string name="log_remaps_label">Zaznamenat přemapovaná stisknutí tlačítka (pouze pro řešení problémů)</string>
 	<string name="open_accessibility_settings">Otevřete Nastavení usnadnění</string>
-	<string name="paste">Pasta</string>
+	<string name="paste">Vložit</string>
 	<string name="save">Uložit</string>
 	<string name="shizuku_auth_token_label">%1$s počáteční/zastavovací token ověření záměru (vložte celý řádek ‘auth: XXXX’ z obrazovky Zobrazit záměry %1$s)</string>
 	<string name="status_placeholder">Udělte oprávnění %1$s a poté tuto službu povolte v části Usnadnění</string>

@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Log remapped button okunyiga (okugonjoola ebizibu byokka)</string>
 	<string name="open_accessibility_settings">Ggulawo Enteekateeka z’Okutuuka ku Nsonga</string>
 	<string name="paste">Okusiiga</string>
-	<string name="save">Okununula</string>
+	<string name="save">Tereka</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (ssaako layini ya ‘auth: XXXX’ enzijuvu okuva ku %1$s’s View intents screen)</string>
 	<string name="status_placeholder">Wa %1$s olukusa, olwo osobozesa empeereza eno wansi wa Accessibility</string>
 	<string name="tv_brand_label">Ekika kya TV (kikosa %1$s TV button mu ngeri ey’enjawulo)</string>

@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Kirjaa uudelleen kartoitetut painikkeen painallukset (vain vianetsintään)</string>
 	<string name="open_accessibility_settings">Avaa Esteettömyysasetukset</string>
 	<string name="paste">Liitä</string>
-	<string name="save">Tallentaa</string>
+	<string name="save">Tallenna</string>
 	<string name="shizuku_auth_token_label">%1$s aloitus/lopetustarkoitustodennustunnus (liitä koko ‘auth: XXXX’ -rivi käyttäjän %1$s Näytä tavoitteet -näytöstä)</string>
 	<string name="status_placeholder">Myönnä %1$s käyttöoikeus ja ota sitten tämä palvelu käyttöön Esteettömyys-kohdassa</string>
 	<string name="tv_brand_label">TV-brändi (vaikuttaa erityisesti %1$s TV-painikkeeseen)</string>

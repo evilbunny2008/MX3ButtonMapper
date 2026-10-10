@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Hùn Nǔ E Nɔ Zɔ́n Bɔ È Nɔ Mɔ Nǔ lɛ É</string>
 	<string name="paste">Tɛn</string>
 	<string name="save">Xàsà do</string>
-	<string name="shizuku_auth_token_label">%1$s sín wuntun nǔjlɛdonǔwu tɔn bɛ́/ɖò te (ɖó ‘aut: XXXX’ sín linlin ɔ bǐ jí ɖò %1$s sín View intents sín ɖiɖe jí)</string>
+	<string name="shizuku_auth_token_label">%1$s sín wuntun nǔjlɛdonǔwu tɔn bɛ́/ɖò te (ɖó ‘auth: XXXX’ sín linlin ɔ bǐ jí ɖò %1$s sín View intents sín ɖiɖe jí)</string>
 	<string name="status_placeholder">Na gbè %1$s, enɛ gudo hǔn, hun azɔ̌ élɔ́ ɖò Accessibilité glɔ́</string>
 	<string name="tv_brand_label">Televiziɔn sín wuntun (é nɔ wà nǔ dó %1$s TV sín butɔn ɔ wu tawun)</string>
 </resources>

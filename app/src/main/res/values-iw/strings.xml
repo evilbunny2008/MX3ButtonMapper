@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">יומן לחיצות על כפתורים שסומנו מחדש (לפתרון בעיות בלבד)</string>
 	<string name="open_accessibility_settings">פתח את הגדרות נגישות</string>
 	<string name="paste">לְהַדבִּיק</string>
-	<string name="save">לְהַצִיל</string>
+	<string name="save">שמור</string>
 	<string name="shizuku_auth_token_label">%1$s התחל/הפסק כוונות אישור (הדבק את השורה המלאה ‘auth: XXXX’ ממסך התצוגה של כוונות של %1$s)</string>
 	<string name="status_placeholder">הענק הרשאה ל %1$s ולאחר מכן הפעל את השירות הזה תחת נגישות</string>
 	<string name="tv_brand_label">מותג הטלוויזיה (משפיע באופן ספציפי על לחצן הטלוויזיה %1$s)</string>

@@ -7,7 +7,7 @@
 	<string name="log_remaps_label">Реєстрація натискань перепризначених кнопок (лише для усунення несправностей)</string>
 	<string name="open_accessibility_settings">Відкрийте налаштування доступності</string>
 	<string name="paste">Вставити</string>
-	<string name="save">зберегти</string>
+	<string name="save">Зберегти</string>
 	<string name="shizuku_auth_token_label">Маркер автентифікації наміру початку/зупинки %1$s (вставте повний рядок ‘auth: XXXX’ із екрана перегляду намірів %1$s)</string>
 	<string name="status_placeholder">Надайте дозвіл %1$s, а потім увімкніть цю послугу в розділі Доступність</string>
 	<string name="tv_brand_label">Бренд телевізора (особливо впливає на кнопку ТВ %1$s)</string>

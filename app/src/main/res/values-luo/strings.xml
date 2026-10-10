@@ -8,7 +8,7 @@
 	<string name="open_accessibility_settings">Yar chenro mag donjo</string>
 	<string name="paste">Romb</string>
 	<string name="save">Waro</string>
-	<string name="shizuku_auth_token_label">%1$s chako/weyo ranyisi mar ng’eyo (keto laini ma opong‘ mar ’ng’eyo: XXXX‘ kowuok e skrin mar %1$s’s Neno gombo)</string>
+	<string name="shizuku_auth_token_label">%1$s chako/weyo ranyisi mar ng’eyo (keto laini ma opong’ mar ‘auth: XXXX’ kowuok e skrin mar %1$s’s Neno gombo)</string>
 	<string name="status_placeholder">Mi %1$s ratiro, kae to iti gi tijni e bwo Yore mar Yudo</string>
 	<string name="tv_brand_label">Kido mar TV (omulo baton mar TV mar %1$s ahinya)</string>
 </resources>
