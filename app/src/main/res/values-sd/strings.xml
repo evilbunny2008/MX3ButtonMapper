@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">مخصوص هارڊويئر بٽڻ کي دٻائڻ لاءِ ٻڌو ۽ انهن کي ٻئي ڪيڪوڊ تي ٻيهر ٺاهيو</string>
 	<string name="app_not_installed_message">هن بٽڻ تي ميپ ٿيل ايپ (%1$s) انسٽال ٿيل ناهي</string>
 	<string name="app_not_installed_title">ايپ انسٽال ٿيل ناهي</string>
+	<string name="language">ٻولي</string>
 	<string name="log_key_events_label">لاگ هر اهم پريس (صرف مسئلو حل ڪرڻ لاء)</string>
 	<string name="log_remaps_label">لاگ ريمپ ٿيل بٽڻ دٻايو (صرف مسئلو حل ڪرڻ لاءِ)</string>
 	<string name="open_accessibility_settings">رسائي سيٽنگون کوليو</string>
@@ -10,5 +11,6 @@
 	<string name="save">محفوظ ڪريو</string>
 	<string name="shizuku_auth_token_label">%1$s شروع/اسٽاپ انٽيٽ آٿ ٽوڪن (پيسٽ ڪريو مڪمل ‘auth: XXXX’ لائن %1$s جي View intents اسڪرين مان)</string>
 	<string name="status_placeholder">%1$s جي اجازت ڏيو، پوءِ ھن سروس کي رسائي جي تحت فعال ڪريو</string>
+	<string name="system_default">سسٽم ڊفالٽ</string>
 	<string name="tv_brand_label">ٽي وي برانڊ (خاص طور تي %1$s ٽي وي بٽڻ کي متاثر ڪري ٿو)</string>
 </resources>

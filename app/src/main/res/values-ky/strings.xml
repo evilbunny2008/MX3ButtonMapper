@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Белгилүү аппараттык баскычтарды басууларды угат жана аларды башка баскыч кодуна алмаштырат</string>
 	<string name="app_not_installed_message">Бул баскычка дал келген колдонмо (%1$s) орнотулган эмес</string>
 	<string name="app_not_installed_title">Колдонмо орнотулган жок</string>
+	<string name="language">Тил</string>
 	<string name="log_key_events_label">Ар бир баскычты басуу журналына кириңиз (маселелерди чечүү үчүн гана)</string>
 	<string name="log_remaps_label">Ремаланган баскыч басуулар журналы (маселелерди оңдоо үчүн гана)</string>
 	<string name="open_accessibility_settings">Атайын мүмкүнчүлүктөр жөндөөлөрүн ачыңыз</string>
@@ -10,5 +11,6 @@
 	<string name="save">Сактоо</string>
 	<string name="shizuku_auth_token_label">%1$s баштоо/токтоо ниетинин аутентификация белгисин (%1$s’тин ниеттерди көрүү экранынан толук ‘auth: XXXX’ сабын чаптаңыз)</string>
 	<string name="status_placeholder">%1$s уруксатын бериңиз, андан соң бул кызматты Атайын мүмкүнчүлүктөр бөлүмүндө иштетиңиз</string>
+	<string name="system_default">Тутумдун демейкиси</string>
 	<string name="tv_brand_label">Сыналгы бренди (өзгөчө %1$s сыналгы баскычына таасир этет)</string>
 </resources>

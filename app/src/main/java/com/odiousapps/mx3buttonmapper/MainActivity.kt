@@ -17,12 +17,17 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import rikka.shizuku.Shizuku
+import java.text.Collator
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -66,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         setUpShizukuAuthTokenField()
         setUpTvBrandSelector()
         setUpLogToggles()
+        setUpLanguagePicker()
     }
 
     /**
@@ -193,6 +199,42 @@ class MainActivity : AppCompatActivity() {
                     Log.i(TAG, "$logName set to $isChecked")
                 }
             }
+        }
+    }
+
+    /**
+     * In-app language choice, mainly for the translated languages a TV
+     * can't be set to system-wide (Hausa, Welsh, etc.) -- Android TV has
+     * no per-app language screen of its own. Each language is listed in
+     * its own name, so it's findable whatever the app is currently in.
+     * AppCompat recreates the activity itself once the choice is applied.
+     */
+    private fun setUpLanguagePicker() {
+        findViewById<Button>(R.id.languageButton).setOnClickListener {
+            val collator = Collator.getInstance()
+            val languages = (listOf("en") + BuildConfig.APP_LOCALES)
+                .map { tag ->
+                    val locale = Locale.forLanguageTag(tag)
+                    tag to locale.getDisplayName(locale).replaceFirstChar { it.titlecase(locale) }
+                }
+                .sortedWith(compareBy(collator) { it.second })
+
+            // Index 0 is "System default", so every language is offset by one
+            val current = AppCompatDelegate.getApplicationLocales()
+            val checked = if (current.isEmpty) 0 else
+                languages.indexOfFirst { Locale.forLanguageTag(it.first) == current[0] } + 1
+
+            val labels = listOf(getString(R.string.system_default)) + languages.map { it.second }
+            AlertDialog.Builder(this)
+                .setTitle(R.string.language)
+                .setSingleChoiceItems(labels.toTypedArray(), checked) { dialog, which ->
+                    dialog.dismiss()
+                    val chosen = if (which == 0) LocaleListCompat.getEmptyLocaleList()
+                        else LocaleListCompat.forLanguageTags(languages[which - 1].first)
+                    Log.i(TAG, "App language set to ${chosen.toLanguageTags().ifEmpty { "system default" }}")
+                    AppCompatDelegate.setApplicationLocales(chosen)
+                }
+                .show()
         }
     }
 

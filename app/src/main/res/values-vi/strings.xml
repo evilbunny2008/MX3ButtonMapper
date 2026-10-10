@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Lắng nghe các lần nhấn nút phần cứng cụ thể và ánh xạ lại chúng sang mã khóa khác</string>
 	<string name="app_not_installed_message">Ứng dụng được ánh xạ tới nút này (%1$s) chưa được cài đặt</string>
 	<string name="app_not_installed_title">Ứng dụng chưa được cài đặt</string>
+	<string name="language">Ngôn ngữ</string>
 	<string name="log_key_events_label">Ghi lại mọi lần nhấn phím (chỉ để khắc phục sự cố)</string>
 	<string name="log_remaps_label">Ghi lại các lần nhấn nút được ánh xạ lại (chỉ để khắc phục sự cố)</string>
 	<string name="open_accessibility_settings">Mở cài đặt trợ năng</string>
@@ -10,5 +11,6 @@
 	<string name="save">Lưu</string>
 	<string name="shizuku_auth_token_label">Mã thông báo xác thực ý định bắt đầu/dừng %1$s (dán dòng ‘auth: XXXX’ đầy đủ từ màn hình Xem ý định của %1$s)</string>
 	<string name="status_placeholder">Cấp quyền cho %1$s, sau đó kích hoạt dịch vụ này trong Trợ năng</string>
+	<string name="system_default">Mặc định của hệ thống</string>
 	<string name="tv_brand_label">Thương hiệu TV (ảnh hưởng cụ thể đến nút TV %1$s)</string>
 </resources>

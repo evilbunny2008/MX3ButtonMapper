@@ -3,12 +3,14 @@
 	<string name="accessibility_service_description">Guh dide pêlên bişkojka hardware ya taybetî û wan li ser kodek din vedigire</string>
 	<string name="app_not_installed_message">Sepana ku li ser vê bişkokê hatiye nexşandin (%1$s) nehatiye saz kirin</string>
 	<string name="app_not_installed_title">App nehat saz kirin</string>
+	<string name="language">Ziman</string>
 	<string name="log_key_events_label">Têkeve her çapkirina bişkojkê (tenê ji bo çareserkirina pirsgirêkê)</string>
 	<string name="log_remaps_label">Pelên bişkojka ji nû ve hatî tomarkirin (tenê ji bo çareserkirina pirsgirêkê)</string>
 	<string name="open_accessibility_settings">Mîhengên Gihîştinê vekin</string>
-	<string name="paste">Paste</string>
-	<string name="save">Rizgarkirin</string>
+	<string name="paste">Pêve bike</string>
+	<string name="save">Tomar bike</string>
 	<string name="shizuku_auth_token_label">%1$s nîşana erêkirina niyeta destpêk/rawestandinê (xêza tam ‘auth: XXXX’ ji dîmendera niyeta Nêrînê ya %1$s bikişîne)</string>
 	<string name="status_placeholder">Destûra %1$s bide, paşê vê karûbarê di bin Gihîştinê de çalak bike</string>
+	<string name="system_default">Standarda pergalê</string>
 	<string name="tv_brand_label">Nîşana televîzyonê (bi taybetî bandorê li bişkoja TV-yê %1$s dike)</string>
 </resources>

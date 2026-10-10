@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Ilalela izinkinobho zezingxenyekazi zekhompuyutha ezicindezelwayo futhi iziphindiselela kwenye ikhodi yokhiye</string>
 	<string name="app_not_installed_message">Uhlelo lokusebenza olufakwe kule nkinobho (%1$s) alufakiwe</string>
 	<string name="app_not_installed_title">Uhlelo lokusebenza alufakiwe</string>
+	<string name="language">Ulimi</string>
 	<string name="log_key_events_label">Ngena kuwo wonke ukhiye wokucindezela (ukuthola ukuxazulula inkinga kuphela)</string>
 	<string name="log_remaps_label">Ukucindezela inkinobho yelogi efakwe kumephu kabusha (yokuxazulula inkinga kuphela)</string>
 	<string name="open_accessibility_settings">Vula Izilungiselelo Zokufinyeleleka</string>
@@ -10,5 +11,6 @@
 	<string name="save">Londoloza</string>
 	<string name="shizuku_auth_token_label">%1$s ithokheni ye-auth yenhloso yokuqala/yokumisa (namathisela umugqa ogcwele othi ‘i-auth: XXXX’ kusukela kusikrini sezinhloso zokubuka %1$s)</string>
 	<string name="status_placeholder">Nikeza %1$s imvume, bese unika amandla le sevisi ngaphansi kokufinyelela</string>
+	<string name="system_default">Okuzenzakalelayo kwesistimu</string>
 	<string name="tv_brand_label">Ibhrendi ye-TV (ithinta ngokuqondile inkinobho ye-TV ye %1$s)</string>
 </resources>

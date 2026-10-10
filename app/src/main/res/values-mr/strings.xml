@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">विशिष्ट हार्डवेअर बटण दाबण्यासाठी ऐकते आणि त्यांना दुसऱ्या कीकोडवर रीमॅप करते</string>
 	<string name="app_not_installed_message">या बटणावर मॅप केलेले ॲप (%1$s) स्थापित केलेले नाही</string>
 	<string name="app_not_installed_title">ॲप इंस्टॉल नाही</string>
+	<string name="language">भाषा</string>
 	<string name="log_key_events_label">प्रत्येक की दाबा लॉग करा (फक्त समस्यानिवारणासाठी)</string>
 	<string name="log_remaps_label">लॉग रीमॅप केलेले बटण दाबा (फक्त समस्यानिवारणासाठी)</string>
 	<string name="open_accessibility_settings">प्रवेशयोग्यता सेटिंग्ज उघडा</string>
@@ -10,5 +11,6 @@
 	<string name="save">जतन करा</string>
 	<string name="shizuku_auth_token_label">%1$s स्टार्ट/स्टॉप इंटेंट प्रमाणीकरण टोकन (%1$s च्या व्ह्यू इंटेंट स्क्रीनवरून संपूर्ण ‘auth: XXXX’ ओळ पेस्ट करा)</string>
 	<string name="status_placeholder">%1$s परवानगी द्या, त्यानंतर प्रवेशयोग्यतेखाली ही सेवा सक्षम करा</string>
+	<string name="system_default">सिस्टम डीफॉल्ट</string>
 	<string name="tv_brand_label">टीव्ही ब्रँड (विशेषतः %1$s टीव्ही बटण प्रभावित करते)</string>
 </resources>

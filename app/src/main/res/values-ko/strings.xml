@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">특정 하드웨어 버튼 누르기를 수신하고 이를 다른 키코드에 다시 매핑합니다</string>
 	<string name="app_not_installed_message">이 버튼(%1$s)에 매핑된 앱이 설치되지 않았습니다</string>
 	<string name="app_not_installed_title">앱이 설치되지 않았습니다</string>
+	<string name="language">언어</string>
 	<string name="log_key_events_label">모든 키 누름 기록(문제 해결용)</string>
 	<string name="log_remaps_label">다시 매핑된 버튼 누름 기록(문제 해결용)</string>
 	<string name="open_accessibility_settings">접근성 설정 열기</string>
@@ -10,5 +11,6 @@
 	<string name="save">저장</string>
 	<string name="shizuku_auth_token_label">%1$s 시작/중지 인텐트 인증 토큰(%1$s의 인텐트 보기 화면에서 전체 ‘auth: XXXX’ 줄 붙여넣기)</string>
 	<string name="status_placeholder">%1$s 권한을 부여한 후 접근성에서 이 서비스를 활성화하세요</string>
+	<string name="system_default">시스템 기본값</string>
 	<string name="tv_brand_label">TV 브랜드(특히 %1$s TV 버튼에 영향을 줌)</string>
 </resources>

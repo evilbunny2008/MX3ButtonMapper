@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Muayyan apparat tugmasi bosishlarini tinglaydi va ularni boshqa kalit kodiga o’zgartiradi</string>
 	<string name="app_not_installed_message">Ushbu tugma (%1$s) bilan moslangan ilova oʻrnatilmagan</string>
 	<string name="app_not_installed_title">Ilova oʻrnatilmagan</string>
+	<string name="language">Til</string>
 	<string name="log_key_events_label">Har bir tugmani bosish jurnaliga kirish (faqat muammolarni bartaraf etish uchun)</string>
 	<string name="log_remaps_label">Qayta ko’rsatilgan tugmani bosish jurnali (faqat muammolarni bartaraf etish uchun)</string>
 	<string name="open_accessibility_settings">Maxsus imkoniyatlar sozlamalarini oching</string>
@@ -10,5 +11,6 @@
 	<string name="save">Saqlash</string>
 	<string name="shizuku_auth_token_label">%1$s boshlash/to’xtatish niyati autentifikatsiya belgisi (to’liq ‘auth: XXXX’ qatorini %1$s ko’rish niyatlari ekranidan joylashtiring)</string>
 	<string name="status_placeholder">%1$s ruxsatini bering, so’ngra maxsus imkoniyatlar ostida ushbu xizmatni yoqing</string>
+	<string name="system_default">Tizim standarti</string>
 	<string name="tv_brand_label">Televizor brendi (ayniqsa %1$s TV tugmasiga ta’sir qiladi)</string>
 </resources>

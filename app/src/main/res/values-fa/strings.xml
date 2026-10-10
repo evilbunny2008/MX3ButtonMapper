@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">به فشردن دکمه های سخت افزاری خاص گوش می دهد و آنها را به یک کد کلید دیگر تغییر می دهد</string>
 	<string name="app_not_installed_message">برنامه نگاشت شده به این دکمه (%1$s) نصب نشده است</string>
 	<string name="app_not_installed_title">برنامه نصب نشده است</string>
+	<string name="language">زبان</string>
 	<string name="log_key_events_label">ثبت هر فشار کلید (فقط برای عیب یابی)</string>
 	<string name="log_remaps_label">فشردن دکمه های تغییر نقشه ثبت شده (فقط برای عیب یابی)</string>
 	<string name="open_accessibility_settings">تنظیمات دسترس‌پذیری را باز کنید</string>
@@ -10,5 +11,6 @@
 	<string name="save">ذخیره کنید</string>
 	<string name="shizuku_auth_token_label">نشانه احراز هویت شروع/توقف %1$s (خط کامل ‘auth: XXXX’ را از صفحه نمایش اهداف %1$s جای‌گذاری کنید)</string>
 	<string name="status_placeholder">به %1$s اجازه بدهید، سپس این سرویس را در دسترس‌پذیری فعال کنید</string>
+	<string name="system_default">پیش‌فرض سیستم</string>
 	<string name="tv_brand_label">نام تجاری تلویزیون (به طور خاص روی دکمه تلویزیون %1$s تأثیر می گذارد)</string>
 </resources>

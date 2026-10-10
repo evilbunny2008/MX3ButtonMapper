@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Nasłuchuje naciśnięć konkretnych przycisków sprzętowych i przypisuje je do innego kodu klawisza</string>
 	<string name="app_not_installed_message">Aplikacja przypisana do tego przycisku (%1$s) nie jest zainstalowana</string>
 	<string name="app_not_installed_title">Aplikacja nie jest zainstalowana</string>
+	<string name="language">Język</string>
 	<string name="log_key_events_label">Rejestruj każde naciśnięcie klawisza (tylko w celu rozwiązywania problemów)</string>
 	<string name="log_remaps_label">Rejestruj ponownie przypisane naciśnięcia przycisków (tylko w celu rozwiązywania problemów)</string>
 	<string name="open_accessibility_settings">Otwórz Ustawienia dostępności</string>
@@ -10,5 +11,6 @@
 	<string name="save">Zapisz</string>
 	<string name="shizuku_auth_token_label">Token autoryzacji intencji rozpoczęcia/zatrzymania %1$s (wklej pełną linię ‘auth: XXXX’ z ekranu Wyświetl intencje %1$s)</string>
 	<string name="status_placeholder">Przyznaj uprawnienia %1$s, a następnie włącz tę usługę w obszarze Dostępność</string>
+	<string name="system_default">Domyślny systemu</string>
 	<string name="tv_brand_label">Marka telewizora (wpływa szczególnie na przycisk TV %1$s)</string>
 </resources>

@@ -146,6 +146,20 @@
             android:exported="false"
             android:initOrder="100" />
 
+        <!--
+          Lets AppCompat persist the in-app language choice itself on
+          API < 33 (MainActivity's language picker). On 33+ the system
+          stores it instead and this service is never used.
+        -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
         <!-- Required for Shizuku to talk to this app -->
         <provider
             android:name="rikka.shizuku.ShizukuProvider"

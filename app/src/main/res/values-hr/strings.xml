@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Osluškuje pritiske specifičnih hardverskih gumba i preslikava ih na drugi kod tipke</string>
 	<string name="app_not_installed_message">Aplikacija mapirana na ovaj gumb (%1$s) nije instalirana</string>
 	<string name="app_not_installed_title">Aplikacija nije instalirana</string>
+	<string name="language">Jezik</string>
 	<string name="log_key_events_label">Bilježi svaki pritisak tipke (samo za rješavanje problema)</string>
 	<string name="log_remaps_label">Bilježi ponovno mapirane pritiske gumba (samo za rješavanje problema)</string>
 	<string name="open_accessibility_settings">Otvorite Postavke pristupačnosti</string>
@@ -10,5 +11,6 @@
 	<string name="save">Spremi</string>
 	<string name="shizuku_auth_token_label">Token autentifikacije namjere pokretanja/zaustavljanja %1$s (zalijepite cijeli redak ‘auth: XXXX’ sa zaslona Prikaz namjera %1$s)</string>
 	<string name="status_placeholder">Dajte %1$s dopuštenje, a zatim omogućite ovu uslugu pod Pristupačnost</string>
+	<string name="system_default">Zadano sustavom</string>
 	<string name="tv_brand_label">Robna marka TV-a (konkretno utječe na gumb %1$s TV)</string>
 </resources>

@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">నిర్దిష్ట హార్డ్‌వేర్ బటన్ ప్రెస్‌లను వింటుంది మరియు వాటిని మరొక కీకోడ్‌కి రీమ్యాప్ చేస్తుంది</string>
 	<string name="app_not_installed_message">ఈ బటన్ (%1$s)కి మ్యాప్ చేయబడిన యాప్ ఇన్‌స్టాల్ చేయబడలేదు</string>
 	<string name="app_not_installed_title">యాప్ ఇన్‌స్టాల్ చేయబడలేదు</string>
+	<string name="language">భాష</string>
 	<string name="log_key_events_label">ప్రతి కీ ప్రెస్‌ను లాగ్ చేయండి (ట్రబుల్షూటింగ్ కోసం మాత్రమే)</string>
 	<string name="log_remaps_label">లాగ్ రీమ్యాప్ చేయబడిన బటన్ ప్రెస్‌లు (ట్రబుల్షూటింగ్ కోసం మాత్రమే)</string>
 	<string name="open_accessibility_settings">యాక్సెసిబిలిటీ సెట్టింగ్‌లను తెరవండి</string>
@@ -10,5 +11,6 @@
 	<string name="save">సేవ్ చేయండి</string>
 	<string name="shizuku_auth_token_label">%1$s స్టార్ట్/స్టాప్ ఇంటెంట్ ప్రామాణీకరణ టోకెన్ (%1$s వీక్షణ ఇంటెంట్‌ల స్క్రీన్ నుండి పూర్తి ‘auth: XXXX’ లైన్‌ను అతికించండి)</string>
 	<string name="status_placeholder">%1$s అనుమతిని మంజూరు చేయండి, ఆపై యాక్సెసిబిలిటీ కింద ఈ సేవను ప్రారంభించండి</string>
+	<string name="system_default">సిస్టమ్ డిఫాల్ట్</string>
 	<string name="tv_brand_label">టీవీ బ్రాండ్ (ప్రత్యేకంగా %1$s టీవీ బటన్‌ను ప్రభావితం చేస్తుంది)</string>
 </resources>

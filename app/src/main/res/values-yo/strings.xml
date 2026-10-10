@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Tẹtisi fun awọn titẹ bọtini ohun elo kan pato ati tun ṣe wọn si koodu bọtini miiran</string>
 	<string name="app_not_installed_message">Ohun elo ti a yaworan si bọtini yii (%1$s) ko fi sii</string>
 	<string name="app_not_installed_title">App ko fi sori ẹrọ</string>
+	<string name="language">Èdè</string>
 	<string name="log_key_events_label">Wọle gbogbo bọtini titẹ (fun laasigbotitusita nikan)</string>
 	<string name="log_remaps_label">Wọle awọn titẹ bọtini ti a tunṣe (fun laasigbotitusita nikan)</string>
 	<string name="open_accessibility_settings">Ṣii Eto Wiwọle</string>
@@ -10,5 +11,6 @@
 	<string name="save">Fipamọ</string>
 	<string name="shizuku_auth_token_label">%1$s ibere/da ami idaniloju ididuro duro (lẹẹ laini kikun ‘auth: XXXX’ lati iboju %1$s’s View intents)</string>
 	<string name="status_placeholder">Fifun %1$s igbanilaaye, lẹhinna mu iṣẹ yii ṣiṣẹ labẹ Wiwọle</string>
+	<string name="system_default">Àìyípadà ẹ̀rọ</string>
 	<string name="tv_brand_label">Aami TV (ni ipa lori bọtini TV %1$s pataki)</string>
 </resources>

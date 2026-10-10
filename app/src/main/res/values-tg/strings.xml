@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Пахшкунии тугмаҳои мушаххаси сахтафзорро гӯш мекунад ва онҳоро ба дигар коди калидӣ иваз мекунад</string>
 	<string name="app_not_installed_message">Барномаи ба ин тугма хариташуда (%1$s) насб нашудааст</string>
 	<string name="app_not_installed_title">Барнома насб нашудааст</string>
+	<string name="language">Забон</string>
 	<string name="log_key_events_label">Ҳар як пахшкунии тугмаҳоро сабт кунед (танҳо барои ҳалли мушкилот)</string>
 	<string name="log_remaps_label">Сабтҳои такрории тугмаҳоро сабт кунед (танҳо барои ҳалли мушкилот)</string>
 	<string name="open_accessibility_settings">Танзимоти дастрасиро кушоед</string>
@@ -10,5 +11,6 @@
 	<string name="save">Захира кунед</string>
 	<string name="shizuku_auth_token_label">%1$s аломати аутентификацияи нияти оғоз/қатъ (хатти пурраи ‘auth: XXXX’ ро аз экрани Намоиши ниятҳои %1$s часбонед)</string>
 	<string name="status_placeholder">Ба %1$s иҷозат диҳед ва пас ин хидматро дар зери Дастрасӣ фаъол созед</string>
+	<string name="system_default">Пешфарзи система</string>
 	<string name="tv_brand_label">Бренд ТВ (махсусан ба тугмаи ТВ %1$s таъсир мерасонад)</string>
 </resources>

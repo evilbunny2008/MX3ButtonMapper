@@ -4,6 +4,7 @@
 	<string name="app_name" translatable="false">MX3 Button Mapper</string>
 	<string name="app_not_installed_message">The app mapped to this button (%1$s) isn’t installed</string>
 	<string name="app_not_installed_title">App not installed</string>
+	<string name="language">Language</string>
 	<string name="log_key_events_label">Log every key press (for troubleshooting only)</string>
 	<string name="log_remaps_label">Log remapped button presses (for troubleshooting only)</string>
 	<string name="mx3_remote_name" translatable="false">MX3 Air Mouse</string>
@@ -15,6 +16,7 @@
 	<string name="shizuku_name" translatable="false">Shizuku</string>
 	<string name="status_placeholder">Grant %1$s permission, then enable this service under Accessibility</string>
 	<string name="tv_brand_blaupunkt" translatable="false">Blaupunkt</string>
+	<string name="system_default">System default</string>
 	<string name="tv_brand_label">TV brand (affects the %1$s TV button specifically)</string>
 	<string name="tv_brand_tcl" translatable="false">TCL</string>
 </resources>

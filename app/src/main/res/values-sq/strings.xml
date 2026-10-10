@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Dëgjon për shtypjen e butonave të veçantë të harduerit dhe i ripërputh ato në një kod tjetër tasti</string>
 	<string name="app_not_installed_message">Aplikacioni i vendosur në këtë buton (%1$s) nuk është i instaluar</string>
 	<string name="app_not_installed_title">Aplikacioni nuk është i instaluar</string>
+	<string name="language">Gjuha</string>
 	<string name="log_key_events_label">Regjistro çdo shtypje tasti (vetëm për zgjidhjen e problemeve)</string>
 	<string name="log_remaps_label">Shtypjet e butonit të rimarrë të regjistrit (vetëm për zgjidhjen e problemeve)</string>
 	<string name="open_accessibility_settings">Hap ‘Cilësimet e aksesueshmërisë’</string>
@@ -10,5 +11,6 @@
 	<string name="save">Ruaj</string>
 	<string name="shizuku_auth_token_label">Shenja e vërtetimit të qëllimit të fillimit/ndalimit të %1$s (ngjit rreshtin e plotë ‘auth: XXXX’ nga ekrani i synimeve të Shiko të %1$s)</string>
 	<string name="status_placeholder">Jep leje %1$s, më pas aktivizo këtë shërbim nën ‘Qasshmëria’</string>
+	<string name="system_default">Parazgjedhja e sistemit</string>
 	<string name="tv_brand_label">Marka e televizorit (ndikon në mënyrë specifike në butonin e TV %1$s)</string>
 </resources>

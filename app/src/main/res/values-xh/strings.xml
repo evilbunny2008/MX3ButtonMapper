@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Imamela iqhosha elithile le-hardware elicinezelayo kwaye libabuyisele kwenye ikhowudi yesitshixo</string>
 	<string name="app_not_installed_message">Usetyenziso olumaphulwe kweli qhosha (%1$s) alufakwanga</string>
 	<string name="app_not_installed_title">Usetyenziso alufakwanga</string>
+	<string name="language">Ulwimi</string>
 	<string name="log_key_events_label">Shicilela iqhosha ngalinye (ukulungisa ingxaki kuphela)</string>
 	<string name="log_remaps_label">Shicilela iqhosha lemaphu kwakhona (ukulungisa ingxaki kuphela)</string>
 	<string name="open_accessibility_settings">Vula iSetingi zokuFikelela</string>
@@ -10,5 +11,6 @@
 	<string name="save">Gcina</string>
 	<string name="shizuku_auth_token_label">%1$s qalisa/yekisa umqondiso wobubhali wenjongo (ncamathisela ngokupheleleyo ‘auth: XXXX’ esuka kwi %1$s’s Jonga isikrini seenjongo)</string>
 	<string name="status_placeholder">Nika imvume ye %1$s, emva koko uvule le nkonzo phantsi koFikelelo</string>
+	<string name="system_default">Okungagqibekanga kwesistim</string>
 	<string name="tv_brand_label">Uhlobo lweTV (ichaphazela i %1$s iqhosha leTV ngokukodwa)</string>
 </resources>

@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Luistert naar specifieke hardwareknopdrukken en wijst deze opnieuw toe aan een andere sleutelcode</string>
 	<string name="app_not_installed_message">De app die aan deze knop is toegewezen (%1$s) is niet geïnstalleerd</string>
 	<string name="app_not_installed_title">App niet geïnstalleerd</string>
+	<string name="language">Taal</string>
 	<string name="log_key_events_label">Registreer elke toetsaanslag (alleen voor probleemoplossing)</string>
 	<string name="log_remaps_label">Opnieuw toegewezen knopdrukken registreren (alleen voor probleemoplossing)</string>
 	<string name="open_accessibility_settings">Open Toegankelijkheidsinstellingen</string>
@@ -10,5 +11,6 @@
 	<string name="save">Opslaan</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (plak de volledige ‘auth: XXXX’ regel uit het scherm View intents van %1$s)</string>
 	<string name="status_placeholder">Verleen %1$s toestemming en schakel deze service vervolgens in onder Toegankelijkheid</string>
+	<string name="system_default">Systeemstandaard</string>
 	<string name="tv_brand_label">TV-merk (heeft specifiek invloed op de %1$s TV-knop)</string>
 </resources>

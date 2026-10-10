@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Тоног төхөөрөмжийн тусгай товчлуур дарахыг сонсож, өөр түлхүүр код руу шилжүүлнэ</string>
 	<string name="app_not_installed_message">Энэ товчлуурт (%1$s) буулгасан програмыг суулгаагүй байна</string>
 	<string name="app_not_installed_title">Апп суулгаагүй байна</string>
+	<string name="language">Хэл</string>
 	<string name="log_key_events_label">Товчлуур дарах бүрийг бүртгэх (зөвхөн алдааг олж засварлахад)</string>
 	<string name="log_remaps_label">Дахин харуулсан товчлуурын даралтыг бүртгэх (зөвхөн алдааг олж засварлахад зориулагдсан)</string>
 	<string name="open_accessibility_settings">Хандалтын тохиргоог нээнэ үү</string>
@@ -10,5 +11,6 @@
 	<string name="save">Хадгалах</string>
 	<string name="shizuku_auth_token_label">%1$s эхлүүлэх/зогсоох зорилгыг баталгаажуулах токен (%1$s зорилгыг харах дэлгэцээс ‘auth: XXXX’ мөрийг бүтнээр нь буулгана уу)</string>
 	<string name="status_placeholder">%1$s д зөвшөөрөл өгөөд, Хүртээмжийн хэсгээс энэ үйлчилгээг идэвхжүүлнэ үү</string>
+	<string name="system_default">Системийн өгөгдмөл</string>
 	<string name="tv_brand_label">ТВ брэнд (ялангуяа %1$s ТВ товчлуурт нөлөөлдөг)</string>
 </resources>

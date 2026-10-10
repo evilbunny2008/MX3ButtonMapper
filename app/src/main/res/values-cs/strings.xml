@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Poslouchá stisknutí konkrétních hardwarových tlačítek a přemapuje je na jiný klíčový kód</string>
 	<string name="app_not_installed_message">Aplikace namapovaná na toto tlačítko (%1$s) není nainstalována</string>
 	<string name="app_not_installed_title">Aplikace není nainstalována</string>
+	<string name="language">Jazyk</string>
 	<string name="log_key_events_label">Zaznamenat každé stisknutí klávesy (pouze pro řešení problémů)</string>
 	<string name="log_remaps_label">Zaznamenat přemapovaná stisknutí tlačítka (pouze pro řešení problémů)</string>
 	<string name="open_accessibility_settings">Otevřete Nastavení usnadnění</string>
@@ -10,5 +11,6 @@
 	<string name="save">Uložit</string>
 	<string name="shizuku_auth_token_label">%1$s počáteční/zastavovací token ověření záměru (vložte celý řádek ‘auth: XXXX’ z obrazovky Zobrazit záměry %1$s)</string>
 	<string name="status_placeholder">Udělte oprávnění %1$s a poté tuto službu povolte v části Usnadnění</string>
+	<string name="system_default">Výchozí nastavení systému</string>
 	<string name="tv_brand_label">Značka TV (konkrétně ovlivňuje tlačítko TV %1$s)</string>
 </resources>

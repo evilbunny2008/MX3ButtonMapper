@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Na-ege ntị maka ịpị bọtịnụ ngwaike akọwapụtara wee tinye ha na koodu igodo ọzọ</string>
 	<string name="app_not_installed_message">Ngwa etinyere na bọtịnụ a (%1$s) etinyeghị</string>
 	<string name="app_not_installed_title">Ewụnyeghị ngwa</string>
+	<string name="language">Asụsụ</string>
 	<string name="log_key_events_label">Banye igodo ọ bụla (maka nchọpụta nsogbu naanị)</string>
 	<string name="log_remaps_label">Debanye aha bọtịnụ ndị emegharịrị (maka nchọpụta nsogbu naanị)</string>
 	<string name="open_accessibility_settings">Mepee Ntọala nnweta</string>
@@ -10,5 +11,6 @@
 	<string name="save">Chekwa</string>
 	<string name="shizuku_auth_token_label">%1$s mmalite/kwụsị intent auth token (mado n’uju ‘auth: XXXX’ site na %1$s’s View intent screen)</string>
 	<string name="status_placeholder">Nye ikike %1$s, wee gbanye ọrụ a n’okpuru nnweta</string>
+	<string name="system_default">Ndabara sistemụ</string>
 	<string name="tv_brand_label">Akara TV (na-emetụta bọtịnụ %1$s TV kpọmkwem)</string>
 </resources>

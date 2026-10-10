@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Слуша за натискане на конкретни хардуерни бутони и ги пренасочва към друг клавишен код</string>
 	<string name="app_not_installed_message">Приложението, свързано с този бутон (%1$s), не е инсталирано</string>
 	<string name="app_not_installed_title">Приложението не е инсталирано</string>
+	<string name="language">Език</string>
 	<string name="log_key_events_label">Регистрирайте всяко натискане на клавиш (само за отстраняване на неизправности)</string>
 	<string name="log_remaps_label">Регистрирайте преназначените натискания на бутони (само за отстраняване на неизправности)</string>
 	<string name="open_accessibility_settings">Отворете Настройки за достъпност</string>
@@ -10,5 +11,6 @@
 	<string name="save">Запазване</string>
 	<string name="shizuku_auth_token_label">Токен за удостоверяване на намерение за стартиране/стоп на %1$s (поставете пълния ред ‘auth: XXXX’ от екрана за преглед на намеренията на %1$s)</string>
 	<string name="status_placeholder">Дайте разрешение на %1$s, след което активирайте тази услуга под Достъпност</string>
+	<string name="system_default">По подразбиране за системата</string>
 	<string name="tv_brand_label">Марка на телевизора (засяга конкретно бутона за телевизор %1$s)</string>
 </resources>

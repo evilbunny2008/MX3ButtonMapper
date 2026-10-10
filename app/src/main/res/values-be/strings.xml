@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Прыслухоўваецца да націсканняў пэўных апаратных кнопак і пераназначае іх на іншы код клавішы</string>
 	<string name="app_not_installed_message">Праграма, прывязаная да гэтай кнопкі (%1$s), не ўсталявана</string>
 	<string name="app_not_installed_title">Праграма не ўстаноўлена</string>
+	<string name="language">Мова</string>
 	<string name="log_key_events_label">Запісвайце кожнае націсканне клавішы (толькі для ліквідацыі непаладак)</string>
 	<string name="log_remaps_label">Журнал націсканняў пераназначаных кнопак (толькі для ліквідацыі непаладак)</string>
 	<string name="open_accessibility_settings">Адкрыйце налады спецыяльных магчымасцей</string>
@@ -10,5 +11,6 @@
 	<string name="save">Захаваць</string>
 	<string name="shizuku_auth_token_label">Токен аўтэнтыфікацыі намеру %1$s для запуску/прыпынення (устаўце поўны радок ‘auth: XXXX’ з экрана прагляду намераў %1$s)</string>
 	<string name="status_placeholder">Дайце %1$s дазвол, затым уключыце гэту паслугу ў раздзеле ‘Спецыяльныя магчымасці’</string>
+	<string name="system_default">Як у сістэме</string>
 	<string name="tv_brand_label">Марка тэлевізара (асабліва ўплывае на кнопку ТБ %1$s)</string>
 </resources>

@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Kuulab konkreetseid riistvaranuppude vajutusi ja ühendab need ümber teise klahvikoodiga</string>
 	<string name="app_not_installed_message">Selle nupuga seotud rakendust (%1$s) pole installitud</string>
 	<string name="app_not_installed_title">Rakendus pole installitud</string>
+	<string name="language">Keel</string>
 	<string name="log_key_events_label">Logige sisse iga klahvivajutus (ainult tõrkeotsinguks)</string>
 	<string name="log_remaps_label">Logi uuesti kaardistatud nupuvajutused (ainult tõrkeotsinguks)</string>
 	<string name="open_accessibility_settings">Avage juurdepääsetavuse seaded</string>
@@ -10,5 +11,6 @@
 	<string name="save">Salvesta</string>
 	<string name="shizuku_auth_token_label">%1$s käivitus-/lõpetamiskavatsuse autentimisluba (kleepige täielik rida ‘auth: XXXX’ rakenduse %1$s kuvalt Vaata kavatsusi)</string>
 	<string name="status_placeholder">Andke %1$s luba ja lubage see teenus jaotises Juurdepääsetavus</string>
+	<string name="system_default">Süsteemi vaikeseade</string>
 	<string name="tv_brand_label">Teleri bränd (mõjutab konkreetselt %1$s teleri nuppu)</string>
 </resources>

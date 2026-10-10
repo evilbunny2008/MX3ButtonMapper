@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Escucha las pulsaciones de botones de hardware específicos y los reasigna a otro código clave</string>
 	<string name="app_not_installed_message">La aplicación asignada a este botón (%1$s) no está instalada</string>
 	<string name="app_not_installed_title">Aplicación no instalada</string>
+	<string name="language">Idioma</string>
 	<string name="log_key_events_label">Registre cada pulsación de tecla (solo para solución de problemas)</string>
 	<string name="log_remaps_label">Registrar pulsaciones de botones reasignados (solo para solución de problemas)</string>
 	<string name="open_accessibility_settings">Abrir configuración de accesibilidad</string>
@@ -10,5 +11,6 @@
 	<string name="save">Guardar</string>
 	<string name="shizuku_auth_token_label">Token de autenticación de intención de inicio/detención de %1$s (pegue la línea completa ‘auth: XXXX’ de la pantalla Ver intenciones de %1$s)</string>
 	<string name="status_placeholder">Otorgue permiso a %1$s y luego habilite este servicio en Accesibilidad</string>
+	<string name="system_default">Predeterminado del sistema</string>
 	<string name="tv_brand_label">Marca de TV (afecta específicamente al botón TV de %1$s)</string>
 </resources>

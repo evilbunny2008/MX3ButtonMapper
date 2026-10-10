@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Koute pou peze bouton pyès ki nan konpitè espesifik ak remap yo nan yon lòt keycode</string>
 	<string name="app_not_installed_message">Aplikasyon ki trase sou bouton sa a (%1$s) pa enstale</string>
 	<string name="app_not_installed_title">Aplikasyon pa enstale</string>
+	<string name="language">Lang</string>
 	<string name="log_key_events_label">Anrejistre chak peze kle (pou depanaj sèlman)</string>
 	<string name="log_remaps_label">Mete bouton sou bouton remap (pou depanaj sèlman)</string>
 	<string name="open_accessibility_settings">Louvri Anviwònman Aksè</string>
@@ -10,5 +11,6 @@
 	<string name="save">Sove</string>
 	<string name="shizuku_auth_token_label">%1$s kòmanse/sispann siy otorizasyon entansyon (kole liy konplè ‘auth: XXXX’ ki soti nan ekran View entansyon %1$s la)</string>
 	<string name="status_placeholder">Bay %1$s pèmisyon, epi aktive sèvis sa a anba Aksè</string>
+	<string name="system_default">Paramèt sistèm nan</string>
 	<string name="tv_brand_label">Mak televizyon (afèkte bouton televizyon %1$s espesyalman)</string>
 </resources>

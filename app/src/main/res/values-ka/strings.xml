@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">უსმენს კონკრეტული აპარატურის ღილაკების დაჭერას და ასახავს მათ სხვა საკვანძო კოდზე</string>
 	<string name="app_not_installed_message">ამ ღილაკზე შედგენილი აპი (%1$s) არ არის დაინსტალირებული</string>
 	<string name="app_not_installed_title">აპლიკაცია არ არის დაინსტალირებული</string>
+	<string name="language">ენა</string>
 	<string name="log_key_events_label">ყოველი ღილაკის დაჭერის ჟურნალი (მხოლოდ პრობლემების მოსაგვარებლად)</string>
 	<string name="log_remaps_label">ღილაკების ხელახალი დაჭერა ჟურნალში (მხოლოდ პრობლემების მოსაგვარებლად)</string>
 	<string name="open_accessibility_settings">გახსენით ხელმისაწვდომობის პარამეტრები</string>
@@ -10,5 +11,6 @@
 	<string name="save">შენახვა</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth ჟეტონი (ჩასვით სრული ‘auth: XXXX’ ხაზი %1$s ის View intents ეკრანიდან)</string>
 	<string name="status_placeholder">მიანიჭეთ %1$s ნებართვა, შემდეგ ჩართეთ ეს სერვისი ხელმისაწვდომობის ქვეშ</string>
+	<string name="system_default">სისტემის ნაგულისხმევი</string>
 	<string name="tv_brand_label">ტელევიზორის ბრენდი (კონკრეტულად მოქმედებს %1$s ტელევიზორის ღილაკზე)</string>
 </resources>

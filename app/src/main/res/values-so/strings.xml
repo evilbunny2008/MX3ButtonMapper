@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Waxa uu dhageystaa taabashada badhanka qalabka gaarka ah oo dib ugu dhigaya furaha furaha kale</string>
 	<string name="app_not_installed_message">Abka lagu dhejiyay badhankan (%1$s) lama rakibin</string>
 	<string name="app_not_installed_title">Abka lama rakibin</string>
+	<string name="language">Luqad</string>
 	<string name="log_key_events_label">Geli taabasho kasta oo fure ah (kaliya cilad-raadinta)</string>
 	<string name="log_remaps_label">Geli badhanka la kharibadeeyay (kaliya cilad-raadinta)</string>
 	<string name="open_accessibility_settings">Fur Dejinta Helitaanka</string>
@@ -10,5 +11,6 @@
 	<string name="save">Kaydi</string>
 	<string name="shizuku_auth_token_label">%1$s start/stop intent auth token (ku dheji khadka ‘auth: XXXX’ oo buuxa %1$s ee View intents screen)</string>
 	<string name="status_placeholder">Sii %1$s ogolaanshaha, ka dibna awood u geli adeegan hoos gelitaanka</string>
+	<string name="system_default">Sida nidaamka</string>
 	<string name="tv_brand_label">Summada TV-ga (waxay si gaar ah u saamaysaa badhanka %1$s TV)</string>
 </resources>

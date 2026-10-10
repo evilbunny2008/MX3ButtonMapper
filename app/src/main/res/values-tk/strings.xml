@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Apparatörite enjam düwmesiniň basylmagyny diňleýär we başga bir düwmä geçirýär</string>
 	<string name="app_not_installed_message">Bu düwmä düzülen programma (%1$s) gurulmady</string>
 	<string name="app_not_installed_title">Programma gurulmady</string>
+	<string name="language">Dil</string>
 	<string name="log_key_events_label">Her düwmäni basyň (diňe näsazlyklary düzetmek üçin)</string>
 	<string name="log_remaps_label">Gaýtalanan düwmäni basyň (diňe näsazlyklary düzetmek üçin)</string>
 	<string name="open_accessibility_settings">Elýeterlilik sazlamalaryny açyň</string>
@@ -10,5 +11,6 @@
 	<string name="save">Saklaň</string>
 	<string name="shizuku_auth_token_label">%1$s başlangyç / tok niýet awtor belligini (doly ‘auth: XXXX’ setirini%1$s Görkezişiň ekranyndan goýuň)</string>
 	<string name="status_placeholder">%1$s rugsat beriň, soňra bu hyzmaty elýeterlilik astynda işlediň</string>
+	<string name="system_default">Ulgamyň deslapky sazlamasy</string>
 	<string name="tv_brand_label">Telewizor markasy (%1$s telewizion düwmesine täsir edýär)</string>
 </resources>

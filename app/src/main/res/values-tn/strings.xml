@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">E reetsa go tobediwa ga konopo e e rileng ya serwethata le go e mmapa gape mo khoutung e nngwe ya konopo</string>
 	<string name="app_not_installed_message">Tiriswa e e tsenngwang mo konopong eno (%1$s) ga e a tsenngwa</string>
 	<string name="app_not_installed_title">Tiriswa ga e ise e tsenngwe</string>
+	<string name="language">Puo</string>
 	<string name="log_key_events_label">Kwala tobetso nngwe le nngwe ya konopo (go rarabolola mathata fela)</string>
 	<string name="log_remaps_label">Go tobetsa konopo e e rulagantsweng sešwa (go rarabolola mathata fela)</string>
 	<string name="open_accessibility_settings">Bula Diseting tsa Phitlhelelo</string>
@@ -10,5 +11,6 @@
 	<string name="save">Boloka</string>
 	<string name="shizuku_auth_token_label">%1$s letshwao la netefatso ya maikaelelo a go simolola/go emisa (kgomaretsa mola o o feletseng wa ‘auth: XXXX’ go tswa mo sekirining sa Leba maikaelelo a %1$s)</string>
 	<string name="status_placeholder">Naya tetla ya %1$s, o bo o kgontsha tirelo eno ka fa tlase ga Phitlhelelo</string>
+	<string name="system_default">Tlwaelo ya sistimi</string>
 	<string name="tv_brand_label">Letshwaokgwebo la TV (le ama konopo ya TV ya %1$s ka tlhamalalo)</string>
 </resources>

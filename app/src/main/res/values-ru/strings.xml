@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Прослушивает нажатия определенных аппаратных кнопок и переназначает их на другой код клавиши</string>
 	<string name="app_not_installed_message">Приложение, сопоставленное с этой кнопкой (%1$s), не установлено</string>
 	<string name="app_not_installed_title">Приложение не установлено</string>
+	<string name="language">Язык</string>
 	<string name="log_key_events_label">Регистрируйте каждое нажатие клавиши (только для устранения неполадок)</string>
 	<string name="log_remaps_label">Записывать переназначенные нажатия кнопок (только для устранения неполадок)</string>
 	<string name="open_accessibility_settings">Открыть настройки специальных возможностей</string>
@@ -10,5 +11,6 @@
 	<string name="save">Сохранить</string>
 	<string name="shizuku_auth_token_label">Токен аутентификации начала/остановки намерения %1$s (вставьте полную строку ‘auth: XXXX’ с экрана просмотра намерений %1$s)</string>
 	<string name="status_placeholder">Предоставьте разрешение %1$s, затем включите эту службу в разделе ‘Доступность’</string>
+	<string name="system_default">Как в системе</string>
 	<string name="tv_brand_label">Бренд телевизора (влияет конкретно на кнопку телевизора %1$s)</string>
 </resources>

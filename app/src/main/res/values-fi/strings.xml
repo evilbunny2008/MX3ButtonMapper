@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Kuuntelee tiettyjä laitteiston painikkeiden painalluksia ja yhdistää ne uudelleen toiseen näppäinkoodiin</string>
 	<string name="app_not_installed_message">Tähän painikkeeseen (%1$s) yhdistettyä sovellusta ei ole asennettu</string>
 	<string name="app_not_installed_title">Sovellusta ei ole asennettu</string>
+	<string name="language">Kieli</string>
 	<string name="log_key_events_label">Kirjaa jokainen näppäinpainallus (vain vianmääritystä varten)</string>
 	<string name="log_remaps_label">Kirjaa uudelleen kartoitetut painikkeen painallukset (vain vianetsintään)</string>
 	<string name="open_accessibility_settings">Avaa Esteettömyysasetukset</string>
@@ -10,5 +11,6 @@
 	<string name="save">Tallenna</string>
 	<string name="shizuku_auth_token_label">%1$s aloitus/lopetustarkoitustodennustunnus (liitä koko ‘auth: XXXX’ -rivi käyttäjän %1$s Näytä tavoitteet -näytöstä)</string>
 	<string name="status_placeholder">Myönnä %1$s käyttöoikeus ja ota sitten tämä palvelu käyttöön Esteettömyys-kohdassa</string>
+	<string name="system_default">Järjestelmän oletus</string>
 	<string name="tv_brand_label">TV-brändi (vaikuttaa erityisesti %1$s TV-painikkeeseen)</string>
 </resources>

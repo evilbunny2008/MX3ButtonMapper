@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">ئالاھىدە قاتتىق دېتال كۇنۇپكىسىنى بېسىشنى ئاڭلايدۇ ۋە ئۇلارنى باشقا بىر كۇنۇپكا تاختىسىغا قايتۇرىدۇ</string>
 	<string name="app_not_installed_message">بۇ كۇنۇپكا (%1$s) غا سىزىلغان دېتال ئورنىتىلمىغان</string>
 	<string name="app_not_installed_title">ئەپ ئورنىتىلمىدى</string>
+	<string name="language">تىل</string>
 	<string name="log_key_events_label">ھەر بىر كۇنۇپكىنى بېسىڭ (پەقەت مەسىلىنى ھەل قىلىش ئۈچۈن)</string>
 	<string name="log_remaps_label">قايتا كۆچۈرۈلگەن كۇنۇپكا بېسىش (پەقەت مەسىلىنى ھەل قىلىش ئۈچۈن)</string>
 	<string name="open_accessibility_settings">قولايلىق تەڭشەكلەرنى ئېچىڭ</string>
@@ -10,5 +11,6 @@
 	<string name="save">ساقلاش</string>
 	<string name="shizuku_auth_token_label">%1$s نى باشلاش / توختىتىش مۇددىئاسى ئاپتوماتىك بەلگە (تولۇق ‘auth: XXXX’ قۇرنى%1$s نىڭ كۆرۈنۈش مۇددىئاسى ئېكرانىدىن چاپلاڭ)</string>
 	<string name="status_placeholder">%1$s ئىجازەت بېرىڭ ، ئاندىن بۇ مۇلازىمەتنى قولايلىق ھالەتتە قوزغىتىڭ</string>
+	<string name="system_default">سىستېما كۆڭۈلدىكى</string>
 	<string name="tv_brand_label">تېلېۋىزىيە ماركىسى (%1$s تېلېۋىزور كۇنۇپكىسىغا تەسىر كۆرسىتىدۇ)</string>
 </resources>

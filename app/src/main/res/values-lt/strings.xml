@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Klauso konkrečių aparatūros mygtukų paspaudimų ir perjungia juos į kitą klavišo kodą</string>
 	<string name="app_not_installed_message">Programa, susieta su šiuo mygtuku (%1$s), neįdiegta</string>
 	<string name="app_not_installed_title">Programa neįdiegta</string>
+	<string name="language">Kalba</string>
 	<string name="log_key_events_label">Užregistruokite kiekvieną klavišo paspaudimą (tik trikčių šalinimui)</string>
 	<string name="log_remaps_label">Perdaryti mygtukų paspaudimai žurnale (tik trikčių šalinimui)</string>
 	<string name="open_accessibility_settings">Atidarykite pritaikymo neįgaliesiems nustatymus</string>
@@ -10,5 +11,6 @@
 	<string name="save">Išsaugoti</string>
 	<string name="shizuku_auth_token_label">%1$s pradžios/sustabdymo ketinimo autentifikavimo prieigos raktas (įklijuokite visą eilutę ‘auth: XXXX’ iš %1$s peržiūros ketinimų ekrano)</string>
 	<string name="status_placeholder">Suteikite %1$s leidimą, tada įgalinkite šią paslaugą skiltyje Prieinamumas</string>
+	<string name="system_default">Numatytoji sistemos</string>
 	<string name="tv_brand_label">TV prekės ženklas (paveikia būtent %1$s TV mygtuką)</string>
 </resources>

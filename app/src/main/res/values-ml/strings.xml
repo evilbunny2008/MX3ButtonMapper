@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">നിർദ്ദിഷ്ട ഹാർഡ്‌വെയർ ബട്ടൺ അമർത്തുന്നത് ശ്രദ്ധിക്കുകയും അവയെ മറ്റൊരു കീകോഡിലേക്ക് റീമാപ്പ് ചെയ്യുകയും ചെയ്യുന്നു</string>
 	<string name="app_not_installed_message">ഈ ബട്ടണിലേക്ക് (%1$s) മാപ്പ് ചെയ്‌ത ആപ്പ് ഇൻസ്‌റ്റാൾ ചെയ്‌തിട്ടില്ല</string>
 	<string name="app_not_installed_title">ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല</string>
+	<string name="language">ഭാഷ</string>
 	<string name="log_key_events_label">എല്ലാ കീ അമർത്തലുകളും ലോഗ് ചെയ്യുക (ട്രബിൾഷൂട്ടിംഗിനായി മാത്രം)</string>
 	<string name="log_remaps_label">ലോഗ് റീമാപ്പ് ചെയ്ത ബട്ടൺ അമർത്തലുകൾ (ട്രബിൾഷൂട്ടിംഗിന് മാത്രം)</string>
 	<string name="open_accessibility_settings">പ്രവേശനക്ഷമത ക്രമീകരണങ്ങൾ തുറക്കുക</string>
@@ -10,5 +11,6 @@
 	<string name="save">സംരക്ഷിക്കുക</string>
 	<string name="shizuku_auth_token_label">%1$s സ്റ്റാർട്ട്/സ്റ്റോപ്പ് ഇൻഡൻ്റ് ഓത്ത് ടോക്കൺ (%1$s ൻ്റെ വ്യൂ ഇൻ്റൻ്റ് സ്‌ക്രീനിൽ നിന്ന് മുഴുവൻ ‘auth: XXXX’ ലൈൻ ഒട്ടിക്കുക)</string>
 	<string name="status_placeholder">%1$s അനുമതി നൽകുക, തുടർന്ന് പ്രവേശനക്ഷമതയ്ക്ക് കീഴിൽ ഈ സേവനം പ്രവർത്തനക്ഷമമാക്കുക</string>
+	<string name="system_default">സിസ്‌റ്റം ഡിഫോൾട്ട്</string>
 	<string name="tv_brand_label">ടിവി ബ്രാൻഡ് (%1$s ടിവി ബട്ടണിനെ പ്രത്യേകമായി ബാധിക്കുന്നു)</string>
 </resources>

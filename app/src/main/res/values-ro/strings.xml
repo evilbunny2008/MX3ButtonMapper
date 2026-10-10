@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">Ascultă apăsarea anumitor butoane hardware și le remapează la un alt cod de cheie</string>
 	<string name="app_not_installed_message">Aplicația mapată la acest buton (%1$s) nu este instalată</string>
 	<string name="app_not_installed_title">Aplicația nu este instalată</string>
+	<string name="language">Limbă</string>
 	<string name="log_key_events_label">Înregistrați fiecare apăsare de tastă (doar pentru depanare)</string>
 	<string name="log_remaps_label">Înregistrați apăsările butoanelor remapate (doar pentru depanare)</string>
 	<string name="open_accessibility_settings">Deschideți Setări de accesibilitate</string>
@@ -10,5 +11,6 @@
 	<string name="save">Salva</string>
 	<string name="shizuku_auth_token_label">Indicativ de autentificare a intenției de pornire/oprire %1$s (inserați întregul rând ‘auth: XXXX’ din ecranul Afișați intențiile de la %1$s)</string>
 	<string name="status_placeholder">Acordați permisiunea %1$s, apoi activați acest serviciu în Accesibilitate</string>
+	<string name="system_default">Setare prestabilită de sistem</string>
 	<string name="tv_brand_label">Marca TV (afectează în mod specific butonul TV %1$s)</string>
 </resources>

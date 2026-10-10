@@ -3,6 +3,7 @@
 	<string name="accessibility_service_description">د ځانګړي هارډویر تڼۍ فشارونو ته غوږ نیسي او بل کیکوډ ته یې بیا نقشه کوي</string>
 	<string name="app_not_installed_message">د دې تڼۍ (%1$s) سره نقشه شوی ایپ نصب شوی ندی</string>
 	<string name="app_not_installed_title">اپلیکیشن ندی نصب شوی</string>
+	<string name="language">ژبه</string>
 	<string name="log_key_events_label">هر کیلي فشار ته ننوتل (یوازې د ستونزو حل لپاره)</string>
 	<string name="log_remaps_label">د بیارغول شوي تڼۍ فشارونه ننوتل (یوازې د ستونزې حل کولو لپاره)</string>
 	<string name="open_accessibility_settings">د لاسرسي ترتیبات خلاص کړئ</string>
@@ -10,5 +11,6 @@
 	<string name="save">خوندي کړئ</string>
 	<string name="shizuku_auth_token_label">د %1$s د پیل / ودرولو ارادې تصدیق کولو نښه (د %1$s د لید ارادې سکرین څخه بشپړ ‘auth: XXXX’ کرښه پیسټ کړئ)</string>
 	<string name="status_placeholder">د %1$s اجازه ورکړئ، بیا دا خدمت د لاسرسي وړ وړ کړئ</string>
+	<string name="system_default">د سیسټم ډیفالټ</string>
 	<string name="tv_brand_label">د تلویزیون برانډ (په ځانګړې توګه د %1$s تلویزیون تڼۍ اغیزه کوي)</string>
 </resources>
