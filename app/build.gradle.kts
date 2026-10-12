@@ -48,25 +48,6 @@ android {
         targetSdk = 37
         versionCode = 48
         versionName = "0.0.48"
-
-        // Every translated locale (any values-*/ folder with a strings.xml),
-        // as BCP-47 tags, so MainActivity's language picker lists exactly
-        // what's actually translated without a hand-maintained list. English
-        // is the unqualified values/ folder, so it's added in MainActivity.
-        // Plain "zh" is listed as zh-Hans so the picker can tell it apart
-        // from b+zh+Hant -- it still resolves to values-zh at runtime.
-        val appLocales = file("src/main/res").listFiles()!!
-            .filter { it.name.startsWith("values-") && File(it, "strings.xml").exists() }
-            .map { dir ->
-                val qualifier = dir.name.removePrefix("values-")
-                when {
-                    qualifier == "zh" -> "zh-Hans"
-                    qualifier.startsWith("b+") -> qualifier.removePrefix("b+").replace('+', '-')
-                    else -> qualifier.replace("-r", "-")
-                }
-            }
-            .sorted()
-        buildConfigField("String[]", "APP_LOCALES", appLocales.joinToString(", ", "{ ", " }") { "\"$it\"" })
     }
 
     // Generates android:localeConfig from the values-*/ folders, so
@@ -137,19 +118,6 @@ android {
 // "produce...BundleIdeListingFile" task, which declares the bundle at
 // its default name/location as one of its own inputs - deleting it any
 // earlier fails that task's input validation with "file doesn't exist".
-//
-// Defined as a proper typed task class (not a closure passed to
-// tasks.register) with Provider/Property-typed inputs: an earlier version
-// captured the whole AGP `variant` object inside a doLast {} closure, and
-// resolved variant.artifacts.get(SingleArtifact.BUNDLE) at execution time
-// from within that closure. `variant` internally holds live references to
-// Project, Configuration, and other Task objects (JavaCompile, etc.) --
-// none of which the configuration cache is able to serialize, so every
-// build failed to cache with errors naming exactly those types. Declaring
-// bundleFile as a RegularFileProperty and wiring it from
-// variant.artifacts.get(...) (itself a Provider<RegularFile>) at
-// configuration time means only the resolved file path is ever captured --
-// the task action itself never touches `variant` at all.
 abstract class RenameBundleTask : DefaultTask() {
     @get:InputFile
     abstract val bundleFile: RegularFileProperty
