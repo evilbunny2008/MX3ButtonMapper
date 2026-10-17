@@ -142,6 +142,17 @@ class ButtonMapperService : AccessibilityService() {
             TvBrand.BLAUPUNKT to "com.mediatek.wwtv.tvcenter",
         )
 
+        // Kodi is the exception to the DPAD_UP/DOWN x5 burst used outside
+        // the TV app (see SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED below):
+        // unlike most TV apps, Kodi genuinely handles PAGE_UP/PAGE_DOWN
+        // itself (a full page jump in lists, its own fullscreen-video
+        // bindings during playback), so a burst of five D-pad presses on
+        // top of that just overshoots. Inside Kodi the remote's original
+        // PAGE_UP/PAGE_DOWN is sent once instead, with normal
+        // hold-to-repeat. Package name confirmed via
+        // `adb shell pm list packages` on the TCL TV.
+        private const val KODI_PACKAGE = "org.xbmc.kodi"
+
         // scanCode -> (replacement keyCode, package that must currently be
         // in the foreground for the remap to apply). Outside that
         // foreground app, the scancode passes through untouched -- same
@@ -160,6 +171,9 @@ class ButtonMapperService : AccessibilityService() {
             val inForegroundRepeatTimes: Int = 1,
             val outsideForegroundKeyCode: Int,
             val outsideForegroundRepeatTimes: Int = 1,
+            // Sent once (with hold-to-repeat) while Kodi is in the
+            // foreground -- see KODI_PACKAGE.
+            val inKodiKeyCode: Int,
         )
 
         private val SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED: Map<Int, ForegroundScopedRemap> = mapOf(
@@ -185,11 +199,13 @@ class ButtonMapperService : AccessibilityService() {
                 inForegroundKeyCode = KeyEvent.KEYCODE_CHANNEL_UP,      // 166
                 outsideForegroundKeyCode = KeyEvent.KEYCODE_DPAD_UP,    // 19
                 outsideForegroundRepeatTimes = 5,
+                inKodiKeyCode = KeyEvent.KEYCODE_PAGE_UP,               // 92
             ),
             109 to ForegroundScopedRemap(
                 inForegroundKeyCode = KeyEvent.KEYCODE_CHANNEL_DOWN,    // 167
                 outsideForegroundKeyCode = KeyEvent.KEYCODE_DPAD_DOWN,  // 20
                 outsideForegroundRepeatTimes = 5,
+                inKodiKeyCode = KeyEvent.KEYCODE_PAGE_DOWN,             // 93
             ),
         )
 
@@ -697,8 +713,17 @@ class ButtonMapperService : AccessibilityService() {
 
         SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED[event.scanCode]?.let { remap ->
             val inForeground = isCurrentForegroundTheTvApp()
-            val targetKeyCode = if (inForeground) remap.inForegroundKeyCode else remap.outsideForegroundKeyCode
-            val targetRepeatTimes = if (inForeground) remap.inForegroundRepeatTimes else remap.outsideForegroundRepeatTimes
+            val inKodi = currentForegroundPackage == KODI_PACKAGE
+            val targetKeyCode = when {
+                inForeground -> remap.inForegroundKeyCode
+                inKodi -> remap.inKodiKeyCode
+                else -> remap.outsideForegroundKeyCode
+            }
+            val targetRepeatTimes = when {
+                inForeground -> remap.inForegroundRepeatTimes
+                inKodi -> 1
+                else -> remap.outsideForegroundRepeatTimes
+            }
 
             if (!KeyInjector.isReady()) {
                 if (event.action == KeyEvent.ACTION_DOWN && !isRepeat) {
