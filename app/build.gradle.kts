@@ -46,8 +46,27 @@ android {
         applicationId = "com.odiousapps.mx3buttonmapper"
         minSdk = 26
         targetSdk = 37
-        versionCode = 48
-        versionName = "0.0.48"
+        versionCode = 49
+        versionName = "0.0.49"
+
+        // Every translated locale (any values-*/ folder with a strings.xml),
+        // as BCP-47 tags, so MainActivity's language picker lists exactly
+        // what's actually translated without a hand-maintained list. English
+        // is the unqualified values/ folder, so it's added in MainActivity.
+        // Plain "zh" is listed as zh-Hans so the picker can tell it apart
+        // from b+zh+Hant -- it still resolves to values-zh at runtime.
+        val appLocales = file("src/main/res").listFiles()!!
+            .filter { it.name.startsWith("values-") && File(it, "strings.xml").exists() }
+            .map { dir ->
+                val qualifier = dir.name.removePrefix("values-")
+                when {
+                    qualifier == "zh" -> "zh-Hans"
+                    qualifier.startsWith("b+") -> qualifier.removePrefix("b+").replace('+', '-')
+                    else -> qualifier.replace("-r", "-")
+                }
+            }
+            .sorted()
+        buildConfigField("String[]", "APP_LOCALES", appLocales.joinToString(", ", "{ ", " }") { "\"$it\"" })
     }
 
     // Generates android:localeConfig from the values-*/ folders, so
