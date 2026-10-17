@@ -1,0 +1,4 @@
+* In Kodi, the MX3 remote's Channel/Program Up/Down buttons now send a
+  single Page Up/Down (repeating while held) instead of jumping five
+  items with D-pad presses -- Kodi handles Page Up/Down itself, so the
+  five-press burst just overshot. Every other app is unchanged.
