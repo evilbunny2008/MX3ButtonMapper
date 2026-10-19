@@ -1,0 +1,23 @@
+Az MX3 Button Mapper átállítja a Google TV-eszközökhöz csatlakoztatott MX3 típusú air mouse távirányítók hardvergombjait -- azokat a gombokat, amelyek gyárilag rossz billentyűkódot küldenek, vagy semmi hasznosat.
+
+Két Android-mechanizmust kombinál:
+
+• Egy kisegítő lehetőség szolgáltatást, amely rendszerszinten figyeli a nyers scankódokat, és el tudja nyelni az eredeti gombnyomást.
+• A Shizukut, amellyel az eredeti helyett helyettesítő billentyűkód vagy gombnyomás-sorozat injektálható. A Shizuku ezt ugyanazokkal a shell-jogosultságokkal teszi, amelyekkel a 'adb shell input keyevent' is rendelkezik, így nincs szükség rootra. Ha a Shizuku nincs csatlakoztatva, de az eszköz rootolt, az alkalmazás a 'su' segítségével injektálja a billentyűket, ezért szuperfelhasználói hozzáférést kér a root-kezelőtől.
+
+Támogatott átállítási típusok (beépített, kész alapértelmezett készlet, így gombonként nem kell semmit beállítani):
+
+• Gomb átállítása másik billentyűkódra (pl. egy rossz helyre került Page Up/Page Down gombból valódi Csatorna +/Csatorna -).
+• Ugyanazon billentyűkód többszöri küldése egy gombnyomással (pl. egyetlen gomb, amely háromszor küldi a Hangerő - parancsot).
+• Gomb eltérő átállítása az előtérben lévő alkalmazástól függően (pl. Csatorna +/- a TV-alkalmazásban, egyetlen Page Up/Page Down a Kodiban, máshol pedig D-pad-nyomások sorozata a listákban való ugráshoz).
+• Alkalmazás közvetlen indítása gombnyomással, miközben ugyanannak a gombnak a nyomva tartása továbbra is a szokásos hosszú nyomást küldi (pl. a Kezdőlap megnyomása megnyitja az MX3 Launchert, nyomva tartása hosszan nyomja a Kezdőlapot).
+
+Beállítások az alkalmazásban:
+
+• Tévé márkája (TCL vagy Blaupunkt), mivel ezek a tévék eltérő billentyűkódot várnak a távirányító TV gombjához, és eltérő élő tévé alkalmazást használnak.
+• A billentyűnyomások opcionális naplózása hibaelhárításhoz, alapértelmezés szerint kikapcsolva.
+• Az alkalmazás nyelve -- a felület nagyjából 100 nyelvre van lefordítva.
+
+Az alkalmazás a Shizukun keresztül saját magát is beállítja: automatikusan bekapcsolja a saját kisegítő lehetőség szolgáltatását, így nem kell kézzel keresgélni a Beállítások -> Kisegítő lehetőségek menüben, indításkor megnyithatja a választott indítót, TCL tévéken pedig újra megadja az automatikus indítás engedélyét, amelyet a TCL firmware-je egyébként elvesz, így az átállítások újraindítás után is működnek.
+
+Megjegyzés: egyes alapértelmezett átállítások a kényelem kedvéért bizonyos külső alkalmazásokat indítanak (pl. közvetlenül egy indítót, videóalkalmazást vagy böngészőt).

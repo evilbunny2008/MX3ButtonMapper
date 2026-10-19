@@ -1,0 +1,2 @@
+* Pogas zem Shizuku autentifikācijas marķiera lauka tagad ir standarta pogu joslas pogas bez apmales, kā ierasts Android.
+* Veikala apraksts ir atjaunināts ar pašreizējām funkcijām un tagad ir tulkots visās valodās, ko atbalsta Google Play.

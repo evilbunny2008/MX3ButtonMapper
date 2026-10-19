@@ -1,0 +1,23 @@
+MX3 Button Mapper ken die fisiese knoppies op MX3-tipe air mouse-afstandbehere wat aan Google TV-toestelle gekoppel is, opnuut toe -- knoppies wat uit die boks die verkeerde sleutelkode stuur, of glad niks nuttigs nie.
+
+Dit werk deur twee Android-meganismes te kombineer:
+
+• 'n Toeganklikheidsdiens wat stelselwyd na rou skandeerkodes luister en die oorspronklike knoppiedruk kan "insluk".
+• Shizuku, wat gebruik word om 'n plaasvervangende sleutelkode of drukreeks in te voeg in plaas van die oorspronklike. Shizuku doen dit met dieselfde dopvlak-voorregte wat 'adb shell input keyevent' reeds het, so root is nie nodig nie. As Shizuku nie gekoppel is nie, maar die toestel ge-root is, voeg die program eerder sleutels via 'su' in, en sal dus jou root-bestuurder om supergebruikertoegang vra.
+
+Ondersteunde soorte hertoekenning ('n gereedgemaakte verstekstel is ingebou, so daar is niks om per knoppie op te stel nie):
+
+• Ken 'n knoppie aan 'n ander sleutelkode toe (bv. 'n verdwaalde Page Up/Page Down-knoppie wat 'n regte Kanaal +/Kanaal - word).
+• Stuur dieselfde sleutelkode verskeie kere met een druk (bv. een knoppie wat drie keer Volume af stuur).
+• Ken 'n knoppie verskillend toe na gelang van die program op die voorgrond (bv. Kanaal +/- in die TV-program, 'n enkele Page Up/Page Down in Kodi, en 'n reeks D-pad-drukke om oral elders deur lyste te spring).
+• Begin 'n program direk met 'n knoppie, terwyl om dieselfde knoppie in te hou steeds sy normale lang druk stuur (bv. om Tuis te druk maak MX3 Launcher oop, om dit in te hou gee 'n lang druk op Tuis).
+
+Instellings in die program:
+
+• TV-handelsmerk (TCL of Blaupunkt), aangesien hierdie TV's verskillende sleutelkodes vir die afstandbeheer se TV-knoppie verwag en verskillende regstreekse-TV-programme gebruik.
+• Opsionele aantekening van sleuteldrukke vir foutsporing, by verstek af.
+• Programtaal -- die koppelvlak is in sowat 100 tale vertaal.
+
+Die program stel homself ook via Shizuku op: dit skakel sy eie toeganklikheidsdiens outomaties aan, so jy hoef nie self in Instellings -> Toeganklikheid te soek nie, dit kan jou gekose lanseerder by opstart oopmaak, en op TCL-TV's gee dit weer die toestemming vir outomatiese begin wat TCL se fermware andersins verwyder, sodat die hertoekennings ná 'n herbegin bly werk.
+
+Let wel: sommige van die verstek-hertoekennings maak gerieflikheidshalwe spesifieke derdepartyprogramme oop (bv. reguit na 'n lanseerder, 'n videoprogram of 'n blaaier).

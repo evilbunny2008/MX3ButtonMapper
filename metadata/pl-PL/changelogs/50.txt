@@ -1,0 +1,2 @@
+* Przyciski pod polem tokenu uwierzytelniania Shizuku są teraz standardowymi przyciskami paska przycisków bez obramowania, jak zwykle w Androidzie.
+* Opis w sklepie został zaktualizowany o obecne funkcje i jest teraz przetłumaczony na wszystkie języki obsługiwane przez Google Play.

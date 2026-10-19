@@ -1,0 +1,1 @@
+* Removido um componente de serviço em primeiro plano que não era utilizado, juntamente com as autorizações FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nunca era iniciado, por isso nada muda no funcionamento da aplicação, que agora pede menos autorizações.

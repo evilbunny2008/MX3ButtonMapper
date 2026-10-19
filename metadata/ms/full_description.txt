@@ -1,0 +1,23 @@
+MX3 Button Mapper memetakan semula butang fizikal pada alat kawalan jauh air mouse jenis MX3 yang disambungkan ke peranti Google TV -- butang yang sejak asal menghantar kod kekunci yang salah, atau tidak menghantar apa-apa yang berguna.
+
+Aplikasi ini berfungsi dengan menggabungkan dua mekanisme Android:
+
+• Perkhidmatan kebolehcapaian yang mendengar kod imbasan mentah di seluruh sistem dan boleh "menelan" tekanan butang asal.
+• Shizuku, yang digunakan untuk menyuntik kod kekunci atau urutan tekanan gantian di tempat tekanan asal. Shizuku melakukannya dengan keistimewaan peringkat shell yang sama seperti yang sudah dimiliki 'adb shell input keyevent', jadi root tidak diperlukan. Jika Shizuku tidak disambungkan tetapi peranti telah di-root, aplikasi akan menyuntik kekunci melalui 'su' dan oleh itu akan meminta akses superpengguna daripada pengurus root anda.
+
+Jenis pemetaan yang disokong (set pemetaan lalai sedia ada terbina dalam, jadi tiada apa yang perlu dikonfigurasi bagi setiap butang):
+
+• Memetakan semula butang kepada kod kekunci lain (cth. butang Page Up/Page Down yang tersasar dijadikan Saluran +/Saluran - yang sebenar).
+• Menghantar kod kekunci yang sama beberapa kali dengan satu tekanan (cth. satu butang yang menghantar tiga tekanan Perlahankan kelantangan).
+• Memetakan butang secara berbeza mengikut aplikasi di latar depan (cth. Saluran +/- dalam aplikasi TV, satu Page Up/Page Down dalam Kodi, dan rentetan tekanan D-pad untuk melompat dalam senarai di tempat lain).
+• Membuka aplikasi terus daripada butang, sementara menahan butang yang sama masih menghantar tekanan lamanya yang biasa (cth. menekan Laman Utama membuka MX3 Launcher, menahannya membuat tekanan lama Laman Utama).
+
+Tetapan dalam aplikasi:
+
+• Jenama TV (TCL atau Blaupunkt), kerana TV ini menjangkakan kod kekunci yang berbeza untuk butang TV pada alat kawalan jauh dan menggunakan aplikasi TV langsung yang berbeza.
+• Pengelogan tekanan kekunci pilihan untuk penyelesaian masalah, dimatikan secara lalai.
+• Bahasa aplikasi -- antara muka telah diterjemahkan ke dalam kira-kira 100 bahasa.
+
+Aplikasi ini juga menyediakan dirinya sendiri melalui Shizuku: ia mendayakan perkhidmatan kebolehcapaiannya sendiri secara automatik, jadi anda tidak perlu mencarinya secara manual dalam Tetapan -> Kebolehcapaian, ia boleh membuka pelancar pilihan anda semasa bermula, dan pada TV TCL ia memberikan semula kebenaran mula automatik yang biasanya ditarik balik oleh perisian tegar TCL, supaya pemetaan terus berfungsi selepas but semula.
+
+Nota: sesetengah pemetaan lalai membuka aplikasi pihak ketiga tertentu untuk kemudahan (cth. terus ke pelancar, aplikasi video atau penyemak imbas).

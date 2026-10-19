@@ -1,0 +1,1 @@
+* U hoq një komponent i papërdorur shërbimi në plan të parë, bashkë me lejet FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nuk nisej kurrë, prandaj asgjë nuk ndryshon në funksionimin e aplikacionit, që tani kërkon më pak leje.

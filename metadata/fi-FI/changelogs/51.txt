@@ -1,0 +1,1 @@
+* Poistettiin käyttämätön etualapalvelun osa sekä sen käyttöoikeudet FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- sitä ei koskaan käynnistetty, joten sovelluksen toiminta ei muutu, ja sovellus pyytää nyt vähemmän käyttöoikeuksia.

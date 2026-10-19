@@ -1,0 +1,1 @@
+* Menghapus komponen layanan latar depan yang tidak digunakan beserta izin FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- komponen ini tidak pernah dijalankan, jadi cara kerja aplikasi tidak berubah, dan aplikasi kini meminta lebih sedikit izin.

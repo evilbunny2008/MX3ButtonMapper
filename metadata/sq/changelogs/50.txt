@@ -1,0 +1,2 @@
+* Butonat poshtë fushës së tokenit të vërtetimit të Shizuku janë tani butona standardë pa kornizë shiriti butonash, siç është zakon në Android.
+* Përshkrimi në dyqan është përditësuar me veçoritë aktuale dhe tani është përkthyer në të gjitha gjuhët që mbështet Google Play.

@@ -1,0 +1,2 @@
+* Shizukun todennustunnuksen kentän alla olevat painikkeet ovat nyt tavallisia reunattomia painikepalkin painikkeita, kuten Androidissa on tapana.
+* Kauppasivu on päivitetty vastaamaan nykyisiä ominaisuuksia, ja se on nyt käännetty kaikille Google Playn tukemille kielille.

@@ -1,0 +1,1 @@
+* Uklonjena je nekorištena komponenta usluge u prvom planu zajedno s dopuštenjima FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nikada se nije pokretala, pa se u radu aplikacije ništa ne mijenja, a aplikacija sada traži manje dopuštenja.

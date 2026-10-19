@@ -1,0 +1,2 @@
+* Tlačítka pod polem pro ověřovací token Shizuku jsou nyní standardní tlačítka lišty bez okraje, jak je v Androidu obvyklé.
+* Popis v obchodě byl aktualizován podle současných funkcí a je nyní přeložen do všech jazyků, které Google Play podporuje.

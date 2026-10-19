@@ -1,0 +1,1 @@
+* Odstránený nepoužívaný komponent služby v popredí spolu s povoleniami FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nikdy sa nespúšťal, takže sa na fungovaní aplikácie nič nemení a aplikácia teraz žiada menej povolení.

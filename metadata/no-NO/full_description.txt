@@ -1,0 +1,23 @@
+MX3 Button Mapper tilordner de fysiske knappene på air mouse-fjernkontroller av MX3-typen som er koblet til Google TV-enheter, på nytt -- knapper som fra fabrikken sender feil tastekode, eller ingenting nyttig i det hele tatt.
+
+Det fungerer ved å kombinere to Android-mekanismer:
+
+• En tilgjengelighetstjeneste som lytter etter rå skannekoder i hele systemet og kan fange opp (svelge) det opprinnelige knappetrykket.
+• Shizuku, som brukes til å sette inn en erstatningstastekode eller en trykksekvens i stedet for den opprinnelige. Shizuku gjør dette med de samme skallrettighetene som 'adb shell input keyevent' allerede har, så root er ikke nødvendig. Hvis Shizuku ikke er tilkoblet, men enheten er rootet, bruker appen 'su' til å sette inn taster i stedet, og vil derfor be root-administratoren din om superbrukertilgang.
+
+Støttede typer tilordning (et ferdig standardsett er innebygd, så det er ingenting å konfigurere per knapp):
+
+• Tilordne en knapp til en annen tastekode (f.eks. en bortkommen Page Up/Page Down-knapp som blir ekte Kanal opp/Kanal ned).
+• Sende samme tastekode flere ganger per trykk (f.eks. én knapp som sender tre trykk på Volum ned).
+• Tilordne en knapp ulikt avhengig av appen i forgrunnen (f.eks. Kanal opp/ned i TV-appen, ett enkelt Page Up/Page Down i Kodi og en serie D-pad-trykk for å hoppe gjennom lister alle andre steder).
+• Starte en app direkte med en knapp, mens det å holde inne samme knapp fortsatt sender det vanlige lange trykket (f.eks. åpner et trykk på Hjem MX3 Launcher, mens å holde den inne gir et langt trykk på Hjem).
+
+Innstillinger i appen:
+
+• TV-merke (TCL eller Blaupunkt), siden disse TV-ene forventer ulike tastekoder for fjernkontrollens TV-knapp og bruker ulike apper for direkte-TV.
+• Valgfri logging av tastetrykk for feilsøking, av som standard.
+• Appspråk -- grensesnittet er oversatt til rundt 100 språk.
+
+Appen setter også seg selv opp via Shizuku: den slår automatisk på sin egen tilgjengelighetstjeneste, så du slipper å lete i Innstillinger -> Tilgjengelighet selv, den kan åpne den valgte startskjermappen ved oppstart, og på TCL-TV-er gir den på nytt tillatelsen til automatisk oppstart som fastvaren til TCL ellers fjerner, slik at tilordningene fortsetter å virke etter en omstart.
+
+Merk: noen av standardtilordningene starter for enkelhets skyld bestemte tredjepartsapper (f.eks. rett til en startskjermapp, en videoapp eller en nettleser).

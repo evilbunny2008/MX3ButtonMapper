@@ -1,0 +1,23 @@
+MX3 Button Mapper perskiria aparatinius mygtukus MX3 tipo air mouse nuotolinio valdymo pultuose, prijungtuose prie Google TV įrenginių, -- mygtukus, kurie iš gamyklos siunčia neteisingą klavišo kodą arba nieko naudingo.
+
+Programa sujungia du Android mechanizmus:
+
+• Pritaikymo neįgaliesiems paslaugą, kuri visoje sistemoje klausosi neapdorotų skenavimo kodų ir gali „praryti“ pradinį mygtuko paspaudimą.
+• Shizuku, kuriuo vietoj pradinio paspaudimo įterpiamas pakaitinis klavišo kodas arba paspaudimų seka. Shizuku tai leidžia su tomis pačiomis apvalkalo teisėmis, kurias jau turi 'adb shell input keyevent', todėl root nereikia. Jei Shizuku neprijungtas, bet įrenginys turi root, programa klavišus įterpia per 'su' ir todėl paprašys jūsų root tvarkytuvės supernaudotojo prieigos.
+
+Palaikomi perskyrimo tipai (įtaisytas paruoštas numatytasis rinkinys, todėl kiekvienam mygtukui nieko nustatyti nereikia):
+
+• Perskirti mygtuką kitam klavišo kodui (pvz., paklydusį Page Up/Page Down mygtuką paversti tikru Kanalas +/Kanalas -).
+• Siųsti tą patį klavišo kodą kelis kartus vienu paspaudimu (pvz., vienas mygtukas, siunčiantis tris Garsas - paspaudimus).
+• Perskirti mygtuką skirtingai pagal tai, kuri programa yra priekiniame plane (pvz., Kanalas +/- TV programoje, vienas Page Up/Page Down Kodi programoje, o visur kitur D-pad paspaudimų serija šokinėti po sąrašus).
+• Paleisti programą tiesiog mygtuku, o laikant tą patį mygtuką vis tiek siunčiamas įprastas ilgas paspaudimas (pvz., paspaudus Pradžia atidaroma MX3 Launcher, o laikant -- ilgas Pradžia paspaudimas).
+
+Nustatymai programoje:
+
+• Televizoriaus prekės ženklas (TCL arba Blaupunkt), nes šie televizoriai pulto TV mygtukui tikisi skirtingų kodų ir naudoja skirtingas tiesioginės TV programas.
+• Pasirenkamas klavišų paspaudimų registravimas trikčių šalinimui, pagal numatytuosius nustatymus išjungtas.
+• Programos kalba -- sąsaja išversta į maždaug 100 kalbų.
+
+Programa per Shizuku taip pat susikonfigūruoja pati: automatiškai įjungia savo pritaikymo neįgaliesiems paslaugą, todėl nereikia jos rankiniu būdu ieškoti skiltyje Nustatymai -> Pritaikymas neįgaliesiems, paleidimo metu gali atidaryti jūsų pasirinktą paleidimo programą, o TCL televizoriuose iš naujo suteikia automatinio paleidimo leidimą, kurį TCL programinė įranga kitaip atima, kad perskyrimai veiktų ir paleidus iš naujo.
+
+Pastaba: kai kurie numatytieji perskyrimai patogumo dėlei paleidžia tam tikras trečiųjų šalių programas (pvz., iškart paleidimo programą, vaizdo įrašų programą ar naršyklę).

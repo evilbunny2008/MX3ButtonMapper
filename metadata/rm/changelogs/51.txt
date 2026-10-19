@@ -1,0 +1,1 @@
+* Allontanà ina cumponenta da servetsch en il fund davant betg duvrada, ensemen cun las permissiuns FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- ella n'è mai vegnida aviada, uschia che nagut na sa mida en il funcziunament da l'app, e l'app dumonda ussa main permissiuns.

@@ -1,0 +1,2 @@
+* Les boutons sous le champ du jeton d'authentification Shizuku sont désormais des boutons de barre de boutons standard sans bordure, comme il est d'usage sur Android.
+* La fiche du store a été mise à jour pour refléter les fonctionnalités actuelles et est désormais traduite dans toutes les langues prises en charge par Google Play.

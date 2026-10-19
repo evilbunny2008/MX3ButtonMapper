@@ -1,0 +1,23 @@
+MX3 Button Mapper zmienia przypisanie przycisków sprzętowych pilotów typu air mouse MX3 podłączonych do urządzeń z Google TV -- przycisków, które fabrycznie wysyłają niewłaściwy kod klawisza albo nic przydatnego.
+
+Działa dzięki połączeniu dwóch mechanizmów Androida:
+
+• Usługi ułatwień dostępu, która w całym systemie nasłuchuje surowych kodów skanowania (scancode) i może przechwycić (pochłonąć) oryginalne naciśnięcie przycisku.
+• Shizuku, używanego do wstrzyknięcia zastępczego kodu klawisza lub sekwencji naciśnięć w miejsce oryginalnego. Shizuku robi to z tymi samymi uprawnieniami powłoki, które ma już 'adb shell input keyevent', więc root nie jest potrzebny. Jeśli Shizuku nie jest połączone, a urządzenie ma roota, aplikacja wstrzykuje klawisze przez 'su' i dlatego poprosi menedżera roota o dostęp superużytkownika.
+
+Obsługiwane rodzaje przypisań (wbudowany jest gotowy domyślny zestaw, więc nie trzeba niczego konfigurować dla poszczególnych przycisków):
+
+• Przypisanie przycisku do innego kodu klawisza (np. zabłąkany przycisk Page Up/Page Down zamieniony na prawdziwy Kanał +/Kanał -).
+• Wysyłanie tego samego kodu klawisza kilka razy jednym naciśnięciem (np. jeden przycisk wysyłający trzy naciśnięcia Ciszej).
+• Różne przypisanie przycisku zależnie od aplikacji na pierwszym planie (np. Kanał +/- w aplikacji TV, pojedyncze Page Up/Page Down w Kodi, a wszędzie indziej seria naciśnięć D-pada do przeskakiwania po listach).
+• Uruchamianie aplikacji bezpośrednio przyciskiem, przy czym przytrzymanie tego samego przycisku nadal wysyła jego zwykłe długie naciśnięcie (np. krótkie naciśnięcie Home otwiera MX3 Launcher, przytrzymanie daje długie naciśnięcie Home).
+
+Ustawienia w aplikacji:
+
+• Marka telewizora (TCL lub Blaupunkt), ponieważ te telewizory oczekują różnych kodów klawiszy dla przycisku TV na pilocie i używają różnych aplikacji do telewizji na żywo.
+• Opcjonalne rejestrowanie naciśnięć klawiszy do rozwiązywania problemów, domyślnie wyłączone.
+• Język aplikacji -- interfejs jest przetłumaczony na około 100 języków.
+
+Aplikacja konfiguruje się też sama przez Shizuku: automatycznie włącza własną usługę ułatwień dostępu, więc nie trzeba ręcznie szukać jej w Ustawienia -> Ułatwienia dostępu, może uruchamiać wybrany launcher przy starcie, a na telewizorach TCL ponownie przyznaje uprawnienie autostartu, które oprogramowanie TCL w przeciwnym razie odbiera, dzięki czemu przypisania działają także po ponownym uruchomieniu.
+
+Uwaga: niektóre domyślne przypisania dla wygody uruchamiają określone aplikacje innych firm (np. od razu launcher, aplikację wideo lub przeglądarkę).

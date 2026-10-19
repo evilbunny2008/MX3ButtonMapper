@@ -1,0 +1,2 @@
+* Ils buttuns sut il champ dal token d'autentificaziun da Shizuku èn ussa buttuns da standard senza ur d'ina trav da buttuns, sco usità en Android.
+* La descripziun en la butia è actualisada cun las funcziuns actualas ed è ussa translatada en tut las linguas che Google Play sustegna.

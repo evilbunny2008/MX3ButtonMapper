@@ -1,0 +1,23 @@
+MX3 Button Mapper preslika strojne gumbe na daljinskih upravljalnikih tipa air mouse MX3, povezanih z napravami Google TV -- gumbe, ki že tovarniško pošiljajo napačno kodo tipke ali nič uporabnega.
+
+Deluje s kombinacijo dveh mehanizmov Androida:
+
+• Storitve za dostopnost, ki po vsem sistemu posluša surove kode skeniranja (scancode) in lahko prvotni pritisk gumba prestreže (pogoltne).
+• Shizuku, ki namesto prvotnega pritiska vstavi nadomestno kodo tipke ali zaporedje pritiskov. Shizuku to omogoča z enakimi pravicami lupine, kot jih že ima 'adb shell input keyevent', zato root ni potreben. Če Shizuku ni povezan, naprava pa ima root, aplikacija vstavlja tipke prek 'su' in bo zato vaš upravitelj roota prosila za dostop skrbnika (superuser).
+
+Podprte vrste preslikav (vgrajen je pripravljen privzeti nabor, zato za posamezne gumbe ni treba ničesar nastavljati):
+
+• Preslikava gumba na drugo kodo tipke (npr. zatavan gumb Page Up/Page Down v pravi Kanal +/Kanal -).
+• Večkratno pošiljanje iste kode tipke z enim pritiskom (npr. en gumb, ki pošlje tri pritiske Tišje).
+• Različna preslikava gumba glede na aplikacijo v ospredju (npr. Kanal +/- v aplikaciji TV, en sam Page Up/Page Down v Kodiju in povsod drugod niz pritiskov smernega gumba za preskakovanje po seznamih).
+• Zagon aplikacije neposredno z gumbom, pri čemer držanje istega gumba še vedno pošlje njegov običajni dolgi pritisk (npr. pritisk na Domov odpre MX3 Launcher, držanje pa izvede dolgi pritisk na Domov).
+
+Nastavitve v aplikaciji:
+
+• Znamka televizorja (TCL ali Blaupunkt), ker ti televizorji za gumb TV na daljincu pričakujejo različne kode in uporabljajo različne aplikacije za TV v živo.
+• Izbirno beleženje pritiskov tipk za odpravljanje težav, privzeto izklopljeno.
+• Jezik aplikacije -- vmesnik je preveden v približno 100 jezikov.
+
+Aplikacija se prek Shizukuja tudi sama nastavi: samodejno vklopi lastno storitev za dostopnost, zato je ni treba ročno iskati v Nastavitve -> Dostopnost, ob zagonu lahko odpre izbrani zaganjalnik, na televizorjih TCL pa znova podeli dovoljenje za samodejni zagon, ki ga strojna programska oprema TCL sicer odvzame, da preslikave delujejo tudi po ponovnem zagonu.
+
+Opomba: nekatere privzete preslikave za udobje zaženejo določene aplikacije tretjih oseb (npr. neposredno zaganjalnik, video aplikacijo ali brskalnik).

@@ -1,0 +1,1 @@
+* Usunięto nieużywany komponent usługi pierwszoplanowej wraz z uprawnieniami FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nigdy nie był uruchamiany, więc działanie aplikacji się nie zmienia, a aplikacja prosi teraz o mniej uprawnień.

@@ -1,0 +1,23 @@
+MX3 Button Mapper hubadilisha kazi za vitufe halisi vya rimoti za air mouse za aina ya MX3 zilizounganishwa na vifaa vya Google TV -- vitufe ambavyo tangu mwanzo hutuma msimbo wa kitufe usio sahihi, au havitumi chochote cha maana.
+
+Inafanya kazi kwa kuchanganya mbinu mbili za Android:
+
+• Huduma ya ufikivu inayosikiliza misimbo ghafi ya kuchanganua katika mfumo mzima na inaweza "kumeza" ubonyezaji asili wa kitufe.
+• Shizuku, inayotumiwa kuingiza msimbo mbadala wa kitufe au mfululizo wa mibonyezo badala ya ule wa asili. Shizuku hufanya hivi kwa haki zile zile za kiwango cha shell ambazo 'adb shell input keyevent' tayari inazo, kwa hivyo root haihitajiki. Ikiwa Shizuku haijaunganishwa lakini kifaa kina root, programu huingiza vitufe kupitia 'su' badala yake, na kwa hivyo itaomba ufikiaji wa mtumiaji mkuu kutoka kwa kidhibiti chako cha root.
+
+Aina za ubadilishaji zinazotumika (seti tayari ya ubadilishaji chaguomsingi imejengwa ndani, kwa hivyo hakuna cha kusanidi kwa kila kitufe):
+
+• Kubadilisha kitufe kiwe msimbo mwingine wa kitufe (k.m. kitufe cha Page Up/Page Down kilichopotea kuwa Chaneli +/Chaneli - halisi).
+• Kutuma msimbo ule ule mara kadhaa kwa mbonyezo mmoja (k.m. kitufe kimoja kinachotuma Punguza sauti mara tatu).
+• Kubadilisha kitufe kwa njia tofauti kulingana na programu iliyo mbele (k.m. Chaneli +/- ndani ya programu ya TV, Page Up/Page Down mara moja ndani ya Kodi, na mfululizo wa mibonyezo ya D-pad kurukaruka kwenye orodha kila mahali pengine).
+• Kufungua programu moja kwa moja kwa kitufe, huku kushikilia kitufe hicho hicho bado kunatuma mbonyezo wake mrefu wa kawaida (k.m. kubonyeza Mwanzo hufungua MX3 Launcher, kukishikilia hufanya mbonyezo mrefu wa Mwanzo).
+
+Mipangilio ndani ya programu:
+
+• Chapa ya TV (TCL au Blaupunkt), kwa sababu TV hizi zinatarajia misimbo tofauti kwa kitufe cha TV cha rimoti na hutumia programu tofauti za TV mubashara.
+• Kumbukumbu ya hiari ya mibonyezo ya vitufe kwa ajili ya utatuzi, imezimwa kwa chaguomsingi.
+• Lugha ya programu -- kiolesura kimetafsiriwa katika takriban lugha 100.
+
+Programu pia hujisanidi yenyewe kupitia Shizuku: huwasha huduma yake ya ufikivu kiotomatiki, kwa hivyo huhitaji kuitafuta mwenyewe katika Mipangilio -> Ufikivu, inaweza kufungua kizindua ulichochagua inapoanza, na kwenye TV za TCL hutoa tena ruhusa ya kuanza kiotomatiki ambayo programu dhibiti ya TCL huiondoa vinginevyo, ili ubadilishaji uendelee kufanya kazi baada ya kuwasha upya.
+
+Kumbuka: baadhi ya ubadilishaji chaguomsingi hufungua programu mahususi za wahusika wengine kwa urahisi (k.m. moja kwa moja kwenye kizindua, programu ya video au kivinjari).

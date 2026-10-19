@@ -1,0 +1,23 @@
+MX3 Button Mapper reassigna ils buttuns fisics dals telecomonds air mouse dal tip MX3 colliads cun apparats Google TV -- buttuns che tramettan gia da la fabrica in code da tasta fallà u nagut nizzaivel.
+
+L'app funcziuna cun cumbinar dus mecanissems dad Android:
+
+• In servetsch d'accessibladad che taidla in tut il sistem ils codes da scan bruts e po "travuschar" il smatg original dal buttun.
+• Shizuku, duvrà per injectar in code da tasta u ina successiun da smatgs da remplazzament empè da l'original. Shizuku fa quai cun ils medems privilegis da shell ch'il 'adb shell input keyevent' ha gia, uschia ch'i na dovra nagin root. Sch'il Shizuku n'è betg collià, ma l'apparat ha root, injectescha l'app las tastas sur 'su' e dumonda perquai il manader da root d'acces da superutilisader.
+
+Tips da reassignaziun sustegnids (in set da reassignaziuns predefinì è integrà, uschia ch'i na dovra nagina configuraziun per mintga buttun):
+
+• Reassignar in buttun ad in auter code da tasta (p.ex. in buttun Page Up/Page Down sbaglià che daventa in vair Chanal +/Chanal -).
+• Trametter il medem code da tasta pliras giadas cun in sulet smatg (p.ex. in sulet buttun che trametta trais giadas Volumen -).
+• Reassignar in buttun different tenor l'app en il fund davant (p.ex. Chanal +/- en l'app da televisiun, in sulet Page Up/Page Down en Kodi ed ina seria da smatgs dal D-pad per siglir tras glistas dapertut auter).
+• Aviar in'app directamain cun in buttun, durant che tegnair smatgà il medem buttun trametta anc adina ses smatg liung normal (p.ex. smatgar Pagina iniziala avra MX3 Launcher, al tegnair smatgà fa in smatg liung sin Pagina iniziala).
+
+Parameters en l'app:
+
+• Marca da la televisiun (TCL u Blaupunkt), perquai che questas televisiuns spetgan auters codes per il buttun TV dal telecomond e duvran autras apps per la televisiun live.
+• Protocollaziun facultativa dals smatgs da tasta per tschertgar sbagls, deactivada sco predefiniziun.
+• Lingua da l'app -- l'interfatscha è translatada en var 100 linguas.
+
+L'app s'installescha er sezza sur Shizuku: ella activescha automaticamain ses agen servetsch d'accessibladad, uschia che Vus na stuais betg al tschertgar a maun en Parameters -> Accessibladad, ella po avrir Voss launcher tschernì cun l'aviament e sin televisiuns da TCL conceda ella danovamain la permissiun d'aviament automatic che la firmware da TCL allontanescha uschiglio, uschia che las reassignaziuns funcziunan er suenter in reaviament.
+
+Remartga: intginas reassignaziuns predefinidas avran per cumadaivladad tschertas apps da terzas parts (p.ex. directamain in launcher, in'app da video u in navigatur).

@@ -1,0 +1,2 @@
+* Butang di bawah medan token pengesahan Shizuku kini ialah butang bar butang standard tanpa sempadan, seperti kebiasaan dalam Android.
+* Halaman gedung telah dikemas kini dengan ciri semasa dan kini diterjemahkan ke dalam semua bahasa yang disokong Google Play.

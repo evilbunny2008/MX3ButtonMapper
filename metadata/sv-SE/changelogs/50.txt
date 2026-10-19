@@ -1,0 +1,2 @@
+* Knapparna under fältet för Shizukus autentiseringstoken är nu vanliga kantlösa knappar i en knapprad, som brukligt i Android.
+* Butiksbeskrivningen har uppdaterats med nuvarande funktioner och är nu översatt till alla språk som Google Play stöder.

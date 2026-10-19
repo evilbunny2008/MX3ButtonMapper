@@ -1,0 +1,1 @@
+* 移除了一个未使用的前台服务组件及其 FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE 权限 -- 它从未被启动，因此应用的运行方式没有任何变化，而应用现在请求的权限更少了。

@@ -1,0 +1,23 @@
+MX3 Button Mapper endurskilgreinir vélbúnaðarhnappa á air mouse-fjarstýringum af MX3-gerð sem tengdar eru við Google TV-tæki -- hnappa sem frá framleiðanda senda rangan lyklakóða eða ekkert gagnlegt.
+
+Það virkar með því að sameina tvær aðferðir í Android:
+
+• Aðgengisþjónustu sem hlustar eftir hráum skannakóðum um allt kerfið og getur gleypt upprunalega hnappaýtinguna.
+• Shizuku, sem er notað til að senda inn annan lyklakóða eða röð ýtinga í stað þeirrar upprunalegu. Shizuku gerir þetta með sömu skelréttindum og 'adb shell input keyevent' hefur nú þegar, svo ekki þarf rótaraðgang. Ef Shizuku er ekki tengt en tækið er með rótaraðgang notar forritið 'su' til að senda inn lykla og biður því rótarstjórann þinn um ofurnotandaaðgang.
+
+Studdar gerðir endurskilgreininga (tilbúið sjálfgefið safn er innbyggt, svo ekkert þarf að stilla fyrir hvern hnapp):
+
+• Endurskilgreina hnapp á annan lyklakóða (t.d. villuráfandi Page Up/Page Down-hnapp í raunverulegt Rás upp/Rás niður).
+• Senda sama lyklakóðann nokkrum sinnum við eina ýtingu (t.d. einn hnapp sem sendir þrjár ýtingar á Lækka hljóð).
+• Endurskilgreina hnapp á mismunandi hátt eftir því hvaða forrit er í forgrunni (t.d. Rás upp/niður í sjónvarpsforritinu, eina Page Up/Page Down-ýtingu í Kodi og runu af D-pad-ýtingum til að stökkva í gegnum lista alls staðar annars staðar).
+• Opna forrit beint með hnappi, á meðan það að halda sama hnappi inni sendir enn venjulega langa ýtingu hans (t.d. opnar ýting á Heim MX3 Launcher, en að halda honum inni gefur langa ýtingu á Heim).
+
+Stillingar í forritinu:
+
+• Sjónvarpsframleiðandi (TCL eða Blaupunkt), þar sem þessi sjónvörp búast við mismunandi lyklakóðum fyrir TV-hnapp fjarstýringarinnar og nota mismunandi forrit fyrir beint sjónvarp.
+• Valfrjáls skráning lyklaýtinga til bilanaleitar, slökkt sjálfgefið.
+• Tungumál forritsins -- viðmótið er þýtt á um 100 tungumál.
+
+Forritið setur sig einnig upp sjálft í gegnum Shizuku: það kveikir sjálfkrafa á eigin aðgengisþjónustu, svo þú þarft ekki að leita handvirkt í Stillingar -> Aðgengi, það getur opnað valinn ræsi við ræsingu og á TCL-sjónvörpum veitir það aftur heimild til sjálfvirkrar ræsingar sem fastbúnaður TCL fjarlægir annars, svo endurskilgreiningarnar virki áfram eftir endurræsingu.
+
+Athugið: sumar sjálfgefnu endurskilgreiningarnar opna tiltekin forrit frá þriðja aðila til þæginda (t.d. beint í ræsi, myndbandsforrit eða vafra).

@@ -1,0 +1,1 @@
+* 移除了一個未使用的前景服務元件及其 FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE 權限 -- 它從未被啟動，因此應用程式的運作方式沒有任何改變，而應用程式現在要求的權限更少了。

@@ -1,0 +1,1 @@
+* A fost eliminată o componentă de serviciu în prim-plan nefolosită, împreună cu permisiunile FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nu era pornită niciodată, deci funcționarea aplicației nu se schimbă, iar aplicația cere acum mai puține permisiuni.

@@ -1,0 +1,23 @@
+MX3 Button Mapper omtildeler de fysiske knapper på air mouse-fjernbetjeninger af MX3-typen, der er forbundet til Google TV-enheder -- knapper, der fra fabrikken sender den forkerte tastekode eller slet intet brugbart.
+
+Det virker ved at kombinere to Android-mekanismer:
+
+• En hjælpefunktionstjeneste, der lytter efter rå scankoder i hele systemet og kan opsluge det oprindelige knaptryk.
+• Shizuku, der bruges til at indsætte en erstatningstastekode eller en række tryk i stedet for det oprindelige. Shizuku gør det med de samme shell-rettigheder, som 'adb shell input keyevent' allerede har, så root er ikke nødvendig. Hvis Shizuku ikke er forbundet, men enheden er rootet, bruger appen i stedet 'su' til at indsætte taster og vil derfor bede din root-administrator om superbrugeradgang.
+
+Understøttede typer omtildeling (et færdigt standardsæt er indbygget, så der er intet at konfigurere pr. knap):
+
+• Omtildel en knap til en anden tastekode (f.eks. en vildfaren Page Up/Page Down-knap, der bliver til rigtig Kanal op/Kanal ned).
+• Send den samme tastekode flere gange pr. tryk (f.eks. én knap, der sender tre tryk på Lydstyrke ned).
+• Omtildel en knap forskelligt afhængigt af appen i forgrunden (f.eks. Kanal op/ned i tv-appen, ét Page Up/Page Down i Kodi og en serie D-pad-tryk til at springe gennem lister alle andre steder).
+• Start en app direkte med en knap, mens et langt tryk på samme knap stadig sender dens normale lange tryk (f.eks. åbner et tryk på Hjem MX3 Launcher, mens et langt tryk giver et langt tryk på Hjem).
+
+Indstillinger i appen:
+
+• Tv-mærke (TCL eller Blaupunkt), da disse tv'er forventer forskellige tastekoder for fjernbetjeningens TV-knap og bruger forskellige apps til live-tv.
+• Valgfri logning af tastetryk til fejlfinding, slået fra som standard.
+• Appsprog -- brugerfladen er oversat til omkring 100 sprog.
+
+Appen sætter sig også selv op via Shizuku: den slår automatisk sin egen hjælpefunktionstjeneste til, så du ikke selv skal lede i Indstillinger -> Hjælpefunktioner, den kan åbne din valgte launcher ved opstart, og på TCL-tv'er giver den igen den tilladelse til automatisk start, som TCL's firmware ellers fjerner, så omtildelingerne bliver ved med at virke efter en genstart.
+
+Bemærk: nogle af standardomtildelingerne starter for nemheds skyld bestemte tredjepartsapps (f.eks. direkte til en launcher, en videoapp eller en browser).

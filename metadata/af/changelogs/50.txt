@@ -1,0 +1,2 @@
+* Die knoppies onder die veld vir Shizuku se stawingsteken is nou standaard randlose knoppiebalk-knoppies, soos gewoonlik in Android.
+* Die winkelinskrywing is bygewerk met die huidige kenmerke en is nou in elke taal vertaal wat Google Play ondersteun.

@@ -1,0 +1,1 @@
+* S'ha eliminat un component de servei en primer pla que no s'utilitzava, juntament amb els permisos FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- no s'iniciava mai, de manera que el funcionament de l'aplicació no canvia i ara demana menys permisos.

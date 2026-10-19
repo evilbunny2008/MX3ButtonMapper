@@ -1,0 +1,1 @@
+* Mengalih keluar komponen perkhidmatan latar depan yang tidak digunakan bersama kebenaran FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- ia tidak pernah dimulakan, jadi cara aplikasi berfungsi tidak berubah, dan aplikasi kini meminta lebih sedikit kebenaran.

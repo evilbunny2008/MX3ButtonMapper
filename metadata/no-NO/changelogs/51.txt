@@ -1,0 +1,1 @@
+* En ubrukt forgrunnstjenestekomponent er fjernet sammen med tillatelsene FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- den ble aldri startet, så ingenting endres i hvordan appen fungerer, og appen ber nå om færre tillatelser.

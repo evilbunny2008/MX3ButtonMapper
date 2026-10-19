@@ -1,0 +1,1 @@
+* 'n Ongebruikte voorgronddienskomponent is verwyder saam met die FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE-toestemmings -- dit is nooit begin nie, so niks verander aan hoe die program werk nie, en die program vra nou minder toestemmings.

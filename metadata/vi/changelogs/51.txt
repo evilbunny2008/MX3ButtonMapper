@@ -1,0 +1,1 @@
+* Đã gỡ bỏ một thành phần dịch vụ nền trước không dùng đến cùng các quyền FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nó chưa bao giờ được khởi chạy, nên cách ứng dụng hoạt động không thay đổi, và ứng dụng giờ xin ít quyền hơn.

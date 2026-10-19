@@ -1,0 +1,2 @@
+* Tombol di bawah kolom token autentikasi Shizuku kini menjadi tombol bilah tombol standar tanpa bingkai, seperti yang lazim di Android.
+* Halaman toko telah diperbarui sesuai fitur saat ini dan kini diterjemahkan ke semua bahasa yang didukung Google Play.

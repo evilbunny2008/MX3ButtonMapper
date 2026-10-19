@@ -1,0 +1,23 @@
+MX3 Button Mapper přemapovává hardwarová tlačítka ovladačů typu air mouse MX3 připojených k zařízením Google TV -- tlačítka, která už z výroby posílají špatný kód klávesy nebo nic užitečného.
+
+Funguje díky kombinaci dvou mechanismů Androidu:
+
+• Služby usnadnění přístupu, která v celém systému naslouchá surovým scankódům a dokáže původní stisk tlačítka pohltit.
+• Shizuku, které místo původního stisku vloží náhradní kód klávesy nebo sekvenci stisků. Shizuku to umožňuje se stejnými oprávněními shellu, jaká už má 'adb shell input keyevent', takže root není potřeba. Pokud Shizuku není připojeno, ale zařízení má root, aplikace vkládá klávesy přes 'su', a proto požádá vašeho správce rootu o přístup superuživatele.
+
+Podporované typy mapování (je vestavěná hotová výchozí sada, takže není nutné nic nastavovat pro jednotlivá tlačítka):
+
+• Přemapovat tlačítko na jiný kód klávesy (např. zatoulané tlačítko Page Up/Page Down na skutečné Kanál +/Kanál -).
+• Poslat stejný kód klávesy několikrát jedním stiskem (např. jedno tlačítko, které pošle tři stisky Hlasitost -).
+• Přemapovat tlačítko různě podle aplikace v popředí (např. Kanál +/- v aplikaci TV, jediné Page Up/Page Down v Kodi a všude jinde série stisků D-padu pro přeskakování v seznamech).
+• Spustit aplikaci přímo stiskem tlačítka, přičemž podržení téhož tlačítka stále pošle jeho běžný dlouhý stisk (např. stisk Domů otevře MX3 Launcher, podržení provede dlouhý stisk Domů).
+
+Nastavení v aplikaci:
+
+• Značka televizoru (TCL nebo Blaupunkt), protože tyto televizory očekávají pro tlačítko TV na ovladači různé kódy a používají různé aplikace pro živé vysílání.
+• Volitelné zaznamenávání stisků kláves pro řešení problémů, ve výchozím stavu vypnuto.
+• Jazyk aplikace -- rozhraní je přeloženo do zhruba 100 jazyků.
+
+Aplikace se také sama nastaví přes Shizuku: automaticky zapne vlastní službu usnadnění přístupu, takže ji nemusíte ručně hledat v Nastavení -> Usnadnění přístupu, při spuštění může otevřít zvolený launcher a na televizorech TCL znovu udělí oprávnění k automatickému spuštění, které firmware TCL jinak odebírá, aby mapování fungovalo i po restartu.
+
+Poznámka: některá výchozí mapování pro pohodlí spouštějí konkrétní aplikace třetích stran (např. rovnou launcher, video aplikaci nebo prohlížeč).

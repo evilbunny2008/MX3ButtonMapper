@@ -1,0 +1,23 @@
+MX3 Button Mapper muudab Google TV seadmetega ühendatud MX3-tüüpi air mouse kaugjuhtimispultide füüsiliste nuppude funktsioone -- nuppudel, mis tehaseseadetes saadavad vale klahvikoodi või üldse mitte midagi kasulikku.
+
+See töötab kahe Androidi mehhanismi koostööna:
+
+• Juurdepääsetavusteenus, mis kuulab kogu süsteemis tooreid skannkoode ja suudab algse nupuvajutuse kinni püüda (alla neelata).
+• Shizuku, millega sisestatakse algse asemel asendav klahvikood või vajutuste jada. Shizuku teeb seda samade shelli õigustega, mis 'adb shell input keyevent' käsul juba on, seega pole juurkasutaja õigusi vaja. Kui Shizuku pole ühendatud, kuid seadmel on root, sisestab rakendus klahvid hoopis 'su' kaudu ja palub seetõttu teie root-halduril anda superkasutaja juurdepääs.
+
+Toetatud ümbermääramise tüübid (sisse on ehitatud valmis vaikekomplekt, seega pole vaja iga nuppu eraldi seadistada):
+
+• Nupu määramine teisele klahvikoodile (nt eksinud Page Up/Page Down nupp päris Kanal üles/Kanal alla nupuks).
+• Sama klahvikoodi saatmine ühe vajutusega mitu korda (nt üks nupp, mis saadab kolm Helitugevus alla vajutust).
+• Nupu erinev määramine olenevalt esiplaanil olevast rakendusest (nt Kanal üles/alla teleri rakenduses, üksik Page Up/Page Down Kodis ja mujal D-padi vajutuste seeria loendites hüppamiseks).
+• Rakenduse otse käivitamine nupuga, samal ajal kui sama nupu all hoidmine saadab endiselt selle tavalise pika vajutuse (nt Avakuva vajutus avab MX3 Launcheri, all hoidmine teeb pika Avakuva vajutuse).
+
+Rakenduse seaded:
+
+• Teleri mark (TCL või Blaupunkt), sest need telerid ootavad puldi TV-nupu jaoks erinevaid klahvikoode ja kasutavad erinevaid otse-TV rakendusi.
+• Valikuline klahvivajutuste logimine tõrkeotsinguks, vaikimisi välja lülitatud.
+• Rakenduse keel -- liides on tõlgitud umbes 100 keelde.
+
+Rakendus seadistab ennast ka Shizuku kaudu ise: see lülitab oma juurdepääsetavusteenuse automaatselt sisse, nii et seda pole vaja käsitsi otsida jaotisest Seaded -> Juurdepääsetavus, see saab käivitamisel avada valitud käivitusprogrammi ning TCL-i teleritel annab see uuesti automaatse käivitamise loa, mille TCL-i püsivara muidu ära võtab, et ümbermääramised töötaksid ka pärast taaskäivitust.
+
+Märkus: mõned vaikimisi määramised avavad mugavuse huvides kindlaid kolmanda osapoole rakendusi (nt otse käivitusprogrammi, videorakenduse või brauseri).

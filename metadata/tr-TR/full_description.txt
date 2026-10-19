@@ -1,0 +1,23 @@
+MX3 Button Mapper, Google TV cihazlarına bağlı MX3 tipi air mouse kumandaların fiziksel tuşlarını yeniden eşler -- kutudan çıktığı haliyle yanlış tuş kodu gönderen ya da hiçbir işe yaramayan tuşları.
+
+İki Android mekanizmasını birleştirerek çalışır:
+
+• Sistem genelinde ham tarama kodlarını dinleyen ve orijinal tuşa basmayı yutabilen bir erişilebilirlik hizmeti.
+• Orijinalin yerine yedek bir tuş kodu veya basma dizisi enjekte etmek için kullanılan Shizuku. Shizuku bunu 'adb shell input keyevent' komutunun zaten sahip olduğu shell düzeyindeki yetkilerle yapar, bu yüzden root gerekmez. Shizuku bağlı değilse ama cihaz rootluysa uygulama tuşları 'su' üzerinden enjekte eder ve bu nedenle root yöneticinizden süper kullanıcı erişimi ister.
+
+Desteklenen eşleme türleri (hazır bir varsayılan eşleme seti yerleşik olarak gelir, bu yüzden tuş başına yapılandırılacak bir şey yoktur):
+
+• Bir tuşu farklı bir tuş koduna eşlemek (ör. yersiz bir Page Up/Page Down tuşunu gerçek Kanal +/Kanal - tuşuna dönüştürmek).
+• Tek basışta aynı tuş kodunu birkaç kez göndermek (ör. üç kez Ses kısma gönderen tek bir tuş).
+• Bir tuşu ön plandaki uygulamaya göre farklı eşlemek (ör. TV uygulamasında Kanal +/-, Kodi'de tek bir Page Up/Page Down ve diğer her yerde listelerde atlamak için bir dizi D-pad basışı).
+• Bir tuşla doğrudan bir uygulama başlatmak; aynı tuşu basılı tutmak ise normal uzun basışını göndermeye devam eder (ör. Ana ekran tuşuna basmak MX3 Launcher'ı açar, basılı tutmak Ana ekrana uzun basar).
+
+Uygulama içi ayarlar:
+
+• TV markası (TCL veya Blaupunkt); bu TV'ler kumandanın TV tuşu için farklı tuş kodları bekler ve farklı canlı TV uygulamaları kullanır.
+• Sorun giderme için isteğe bağlı tuş basışı kaydı, varsayılan olarak kapalı.
+• Uygulama dili -- arayüz yaklaşık 100 dile çevrilmiştir.
+
+Uygulama ayrıca Shizuku aracılığıyla kendini kurar: kendi erişilebilirlik hizmetini otomatik olarak etkinleştirir, böylece Ayarlar -> Erişilebilirlik bölümünde elle aramanız gerekmez; başlangıçta seçtiğiniz başlatıcıyı açabilir ve TCL TV'lerde, TCL yazılımının aksi halde kaldırdığı otomatik başlatma iznini yeniden verir, böylece eşlemeler yeniden başlatmadan sonra da çalışmaya devam eder.
+
+Not: bazı varsayılan eşlemeler kolaylık için belirli üçüncü taraf uygulamaları başlatır (ör. doğrudan bir başlatıcıya, bir video uygulamasına veya bir tarayıcıya geçmek).

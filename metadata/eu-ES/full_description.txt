@@ -1,0 +1,23 @@
+MX3 Button Mapper-ek Google TV gailuetara konektatutako MX3 motako air mouse urruneko aginteen botoi fisikoak esleitzen ditu berriro -- fabrikatik tekla-kode okerra edo ezer erabilgarririk bidaltzen ez duten botoiak.
+
+Android-en bi mekanismo konbinatuz funtzionatzen du:
+
+• Erabilerraztasun-zerbitzu bat, sistema osoan eskaneatze-kode gordinak entzuten dituena eta jatorrizko botoi-sakatzea irentsi dezakeena.
+• Shizuku, jatorrizkoaren ordez ordezko tekla-kode bat edo sakatze-sekuentzia bat txertatzeko erabiltzen dena. Shizuku-k 'adb shell input keyevent' komandoak dituen shell-eko baimen berberekin egiten du, beraz ez da root-ik behar. Shizuku konektatuta ez badago baina gailuak root badu, aplikazioak 'su' bidez txertatzen ditu teklak, eta, beraz, supererabiltzaile-sarbidea eskatuko dio zure root-kudeatzaileari.
+
+Onartutako esleipen motak (lehenetsitako esleipen-multzo bat dator barnean, beraz ez dago botoiz botoi ezer konfiguratu beharrik):
+
+• Botoi bat beste tekla-kode batera esleitzea (adib. galdutako Page Up/Page Down botoi bat benetako Kanala +/Kanala - bihurtzea).
+• Tekla-kode bera hainbat aldiz bidaltzea sakatze bakarrarekin (adib. Bolumena - hiru aldiz bidaltzen duen botoi bakarra).
+• Botoi bat modu desberdinean esleitzea aurreko planoan dagoen aplikazioaren arabera (adib. Kanala +/- TB aplikazioan, Page Up/Page Down bakarra Kodi-n, eta beste leku guztietan D-pad sakatze-sorta bat zerrendetan jauzi egiteko).
+• Aplikazio bat zuzenean irekitzea botoi batekin, botoi bera sakatuta edukitzeak bere sakatze luze arrunta bidaltzen jarraitzen duen bitartean (adib. Hasiera sakatzeak MX3 Launcher irekitzen du, eta sakatuta edukitzeak Hasieraren sakatze luzea egiten du).
+
+Aplikazioko ezarpenak:
+
+• Telebistaren marka (TCL edo Blaupunkt), telebista hauek urruneko agintearen TV botoirako tekla-kode desberdinak espero dituztelako eta zuzeneko telebistarako aplikazio desberdinak erabiltzen dituztelako.
+• Tekla-sakatzeen aukerako erregistroa arazoak konpontzeko, lehenespenez desaktibatuta.
+• Aplikazioaren hizkuntza -- interfazea 100 bat hizkuntzatara itzulita dago.
+
+Aplikazioak bere burua ere konfiguratzen du Shizuku bidez: bere erabilerraztasun-zerbitzua automatikoki aktibatzen du, Ezarpenak -> Erabilerraztasuna atalean eskuz bilatu beharrik izan ez dezazun, abiaraztean aukeratutako abiarazlea ireki dezake, eta TCL telebistetan TCL-ren firmwareak bestela kentzen duen abiarazte automatikoko baimena ematen du berriro, esleipenek berrabiarazi ondoren ere funtziona dezaten.
+
+Oharra: lehenetsitako esleipen batzuek hirugarrenen aplikazio jakin batzuk irekitzen dituzte erosotasunagatik (adib. zuzenean abiarazle bat, bideo-aplikazio bat edo nabigatzaile bat).

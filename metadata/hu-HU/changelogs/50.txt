@@ -1,0 +1,2 @@
+* A Shizuku hitelesítési token mezője alatti gombok mostantól szabványos, keret nélküli gombsávgombok, ahogy az Androidon megszokott.
+* Az áruházi leírás frissült a jelenlegi funkciókkal, és mostantól a Google Play által támogatott összes nyelvre le van fordítva.

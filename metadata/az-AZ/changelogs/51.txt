@@ -1,0 +1,1 @@
+* İstifadə olunmayan ön plan xidməti komponenti FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE icazələri ilə birlikdə silindi -- o heç vaxt işə salınmırdı, ona görə tətbiqin işində heç nə dəyişmir və tətbiq indi daha az icazə istəyir.

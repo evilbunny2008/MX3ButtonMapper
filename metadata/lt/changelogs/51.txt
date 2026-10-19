@@ -1,0 +1,1 @@
+* Pašalintas nenaudojamas priekinio plano paslaugos komponentas kartu su leidimais FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- jis niekada nebuvo paleidžiamas, todėl programos veikimas nesikeičia, o leidimų ji dabar prašo mažiau.

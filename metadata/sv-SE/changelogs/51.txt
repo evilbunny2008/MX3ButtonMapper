@@ -1,0 +1,1 @@
+* En oanvänd förgrundstjänstkomponent har tagits bort tillsammans med behörigheterna FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- den startades aldrig, så inget ändras i hur appen fungerar, och appen ber nu om färre behörigheter.

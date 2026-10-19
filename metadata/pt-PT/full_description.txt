@@ -1,0 +1,23 @@
+O MX3 Button Mapper remapeia os botões físicos de comandos air mouse do tipo MX3 ligados a dispositivos Google TV -- botões que, de origem, enviam o código de tecla errado ou nada de útil.
+
+Funciona combinando dois mecanismos do Android:
+
+• Um serviço de acessibilidade que escuta os scancodes em bruto em todo o sistema e pode consumir (absorver) o premir original do botão.
+• O Shizuku, utilizado para injetar um código de tecla ou uma sequência de toques de substituição no lugar do original. O Shizuku permite-o com os mesmos privilégios de shell que o 'adb shell input keyevent' já tem, pelo que não é necessário root. Se o Shizuku não estiver ligado mas o dispositivo tiver root, a aplicação passa a injetar as teclas através de 'su' e, por isso, pedirá acesso de superutilizador ao seu gestor de root.
+
+Tipos de remapeamento suportados (está incluído um conjunto de remapeamentos predefinido, por isso não há nada a configurar botão a botão):
+
+• Remapear um botão para outro código de tecla (p. ex., um botão Page Up/Page Down perdido remapeado para um verdadeiro Canal +/Canal -).
+• Enviar o mesmo código de tecla várias vezes com um só toque (p. ex., um único botão que envia três toques de Baixar volume).
+• Remapear um botão de forma diferente consoante a aplicação em primeiro plano (p. ex., Canal +/- na aplicação de TV, um único Page Up/Page Down no Kodi e uma rajada de toques no direcional para percorrer listas em todas as outras).
+• Abrir uma aplicação diretamente com um botão, enquanto manter o mesmo botão premido continua a enviar o toque longo normal (p. ex., tocar em Início abre o MX3 Launcher e mantê-lo premido faz um toque longo em Início).
+
+Definições da aplicação:
+
+• Marca do televisor (TCL ou Blaupunkt), uma vez que estes televisores esperam códigos de tecla diferentes para o botão TV do comando e utilizam aplicações de TV em direto diferentes.
+• Registo opcional de toques nas teclas para resolução de problemas, desativado por predefinição.
+• Idioma da aplicação, com a interface traduzida para cerca de 100 idiomas.
+
+A aplicação também se configura sozinha através do Shizuku: ativa automaticamente o seu próprio serviço de acessibilidade, sem ser preciso procurá-lo manualmente em Definições -> Acessibilidade, pode abrir o launcher à sua escolha no arranque e, nos televisores TCL, volta a conceder a autorização de arranque automático que o firmware da TCL retira, para que os remapeamentos continuem a funcionar após reiniciar.
+
+Nota: alguns remapeamentos predefinidos abrem aplicações de terceiros específicas por conveniência (p. ex., ir diretamente para um launcher, uma aplicação de vídeo ou um navegador).

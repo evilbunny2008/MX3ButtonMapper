@@ -1,0 +1,1 @@
+* Eltávolítottunk egy nem használt előtérszolgáltatás-összetevőt a FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE engedélyekkel együtt -- soha nem indult el, így az alkalmazás működésén semmi nem változik, viszont kevesebb engedélyt kér.

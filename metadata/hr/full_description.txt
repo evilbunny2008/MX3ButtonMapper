@@ -1,0 +1,23 @@
+MX3 Button Mapper mijenja funkcije hardverskih tipki na daljinskim upravljačima tipa air mouse MX3 povezanim s Google TV uređajima -- tipki koje tvornički šalju pogrešan kod tipke ili ništa korisno.
+
+Radi kombinirajući dva Android mehanizma:
+
+• Uslugu pristupačnosti koja u cijelom sustavu osluškuje sirove scan kodove i može „progutati“ izvorni pritisak tipke.
+• Shizuku, kojim se umjesto izvornog pritiska ubacuje zamjenski kod tipke ili niz pritisaka. Shizuku to omogućuje istim ovlastima ljuske koje već ima 'adb shell input keyevent', pa root nije potreban. Ako Shizuku nije povezan, a uređaj ima root, aplikacija ubacuje tipke putem 'su' i zato će od vašeg root upravitelja zatražiti superkorisnički pristup.
+
+Podržane vrste preslikavanja (ugrađen je gotov zadani skup, pa nema ništa za postavljanje po tipki):
+
+• Preslikati tipku na drugi kod (npr. zalutalu tipku Page Up/Page Down u pravi Kanal +/Kanal -).
+• Poslati isti kod više puta jednim pritiskom (npr. jedna tipka koja šalje tri pritiska Tiše).
+• Preslikati tipku različito ovisno o aplikaciji u prvom planu (npr. Kanal +/- u TV aplikaciji, jedan Page Up/Page Down u Kodiju i niz pritisaka D-pada za preskakanje kroz popise svugdje drugdje).
+• Pokrenuti aplikaciju izravno tipkom, a držanje iste tipke i dalje šalje njezin uobičajeni dugi pritisak (npr. pritisak na Početno otvara MX3 Launcher, a držanje daje dugi pritisak na Početno).
+
+Postavke u aplikaciji:
+
+• Marka televizora (TCL ili Blaupunkt), jer ti televizori očekuju različite kodove za tipku TV na daljinskom i koriste različite aplikacije za TV uživo.
+• Neobavezno bilježenje pritisaka tipki radi rješavanja problema, zadano isključeno.
+• Jezik aplikacije -- sučelje je prevedeno na oko 100 jezika.
+
+Aplikacija se i sama postavlja putem Shizukua: automatski uključuje vlastitu uslugu pristupačnosti, pa je ne morate ručno tražiti u Postavke -> Pristupačnost, pri pokretanju može otvoriti odabrani pokretač, a na TCL televizorima ponovno daje dopuštenje za automatsko pokretanje koje TCL-ov firmver inače oduzima, kako bi preslikavanja radila i nakon ponovnog pokretanja.
+
+Napomena: neka zadana preslikavanja radi praktičnosti pokreću određene aplikacije trećih strana (npr. izravno pokretač, video aplikaciju ili preglednik).

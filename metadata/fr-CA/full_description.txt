@@ -1,0 +1,23 @@
+MX3 Button Mapper réaffecte les boutons matériels des télécommandes air mouse de type MX3 connectées aux appareils Google TV -- des boutons qui, d'origine, envoient le mauvais code de touche, ou rien d'utile du tout.
+
+L'application combine deux mécanismes Android :
+
+• Un service d'accessibilité qui écoute les scancodes bruts dans tout le système et peut intercepter (absorber) l'appui d'origine.
+• Shizuku, utilisé pour injecter un code de touche ou une séquence d'appuis de remplacement à la place de l'original. Shizuku accorde cela avec les mêmes privilèges shell que possède déjà 'adb shell input keyevent' : aucun root n'est donc nécessaire. Si Shizuku n'est pas connecté mais que l'appareil est rooté, l'application se rabat sur 'su' pour injecter les touches et demandera donc l'accès superutilisateur à votre gestionnaire root.
+
+Types de réaffectation pris en charge (un jeu de réaffectations par défaut est intégré, il n'y a donc rien à configurer bouton par bouton) :
+
+• Réaffecter un bouton à un autre code de touche (p. ex. un bouton Page préc./Page suiv. égaré réaffecté en véritable Chaîne +/Chaîne -).
+• Envoyer le même code de touche plusieurs fois en un seul appui (p. ex. un bouton unique qui envoie trois appuis sur Volume -).
+• Réaffecter un bouton différemment selon l'application au premier plan (p. ex. Chaîne +/- dans l'application TV, un seul Page préc./Page suiv. dans Kodi, et une rafale d'appuis sur la croix directionnelle pour parcourir les listes partout ailleurs).
+• Lancer une application directement d'un appui, tandis qu'un appui long sur le même bouton envoie toujours son appui long normal (p. ex. un appui court sur Accueil ouvre MX3 Launcher, un appui long effectue un appui long sur Accueil).
+
+Paramètres dans l'application :
+
+• Marque du téléviseur (TCL ou Blaupunkt), car ces téléviseurs attendent des codes de touche différents pour le bouton TV de la télécommande et utilisent des applications de TV en direct différentes.
+• Journalisation facultative des appuis de touches pour le dépannage, désactivée par défaut.
+• Langue de l'application, avec une interface traduite dans une centaine de langues.
+
+L'application se configure aussi elle-même via Shizuku : elle active automatiquement son propre service d'accessibilité, sans avoir à fouiller dans Paramètres -> Accessibilité, elle peut ouvrir le lanceur de votre choix au démarrage, et sur les téléviseurs TCL elle accorde de nouveau l'autorisation de démarrage automatique que le firmware de TCL retire sinon, afin que les réaffectations continuent de fonctionner après un redémarrage.
+
+Remarque : certaines réaffectations par défaut lancent des applications tierces précises, par commodité (p. ex. ouvrir directement un lanceur, une application vidéo ou un navigateur).

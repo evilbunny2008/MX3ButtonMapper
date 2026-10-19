@@ -1,0 +1,23 @@
+I-MX3 Button Mapper ihlela kabusha izinkinobho zangempela kuma-remote e-air mouse ohlobo lwe-MX3 axhunywe kumadivayisi e-Google TV -- izinkinobho ezithi kusukela ekuqaleni zithumele ikhodi yokhiye engalungile, noma zingathumeli lutho oluwusizo nhlobo.
+
+Isebenza ngokuhlanganisa izindlela ezimbili ze-Android:
+
+• Isevisi yokufinyeleleka elalela amakhodi okuskena aluhlaza kulo lonke uhlelo futhi engakwazi "ukugwinya" ukucindezela kokuqala kwenkinobho.
+• I-Shizuku, esetshenziselwa ukufaka ikhodi yokhiye esikhundleni noma uchungechunge lokucindezela esikhundleni sokokuqala. I-Shizuku yenza lokhu ngamalungelo afanayo ezinga le-shell asevele ekhona ku-'adb shell input keyevent', ngakho-ke i-root ayidingeki. Uma i-Shizuku ingaxhunyiwe kodwa idivayisi ine-root, uhlelo lokusebenza lufaka okhiye nge-'su' esikhundleni salokho, futhi ngenxa yalokho luzocela ukufinyelela komsebenzisi ophezulu kumphathi wakho we-root.
+
+Izinhlobo zokuhlela ezisekelwayo (kunesethi yokuhlela ezenzakalelayo esilungile eyakhelwe ngaphakathi, ngakho-ke akukho okudinga ukulungiselelwa enkinobhweni ngayinye):
+
+• Ukuhlela inkinobho ibe ikhodi yokhiye ehlukile (isb. inkinobho ye-Page Up/Page Down eduke ibe yi-Isiteshi +/Isiteshi - sangempela).
+• Ukuthumela ikhodi yokhiye efanayo izikhathi eziningana ngokucindezela okukodwa (isb. inkinobho eyodwa ethumela ukwehlisa ivolumu kathathu).
+• Ukuhlela inkinobho ngendlela ehlukile kuye ngohlelo lokusebenza olungaphambili (isb. Isiteshi +/- ngaphakathi kohlelo lwe-TV, i-Page Up/Page Down eyodwa ku-Kodi, nochungechunge lokucindezela kwe-D-pad ukweqa ohlwini kuyo yonke enye indawo).
+• Ukuvula uhlelo lokusebenza ngqo ngenkinobho, kuyilapho ukubamba inkinobho efanayo kusathumela ukucindezela kwayo okude okujwayelekile (isb. ukucindezela Ikhaya kuvula i-MX3 Launcher, ukuyibamba kwenza ukucindezela okude kwe-Ikhaya).
+
+Izilungiselelo kuhlelo lokusebenza:
+
+• Uhlobo lwe-TV (TCL noma Blaupunkt), ngoba lawa ma-TV alindele amakhodi ahlukile enkinobho ye-TV ye-remote futhi asebenzisa izinhlelo zokusebenza ze-TV ebukhoma ezahlukene.
+• Ukurekhoda okungakhethwa kokucindezela okhiye ukuxazulula izinkinga, kuvaliwe ngokuzenzakalelayo.
+• Ulimi lohlelo lokusebenza -- isixhumi esibonakalayo sihunyushwe cishe ezilimini eziyi-100.
+
+Uhlelo lokusebenza luphinde luzisethe ngokwalo nge-Shizuku: luvula isevisi yalo yokufinyeleleka ngokuzenzakalelayo, ngakho-ke akudingeki uyifune ngesandla ku-Izilungiselelo -> Ukufinyeleleka, lungavula isiqalisi osikhethile lapho luqala, futhi kuma-TV e-TCL luphinde lunikeze imvume yokuqala ngokuzenzakalelayo ebingasuswa yi-firmware ye-TCL, ukuze ukuhlela kuqhubeke kusebenza ngemva kokuqalisa kabusha.
+
+Qaphela: okunye ukuhlela okuzenzakalelayo kuvula izinhlelo zokusebenza ezithile zenkampani yangaphandle ukuze kube lula (isb. ngqo esiqalisini, kuhlelo lwevidiyo noma esipheqululini).

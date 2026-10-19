@@ -1,0 +1,23 @@
+MX3 Button Mapper pārkārto aparatūras pogas MX3 tipa air mouse tālvadības pultīm, kas pievienotas Google TV ierīcēm, -- pogas, kas jau no rūpnīcas sūta nepareizu taustiņa kodu vai neko noderīgu.
+
+Tā darbojas, apvienojot divus Android mehānismus:
+
+• Pieejamības pakalpojumu, kas visā sistēmā klausās neapstrādātus skenēšanas kodus un var “norīt” sākotnējo pogas nospiešanu.
+• Shizuku, ko izmanto, lai sākotnējās vietā ievadītu aizstājošu taustiņa kodu vai nospiedienu secību. Shizuku to nodrošina ar tām pašām čaulas tiesībām, kādas jau ir 'adb shell input keyevent', tāpēc root nav vajadzīgs. Ja Shizuku nav pievienots, bet ierīcei ir root, lietotne ievada taustiņus caur 'su' un tāpēc lūgs jūsu root pārvaldniekam superlietotāja piekļuvi.
+
+Atbalstītie pārkartošanas veidi (iebūvēts gatavs noklusējuma komplekts, tāpēc katrai pogai nekas nav jāiestata):
+
+• Pārkartot pogu uz citu taustiņa kodu (piem., nejaušu Page Up/Page Down pogu par īstu Kanāls +/Kanāls -).
+• Sūtīt vienu un to pašu taustiņa kodu vairākas reizes ar vienu nospiešanu (piem., viena poga, kas sūta trīs Skaļums - nospiedienus).
+• Pārkartot pogu atšķirīgi atkarībā no lietotnes priekšplānā (piem., Kanāls +/- TV lietotnē, viens Page Up/Page Down programmā Kodi un visur citur D-pad nospiedienu sērija, lai pārlēktu sarakstos).
+• Atvērt lietotni tieši ar pogu, kamēr tās pašas pogas turēšana joprojām sūta tās parasto ilgo nospiešanu (piem., nospiežot Sākums, atveras MX3 Launcher, bet turot to -- ilga Sākums nospiešana).
+
+Iestatījumi lietotnē:
+
+• Televizora zīmols (TCL vai Blaupunkt), jo šie televizori pults TV pogai sagaida atšķirīgus kodus un izmanto dažādas tiešraides TV lietotnes.
+• Neobligāta taustiņu nospiedienu reģistrēšana problēmu novēršanai, pēc noklusējuma izslēgta.
+• Lietotnes valoda -- saskarne ir tulkota aptuveni 100 valodās.
+
+Lietotne arī pati sevi iestata, izmantojot Shizuku: tā automātiski ieslēdz savu pieejamības pakalpojumu, tāpēc nav manuāli jāmeklē sadaļā Iestatījumi -> Pieejamība, startējot tā var atvērt jūsu izvēlēto palaidēju, bet TCL televizoros tā atkārtoti piešķir automātiskās palaišanas atļauju, ko TCL programmaparatūra citādi atņem, lai pārkartojumi darbotos arī pēc restartēšanas.
+
+Piezīme: dažas noklusējuma pārkartošanas ērtības labad palaiž noteiktas trešo pušu lietotnes (piem., uzreiz palaidēju, video lietotni vai pārlūku).

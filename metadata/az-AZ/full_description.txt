@@ -1,0 +1,23 @@
+MX3 Button Mapper Google TV cihazlarına qoşulmuş MX3 tipli air mouse pultlarının fiziki düymələrini yenidən təyin edir -- zavoddan səhv düymə kodu göndərən və ya heç bir faydalı şey göndərməyən düymələri.
+
+O, iki Android mexanizmini birləşdirərək işləyir:
+
+• Bütün sistemdə xam skan kodlarını dinləyən və orijinal düymə basılmasını “uda” bilən əlçatımlılıq xidməti.
+• Orijinalın yerinə əvəzedici düymə kodu və ya basma ardıcıllığı daxil etmək üçün istifadə olunan Shizuku. Shizuku bunu 'adb shell input keyevent' əmrinin artıq malik olduğu shell səviyyəli imtiyazlarla edir, ona görə root lazım deyil. Shizuku qoşulmayıbsa, amma cihazda root varsa, tətbiq düymələri 'su' vasitəsilə daxil edir və buna görə root menecerinizdən superistifadəçi icazəsi istəyəcək.
+
+Dəstəklənən təyinat növləri (hazır standart təyinat dəsti daxildir, ona görə hər düymə üçün ayrıca heç nə qurmaq lazım deyil):
+
+• Düyməni başqa düymə koduna təyin etmək (məs. yersiz Page Up/Page Down düyməsini əsl Kanal +/Kanal - düyməsinə çevirmək).
+• Bir basışla eyni düymə kodunu bir neçə dəfə göndərmək (məs. üç dəfə Səsi azalt göndərən tək düymə).
+• Düyməni ön planda olan tətbiqdən asılı olaraq fərqli təyin etmək (məs. TV tətbiqində Kanal +/-, Kodi-də tək Page Up/Page Down, digər hər yerdə isə siyahılarda tullanmaq üçün D-pad basışları silsiləsi).
+• Düymə ilə tətbiqi birbaşa açmaq, eyni düyməni basılı saxlamaq isə adi uzun basışı göndərməyə davam edir (məs. Əsas səhifə düyməsinə basmaq MX3 Launcher-i açır, basılı saxlamaq Əsas səhifəyə uzun basır).
+
+Tətbiqdaxili ayarlar:
+
+• Televizor markası (TCL və ya Blaupunkt), çünki bu televizorlar pultun TV düyməsi üçün fərqli kodlar gözləyir və fərqli canlı TV tətbiqlərindən istifadə edir.
+• Problemlərin aradan qaldırılması üçün düymə basışlarının istəyə bağlı qeydiyyatı, standart olaraq söndürülüb.
+• Tətbiqin dili -- interfeys təxminən 100 dilə tərcümə olunub.
+
+Tətbiq həmçinin Shizuku vasitəsilə özünü quraşdırır: öz əlçatımlılıq xidmətini avtomatik aktivləşdirir, beləliklə Ayarlar -> Əlçatımlılıq bölməsində əl ilə axtarmağa ehtiyac qalmır, başlanğıcda seçdiyiniz başladıcını aça bilər, TCL televizorlarında isə TCL proqram təminatının əks halda götürdüyü avtomatik başlatma icazəsini yenidən verir ki, təyinatlar yenidən başladıqdan sonra da işləsin.
+
+Qeyd: bəzi standart təyinatlar rahatlıq üçün müəyyən üçüncü tərəf tətbiqlərini açır (məs. birbaşa başladıcıya, video tətbiqinə və ya brauzerə keçid).

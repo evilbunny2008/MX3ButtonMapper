@@ -1,0 +1,2 @@
+* Los botones bajo el campo del token de autenticación de Shizuku ahora son botones estándar sin borde de barra de botones, como es habitual en Android.
+* La ficha de la tienda se actualizó con las funciones actuales y ahora está traducida a todos los idiomas que admite Google Play.

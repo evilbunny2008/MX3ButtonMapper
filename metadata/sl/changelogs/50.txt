@@ -1,0 +1,2 @@
+* Gumba pod poljem za preverjalni žeton Shizuku sta zdaj standardna gumba vrstice brez obrobe, kot je običajno v Androidu.
+* Opis v trgovini je posodobljen s trenutnimi funkcijami in je zdaj preveden v vse jezike, ki jih podpira Google Play.

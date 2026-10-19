@@ -1,0 +1,1 @@
+* Inalis ang isang hindi ginagamit na bahagi ng foreground service kasama ang mga pahintulot na FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- hindi ito kailanman sinimulan, kaya walang nagbabago sa paggana ng app, at mas kaunti na ang hinihinging pahintulot nito.

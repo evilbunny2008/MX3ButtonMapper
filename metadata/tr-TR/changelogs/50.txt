@@ -1,0 +1,2 @@
+* Shizuku kimlik doğrulama belirteci alanının altındaki düğmeler artık Android'de alışıldığı gibi standart, kenarlıksız düğme çubuğu düğmeleridir.
+* Mağaza sayfası mevcut özelliklere göre güncellendi ve artık Google Play'in desteklediği tüm dillere çevrildi.

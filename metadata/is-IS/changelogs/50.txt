@@ -1,0 +1,2 @@
+* Hnapparnir undir reitnum fyrir auðkenningartákn Shizuku eru nú hefðbundnir rammalausir hnappar í hnappastiku, eins og venja er í Android.
+* Lýsingin í versluninni hefur verið uppfærð með núverandi eiginleikum og er nú þýdd á öll tungumál sem Google Play styður.

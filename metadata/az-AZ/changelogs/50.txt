@@ -1,0 +1,2 @@
+* Shizuku autentifikasiya tokeni sahəsinin altındakı düymələr indi Android-də adət olduğu kimi standart, çərçivəsiz düymə paneli düymələridir.
+* Mağaza səhifəsi cari funksiyalara uyğun yeniləndi və indi Google Play-in dəstəklədiyi bütün dillərə tərcümə olunub.

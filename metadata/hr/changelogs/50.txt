@@ -1,0 +1,2 @@
+* Tipke ispod polja za Shizuku token za autentifikaciju sada su standardni gumbi trake bez obruba, kao što je uobičajeno na Androidu.
+* Opis u trgovini ažuriran je trenutačnim značajkama i sada je preveden na sve jezike koje podržava Google Play.

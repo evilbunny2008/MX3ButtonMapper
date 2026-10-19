@@ -1,0 +1,1 @@
+* Ónotaður forgrunnsþjónustuhluti var fjarlægður ásamt heimildunum FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- hann var aldrei ræstur, svo ekkert breytist í virkni forritsins, og forritið biður nú um færri heimildir.

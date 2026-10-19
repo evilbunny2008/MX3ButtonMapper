@@ -1,0 +1,2 @@
+* Knapperne under feltet til Shizukus godkendelsestoken er nu almindelige kantløse knapper i en knaplinje, som det er normalt i Android.
+* Butiksbeskrivelsen er opdateret med de nuværende funktioner og er nu oversat til alle de sprog, Google Play understøtter.

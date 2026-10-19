@@ -1,0 +1,2 @@
+* De knoppen onder het veld voor het Shizuku-authenticatietoken zijn nu standaard randloze knoppen van een knoppenbalk, zoals gebruikelijk in Android.
+* De winkelvermelding is bijgewerkt met de huidige functies en is nu vertaald in alle talen die Google Play ondersteunt.

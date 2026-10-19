@@ -1,0 +1,23 @@
+MX3 Button Mapper ricakton butonat fizikë të telekomandave air mouse të tipit MX3 të lidhura me pajisje Google TV -- butona që nga fabrika dërgojnë kodin e gabuar të tastit ose asgjë të dobishme.
+
+Funksionon duke kombinuar dy mekanizma të Android-it:
+
+• Një shërbim qasshmërie që dëgjon kodet e papërpunuara të skanimit në të gjithë sistemin dhe mund të gëlltisë shtypjen origjinale të butonit.
+• Shizuku, i përdorur për të injektuar një kod tasti ose një varg shtypjesh zëvendësuese në vend të asaj origjinale. Shizuku e lejon këtë me të njëjtat privilegje shell-i që ka tashmë 'adb shell input keyevent', prandaj nuk nevojitet root. Nëse Shizuku nuk është i lidhur, por pajisja ka root, aplikacioni injekton tastet përmes 'su' dhe për këtë arsye do t'i kërkojë menaxherit tuaj të root-it qasje superpërdoruesi.
+
+Llojet e mbështetura të ricaktimit (përfshihet një grup i gatshëm i parazgjedhur, prandaj nuk ka asgjë për t'u konfiguruar për çdo buton):
+
+• Ricaktimi i një butoni në një kod tjetër tasti (p.sh. një buton Page Up/Page Down i humbur i kthyer në Kanal +/Kanal - të vërtetë).
+• Dërgimi i të njëjtit kod tasti disa herë me një shtypje (p.sh. një buton i vetëm që dërgon tri shtypje të Volum -).
+• Ricaktimi ndryshe i një butoni sipas aplikacionit në plan të parë (p.sh. Kanal +/- brenda aplikacionit TV, një Page Up/Page Down i vetëm në Kodi dhe një breshëri shtypjesh D-pad për të kaluar nëpër lista kudo tjetër).
+• Hapja e drejtpërdrejtë e një aplikacioni me një buton, ndërsa mbajtja e shtypur e të njëjtit buton vazhdon të dërgojë shtypjen e gjatë normale (p.sh. shtypja e Kreut hap MX3 Launcher, mbajtja e tij bën një shtypje të gjatë të Kreut).
+
+Cilësimet në aplikacion:
+
+• Marka e televizorit (TCL ose Blaupunkt), pasi këta televizorë presin kode të ndryshme për butonin TV të telekomandës dhe përdorin aplikacione të ndryshme për TV të drejtpërdrejtë.
+• Regjistrim opsional i shtypjeve të tasteve për zgjidhjen e problemeve, i çaktivizuar si parazgjedhje.
+• Gjuha e aplikacionit -- ndërfaqja është përkthyer në rreth 100 gjuhë.
+
+Aplikacioni konfigurohet edhe vetë përmes Shizuku: aktivizon automatikisht shërbimin e vet të qasshmërisë, që të mos keni nevojë ta kërkoni me dorë te Cilësimet -> Qasshmëria, mund të hapë në nisje lëshuesin që zgjidhni dhe, në televizorët TCL, rijep lejen e nisjes automatike që firmware-i i TCL përndryshe e heq, që ricaktimet të vazhdojnë të funksionojnë pas rinisjes.
+
+Shënim: disa ricaktime të parazgjedhura hapin për lehtësi aplikacione të caktuara të palëve të treta (p.sh. drejtpërdrejt një lëshues, një aplikacion videosh ose një shfletues).

@@ -1,0 +1,2 @@
+* Shizuku-ren autentifikazio-tokenaren eremuaren azpiko botoiak ertzik gabeko botoi-barra estandarreko botoiak dira orain, Android-en ohikoa den bezala.
+* Dendako fitxa egungo eginbideekin eguneratu da, eta orain Google Play-k onartzen dituen hizkuntza guztietara itzulita dago.

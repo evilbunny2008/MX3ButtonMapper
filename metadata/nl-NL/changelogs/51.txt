@@ -1,0 +1,1 @@
+* Een ongebruikt onderdeel voor een voorgrondservice is verwijderd, samen met de rechten FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- het werd nooit gestart, dus er verandert niets aan hoe de app werkt, en de app vraagt nu minder rechten.

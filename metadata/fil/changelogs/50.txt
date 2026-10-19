@@ -1,0 +1,2 @@
+* Ang mga button sa ilalim ng field ng auth token ng Shizuku ay karaniwang walang-border na button ng button bar na ngayon, gaya ng nakasanayan sa Android.
+* Na-update ang listing sa store para sa mga kasalukuyang feature at naisalin na ito sa lahat ng wikang sinusuportahan ng Google Play.

@@ -1,0 +1,1 @@
+* Odstranjena je neuporabljena komponenta storitve v ospredju skupaj z dovoljenjema FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- nikoli se ni zagnala, zato se delovanje aplikacije ne spremeni, aplikacija pa zdaj zahteva manj dovoljenj.

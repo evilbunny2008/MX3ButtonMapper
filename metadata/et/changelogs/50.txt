@@ -1,0 +1,2 @@
+* Shizuku autentimisloa välja all olevad nupud on nüüd tavalised raamita nupuriba nupud, nagu Androidis tavaks.
+* Poe kirjeldus on uuendatud praeguste funktsioonidega ja on nüüd tõlgitud kõigisse keeltesse, mida Google Play toetab.

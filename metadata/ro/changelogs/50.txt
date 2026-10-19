@@ -1,0 +1,2 @@
+* Butoanele de sub câmpul tokenului de autentificare Shizuku sunt acum butoane standard fără chenar dintr-o bară de butoane, cum se obișnuiește pe Android.
+* Prezentarea din magazin a fost actualizată cu funcțiile actuale și este acum tradusă în toate limbile acceptate de Google Play.

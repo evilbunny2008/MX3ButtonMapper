@@ -1,0 +1,23 @@
+MX3 Button Mapper gán lại các nút vật lý trên điều khiển air mouse loại MX3 kết nối với thiết bị Google TV -- những nút mà ngay từ đầu đã gửi sai mã phím, hoặc chẳng gửi gì hữu ích.
+
+Ứng dụng hoạt động bằng cách kết hợp hai cơ chế của Android:
+
+• Một dịch vụ hỗ trợ tiếp cận lắng nghe mã quét thô trên toàn hệ thống và có thể "nuốt" lần nhấn nút gốc.
+• Shizuku, dùng để chèn một mã phím hoặc chuỗi lần nhấn thay thế vào chỗ lần nhấn gốc. Shizuku làm việc này bằng chính các quyền cấp shell mà 'adb shell input keyevent' vốn đã có, nên không cần root. Nếu Shizuku chưa kết nối nhưng thiết bị đã root, ứng dụng sẽ chèn phím qua 'su' thay thế, và do đó sẽ xin quyền siêu người dùng từ trình quản lý root của bạn.
+
+Các kiểu gán lại được hỗ trợ (có sẵn một bộ gán mặc định dựng sẵn, nên không cần cấu hình từng nút):
+
+• Gán lại một nút sang mã phím khác (ví dụ một nút Page Up/Page Down lạc chỗ thành Kênh +/Kênh - thực sự).
+• Gửi cùng một mã phím nhiều lần chỉ với một lần nhấn (ví dụ một nút gửi ba lần Giảm âm lượng).
+• Gán lại nút khác nhau tùy theo ứng dụng đang ở nền trước (ví dụ Kênh +/- trong ứng dụng TV, một lần Page Up/Page Down trong Kodi, và một loạt lần nhấn D-pad để nhảy qua danh sách ở mọi nơi khác).
+• Mở ứng dụng trực tiếp bằng một nút, trong khi giữ chính nút đó vẫn gửi thao tác nhấn giữ bình thường (ví dụ nhấn Màn hình chính mở MX3 Launcher, giữ nút thì nhấn giữ Màn hình chính).
+
+Cài đặt trong ứng dụng:
+
+• Hãng TV (TCL hoặc Blaupunkt), vì các TV này chờ mã phím khác nhau cho nút TV trên điều khiển và dùng ứng dụng truyền hình trực tiếp khác nhau.
+• Ghi nhật ký lần nhấn phím tùy chọn để khắc phục sự cố, mặc định tắt.
+• Ngôn ngữ ứng dụng -- giao diện đã được dịch sang khoảng 100 ngôn ngữ.
+
+Ứng dụng cũng tự thiết lập qua Shizuku: tự động bật dịch vụ hỗ trợ tiếp cận của chính nó, nên bạn không cần tự tìm trong Cài đặt -> Hỗ trợ tiếp cận, có thể mở trình chạy bạn chọn khi khởi động, và trên TV TCL sẽ cấp lại quyền tự khởi động mà firmware của TCL thường thu hồi, để các thiết lập gán lại vẫn hoạt động sau khi khởi động lại.
+
+Lưu ý: một số thiết lập gán mặc định mở các ứng dụng bên thứ ba cụ thể cho tiện (ví dụ chuyển thẳng tới một trình chạy, ứng dụng video hoặc trình duyệt).

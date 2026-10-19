@@ -1,0 +1,2 @@
+* Mygtukai po Shizuku autentifikavimo prieigos rakto lauku dabar yra standartiniai mygtukų juostos mygtukai be rėmelio, kaip įprasta Android.
+* Aprašas parduotuvėje atnaujintas pagal dabartines funkcijas ir dabar išverstas į visas Google Play palaikomas kalbas.

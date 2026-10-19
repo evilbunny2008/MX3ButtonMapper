@@ -1,0 +1,23 @@
+MX3 Button Mapper memetakan ulang tombol fisik pada remote air mouse jenis MX3 yang terhubung ke perangkat Google TV -- tombol yang sejak awal mengirim kode tombol yang salah, atau tidak mengirim apa pun yang berguna.
+
+Aplikasi ini bekerja dengan menggabungkan dua mekanisme Android:
+
+• Layanan aksesibilitas yang memantau kode pindai mentah di seluruh sistem dan dapat "menelan" tekanan tombol aslinya.
+• Shizuku, yang digunakan untuk menyuntikkan kode tombol atau rangkaian tekanan pengganti sebagai ganti tekanan aslinya. Shizuku melakukannya dengan hak akses tingkat shell yang sama dengan yang sudah dimiliki 'adb shell input keyevent', jadi root tidak diperlukan. Jika Shizuku tidak terhubung tetapi perangkat sudah di-root, aplikasi akan menyuntikkan tombol melalui 'su', sehingga akan meminta akses superuser ke pengelola root Anda.
+
+Jenis pemetaan yang didukung (tersedia set pemetaan default siap pakai, jadi tidak ada yang perlu dikonfigurasi per tombol):
+
+• Memetakan ulang tombol ke kode tombol lain (mis. tombol Page Up/Page Down yang nyasar dijadikan Saluran +/Saluran - yang sebenarnya).
+• Mengirim kode tombol yang sama beberapa kali dalam satu tekanan (mis. satu tombol yang mengirim tiga kali Kecilkan volume).
+• Memetakan tombol secara berbeda tergantung aplikasi yang sedang di latar depan (mis. Saluran +/- di aplikasi TV, satu kali Page Up/Page Down di Kodi, dan rentetan tekanan D-pad untuk melompati daftar di tempat lain).
+• Membuka aplikasi langsung dari tombol, sementara menahan tombol yang sama tetap mengirim tekan lama normalnya (mis. menekan Beranda membuka MX3 Launcher, menahannya melakukan tekan lama Beranda).
+
+Setelan dalam aplikasi:
+
+• Merek TV (TCL atau Blaupunkt), karena TV ini mengharapkan kode tombol yang berbeda untuk tombol TV di remote dan memakai aplikasi TV siaran langsung yang berbeda.
+• Pencatatan tekanan tombol opsional untuk pemecahan masalah, nonaktif secara default.
+• Bahasa aplikasi -- antarmuka telah diterjemahkan ke sekitar 100 bahasa.
+
+Aplikasi ini juga menyiapkan dirinya sendiri melalui Shizuku: mengaktifkan layanan aksesibilitasnya sendiri secara otomatis, jadi Anda tidak perlu mencarinya secara manual di Setelan -> Aksesibilitas, dapat membuka peluncur pilihan Anda saat dimulai, dan di TV TCL memberikan kembali izin mulai otomatis yang biasanya dicabut oleh firmware TCL, agar pemetaan tetap berfungsi setelah dimulai ulang.
+
+Catatan: beberapa pemetaan default membuka aplikasi pihak ketiga tertentu demi kemudahan (mis. langsung ke peluncur, aplikasi video, atau browser).

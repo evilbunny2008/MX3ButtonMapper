@@ -1,0 +1,1 @@
+* Suppression d'un composant de service de premier plan inutilisé et de ses autorisations FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- il n'était jamais démarré, donc rien ne change dans le fonctionnement de l'application, qui demande désormais moins d'autorisations.

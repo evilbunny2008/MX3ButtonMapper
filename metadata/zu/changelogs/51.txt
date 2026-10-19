@@ -1,0 +1,1 @@
+* Kususwe ingxenye yesevisi engaphambili ebingasetshenziswa kanye nezimvume ze-FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- ibingakaze iqaliswe, ngakho-ke akukho okushintshayo endleleni uhlelo lokusebenza olusebenza ngayo, futhi manje lucela izimvume ezimbalwa.

@@ -1,0 +1,23 @@
+MX3 Button Mapper wijst hardwareknoppen opnieuw toe op air-mouse-afstandsbedieningen van het type MX3 die met Google TV-apparaten zijn verbonden -- knoppen die standaard de verkeerde toetscode sturen, of helemaal niets nuttigs.
+
+Dit gebeurt door twee Android-mechanismen te combineren:
+
+• Een toegankelijkheidsservice die systeembreed naar ruwe scancodes luistert en de oorspronkelijke knopdruk kan onderscheppen (opslokken).
+• Shizuku, gebruikt om in plaats van de oorspronkelijke knopdruk een vervangende toetscode of reeks toetsaanslagen in te voeren. Shizuku doet dit met dezelfde shellrechten die 'adb shell input keyevent' al heeft, dus root is niet nodig. Is Shizuku niet verbonden maar het apparaat wel geroot, dan valt de app terug op 'su' om toetsen in te voeren en vraagt daarom je rootbeheerder om superuser-toegang.
+
+Ondersteunde soorten toewijzingen (er is een kant-en-klare standaardset ingebouwd, dus er valt per knop niets in te stellen):
+
+• Een knop toewijzen aan een andere toetscode (bijv. een verdwaalde Page Up/Page Down-knop die een echte Kanaal omhoog/Kanaal omlaag wordt).
+• Dezelfde toetscode meerdere keren per druk sturen (bijv. één knop die drie keer Volume omlaag stuurt).
+• Een knop anders toewijzen afhankelijk van de app op de voorgrond (bijv. Kanaal omhoog/omlaag in de tv-app, één Page Up/Page Down in Kodi en overal elders een reeks D-pad-drukken om door lijsten te springen).
+• Een app direct starten met een knop, terwijl ingedrukt houden van dezelfde knop nog steeds de normale lange druk stuurt (bijv. kort op Home drukken opent MX3 Launcher, ingedrukt houden geeft een lange druk op Home).
+
+Instellingen in de app:
+
+• Tv-merk (TCL of Blaupunkt), omdat deze tv's verschillende toetscodes verwachten voor de tv-knop van de afstandsbediening en verschillende apps voor live-tv gebruiken.
+• Optioneel loggen van toetsaanslagen voor probleemoplossing, standaard uit.
+• App-taal, met de interface vertaald in zo'n 100 talen.
+
+De app stelt zichzelf ook in via Shizuku: hij schakelt zijn eigen toegankelijkheidsservice automatisch in, zodat je niet zelf in Instellingen -> Toegankelijkheid hoeft te zoeken, hij kan bij het opstarten je gekozen launcher openen en op TCL-tv's geeft hij opnieuw de toestemming voor automatisch starten die de firmware van TCL anders intrekt, zodat de toewijzingen na een herstart blijven werken.
+
+Let op: sommige standaardtoewijzingen starten voor het gemak bepaalde apps van derden (bijv. direct naar een launcher, een video-app of een browser).

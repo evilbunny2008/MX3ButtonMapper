@@ -1,0 +1,2 @@
+* Els botons de sota el camp del testimoni d'autenticació de Shizuku ara són botons estàndard sense vora d'una barra de botons, com és habitual a Android.
+* La fitxa de la botiga s'ha actualitzat amb les funcions actuals i ara està traduïda a tots els idiomes que admet Google Play.

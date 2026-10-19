@@ -1,0 +1,23 @@
+MX3 Button Mapper mappar om de fysiska knapparna på air mouse-fjärrkontroller av MX3-typ som är anslutna till Google TV-enheter -- knappar som från början skickar fel tangentkod, eller inget användbart alls.
+
+Det fungerar genom att kombinera två Android-mekanismer:
+
+• En tillgänglighetstjänst som lyssnar efter råa scankoder i hela systemet och kan fånga upp (svälja) den ursprungliga knapptryckningen.
+• Shizuku, som används för att skicka in en ersättande tangentkod eller tryckföljd i stället för den ursprungliga. Shizuku gör detta med samma skalbehörigheter som 'adb shell input keyevent' redan har, så root behövs inte. Om Shizuku inte är anslutet men enheten är rootad använder appen 'su' i stället för att skicka tangenter, och ber därför din root-hanterare om superanvändaråtkomst.
+
+Mappningstyper som stöds (en färdig standarduppsättning är inbyggd, så det finns inget att ställa in per knapp):
+
+• Mappa om en knapp till en annan tangentkod (t.ex. en felplacerad Page Up/Page Down-knapp som blir riktig Kanal upp/Kanal ned).
+• Skicka samma tangentkod flera gånger per tryck (t.ex. en enda knapp som skickar tre tryck på Volym ned).
+• Mappa om en knapp olika beroende på vilken app som är i förgrunden (t.ex. Kanal upp/ned i tv-appen, ett enda Page Up/Page Down i Kodi och en serie D-pad-tryck för att hoppa i listor överallt annars).
+• Starta en app direkt med en knapp, medan ett långt tryck på samma knapp fortfarande skickar dess vanliga långa tryck (t.ex. öppnar ett tryck på Hem MX3 Launcher, medan ett långt tryck ger ett långt tryck på Hem).
+
+Inställningar i appen:
+
+• Tv-märke (TCL eller Blaupunkt), eftersom dessa tv-apparater förväntar sig olika tangentkoder för fjärrkontrollens TV-knapp och använder olika appar för live-tv.
+• Valfri loggning av tangenttryck för felsökning, avstängd som standard.
+• Appspråk -- gränssnittet är översatt till omkring 100 språk.
+
+Appen ställer också in sig själv via Shizuku: den aktiverar sin egen tillgänglighetstjänst automatiskt, så du behöver inte leta i Inställningar -> Tillgänglighet för hand, den kan öppna din valda startskärmsapp vid start, och på TCL-tv-apparater beviljar den på nytt den behörighet för automatisk start som TCL:s firmware annars tar bort, så att mappningarna fortsätter att fungera efter en omstart.
+
+Obs! Vissa av standardmappningarna startar för enkelhetens skull specifika appar från tredje part (t.ex. direkt till en startskärmsapp, en videoapp eller en webbläsare).

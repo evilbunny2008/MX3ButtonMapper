@@ -1,0 +1,23 @@
+MX3 Button Mapper premapúva hardvérové tlačidlá ovládačov typu air mouse MX3 pripojených k zariadeniam Google TV -- tlačidlá, ktoré už z výroby posielajú nesprávny kód klávesu alebo nič užitočné.
+
+Funguje vďaka kombinácii dvoch mechanizmov Androidu:
+
+• Služby dostupnosti, ktorá v celom systéme počúva surové scankódy a dokáže pôvodné stlačenie tlačidla pohltiť.
+• Shizuku, ktoré namiesto pôvodného stlačenia vloží náhradný kód klávesu alebo sekvenciu stlačení. Shizuku to umožňuje s rovnakými oprávneniami shellu, aké už má 'adb shell input keyevent', takže root nie je potrebný. Ak Shizuku nie je pripojené, ale zariadenie má root, aplikácia vkladá klávesy cez 'su', a preto požiada vášho správcu rootu o prístup superpoužívateľa.
+
+Podporované typy mapovania (je vstavaná hotová predvolená sada, takže netreba nič nastavovať pre jednotlivé tlačidlá):
+
+• Premapovať tlačidlo na iný kód klávesu (napr. zatúlané tlačidlo Page Up/Page Down na skutočné Kanál +/Kanál -).
+• Poslať rovnaký kód klávesu niekoľkokrát jedným stlačením (napr. jedno tlačidlo, ktoré pošle tri stlačenia Hlasitosť -).
+• Premapovať tlačidlo rôzne podľa aplikácie v popredí (napr. Kanál +/- v aplikácii TV, jediné Page Up/Page Down v Kodi a všade inde sériu stlačení D-padu na preskakovanie v zoznamoch).
+• Spustiť aplikáciu priamo stlačením tlačidla, pričom podržanie toho istého tlačidla stále pošle jeho bežné dlhé stlačenie (napr. stlačenie Domov otvorí MX3 Launcher, podržanie vykoná dlhé stlačenie Domov).
+
+Nastavenia v aplikácii:
+
+• Značka televízora (TCL alebo Blaupunkt), pretože tieto televízory očakávajú pre tlačidlo TV na ovládači rôzne kódy a používajú rôzne aplikácie na živé vysielanie.
+• Voliteľné zaznamenávanie stlačení klávesov na riešenie problémov, predvolene vypnuté.
+• Jazyk aplikácie -- rozhranie je preložené do približne 100 jazykov.
+
+Aplikácia sa tiež sama nastaví cez Shizuku: automaticky zapne vlastnú službu dostupnosti, takže ju nemusíte ručne hľadať v Nastavenia -> Dostupnosť, pri spustení môže otvoriť zvolený launcher a na televízoroch TCL znova udelí povolenie na automatické spustenie, ktoré firmvér TCL inak odoberá, aby mapovanie fungovalo aj po reštarte.
+
+Poznámka: niektoré predvolené mapovania pre pohodlie spúšťajú konkrétne aplikácie tretích strán (napr. priamo launcher, video aplikáciu alebo prehliadač).

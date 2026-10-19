@@ -1,0 +1,1 @@
+* Erabiltzen ez zen aurreko planoko zerbitzu-osagai bat kendu da, FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE baimenekin batera -- ez zen inoiz abiarazten, beraz aplikazioaren funtzionamenduan ez da ezer aldatzen, eta orain baimen gutxiago eskatzen ditu.

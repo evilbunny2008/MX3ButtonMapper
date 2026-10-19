@@ -1,0 +1,1 @@
+* Kullanılmayan bir ön plan hizmeti bileşeni, FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE izinleriyle birlikte kaldırıldı -- hiç başlatılmıyordu, bu yüzden uygulamanın çalışmasında hiçbir şey değişmez ve uygulama artık daha az izin ister.

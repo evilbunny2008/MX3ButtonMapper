@@ -1,0 +1,23 @@
+Nire-remap ng MX3 Button Mapper ang mga pisikal na button sa mga air mouse remote na uri ng MX3 na nakakonekta sa mga Google TV device -- mga button na mula pa sa umpisa ay nagpapadala ng maling keycode, o walang anumang kapaki-pakinabang.
+
+Gumagana ito sa pamamagitan ng pagsasama ng dalawang mekanismo ng Android:
+
+• Isang serbisyo sa accessibility na nakikinig sa mga raw na scancode sa buong system at kayang "lunukin" ang orihinal na pagpindot sa button.
+• Shizuku, na ginagamit para mag-inject ng kapalit na keycode o sunod-sunod na pagpindot sa halip ng orihinal. Ginagawa ito ng Shizuku gamit ang parehong shell-level na pribilehiyo na mayroon na ang 'adb shell input keyevent', kaya hindi kailangan ng root. Kung hindi nakakonekta ang Shizuku pero naka-root ang device, mag-i-inject ang app ng mga key sa pamamagitan ng 'su', kaya hihingi ito ng superuser access sa iyong root manager.
+
+Mga sinusuportahang uri ng pag-map (may nakapaloob nang handang default na set ng pag-map, kaya walang kailangang i-configure kada button):
+
+• I-remap ang isang button sa ibang keycode (hal. isang ligaw na Page Up/Page Down button na gagawing tunay na Channel +/Channel -).
+• Magpadala ng parehong keycode nang ilang beses sa isang pindot (hal. isang button na nagpapadala ng tatlong Hinaan ang volume).
+• I-remap ang button nang iba-iba depende sa app na nasa harapan (hal. Channel +/- sa TV app, isang Page Up/Page Down sa Kodi, at sunod-sunod na pindot sa D-pad para tumalon sa mga listahan sa iba pang lugar).
+• Direktang magbukas ng app mula sa isang button, habang ang pagpindot nang matagal sa parehong button ay nagpapadala pa rin ng karaniwang matagal na pindot nito (hal. ang pagpindot sa Home ay nagbubukas ng MX3 Launcher, at ang pagpindot nang matagal ay matagal na pindot sa Home).
+
+Mga setting sa app:
+
+• Brand ng TV (TCL o Blaupunkt), dahil umaasa ang mga TV na ito ng magkakaibang keycode para sa TV button ng remote at gumagamit ng magkakaibang app para sa live TV.
+• Opsyonal na pag-log ng mga pagpindot sa key para sa pag-troubleshoot, naka-off bilang default.
+• Wika ng app -- naisalin ang interface sa humigit-kumulang 100 wika.
+
+Sine-set up din ng app ang sarili nito sa pamamagitan ng Shizuku: awtomatiko nitong ine-enable ang sarili nitong serbisyo sa accessibility, kaya hindi mo na kailangang hanapin ito nang mano-mano sa Mga Setting -> Accessibility, kaya nitong buksan ang napili mong launcher sa pagsisimula, at sa mga TCL TV ay ibinabalik nito ang pahintulot sa awtomatikong pagsisimula na kung hindi ay inaalis ng firmware ng TCL, para patuloy na gumana ang mga pag-map pagkatapos mag-reboot.
+
+Tandaan: ang ilan sa mga default na pag-map ay nagbubukas ng mga partikular na third-party na app para sa kaginhawahan (hal. diretso sa isang launcher, video app, o browser).

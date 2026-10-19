@@ -1,0 +1,1 @@
+* Kimeondolewa kijenzi cha huduma ya mbele kisichotumika pamoja na ruhusa za FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- hakijawahi kuanzishwa, kwa hivyo hakuna kinachobadilika katika jinsi programu inavyofanya kazi, na programu sasa inaomba ruhusa chache zaidi.

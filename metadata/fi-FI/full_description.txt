@@ -1,0 +1,23 @@
+MX3 Button Mapper muuttaa Google TV -laitteisiin yhdistettyjen MX3-tyyppisten air mouse -kaukosäätimien fyysisten painikkeiden toimintoja -- painikkeiden, jotka tehdasasetuksilla lähettävät väärän näppäinkoodin tai eivät mitään hyödyllistä.
+
+Sovellus yhdistää kaksi Android-mekanismia:
+
+• Esteettömyyspalvelun, joka kuuntelee raakoja scan-koodeja koko järjestelmässä ja voi niellä alkuperäisen painalluksen.
+• Shizukun, jolla alkuperäisen tilalle syötetään korvaava näppäinkoodi tai painallussarja. Shizuku tekee tämän samoilla shell-oikeuksilla, jotka 'adb shell input keyevent' -komennolla jo on, joten root-oikeuksia ei tarvita. Jos Shizuku ei ole yhdistetty mutta laite on rootattu, sovellus syöttää näppäimet 'su':n kautta ja pyytää siksi root-hallintasovellukselta pääkäyttäjän oikeuksia.
+
+Tuetut uudelleenmääritystyypit (valmis oletusmääritysten sarja on sisäänrakennettu, joten painikekohtaisesti ei tarvitse määrittää mitään):
+
+• Painikkeen määritys toiseen näppäinkoodiin (esim. eksynyt Page Up/Page Down -painike oikeaksi Kanava ylös/Kanava alas -painikkeeksi).
+• Saman näppäinkoodin lähettäminen useita kertoja yhdellä painalluksella (esim. yksi painike, joka lähettää kolme Äänenvoimakkuus alas -painallusta).
+• Painikkeen erilainen määritys etualalla olevan sovelluksen mukaan (esim. Kanava ylös/alas TV-sovelluksessa, yksi Page Up/Page Down Kodissa ja muualla sarja D-pad-painalluksia listoissa hyppimiseen).
+• Sovelluksen käynnistäminen suoraan painikkeella, kun saman painikkeen pitkä painallus lähettää edelleen tavallisen pitkän painalluksen (esim. Koti-painike avaa MX3 Launcherin, ja pohjassa pitäminen tekee pitkän Koti-painalluksen).
+
+Sovelluksen asetukset:
+
+• Television merkki (TCL tai Blaupunkt), koska nämä televisiot odottavat kaukosäätimen TV-painikkeelle eri näppäinkoodeja ja käyttävät eri suoran TV:n sovelluksia.
+• Valinnainen näppäinpainallusten lokitus vianmääritystä varten, oletuksena pois päältä.
+• Sovelluksen kieli -- käyttöliittymä on käännetty noin 100 kielelle.
+
+Sovellus myös määrittää itsensä Shizukun avulla: se ottaa oman esteettömyyspalvelunsa automaattisesti käyttöön, joten sitä ei tarvitse etsiä käsin kohdasta Asetukset -> Esteettömyys, se voi avata valitsemasi käynnistysohjelman käynnistyksen yhteydessä, ja TCL-televisioissa se myöntää uudelleen automaattisen käynnistyksen luvan, jonka TCL:n laiteohjelmisto muuten poistaa, jotta määritykset toimivat myös uudelleenkäynnistyksen jälkeen.
+
+Huomaa: jotkin oletusmääritykset avaavat mukavuussyistä tiettyjä kolmannen osapuolen sovelluksia (esim. suoraan käynnistysohjelman, videosovelluksen tai selaimen).

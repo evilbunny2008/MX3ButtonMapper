@@ -1,0 +1,1 @@
+* Noņemts neizmantots priekšplāna pakalpojuma komponents kopā ar atļaujām FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- tas nekad netika palaists, tāpēc lietotnes darbībā nekas nemainās, un lietotne tagad pieprasa mazāk atļauju.

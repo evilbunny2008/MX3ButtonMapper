@@ -1,0 +1,2 @@
+* Các nút bên dưới ô mã xác thực Shizuku giờ là nút thanh nút tiêu chuẩn không viền, đúng kiểu thông thường trên Android.
+* Trang cửa hàng đã được cập nhật theo các tính năng hiện tại và nay được dịch sang mọi ngôn ngữ mà Google Play hỗ trợ.

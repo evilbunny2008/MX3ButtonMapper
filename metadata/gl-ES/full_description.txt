@@ -1,0 +1,23 @@
+MX3 Button Mapper reasigna os botóns físicos dos mandos air mouse de tipo MX3 conectados a dispositivos Google TV -- botóns que, de fábrica, envían o código de tecla incorrecto ou nada útil.
+
+Funciona combinando dous mecanismos de Android:
+
+• Un servizo de accesibilidade que escoita os códigos de escaneo en bruto en todo o sistema e pode consumir (absorber) a pulsación orixinal.
+• Shizuku, que se usa para inxectar un código de tecla ou unha secuencia de pulsacións de substitución no canto da orixinal. Shizuku permíteo cos mesmos privilexios de shell que xa ten 'adb shell input keyevent', polo que non fai falta root. Se Shizuku non está conectado pero o dispositivo ten root, a aplicación inxecta as teclas mediante 'su' e, polo tanto, pedirá acceso de superusuario ao teu xestor de root.
+
+Tipos de reasignación admitidos (inclúe un conxunto predeterminado listo, así que non hai nada que configurar botón a botón):
+
+• Reasignar un botón a outro código de tecla (p. ex., un botón Re Páx/Av Páx extraviado convertido nun auténtico Canal +/Canal -).
+• Enviar o mesmo código de tecla varias veces cunha soa pulsación (p. ex., un só botón que envía tres pulsacións de Baixar volume).
+• Reasignar un botón de xeito distinto segundo a aplicación en primeiro plano (p. ex., Canal +/- na aplicación de TV, un único Re Páx/Av Páx en Kodi e unha ráfaga de pulsacións da cruceta para percorrer listas en todas as demais).
+• Abrir unha aplicación directamente cun botón, mentres que manter premido o mesmo botón segue enviando a súa pulsación longa normal (p. ex., premer Inicio abre MX3 Launcher e mantelo premido fai unha pulsación longa de Inicio).
+
+Configuración da aplicación:
+
+• Marca do televisor (TCL ou Blaupunkt), xa que estes televisores esperan códigos de tecla distintos para o botón TV do mando e usan aplicacións de TV en directo diferentes.
+• Rexistro opcional de pulsacións de teclas para resolver problemas, desactivado de forma predeterminada.
+• Idioma da aplicación, coa interface traducida a uns 100 idiomas.
+
+A aplicación tamén se configura soa mediante Shizuku: activa automaticamente o seu propio servizo de accesibilidade, sen ter que buscalo a man en Configuración -> Accesibilidade, pode abrir o lanzador que elixas ao iniciarse e, nos televisores TCL, volve conceder o permiso de inicio automático que o firmware de TCL retira, para que as reasignacións sigan funcionando despois de reiniciar.
+
+Nota: algunhas reasignacións predeterminadas abren aplicacións de terceiros concretas por comodidade (p. ex., ir directamente a un lanzador, unha aplicación de vídeo ou un navegador).
