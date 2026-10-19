@@ -21,6 +21,26 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+// Every translated locale (any values-*/ folder with a strings.xml),
+// as BCP-47 tags, so MainActivity's language picker lists exactly
+// what's actually translated without a hand-maintained list. English
+// is the unqualified values/ folder, so it's added in MainActivity.
+// Plain "zh" is listed as zh-Hans so the picker can tell it apart
+// from b+zh+Hant -- it still resolves to values-zh at runtime.
+// Computed out here rather than inside defaultConfig {} so the
+// collection calls aren't flagged as "suspicious receiver type".
+val appLocales: List<String> = file("src/main/res").listFiles()!!
+    .filter { it.name.startsWith("values-") && File(it, "strings.xml").exists() }
+    .map { dir ->
+        val qualifier = dir.name.removePrefix("values-")
+        when {
+            qualifier == "zh" -> "zh-Hans"
+            qualifier.startsWith("b+") -> qualifier.removePrefix("b+").replace('+', '-')
+            else -> qualifier.replace("-r", "-")
+        }
+    }
+    .sorted()
+
 android {
     namespace = "com.odiousapps.mx3buttonmapper"
     compileSdk {
@@ -49,23 +69,6 @@ android {
         versionCode = 50
         versionName = "0.0.50"
 
-        // Every translated locale (any values-*/ folder with a strings.xml),
-        // as BCP-47 tags, so MainActivity's language picker lists exactly
-        // what's actually translated without a hand-maintained list. English
-        // is the unqualified values/ folder, so it's added in MainActivity.
-        // Plain "zh" is listed as zh-Hans so the picker can tell it apart
-        // from b+zh+Hant -- it still resolves to values-zh at runtime.
-        val appLocales = file("src/main/res").listFiles()!!
-            .filter { it.name.startsWith("values-") && File(it, "strings.xml").exists() }
-            .map { dir ->
-                val qualifier = dir.name.removePrefix("values-")
-                when {
-                    qualifier == "zh" -> "zh-Hans"
-                    qualifier.startsWith("b+") -> qualifier.removePrefix("b+").replace('+', '-')
-                    else -> qualifier.replace("-r", "-")
-                }
-            }
-            .sorted()
         buildConfigField("String[]", "APP_LOCALES", appLocales.joinToString(", ", "{ ", " }") { "\"$it\"" })
     }
 
