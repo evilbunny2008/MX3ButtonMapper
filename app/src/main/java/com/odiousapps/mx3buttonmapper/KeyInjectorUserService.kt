@@ -83,7 +83,7 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
             // Read the current list so we don't clobber any other
             // accessibility services (e.g. TalkBack) the user already has
             // enabled.
-            val current = run("settings", "get", "secure", "enabled_accessibility_services").trim()
+            val current = readEnabledAccessibilityServices().trim()
             Log.i(TAG, "enableAccessibilityService: read current='$current'")
             val currentServices = current
                 .split(":")
@@ -155,8 +155,10 @@ class KeyInjectorUserService : IKeyInjectorService.Stub() {
         process.waitFor()
     }
 
-    private fun run(vararg args: String): String {
-        val process = Runtime.getRuntime().exec(args)
+    private fun readEnabledAccessibilityServices(): String {
+        val process = Runtime.getRuntime().exec(
+            arrayOf("settings", "get", "secure", "enabled_accessibility_services")
+        )
         val output = process.inputStream.bufferedReader().readText()
         process.waitFor()
         return output

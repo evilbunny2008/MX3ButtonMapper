@@ -1,0 +1,3 @@
+* The Paste and Save buttons under the Shizuku auth token field are
+  now standard borderless button-bar buttons, matching Android's
+  usual look for a row of related actions.

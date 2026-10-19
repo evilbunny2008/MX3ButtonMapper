@@ -133,11 +133,11 @@ has more detail and screenshots if your TV's menus look different.)
    settings app and scroll down to the **Accessibility** menu item.
 2. Scroll to the bottom of the **Accessibility** screen where you will
    find Shizuku listed and enable it.
-4. Open Shizuku and tap **Pairing** — a dialog will appear asking if
+3Open Shizuku and tap **Pairing** — a dialog will appear asking if
    you want to open **Developer options**, click on that button.
-6. The enable both **USB debugging** and **Wireless debugging**
-7. Then tap **Pair device with pairing code**.
-8. If the **Allow wireless debugging on this network?** click **Allow**,
+4Then enable both **USB debugging** and **Wireless debugging**
+5Then tap **Pair device with pairing code**.
+6If the **Allow wireless debugging on this network?** click **Allow**,
    then click **Pair device with pairing code** again.
 
 All going well Shizuku will now be paired, otherwise try repeating the

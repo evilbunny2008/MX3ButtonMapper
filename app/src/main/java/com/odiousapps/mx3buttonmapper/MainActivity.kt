@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         pasteButton.setOnClickListener {
-            val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
             val clipText = clipboard.primaryClip
                 ?.takeIf { it.itemCount > 0 }
                 ?.getItemAt(0)

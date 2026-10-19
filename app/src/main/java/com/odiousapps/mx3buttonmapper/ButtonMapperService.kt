@@ -12,15 +12,14 @@ import android.net.NetworkRequest
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
-import com.odiousapps.mx3buttonmapper.AppLog as Log
 import android.view.KeyEvent
 import android.view.accessibility.AccessibilityEvent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import com.odiousapps.mx3buttonmapper.AppLog as Log
 
 /**
  * Listens system-wide for a set of hardware scancodes. Each one is either
