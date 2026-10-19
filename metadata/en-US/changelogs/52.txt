@@ -1,0 +1,1 @@
+* The store listing (description and release notes) is now translated into all Google Play languages.
