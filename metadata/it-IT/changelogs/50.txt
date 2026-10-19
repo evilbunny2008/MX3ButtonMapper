@@ -1,0 +1,2 @@
+* I pulsanti sotto il campo del token di autenticazione di Shizuku sono ora pulsanti standard senza bordo da barra dei pulsanti, come di consueto su Android.
+* La scheda dello store è stata aggiornata con le funzioni attuali ed è ora tradotta in tutte le lingue supportate da Google Play.

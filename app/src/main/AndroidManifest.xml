@@ -9,14 +9,6 @@
         android:name="android.hardware.touchscreen"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"
-        tools:ignore="ForegroundServicesPolicy" />
-    <!--
-      Required specifically for StatusForegroundService's specialUse FGS
-      type below, and is itself a Play Store "restricted permission" if
-      you ever publish - see the justification note in README.md.
-    -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <!--
       Required on API 33+ for SetupNotifier's "open the app to grant
       Shizuku permission" notification to actually show - it's a
@@ -112,25 +104,6 @@
             <meta-data
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessibility_service_config" />
-        </service>
-
-        <!--
-          Optional - only relevant if StatusForegroundService is
-          actually started somewhere (it isn't wired up automatically).
-          android:foregroundServiceType is MANDATORY on Android 14+
-          (targetSdk 34+) - omitting it causes a
-          MissingForegroundServiceTypeException at startForeground()
-          time, not a silent failure. "specialUse" is the closest fit
-          since none of the other FGS types (location, camera,
-          mediaPlayback, etc.) describe input remapping.
-        -->
-        <service
-            android:name=".StatusForegroundService"
-            android:foregroundServiceType="specialUse"
-            android:exported="false">
-            <property
-                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="Hardware button remapping via accessibility service" />
         </service>
 
         <!--

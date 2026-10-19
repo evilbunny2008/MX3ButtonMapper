@@ -1,3 +1,5 @@
 * The Paste and Save buttons under the Shizuku auth token field are
   now standard borderless button-bar buttons, matching Android's
   usual look for a row of related actions.
+* The store listing has been updated to cover the current features and
+  is now translated into every language Google Play supports.

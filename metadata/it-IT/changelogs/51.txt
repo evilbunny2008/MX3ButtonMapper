@@ -1,0 +1,1 @@
+* Rimosso un componente di servizio in primo piano inutilizzato e le relative autorizzazioni FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- non veniva mai avviato, quindi il funzionamento dell'app non cambia e ora l'app richiede meno autorizzazioni.

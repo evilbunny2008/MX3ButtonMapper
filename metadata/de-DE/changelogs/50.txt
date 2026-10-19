@@ -1,0 +1,2 @@
+* Die Schaltflächen unter dem Feld für das Shizuku-Auth-Token sind jetzt randlose Standard-Schaltflächen einer Schaltflächenleiste, wie bei Android üblich.
+* Der Store-Eintrag wurde an die aktuellen Funktionen angepasst und ist jetzt in alle von Google Play unterstützten Sprachen übersetzt.

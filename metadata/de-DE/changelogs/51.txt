@@ -1,0 +1,1 @@
+* Eine ungenutzte Vordergrunddienst-Komponente samt ihren Berechtigungen FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE wurde entfernt -- sie wurde nie gestartet, an der Funktionsweise ändert sich also nichts, und die App fordert jetzt weniger Berechtigungen an.

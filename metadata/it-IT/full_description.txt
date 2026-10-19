@@ -1,0 +1,23 @@
+MX3 Button Mapper rimappa i tasti fisici dei telecomandi air mouse di tipo MX3 collegati ai dispositivi Google TV -- tasti che di fabbrica inviano il codice tasto sbagliato, o niente di utile.
+
+Funziona combinando due meccanismi di Android:
+
+• Un servizio di accessibilità che ascolta gli scancode grezzi in tutto il sistema e può consumare (intercettare) la pressione originale.
+• Shizuku, usato per iniettare un codice tasto o una sequenza di pressioni sostitutiva al posto di quella originale. Shizuku lo consente con gli stessi privilegi di shell che 'adb shell input keyevent' ha già, quindi non serve il root. Se Shizuku non è connesso ma il dispositivo ha i permessi di root, l'app ripiega su 'su' per iniettare i tasti e chiederà quindi l'accesso superutente al tuo gestore root.
+
+Tipi di rimappatura supportati (è incluso un set di rimappature predefinito, quindi non c'è nulla da configurare tasto per tasto):
+
+• Rimappare un tasto su un codice tasto diverso (ad es. un tasto Pag su/Pag giù fuori posto rimappato su un vero Canale +/Canale -).
+• Inviare lo stesso codice tasto più volte con una sola pressione (ad es. un singolo tasto che invia tre pressioni di Volume -).
+• Rimappare un tasto in modo diverso a seconda dell'app in primo piano (ad es. Canale +/- nell'app TV, un singolo Pag su/Pag giù in Kodi e una raffica di pressioni del D-pad per scorrere gli elenchi ovunque altrove).
+• Avviare un'app direttamente con un tasto, mentre tenendo premuto lo stesso tasto viene comunque inviata la normale pressione prolungata (ad es. premendo Home si apre MX3 Launcher, tenendolo premuto si ottiene una pressione prolungata di Home).
+
+Impostazioni nell'app:
+
+• Marca del televisore (TCL o Blaupunkt), poiché questi televisori si aspettano codici tasto diversi per il tasto TV del telecomando e usano app di TV in diretta diverse.
+• Registrazione facoltativa delle pressioni dei tasti per la risoluzione dei problemi, disattivata per impostazione predefinita.
+• Lingua dell'app, con l'interfaccia tradotta in circa 100 lingue.
+
+L'app si configura anche da sola tramite Shizuku: attiva automaticamente il proprio servizio di accessibilità, senza dover cercare a mano in Impostazioni -> Accessibilità, può avviare il launcher che preferisci all'avvio e, sui televisori TCL, concede di nuovo l'autorizzazione di avvio automatico che il firmware TCL altrimenti rimuove, così le rimappature continuano a funzionare dopo un riavvio.
+
+Nota: alcune rimappature predefinite avviano specifiche app di terze parti per comodità (ad es. passare direttamente a un launcher, a un'app video o a un browser).

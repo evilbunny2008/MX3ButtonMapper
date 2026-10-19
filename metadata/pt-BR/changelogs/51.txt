@@ -1,0 +1,1 @@
+* Removido um componente de serviço em primeiro plano que não era usado, junto com as permissões FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE -- ele nunca era iniciado, então nada muda no funcionamento do app, que agora pede menos permissões.

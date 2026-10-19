@@ -1,0 +1,23 @@
+MX3 Button Mapper belegt Hardwaretasten von MX3-Air-Mouse-Fernbedienungen neu, die mit Google-TV-Geräten verbunden sind -- Tasten, die ab Werk den falschen Keycode oder gar nichts Sinnvolles senden.
+
+Dazu kombiniert die App zwei Android-Mechanismen:
+
+• Einen Bedienungshilfen-Dienst, der systemweit auf rohe Scancodes lauscht und den ursprünglichen Tastendruck abfangen (verschlucken) kann.
+• Shizuku, um anstelle des ursprünglichen Tastendrucks einen Ersatz-Keycode oder eine Tastenfolge einzuspeisen. Shizuku nutzt dafür dieselben Shell-Rechte, die 'adb shell input keyevent' ohnehin hat, daher ist kein Root nötig. Ist Shizuku nicht verbunden, das Gerät aber gerootet, weicht die App auf 'su' aus und fragt deshalb Ihren Root-Manager nach Superuser-Zugriff.
+
+Unterstützte Belegungsarten (ein fertiger Standardsatz an Belegungen ist eingebaut, es muss also nichts pro Taste eingerichtet werden):
+
+• Eine Taste auf einen anderen Keycode legen (z. B. eine fehlgeleitete Bild-auf/Bild-ab-Taste auf echtes Kanal auf/Kanal ab).
+• Denselben Keycode mehrmals pro Tastendruck senden (z. B. eine einzelne Taste, die dreimal Leiser sendet).
+• Eine Taste je nach App im Vordergrund unterschiedlich belegen (z. B. Kanal auf/ab in der TV-App, ein einzelnes Bild auf/ab in Kodi und überall sonst eine Folge von Steuerkreuz-Tasten, um durch Listen zu springen).
+• Eine App direkt per Tastendruck starten, während langes Drücken derselben Taste weiterhin ihren normalen langen Tastendruck sendet (z. B. öffnet kurzes Drücken von Home den MX3 Launcher, langes Drücken löst ein langes Home aus).
+
+Einstellungen in der App:
+
+• TV-Marke (TCL oder Blaupunkt), da diese Fernseher für die TV-Taste der Fernbedienung unterschiedliche Keycodes erwarten und verschiedene Live-TV-Apps verwenden.
+• Optionale Protokollierung von Tastendrücken zur Fehlersuche, standardmäßig aus.
+• App-Sprache -- die Oberfläche ist in rund 100 Sprachen übersetzt.
+
+Außerdem richtet sich die App über Shizuku selbst ein: Sie aktiviert ihren Bedienungshilfen-Dienst automatisch, sodass Sie nicht selbst in Einstellungen -> Bedienungshilfen suchen müssen, sie kann beim Start Ihren gewählten Launcher öffnen, und auf TCL-Fernsehern erteilt sie die Autostart-Berechtigung erneut, die TCLs Firmware sonst entzieht, damit die Belegung auch nach einem Neustart funktioniert.
+
+Hinweis: Einige der Standardbelegungen starten der Bequemlichkeit halber bestimmte Apps von Drittanbietern (z. B. direkt einen Launcher, eine Video-App oder einen Browser).

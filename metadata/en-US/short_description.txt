@@ -1,1 +1,1 @@
-Remap hardware MX3 Air Mouse buttons for Google TV
+Remap MX3 Air Mouse remote buttons on Google TV

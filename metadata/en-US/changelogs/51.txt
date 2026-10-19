@@ -1,0 +1,4 @@
+* Removed an unused foreground-service component and its
+  FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE permissions --
+  it was never started, so nothing changes in how the app works, and
+  the app now asks for fewer permissions.
