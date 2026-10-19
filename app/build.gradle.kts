@@ -46,8 +46,8 @@ android {
         applicationId = "com.odiousapps.mx3buttonmapper"
         minSdk = 26
         targetSdk = 37
-        versionCode = 49
-        versionName = "0.0.49"
+        versionCode = 50
+        versionName = "0.0.50"
 
         // Every translated locale (any values-*/ folder with a strings.xml),
         // as BCP-47 tags, so MainActivity's language picker lists exactly
