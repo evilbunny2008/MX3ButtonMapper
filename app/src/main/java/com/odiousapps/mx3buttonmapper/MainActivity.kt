@@ -241,7 +241,8 @@ class MainActivity : AppCompatActivity() {
     /**
      * Uses the same Shizuku privileged process that injects key events to
      * also flip on our own accessibility service, so the user never has to
-     * manually visit Settings -> Accessibility and toggle it.
+     * manually visit Settings -> Accessibility and toggle it -- but only
+     * once they've agreed to showAccessibilityDisclosure().
      *
      * Safe to call more than once -- KeyInjectorUserService merges into the
      * existing enabled_accessibility_services list rather than overwriting
@@ -249,9 +250,41 @@ class MainActivity : AppCompatActivity() {
      * are preserved.
      */
     private fun enableAccessibilityServiceViaShizuku() {
-        val flattenedComponentName =
-            ComponentName(this, ButtonMapperService::class.java).flattenToString()
-        ShizukuUserServiceBridge.enableAccessibilityService(flattenedComponentName)
+        lifecycleScope.launch {
+            if (ButtonMapperPreferences.observeAccessibilityConsent(this@MainActivity).first()) {
+                val flattenedComponentName =
+                    ComponentName(this@MainActivity, ButtonMapperService::class.java).flattenToString()
+                ShizukuUserServiceBridge.enableAccessibilityService(flattenedComponentName)
+            } else {
+                showAccessibilityDisclosure()
+            }
+        }
+    }
+
+    /**
+     * Google Play's prominent disclosure for the AccessibilityService API:
+     * says what the service accesses and why, and nothing is switched on
+     * until the person picks Agree. Declining leaves the service off --
+     * they can still enable it by hand via Open Accessibility Settings,
+     * and the dialog is offered again on the next launch.
+     */
+    private fun showAccessibilityDisclosure() {
+        if (isFinishing || isDestroyed) return
+        AlertDialog.Builder(this)
+            .setTitle(R.string.accessibility_disclosure_title)
+            .setMessage(getString(R.string.accessibility_disclosure_message, getString(R.string.shizuku_name)))
+            .setCancelable(false)
+            .setPositiveButton(R.string.agree) { _, _ ->
+                lifecycleScope.launch {
+                    ButtonMapperPreferences.setAccessibilityConsent(this@MainActivity, true)
+                    Log.i(TAG, "Accessibility disclosure accepted")
+                    enableAccessibilityServiceViaShizuku()
+                }
+            }
+            .setNegativeButton(R.string.no_thanks) { _, _ ->
+                Log.i(TAG, "Accessibility disclosure declined -- service left off")
+            }
+            .show()
     }
 
     private fun requestNotificationPermissionIfNeeded() {

@@ -34,6 +34,7 @@ object ButtonMapperPreferences {
     private val KEY_TV_BRAND = stringPreferencesKey("tv_brand")
     private val KEY_LOG_KEY_EVENTS = booleanPreferencesKey("log_key_events")
     private val KEY_LOG_REMAPS = booleanPreferencesKey("log_remaps")
+    private val KEY_ACCESSIBILITY_CONSENT = booleanPreferencesKey("accessibility_consent")
 
     fun observeShizukuAuthToken(context: Context): Flow<String> =
         context.dataStore.data.map { prefs -> prefs[KEY_SHIZUKU_AUTH_TOKEN] ?: "" }
@@ -85,5 +86,15 @@ object ButtonMapperPreferences {
 
     suspend fun setLogRemaps(context: Context, enabled: Boolean) {
         context.dataStore.edit { it[KEY_LOG_REMAPS] = enabled }
+    }
+
+    // Google Play's prominent-disclosure requirement -- the service must
+    // never be switched on via Shizuku until the person has explicitly
+    // agreed to MainActivity's disclosure dialog. Off until they do.
+    fun observeAccessibilityConsent(context: Context): Flow<Boolean> =
+        context.dataStore.data.map { prefs -> prefs[KEY_ACCESSIBILITY_CONSENT] ?: false }
+
+    suspend fun setAccessibilityConsent(context: Context, consented: Boolean) {
+        context.dataStore.edit { it[KEY_ACCESSIBILITY_CONSENT] = consented }
     }
 }

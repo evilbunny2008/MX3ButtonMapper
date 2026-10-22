@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Listens for specific hardware button presses and remaps them to another keycode</string>
+	<string name="accessibility_service_description">Listens for specific hardware button presses on your remote and remaps them to another key or app, and notes which app is on screen so the same button can behave differently in the TV app. Key presses are never stored or sent anywhere.</string>
+	<string name="accessibility_disclosure_title">Accessibility service</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper uses Android’s Accessibility Service API to remap your remote’s buttons.\n\nWhen enabled, it:\n• Reads the hardware button presses from your remote, so it can replace specific buttons with a different key, a burst of key presses, or an app launch\n• Notes the name of the app currently on screen, so a button (e.g. Channel Up/Down) can do something different inside the TV app\n\nIt does not read screen content, text, or passwords. Key presses and app names are only used on this device at the moment they happen. They are never stored (unless you turn on the troubleshooting logs below), and never shared or sent off the device. This app has no internet access.\n\nIf you agree, the app will use %1$s to turn on its own accessibility service for you. You can turn it off at any time in Settings → Accessibility.</string>
+	<string name="agree">Agree</string>
+	<string name="no_thanks">No thanks</string>
 	<string name="app_name" translatable="false">MX3 Button Mapper</string>
 	<string name="app_not_installed_message">The app mapped to this button (%1$s) isn’t installed</string>
 	<string name="app_not_installed_title">App not installed</string>

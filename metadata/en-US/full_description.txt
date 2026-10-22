@@ -18,6 +18,14 @@ In-app settings:
 • Optional key-press logging for troubleshooting, off by default.
 • App language, with the interface translated into around 100 languages.
 
-The app also sets itself up via Shizuku: it enables its own Accessibility Service automatically, so there is no need to dig through Settings -> Accessibility by hand, it can launch your chosen launcher on startup, and on TCL TVs it re-grants the auto-start permission that TCL's firmware otherwise removes, so the mapper keeps working after a reboot.
+The app also sets itself up via Shizuku: once you agree to the in-app disclosure, it enables its own Accessibility Service for you, so there is no need to dig through Settings -> Accessibility by hand, it can launch your chosen launcher on startup, and on TCL TVs it re-grants the auto-start permission that TCL's firmware otherwise removes, so the mapper keeps working after a reboot.
 
 Note: some of the default mappings launch specific third-party apps for convenience (e.g. jumping straight to a launcher, a video app or a browser).
+
+Accessibility Service API use:
+
+This app uses the Accessibility Service API for its core function. The service:
+• Receives hardware key events from your remote so it can replace specific buttons with a different key, a burst of key presses, or an app launch. Buttons that aren't mapped pass through untouched.
+• Receives window-change events only to learn the package name of the app on screen, so a button can behave differently inside the TV app.
+
+It does not read screen content, text or passwords. No key presses or other data are collected, stored (unless you turn on the optional troubleshooting logs, which stay on the device) or shared -- the app has no internet access. The service is only turned on after you agree to an in-app disclosure, and you can turn it off at any time in Settings -> Accessibility.

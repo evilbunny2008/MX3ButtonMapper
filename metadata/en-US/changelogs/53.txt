@@ -1,0 +1,5 @@
+* The app now explains exactly what its Accessibility Service reads
+  and why, and asks for your agreement before turning it on -- it is
+  never enabled without your consent.
+* The Accessibility Service now only asks Android for the window
+  changes it actually needs, rather than every accessibility event.

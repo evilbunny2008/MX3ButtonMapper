@@ -1018,8 +1018,7 @@ class ButtonMapperService : AccessibilityService() {
         // becomes foreground -- this is how we know which app is
         // currently active for SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED,
         // since key events themselves don't carry that information.
-        // Already covered by accessibility_service_config.xml's
-        // typeAllMask, so no config change needed for this to fire.
+        // The only event type accessibility_service_config.xml asks for.
         //
         // Ignores TRANSIENT_OVERLAY_PACKAGES rather than treating every
         // window-focus change as authoritative -- a transient system
