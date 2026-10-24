@@ -1,0 +1,4 @@
+* The MX3 Air Mouse's Mail button now does what the TV remote's Info
+  button does, instead of turning the volume up three steps.
+* The button the MX3 uses to light up its keypad no longer also turns
+  the volume down -- it now passes through untouched.

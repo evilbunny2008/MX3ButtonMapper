@@ -11,7 +11,7 @@ fire the wrong keycode or don't map to anything useful by default.
   button that actually sends `PAGE_UP` instead of `CHANNEL_UP`, so nothing
   listens for it correctly.
 - **Fire a key several times per press.** One button press can inject a
-  short burst of the same keycode (e.g. three Volume Down presses at
+  short burst of the same keycode (e.g. five D-pad Up presses at
   once), with a configurable delay between each so it reads as distinct
   steps rather than a single blur.
 - **Launch an app directly from a button.** No remapping involved — just
@@ -45,6 +45,7 @@ remote can send a different scancode).
 | 28       | `KEYCODE_DPAD_CENTER`                                  |
 | 419      | 4001 (TCL) or `KEYCODE_GUIDE` (Blaupunkt) -- see below |
 | 127      | `KEYCODE_MENU`                                         |
+| 155      | `KEYCODE_INFO`                                         |
 
 Scancode 419's target keycode depends on the "TV brand" setting in the
 app itself (TCL or Blaupunkt) — different TVs have turned out to expect
@@ -62,13 +63,6 @@ table is unaffected by that setting.
 `com.tcl.tv`; Blaupunkt: `com.mediatek.wwtv.tvcenter`) -- both values
 confirmed via `adb shell dumpsys window | grep mCurrentFocus` while
 live TV was actually on screen.
-
-**Fires a key multiple times per press:**
-
-| Scancode | Sends keycode         | Times |
-|----------|-----------------------|-------|
-| 60       | `KEYCODE_VOLUME_DOWN` | 3     |
-| 155      | `KEYCODE_VOLUME_UP`   | 3     |
 
 **Launches an app:**
 

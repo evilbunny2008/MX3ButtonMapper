@@ -110,8 +110,12 @@ class ButtonMapperService : AccessibilityService() {
             127 to KeyEvent.KEYCODE_MENU,          // 82
             // 171 moved to SCANCODE_TO_APP_PACKAGE below (launches Kodi
             // instead of sending KEYCODE_EISU)
-            // 60 moved to SCANCODE_TO_REPEATED_KEYCODE below (sends
-            // volume down x5 instead of a single KEYCODE_NOTIFICATION press)
+            // MX3 Air Mouse's Mail button (sends KEYCODE_ENVELOPE) -- does
+            // what the TCL remote's Info button does instead.
+            155 to KeyEvent.KEYCODE_INFO,          // 165
+            // 60 deliberately unmapped -- this MX3 uses that button to
+            // light up its keypad backlight, so it must pass through
+            // untouched rather than also changing the volume.
             // 104/109 moved to SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED below
             // (only remapped while a specific TV app is in the foreground)
             // add more scanCode -> keyCode pairs here as needed
@@ -226,11 +230,10 @@ class ButtonMapperService : AccessibilityService() {
 
         // scanCode -> (keyCode to inject, how many times). For buttons that
         // should fire the same keycode several times per press rather than
-        // once -- e.g. a dedicated "big volume jump" button.
-        private val SCANCODE_TO_REPEATED_KEYCODE: Map<Int, Pair<Int, Int>> = mapOf(
-            60 to Pair(KeyEvent.KEYCODE_VOLUME_DOWN, 3),
-            155 to Pair(KeyEvent.KEYCODE_VOLUME_UP, 3),
-        )
+        // once -- e.g. a dedicated "big volume jump" button. Currently
+        // empty: 60/155 used to send volume down/up x3, see
+        // SCANCODE_TO_KEYCODE above.
+        private val SCANCODE_TO_REPEATED_KEYCODE: Map<Int, Pair<Int, Int>> = mapOf()
 
         // scanCode -> keyCode, for buttons where holding vs quickly
         // tapping means something different to the RECEIVING app, and

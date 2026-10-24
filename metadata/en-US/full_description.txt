@@ -8,7 +8,7 @@
     Supported mapping types (a ready-made default mapping set is built in, so there is nothing to configure per button):
 
     • Remap a button to a different keycode (e.g. a stray Page Up/Page Down button remapped to proper Channel Up/Channel Down).
-    • Fire the same keycode several times in one press (e.g. a single button that sends three Volume Down presses).
+    • Fire the same keycode several times in one press (e.g. a single button that sends five D-pad presses to jump through a list).
     • Remap a button differently depending on which app is in the foreground (e.g. Channel Up/Down inside the TV app, a single Page Up/Page Down inside Kodi, and a burst of D-pad presses to jump through lists everywhere else).
     • Launch an app directly from a button press, while holding the same button still sends its normal long-press (e.g. tapping Home opens MX3 Launcher, holding it long-presses Home).
 
