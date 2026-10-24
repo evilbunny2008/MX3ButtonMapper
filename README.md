@@ -44,7 +44,6 @@ remote can send a different scancode).
 | 103      | `KEYCODE_DPAD_UP`                                      |
 | 28       | `KEYCODE_DPAD_CENTER`                                  |
 | 419      | 4001 (TCL) or `KEYCODE_GUIDE` (Blaupunkt) -- see below |
-| 171      | `KEYCODE_EISU`                                         |
 | 127      | `KEYCODE_MENU`                                         |
 
 Scancode 419's target keycode depends on the "TV brand" setting in the
@@ -78,11 +77,12 @@ live TV was actually on screen.
 | 172      | MX3 Launcher                       |
 | 418      | SmartTube (`app.smarttube.fdroid`) |
 | 150      | TV Bro browser                     |
+| 171      | Kodi (`org.xbmc.kodi`)             |
 
-All three are FOSS — MX3 Launcher is this project's own sibling app,
+All four are FOSS — MX3 Launcher is this project's own sibling app,
 `app.smarttube.fdroid` is specifically SmartTube's F-Droid build (a
 separate, distinct package from its non-free Play Store build), and TV
-Bro is open source. None of them are bundled with this app or required
+Bro and Kodi are open source. None of them are bundled with this app or required
 as a build dependency either way — they're just package names this app
 knows how to launch if present. If a mapped target isn't installed, the
 mapping is simply a no-op (see the "if something isn't working"

@@ -53,6 +53,7 @@
         <package android:name="com.odiousapps.mx3launcher" />
         <package android:name="app.smarttube.fdroid" />
         <package android:name="com.phlox.tvwebbrowser" />
+        <package android:name="org.xbmc.kodi" />
     </queries>
 
     <application

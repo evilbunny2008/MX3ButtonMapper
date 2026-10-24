@@ -1,0 +1,2 @@
+* The MX3 Air Mouse button that sent scancode 171 now launches Kodi
+  directly, instead of sending an unused key (KEYCODE_EISU).

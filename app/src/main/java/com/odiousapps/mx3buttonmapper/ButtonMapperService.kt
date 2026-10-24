@@ -108,7 +108,8 @@ class ButtonMapperService : AccessibilityService() {
             // reaching MX3 Launcher's Menu-key App Info feature, which
             // specifically listens for KEYCODE_MENU.
             127 to KeyEvent.KEYCODE_MENU,          // 82
-            171 to KeyEvent.KEYCODE_EISU,          // 212
+            // 171 moved to SCANCODE_TO_APP_PACKAGE below (launches Kodi
+            // instead of sending KEYCODE_EISU)
             // 60 moved to SCANCODE_TO_REPEATED_KEYCODE below (sends
             // volume down x5 instead of a single KEYCODE_NOTIFICATION press)
             // 104/109 moved to SCANCODE_TO_KEYCODE_FOREGROUND_SCOPED below
@@ -220,6 +221,7 @@ class ButtonMapperService : AccessibilityService() {
         private val SCANCODE_TO_APP_PACKAGE: Map<Int, String> = mapOf(
             418 to "app.smarttube.fdroid", // SmartTube (F-Droid build)
             150 to "com.phlox.tvwebbrowser", // TV Bro browser
+            171 to KODI_PACKAGE, // Kodi
         )
 
         // scanCode -> (keyCode to inject, how many times). For buttons that
