@@ -32,7 +32,7 @@ tvFoundation = "1.0.0"
 shizuku = "13.1.5"
 # Reusing the exact same version already live-verified in the sibling
 # MX3 Launcher project.
-datastorePreferences = "1.2.1"
+datastorePreferences = "1.3.0"
 # Build-time only, never packaged into the APK: AGP pulls in jdom2 2.0.6
 # transitively via jetifier-processor, which is vulnerable to XXE
 # (CVE-2021-33813). Forced up to the fixed release from the root
