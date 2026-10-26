@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Waxa uu dhageystaa taabashada badhanka qalabka gaarka ah oo dib ugu dhigaya furaha furaha kale</string>
+	<string name="accessibility_service_description">Waxay ogaataa marka la riixo badhamo gaar ah oo ku yaal kontaroolkaaga, waxayna u beddeshaa fure ama app kale, sidoo kale waxay xusaysaa app-ka shaashadda ku jira si isla badhanku ugu dhaqmo si kale gudaha app-ka TV-ga. Riixitaanka furayaasha weligood lama kaydiyo lamana dirayo meelna.</string>
+	<string name="accessibility_disclosure_title">Adeegga gelitaanka</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper wuxuu isticmaalaa Accessibility Service API-ga Android si uu dib ugu qoondeeyo badhamada kontaroolkaaga.\n\nMarka la shido, wuxuu:\n• Akhriyaa riixitaanka badhamada kontaroolkaaga, si uu badhamo gaar ah ugu beddelo fure kale, riixitaan isdaba joog ah, ama furitaanka app\n• Xusaa magaca app-ka hadda shaashadda ku jira, si badhan (tusaale Kanaalka kor/hoos) uu wax kale ugu sameeyo gudaha app-ka TV-ga\n\nMa akhriyo waxa shaashadda ku jira, qoraal, ama furaha sirta ah. Riixitaanka furayaasha iyo magacyada app-yada waxaa lagu isticmaalaa qalabkan oo keliya, xilliga ay dhacayaan. Weligood lama kaydiyo (haddii aadan shidin diiwaannada cilad-baadhista ee hoose mooyee), weligoodna lama wadaago lamana diro qalabka dibadiisa. App-kan ma laha gelitaan internet.\n\nHaddii aad ogolaato, app-ku wuxuu isticmaali doonaa %1$s si uu kuugu shido adeeggiisa gelitaanka. Waad dami kartaa wakhti kasta gudaha Dejinta → Gelitaanka.</string>
+	<string name="agree">Waan ogolahay</string>
+	<string name="no_thanks">Maya, mahadsanid</string>
 	<string name="app_not_installed_message">Abka lagu dhejiyay badhankan (%1$s) lama rakibin</string>
 	<string name="app_not_installed_title">Abka lama rakibin</string>
 	<string name="language">Luqad</string>

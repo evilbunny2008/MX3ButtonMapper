@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Umva ibyuma byihariye bya bouton ikanda hanyuma ubisubiremo kurundi rufunguzo</string>
+	<string name="accessibility_service_description">Imenya igihe hakanzwe buto zimwe na zimwe kuri telekomande yawe ikazihindurira akazi ikaziha urundi rufunguzo cyangwa porogaramu, kandi ikamenya porogaramu iri kuri ecran kugira ngo buto imwe ishobore gukora mu buryo butandukanye muri porogaramu ya TV. Gukanda kuri buto ntibijya bibikwa cyangwa ngo byoherezwe ahantu na hamwe.</string>
+	<string name="accessibility_disclosure_title">Serivisi yo korohereza kugera</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper ikoresha Accessibility Service API ya Android kugira ngo ihindurire akazi buto za telekomande yawe.\n\nIyo ifunguye:\n• Isoma gukanda kuri buto za telekomande yawe, kugira ngo ishobore gusimbuza buto zimwe urundi rufunguzo, gukanda inshuro nyinshi zikurikiranye, cyangwa gufungura porogaramu\n• Imenya izina rya porogaramu iri kuri ecran ubu, kugira ngo buto (urugero Shene hejuru/hasi) ishobore gukora ikindi kintu muri porogaramu ya TV\n\nNtisoma ibiri kuri ecran, inyandiko cyangwa ijambobanga. Gukanda kuri buto n’amazina ya porogaramu bikoreshwa kuri iki gikoresho gusa, mu gihe bibaye. Ntibijya bibikwa (keretse ufunguye inyandiko zo gukemura ibibazo ziri hasi), kandi ntibijya bisangizwa cyangwa ngo byoherezwe hanze y’igikoresho. Iyi porogaramu ntigira murandasi.\n\nNiwemera, porogaramu izakoresha %1$s kugira ngo ifungure serivisi yayo yo korohereza kugera. Ushobora kuyizimya igihe icyo ari cyo cyose muri Igenamiterere → Korohereza kugera.</string>
+	<string name="agree">Ndemera</string>
+	<string name="no_thanks">Oya, murakoze</string>
 	<string name="app_not_installed_message">Porogaramu yashizwe kuri iyi buto (%1$s) ntabwo yashyizweho</string>
 	<string name="app_not_installed_title">Porogaramu ntabwo yashyizweho</string>
 	<string name="language">Ururimi</string>

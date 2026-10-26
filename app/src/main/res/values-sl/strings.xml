@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Posluša določene pritiske gumbov strojne opreme in jih preslika v drugo kodo tipk</string>
+	<string name="accessibility_service_description">Zaznava pritiske določenih gumbov na daljinskem upravljalniku in jih preslika na drugo tipko ali aplikacijo, poleg tega pa zazna, katera aplikacija je na zaslonu, da lahko isti gumb v aplikaciji TV deluje drugače. Pritiski tipk se nikoli ne shranjujejo in nikamor ne pošiljajo.</string>
+	<string name="accessibility_disclosure_title">Storitev za dostopnost</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper uporablja Androidov vmesnik Accessibility Service API za ponovno preslikavo gumbov daljinskega upravljalnika.\n\nKo je omogočena:\n• Bere pritiske gumbov daljinskega upravljalnika, da lahko določene gumbe nadomesti z drugo tipko, nizom pritiskov ali zagonom aplikacije\n• Zazna ime aplikacije, ki je trenutno na zaslonu, da lahko gumb (npr. Kanal gor/dol) v aplikaciji TV naredi nekaj drugega\n\nNe bere vsebine zaslona, besedila ali gesel. Pritiski tipk in imena aplikacij se uporabljajo samo v tej napravi, v trenutku, ko se zgodijo. Nikoli se ne shranjujejo (razen če spodaj vklopite dnevnike za odpravljanje težav) in se nikoli ne delijo ali pošiljajo iz naprave. Ta aplikacija nima dostopa do interneta.\n\nČe se strinjate, bo aplikacija s pomočjo %1$s sama vklopila svojo storitev za dostopnost. Kadar koli jo lahko izklopite v Nastavitve → Dostopnost.</string>
+	<string name="agree">Strinjam se</string>
+	<string name="no_thanks">Ne, hvala</string>
 	<string name="app_not_installed_message">Aplikacija, preslikana na ta gumb (%1$s), ni nameščena</string>
 	<string name="app_not_installed_title">Aplikacija ni nameščena</string>
 	<string name="language">Jezik</string>

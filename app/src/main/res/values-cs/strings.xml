@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Poslouchá stisknutí konkrétních hardwarových tlačítek a přemapuje je na jiný klíčový kód</string>
+	<string name="accessibility_service_description">Rozpoznává stisknutí konkrétních tlačítek na dálkovém ovladači a přemapovává je na jinou klávesu nebo aplikaci. Také zjišťuje, která aplikace je na obrazovce, aby se stejné tlačítko mohlo v aplikaci TV chovat jinak. Stisknutí kláves se nikdy neukládají ani nikam neodesílají.</string>
+	<string name="accessibility_disclosure_title">Služba usnadnění přístupu</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper používá rozhraní Accessibility Service API systému Android k přemapování tlačítek dálkového ovladače.\n\nKdyž je zapnutá:\n• Čte stisknutí tlačítek dálkového ovladače, aby mohla konkrétní tlačítka nahradit jinou klávesou, sérií stisknutí nebo spuštěním aplikace\n• Zjišťuje název aplikace, která je právě na obrazovce, aby tlačítko (např. Kanál nahoru/dolů) mohlo v aplikaci TV dělat něco jiného\n\nNečte obsah obrazovky, text ani hesla. Stisknutí kláves a názvy aplikací se používají pouze v tomto zařízení a pouze v okamžiku, kdy k nim dojde. Nikdy se neukládají (pokud níže nezapnete protokoly pro řešení potíží) a nikdy se nesdílejí ani neodesílají mimo zařízení. Tato aplikace nemá přístup k internetu.\n\nPokud souhlasíte, aplikace pomocí %1$s sama zapne svou službu usnadnění přístupu. Kdykoli ji můžete vypnout v Nastavení → Přístupnost.</string>
+	<string name="agree">Souhlasím</string>
+	<string name="no_thanks">Ne, děkuji</string>
 	<string name="app_not_installed_message">Aplikace namapovaná na toto tlačítko (%1$s) není nainstalována</string>
 	<string name="app_not_installed_title">Aplikace není nainstalována</string>
 	<string name="language">Jazyk</string>

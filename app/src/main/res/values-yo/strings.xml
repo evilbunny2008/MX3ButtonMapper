@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Tẹtisi fun awọn titẹ bọtini ohun elo kan pato ati tun ṣe wọn si koodu bọtini miiran</string>
+	<string name="accessibility_service_description">Ó máa ń dá ìtẹ̀ àwọn bọ́tìnnì kan pàtó lórí rìmóòtù rẹ mọ̀, ó sì máa ń yàn wọ́n sí kọ́kọ́rọ́ tàbí áàpù mìíràn, ó tún máa ń ṣàkíyèsí áàpù tó wà lójú ìbòjú kí bọ́tìnnì kan náà lè ṣiṣẹ́ lọ́nà mìíràn nínú áàpù TV. A kò jẹ́ tọ́jú ìtẹ̀ kọ́kọ́rọ́ tàbí fi ránṣẹ́ sí ibikíbi.</string>
+	<string name="accessibility_disclosure_title">Iṣẹ́ ìráyèsí</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper ń lo Accessibility Service API ti Android láti yan àwọn bọ́tìnnì rìmóòtù rẹ padà.\n\nNígbà tí a bá tàn án, ó máa ń:\n• Ka ìtẹ̀ bọ́tìnnì láti ara rìmóòtù rẹ, kí ó lè fi kọ́kọ́rọ́ mìíràn, ọ̀wọ́ ìtẹ̀, tàbí ṣíṣí áàpù rọ́pò àwọn bọ́tìnnì kan pàtó\n• Ṣàkíyèsí orúkọ áàpù tó wà lójú ìbòjú lọ́wọ́lọ́wọ́, kí bọ́tìnnì kan (bí àpẹẹrẹ Ìkànnì sókè/sílẹ̀) lè ṣe nǹkan mìíràn nínú áàpù TV\n\nKò ka àkóónú ìbòjú, ọ̀rọ̀, tàbí ọ̀rọ̀ aṣínà. Ìtẹ̀ kọ́kọ́rọ́ àti orúkọ áàpù ni a ń lò lórí ẹ̀rọ yìí nìkan, ní àkókò tí wọ́n bá ṣẹlẹ̀. A kò jẹ́ tọ́jú wọn (àyàfi tí o bá tan àkọsílẹ̀ àtúnṣe ìṣòro tó wà nísàlẹ̀), a kò sì jẹ́ pín wọn tàbí fi wọ́n ránṣẹ́ jáde kúrò lórí ẹ̀rọ náà. Áàpù yìí kò ní àyè sí íńtánẹ́ẹ̀tì.\n\nTí o bá gbà, áàpù náà yóò lo %1$s láti tan iṣẹ́ ìráyèsí tirẹ̀ fún ọ. O lè pa á nígbàkígbà nínú Ètò → Ìráyèsí.</string>
+	<string name="agree">Mo gbà</string>
+	<string name="no_thanks">Rárá, o ṣé</string>
 	<string name="app_not_installed_message">Ohun elo ti a yaworan si bọtini yii (%1$s) ko fi sii</string>
 	<string name="app_not_installed_title">App ko fi sori ẹrọ</string>
 	<string name="language">Èdè</string>

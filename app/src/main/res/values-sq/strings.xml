@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Dëgjon për shtypjen e butonave të veçantë të harduerit dhe i ripërputh ato në një kod tjetër tasti</string>
+	<string name="accessibility_service_description">Dallon shtypjet e butonave të caktuar në telekomandë dhe i ricakton ato në një tast ose aplikacion tjetër, si dhe shënon se cili aplikacion është në ekran, në mënyrë që i njëjti buton të sillet ndryshe në aplikacionin e televizorit. Shtypjet e tasteve nuk ruhen dhe nuk dërgohen kurrë askund.</string>
+	<string name="accessibility_disclosure_title">Shërbimi i qasshmërisë</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper përdor API-në Accessibility Service të Android-it për të ricaktuar butonat e telekomandës.\n\nKur është i aktivizuar, ai:\n• Lexon shtypjet e butonave të telekomandës, në mënyrë që të zëvendësojë butona të caktuar me një tast tjetër, një seri shtypjesh ose hapjen e një aplikacioni\n• Shënon emrin e aplikacionit që është aktualisht në ekran, në mënyrë që një buton (p.sh. Kanali lart/poshtë) të bëjë diçka tjetër brenda aplikacionit të televizorit\n\nNuk lexon përmbajtjen e ekranit, tekstin ose fjalëkalimet. Shtypjet e tasteve dhe emrat e aplikacioneve përdoren vetëm në këtë pajisje, në momentin kur ndodhin. Ato nuk ruhen kurrë (përveç nëse aktivizon regjistrat e zgjidhjes së problemeve më poshtë) dhe nuk ndahen e nuk dërgohen kurrë jashtë pajisjes. Ky aplikacion nuk ka qasje në internet.\n\nNëse pajtohesh, aplikacioni do të përdorë %1$s për të aktivizuar vetë shërbimin e tij të qasshmërisë. Mund ta çaktivizosh në çdo kohë te Cilësimet → Qasshmëria.</string>
+	<string name="agree">Pajtohem</string>
+	<string name="no_thanks">Jo, faleminderit</string>
 	<string name="app_not_installed_message">Aplikacioni i vendosur në këtë buton (%1$s) nuk është i instaluar</string>
 	<string name="app_not_installed_title">Aplikacioni nuk është i instaluar</string>
 	<string name="language">Gjuha</string>

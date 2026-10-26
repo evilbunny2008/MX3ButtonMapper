@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Imamela iqhosha elithile le-hardware elicinezelayo kwaye libabuyisele kwenye ikhowudi yesitshixo</string>
+	<string name="accessibility_service_description">Ibona xa amaqhosha athile kwirimothi yakho ecinezelwa kwaye iwanike umsebenzi wesitshixo okanye i-app eyahlukileyo, kwaye iqaphele ukuba yeyiphi i-app ekwisikrini ukuze iqhosha elinye lisebenze ngendlela eyahlukileyo kwi-app ye-TV. Ukucinezelwa kwezitshixo akuze kugcinwe okanye kuthunyelwe naphi na.</string>
+	<string name="accessibility_disclosure_title">Inkonzo yofikeleleko</string>
+	<string name="accessibility_disclosure_message">I-MX3 Button Mapper isebenzisa i-Accessibility Service API ye-Android ukutshintsha imisebenzi yamaqhosha erimothi yakho.\n\nXa ivuliwe:\n• Ifunda ukucinezelwa kwamaqhosha kwirimothi yakho, ukuze ikwazi ukutshintsha amaqhosha athile ngesinye isitshixo, ukucinezela okulandelelanayo, okanye ukuvula i-app\n• Iqaphela igama le-app ekwisikrini ngoku, ukuze iqhosha (umz. Itshaneli phezulu/ezantsi) lenze into eyahlukileyo ngaphakathi kwi-app ye-TV\n\nAyifundi okuqulathwe sisikrini, umbhalo, okanye iiphasiwedi. Ukucinezelwa kwezitshixo namagama ee-app kusetyenziswa kwesi sixhobo kuphela, ngexesha ekwenzeka ngalo. Akuze kugcinwe (ngaphandle kokuba uvule iilog zokusombulula iingxaki ezingezantsi), kwaye akuze kwabelwane ngako okanye kuthunyelwe ngaphandle kwesixhobo. Le app ayinalo ufikelelo lwe-intanethi.\n\nUkuba uyavuma, i-app iya kusebenzisa i-%1$s ukuvula inkonzo yayo yofikeleleko endaweni yakho. Unokuyicima nangaliphi na ixesha kwi-Iisetingi → Ufikeleleko.</string>
+	<string name="agree">Ndiyavuma</string>
+	<string name="no_thanks">Hayi, enkosi</string>
 	<string name="app_not_installed_message">Usetyenziso olumaphulwe kweli qhosha (%1$s) alufakwanga</string>
 	<string name="app_not_installed_title">Usetyenziso alufakwanga</string>
 	<string name="language">Ulwimi</string>

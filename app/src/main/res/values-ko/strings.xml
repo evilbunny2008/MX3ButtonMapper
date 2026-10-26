@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">특정 하드웨어 버튼 누르기를 수신하고 이를 다른 키코드에 다시 매핑합니다</string>
+	<string name="accessibility_service_description">리모컨의 특정 버튼 입력을 감지하여 다른 키나 앱으로 다시 매핑하고, 같은 버튼이 TV 앱에서 다르게 동작할 수 있도록 화면에 표시된 앱을 확인합니다. 키 입력은 절대 저장되거나 어디로도 전송되지 않습니다.</string>
+	<string name="accessibility_disclosure_title">접근성 서비스</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper는 리모컨 버튼을 다시 매핑하기 위해 Android의 접근성 서비스(Accessibility Service) API를 사용합니다.\n\n사용 설정하면 다음을 수행합니다.\n• 리모컨의 버튼 입력을 읽어 특정 버튼을 다른 키, 연속 키 입력 또는 앱 실행으로 대체합니다\n• 현재 화면에 표시된 앱의 이름을 확인하여 버튼(예: 채널 위/아래)이 TV 앱 안에서 다른 동작을 할 수 있도록 합니다\n\n화면 내용, 텍스트 또는 비밀번호는 읽지 않습니다. 키 입력과 앱 이름은 이 기기에서 해당 입력이 발생하는 순간에만 사용됩니다. 절대 저장되지 않으며(아래의 문제 해결 로그를 켜지 않는 한) 공유되거나 기기 외부로 전송되지 않습니다. 이 앱은 인터넷에 액세스할 수 없습니다.\n\n동의하면 앱이 %1$s을(를) 사용하여 자체 접근성 서비스를 켭니다. 언제든지 설정 → 접근성에서 끌 수 있습니다.</string>
+	<string name="agree">동의</string>
+	<string name="no_thanks">아니요</string>
 	<string name="app_not_installed_message">이 버튼(%1$s)에 매핑된 앱이 설치되지 않았습니다</string>
 	<string name="app_not_installed_title">앱이 설치되지 않았습니다</string>
 	<string name="language">언어</string>

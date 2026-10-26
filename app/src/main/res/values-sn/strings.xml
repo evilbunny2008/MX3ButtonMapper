@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Inoteerera kune chaiyo hardware mabhatani anodzvanya uye anoadzosera kune imwe kiyi kodhi</string>
+	<string name="accessibility_service_description">Inoona kana mabhatani mamwe pariremote yako adzvanywa uye inoachinjira kune imwe kiyi kana app, uye inocherekedza kuti ndeipi app iri pachiratidziri kuitira kuti bhatani rimwe chete rishande zvakasiyana muTV app. Kudzvanya makiyi hakumbochengetwi kana kutumirwa chero kupi.</string>
+	<string name="accessibility_disclosure_title">Sevhisi yekuwanikwa</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper inoshandisa Accessibility Service API yeAndroid kuchinja mabhatani eremote yako.\n\nKana yabatidzwa, inoita izvi:\n• Inoverenga kudzvanywa kwemabhatani kubva pariremote yako, kuitira kuti ikwanise kutsiva mabhatani mamwe nekimwe kiyi, kudzvanya kwakateedzana, kana kuvhura app\n• Inocherekedza zita reapp iri pachiratidziri parizvino, kuitira kuti bhatani (semuenzaniso Chiteshi kumusoro/pasi) riite chimwe chinhu muTV app\n\nHainyatsoverengi zviri pachiratidziri, mavara, kana mapassword. Kudzvanya makiyi nemazita eapp zvinoshandiswa pamudziyo uyu chete, panguva iyo zvinoitika. Hazvimbochengetwi (kunze kwekunge wabatidza marekodhi ekugadzirisa matambudziko ari pazasi), uye hazvimbogovaniswi kana kutumirwa kunze kwemudziyo. App iyi haina internet.\n\nKana ukabvuma, app ichashandisa %1$s kubatidza sevhisi yayo yekuwanikwa iwe. Unogona kuidzima chero nguva muZvirongwa → Kuwanikwa.</string>
+	<string name="agree">Ndinobvuma</string>
+	<string name="no_thanks">Kwete, ndatenda</string>
 	<string name="app_not_installed_message">Iyo app ine bhatani rino (%1$s) haina kuiswa</string>
 	<string name="app_not_installed_title">App haina kuiswa</string>
 	<string name="language">Mutauro</string>

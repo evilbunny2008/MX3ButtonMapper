@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Mendengarkan penekanan tombol perangkat keras tertentu dan memetakannya kembali ke kode kunci lain</string>
+	<string name="accessibility_service_description">Mendeteksi penekanan tombol tertentu pada remote Anda dan memetakannya ulang ke tombol atau aplikasi lain, serta mencatat aplikasi yang sedang tampil di layar agar tombol yang sama dapat berperilaku berbeda di aplikasi TV. Penekanan tombol tidak pernah disimpan atau dikirim ke mana pun.</string>
+	<string name="accessibility_disclosure_title">Layanan aksesibilitas</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper menggunakan Accessibility Service API Android untuk memetakan ulang tombol remote Anda.\n\nSaat diaktifkan, layanan ini:\n• Membaca penekanan tombol dari remote Anda, sehingga dapat mengganti tombol tertentu dengan tombol lain, rangkaian penekanan tombol, atau peluncuran aplikasi\n• Mencatat nama aplikasi yang sedang tampil di layar, sehingga sebuah tombol (mis. Saluran naik/turun) dapat melakukan hal yang berbeda di dalam aplikasi TV\n\nLayanan ini tidak membaca konten layar, teks, atau sandi. Penekanan tombol dan nama aplikasi hanya digunakan di perangkat ini, pada saat terjadinya. Data tersebut tidak pernah disimpan (kecuali Anda mengaktifkan log pemecahan masalah di bawah), dan tidak pernah dibagikan atau dikirim ke luar perangkat. Aplikasi ini tidak memiliki akses internet.\n\nJika Anda setuju, aplikasi akan menggunakan %1$s untuk mengaktifkan layanan aksesibilitasnya sendiri untuk Anda. Anda dapat menonaktifkannya kapan saja di Setelan → Aksesibilitas.</string>
+	<string name="agree">Setuju</string>
+	<string name="no_thanks">Tidak, terima kasih</string>
 	<string name="app_not_installed_message">Aplikasi yang dipetakan ke tombol ini (%1$s) belum diinstal</string>
 	<string name="app_not_installed_title">Aplikasi tidak diinstal</string>
 	<string name="language">Bahasa</string>

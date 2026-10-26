@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Yana sauraron takamaiman maɓallan maɓallan kayan masarufi kuma ya mayar da su zuwa wata lambar maɓalli</string>
+	<string name="accessibility_service_description">Yana gano danna wasu takamaiman maɓallai a kan na’urar sarrafa nesa ɗinka kuma yana sake sanya su zuwa wani maɓalli ko manhaja, sannan yana lura da wace manhaja ce ke kan allo domin maɓalli ɗaya ya iya aiki daban a manhajar TV. Ba a taɓa adana dannawar maɓalli ko aika ta ko’ina ba.</string>
+	<string name="accessibility_disclosure_title">Sabis na samun dama</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper yana amfani da Accessibility Service API na Android don sake sanya maɓallan na’urar sarrafa nesa ɗinka.\n\nIdan an kunna shi, yana:\n• Karanta dannawar maɓallai daga na’urar sarrafa nesa ɗinka, domin ya iya maye gurbin wasu takamaiman maɓallai da wani maɓalli daban, jerin dannawa, ko buɗe manhaja\n• Lura da sunan manhajar da ke kan allo a halin yanzu, domin maɓalli (misali Tasha sama/ƙasa) ya iya yin wani abu daban a cikin manhajar TV\n\nBa ya karanta abin da ke kan allo, rubutu, ko kalmomin sirri. Ana amfani da dannawar maɓalli da sunayen manhajoji ne kawai a kan wannan na’ura, a lokacin da suka faru. Ba a taɓa adana su ba (sai dai idan ka kunna bayanan gyara matsala da ke ƙasa), kuma ba a taɓa raba su ko aika su waje da na’urar ba. Wannan manhaja ba ta da damar shiga intanet.\n\nIdan ka yarda, manhajar za ta yi amfani da %1$s don kunna sabis ɗin samun damar ta da kanta. Kana iya kashe shi a kowane lokaci a Saituna → Samun dama.</string>
+	<string name="agree">Na yarda</string>
+	<string name="no_thanks">A’a, na gode</string>
 	<string name="app_not_installed_message">Ka’idar da aka tsara zuwa wannan maɓallin (%1$s) ba a sanya shi ba</string>
 	<string name="app_not_installed_title">Ba a shigar da app ba</string>
 	<string name="language">Harshe</string>

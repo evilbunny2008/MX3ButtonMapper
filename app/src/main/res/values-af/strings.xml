@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Luister vir spesifieke hardeware knoppies druk en hermap dit na ‘n ander sleutelkode</string>
+	<string name="accessibility_service_description">Bespeur wanneer spesifieke knoppies op jou afstandbeheer gedruk word en ken hulle aan ’n ander sleutel of app toe, en let op watter app op die skerm is sodat dieselfde knoppie anders kan werk in die TV-app. Sleuteldrukke word nooit gestoor of na enige plek gestuur nie.</string>
+	<string name="accessibility_disclosure_title">Toeganklikheidsdiens</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper gebruik Android se Accessibility Service-API om jou afstandbeheer se knoppies te herkarteer.\n\nWanneer dit aangeskakel is, doen dit die volgende:\n• Dit lees die knoppiedrukke van jou afstandbeheer, sodat spesifieke knoppies met ’n ander sleutel, ’n reeks sleuteldrukke of die oopmaak van ’n app vervang kan word\n• Dit let op die naam van die app wat tans op die skerm is, sodat ’n knoppie (bv. Kanaal op/af) iets anders binne die TV-app kan doen\n\nDit lees nie skerminhoud, teks of wagwoorde nie. Sleuteldrukke en appname word slegs op hierdie toestel gebruik, op die oomblik wat hulle gebeur. Hulle word nooit gestoor nie (tensy jy die foutsporingslogs hieronder aanskakel), en word nooit gedeel of van die toestel af gestuur nie. Hierdie app het geen internettoegang nie.\n\nAs jy instem, sal die app %1$s gebruik om sy eie toeganklikheidsdiens vir jou aan te skakel. Jy kan dit enige tyd afskakel in Instellings → Toeganklikheid.</string>
+	<string name="agree">Stem in</string>
+	<string name="no_thanks">Nee dankie</string>
 	<string name="app_not_installed_message">Die toepassing wat na hierdie knoppie gekarteer is (%1$s) is nie geïnstalleer nie</string>
 	<string name="app_not_installed_title">Toepassing nie geïnstalleer nie</string>
 	<string name="language">Taal</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">የተወሰነ የሃርድዌር ቁልፍ ሲጫኑ ያዳምጣል እና ወደ ሌላ የቁልፍ ኮድ ያደርጋቸዋል።</string>
+	<string name="accessibility_service_description">በርቀት መቆጣጠሪያዎ ላይ የተወሰኑ አዝራሮች ሲጫኑ ይለያል እና ወደ ሌላ ቁልፍ ወይም መተግበሪያ እንደገና ይመድባቸዋል፤ እንዲሁም ተመሳሳዩ አዝራር በቲቪ መተግበሪያው ውስጥ በተለየ መንገድ እንዲሠራ በማያ ገጹ ላይ የትኛው መተግበሪያ እንዳለ ይመዘግባል። የቁልፍ መጫኖች በፍጹም አይቀመጡም ወይም ወደ የትም አይላኩም።</string>
+	<string name="accessibility_disclosure_title">የተደራሽነት አገልግሎት</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper የርቀት መቆጣጠሪያዎን አዝራሮች እንደገና ለመመደብ የAndroidን Accessibility Service API ይጠቀማል።\n\nሲበራ፦\n• የተወሰኑ አዝራሮችን በሌላ ቁልፍ፣ በተከታታይ መጫኖች ወይም መተግበሪያ በመክፈት መተካት እንዲችል ከርቀት መቆጣጠሪያዎ የሚመጡ የአዝራር መጫኖችን ያነባል\n• አንድ አዝራር (ለምሳሌ ቻናል ወደ ላይ/ወደ ታች) በቲቪ መተግበሪያው ውስጥ የተለየ ነገር እንዲያደርግ በአሁኑ ጊዜ በማያ ገጹ ላይ ያለውን መተግበሪያ ስም ይመዘግባል\n\nየማያ ገጽ ይዘትን፣ ጽሑፍን ወይም የይለፍ ቃላትን አያነብም። የቁልፍ መጫኖች እና የመተግበሪያ ስሞች በዚህ መሣሪያ ላይ ብቻ፣ በሚከሰቱበት ቅጽበት ብቻ ጥቅም ላይ ይውላሉ። በፍጹም አይቀመጡም (ከታች ያሉትን የችግር መፍቻ ምዝግብ ማስታወሻዎች ካላበሩ በስተቀር)፣ እና በፍጹም አይጋሩም ወይም ከመሣሪያው ውጭ አይላኩም። ይህ መተግበሪያ የበይነመረብ መዳረሻ የለውም።\n\nከተስማሙ፣ መተግበሪያው የራሱን የተደራሽነት አገልግሎት ለእርስዎ ለማብራት %1$sን ይጠቀማል። በማንኛውም ጊዜ በቅንብሮች → ተደራሽነት ውስጥ ሊያጠፉት ይችላሉ።</string>
+	<string name="agree">እስማማለሁ</string>
+	<string name="no_thanks">አይ፣ አመሰግናለሁ</string>
 	<string name="app_not_installed_message">ወደዚህ አዝራር (%1$s) ካርታ የተሰራው መተግበሪያ አልተጫነም።</string>
 	<string name="app_not_installed_title">መተግበሪያ አልተጫነም።</string>
 	<string name="language">ቋንቋ</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Muayyan apparat tugmasi bosishlarini tinglaydi va ularni boshqa kalit kodiga o’zgartiradi</string>
+	<string name="accessibility_service_description">Pultingizdagi muayyan tugmalar bosilishini aniqlaydi va ularni boshqa tugma yoki ilovaga qayta tayinlaydi, shuningdek, bitta tugma TV ilovasida boshqacha ishlashi uchun ekranda qaysi ilova ochiqligini qayd etadi. Tugma bosishlar hech qachon saqlanmaydi va hech qayerga yuborilmaydi.</string>
+	<string name="accessibility_disclosure_title">Maxsus imkoniyatlar xizmati</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper pultingiz tugmalarini qayta tayinlash uchun Android’ning Accessibility Service API’sidan foydalanadi.\n\nYoqilganda u:\n• Muayyan tugmalarni boshqa tugma, ketma-ket bosishlar yoki ilovani ishga tushirish bilan almashtirish uchun pultingizdagi tugma bosishlarini o‘qiydi\n• Tugma (masalan, Kanal yuqoriga/pastga) TV ilovasida boshqa amalni bajara olishi uchun hozir ekranda turgan ilova nomini qayd etadi\n\nU ekran tarkibini, matnni yoki parollarni o‘qimaydi. Tugma bosishlar va ilova nomlari faqat shu qurilmada, ular sodir bo‘lgan paytda ishlatiladi. Ular hech qachon saqlanmaydi (agar quyidagi nosozliklarni tuzatish jurnallarini yoqmasangiz) va hech qachon ulashilmaydi yoki qurilmadan tashqariga yuborilmaydi. Bu ilovada internetga kirish imkoni yo‘q.\n\nRozi bo‘lsangiz, ilova o‘zining maxsus imkoniyatlar xizmatini siz uchun yoqish uchun %1$s’dan foydalanadi. Uni istalgan vaqtda Sozlamalar → Maxsus imkoniyatlar bo‘limida o‘chirib qo‘yishingiz mumkin.</string>
+	<string name="agree">Roziman</string>
+	<string name="no_thanks">Yo‘q, rahmat</string>
 	<string name="app_not_installed_message">Ushbu tugma (%1$s) bilan moslangan ilova oʻrnatilmagan</string>
 	<string name="app_not_installed_title">Ilova oʻrnatilmagan</string>
 	<string name="language">Til</string>

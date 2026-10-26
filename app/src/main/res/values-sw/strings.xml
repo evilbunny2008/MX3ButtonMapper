@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Husikiza mibofyo ya vitufe mahususi vya maunzi na kuziweka kwenye msimbo mwingine muhimu</string>
+	<string name="accessibility_service_description">Hutambua unapobonyeza vitufe mahususi kwenye rimoti yako na kuvipangia upya kwenye kitufe au programu nyingine, na pia hutambua programu iliyo kwenye skrini ili kitufe kilekile kiweze kufanya kazi tofauti ndani ya programu ya TV. Mibonyezo ya vitufe haihifadhiwi kamwe wala haitumwi popote.</string>
+	<string name="accessibility_disclosure_title">Huduma ya ufikivu</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper hutumia Accessibility Service API ya Android kupanga upya vitufe vya rimoti yako.\n\nIkiwashwa, huduma hii:\n• Husoma mibonyezo ya vitufe kutoka kwenye rimoti yako, ili iweze kubadilisha vitufe mahususi kwa kitufe kingine, mfululizo wa mibonyezo, au kufungua programu\n• Hutambua jina la programu iliyo kwenye skrini kwa sasa, ili kitufe (k.m. Chaneli juu/chini) kiweze kufanya jambo tofauti ndani ya programu ya TV\n\nHaisomi maudhui ya skrini, maandishi, wala manenosiri. Mibonyezo ya vitufe na majina ya programu hutumika kwenye kifaa hiki pekee, wakati yanapotokea. Hayahifadhiwi kamwe (isipokuwa ukiwasha kumbukumbu za utatuzi zilizo hapa chini), na hayashirikiwi wala kutumwa nje ya kifaa kamwe. Programu hii haina ufikiaji wa intaneti.\n\nUkikubali, programu itatumia %1$s kuwasha huduma yake ya ufikivu kwa niaba yako. Unaweza kuizima wakati wowote katika Mipangilio → Ufikivu.</string>
+	<string name="agree">Kubali</string>
+	<string name="no_thanks">Hapana, asante</string>
 	<string name="app_not_installed_message">Programu iliyopangwa kwa kitufe hiki (%1$s) haijasakinishwa</string>
 	<string name="app_not_installed_title">Programu haijasakinishwa</string>
 	<string name="language">Lugha</string>

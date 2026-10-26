@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Ascultă apăsarea anumitor butoane hardware și le remapează la un alt cod de cheie</string>
+	<string name="accessibility_service_description">Detectează apăsările anumitor butoane de pe telecomandă și le reatribuie unei alte taste sau aplicații și identifică aplicația afișată pe ecran, astfel încât același buton să se poată comporta diferit în aplicația TV. Apăsările de taste nu sunt niciodată stocate sau trimise nicăieri.</string>
+	<string name="accessibility_disclosure_title">Serviciu de accesibilitate</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper folosește API-ul Accessibility Service din Android pentru a reatribui butoanele telecomenzii.\n\nCând este activat:\n• Citește apăsările butoanelor telecomenzii, pentru a putea înlocui anumite butoane cu o altă tastă, o serie de apăsări sau lansarea unei aplicații\n• Identifică numele aplicației afișate în prezent pe ecran, astfel încât un buton (de ex. Canal sus/jos) să poată face altceva în aplicația TV\n\nNu citește conținutul ecranului, text sau parole. Apăsările de taste și numele aplicațiilor sunt folosite doar pe acest dispozitiv, în momentul în care au loc. Nu sunt niciodată stocate (decât dacă activați jurnalele de depanare de mai jos) și nu sunt niciodată partajate sau trimise în afara dispozitivului. Această aplicație nu are acces la internet.\n\nDacă sunteți de acord, aplicația va folosi %1$s pentru a-și activa singură serviciul de accesibilitate. Îl puteți dezactiva oricând din Setări → Accesibilitate.</string>
+	<string name="agree">Sunt de acord</string>
+	<string name="no_thanks">Nu, mulțumesc</string>
 	<string name="app_not_installed_message">Aplicația mapată la acest buton (%1$s) nu este instalată</string>
 	<string name="app_not_installed_title">Aplicația nu este instalată</string>
 	<string name="language">Limbă</string>

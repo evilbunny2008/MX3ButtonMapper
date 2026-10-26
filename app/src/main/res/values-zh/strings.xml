@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">监听特定硬件按钮的按下操作，并将其重新映射为另一个按键代码</string>
+	<string name="accessibility_service_description">检测遥控器上特定按键的按下操作，并将其重新映射为其他按键或应用；同时记录当前屏幕上显示的应用，以便同一按键在电视应用中实现不同的功能。按键操作绝不会被存储或发送到任何地方。</string>
+	<string name="accessibility_disclosure_title">无障碍服务</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper 使用 Android 的无障碍服务（Accessibility Service）API 来重新映射遥控器按键。\n\n启用后，它会：\n• 读取遥控器的按键操作，以便将特定按键替换为其他按键、一连串按键操作或启动某个应用\n• 记录当前屏幕上显示的应用名称，以便某个按键（例如频道加/减）在电视应用中执行不同的操作\n\n它不会读取屏幕内容、文字或密码。按键操作和应用名称仅在本设备上、在发生的那一刻使用。它们绝不会被存储（除非您开启下方的故障排除日志），也绝不会被共享或发送到设备之外。此应用没有网络访问权限。\n\n如果您同意，应用将使用 %1$s 为您开启其无障碍服务。您可以随时在“设置 → 无障碍”中将其关闭。</string>
+	<string name="agree">同意</string>
+	<string name="no_thanks">不用了，谢谢</string>
 	<string name="app_not_installed_message">映射到此按钮的应用（%1$s）未安装</string>
 	<string name="app_not_installed_title">应用未安装</string>
 	<string name="language">语言</string>

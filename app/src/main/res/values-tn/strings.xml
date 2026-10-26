@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">E reetsa go tobediwa ga konopo e e rileng ya serwethata le go e mmapa gape mo khoutung e nngwe ya konopo</string>
+	<string name="accessibility_service_description">E lemoga fa dikonopo dingwe tse di rileng mo remoteng ya gago di tobetswa mme e di fa tiro ya konopo kgotsa app e nngwe, gape e lemoga gore ke app efe e e mo sekirining gore konopo e le nngwe e kgone go dira ka tsela e e farologaneng mo app ya TV. Go tobetswa ga dikonopo ga go ke go bolokiwa kgotsa go romelwa gope.</string>
+	<string name="accessibility_disclosure_title">Tirelo ya phitlhelelo</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper e dirisa Accessibility Service API ya Android go fetola ditiro tsa dikonopo tsa remote ya gago.\n\nFa e buletswe, e:\n• Bala go tobetswa ga dikonopo go tswa mo remoteng ya gago, gore e kgone go emisetsa dikonopo dingwe ka konopo e nngwe, go tobetsa go go latelanang, kgotsa go bula app\n• Lemoga leina la app e e mo sekirining jaanong, gore konopo (sekai Kanale kwa godimo/kwa tlase) e kgone go dira sengwe se sele mo teng ga app ya TV\n\nGa e bale diteng tsa sekirini, mokwalo, kgotsa difasewete. Go tobetswa ga dikonopo le maina a di-app di dirisiwa mo sedirisweng se fela, ka nako e di diragalang ka yona. Ga di ke di bolokiwa (fa e se fa o bula direkoto tsa go rarabolola mathata tse di kwa tlase), e bile ga di ke di abelanwa kgotsa go romelwa kwa ntle ga sediriswa. App e ga e na phitlhelelo ya inthanete.\n\nFa o dumela, app e tla dirisa %1$s go go bulela tirelo ya yona ya phitlhelelo. O ka e tima nako nngwe le nngwe mo Dipeakanyo → Phitlhelelo.</string>
+	<string name="agree">Ke a dumela</string>
+	<string name="no_thanks">Nnyaa, ke a leboga</string>
 	<string name="app_not_installed_message">Tiriswa e e tsenngwang mo konopong eno (%1$s) ga e a tsenngwa</string>
 	<string name="app_not_installed_title">Tiriswa ga e ise e tsenngwe</string>
 	<string name="language">Puo</string>

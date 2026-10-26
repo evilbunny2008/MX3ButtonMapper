@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">E mamela likonopo tse itseng tsa hardware ebe e li khutlisetsa ho keycode e ‘ngoe</string>
+	<string name="accessibility_service_description">E lemoha ha ho tobetswa dikonopo tse itseng ho remote ya hao mme e di fa mosebetsi wa senotlolo kapa app e nngwe, hape e hlokomela hore na ke app efe e skrineng hore konopo e le nngwe e kgone ho sebetsa ka tsela e fapaneng ho app ya TV. Ho tobetswa ha dinotlolo ha ho mohla ho bolokwang kapa ho romelwang kae kapa kae.</string>
+	<string name="accessibility_disclosure_title">Tshebeletso ya phihlello</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper e sebedisa Accessibility Service API ya Android ho fetola mesebetsi ya dikonopo tsa remote ya hao.\n\nHa e buletswe, e:\n• Bala ho tobetswa ha dikonopo ho tswa ho remote ya hao, e le hore e kgone ho nkela dikonopo tse itseng sebaka ka senotlolo se seng, ho tobetsa ho latellanang, kapa ho bula app\n• Hlokomela lebitso la app e skrineng hajwale, e le hore konopo (mohlala Kanale hodimo/tlase) e kgone ho etsa ntho e nngwe ka hare ho app ya TV\n\nHa e bale dikahare tsa skrine, mongolo, kapa diphasewete. Ho tobetswa ha dinotlolo le mabitso a di-app di sebediswa sesebedisweng sena feela, ka nako eo di etsahalang ka yona. Ha ho mohla di bolokwang (ntle le haeba o bula direkoto tsa ho rarolla mathata tse ka tlase), mme ha ho mohla di arolelanwang kapa di romelwang ka ntle ho sesebediswa. App ena ha e na phihlello ya inthanete.\n\nHaeba o dumela, app e tla sebedisa %1$s ho bulela tshebeletso ya yona ya phihlello bakeng sa hao. O ka e tima nako efe kapa efe ho Disetting → Phihlello.</string>
+	<string name="agree">Ke a dumela</string>
+	<string name="no_thanks">Tjhe, ke a leboha</string>
 	<string name="app_not_installed_message">Sesebelisoa se ‘mapeng ho konopo ena (%1$s) ha se ea kengoa</string>
 	<string name="app_not_installed_title">Sesebelisoa ha sea kengoa</string>
 	<string name="language">Puo</string>

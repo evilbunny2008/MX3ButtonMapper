@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Klauso konkrečių aparatūros mygtukų paspaudimų ir perjungia juos į kitą klavišo kodą</string>
+	<string name="accessibility_service_description">Aptinka tam tikrų nuotolinio valdymo pulto mygtukų paspaudimus ir priskiria juos kitam klavišui ar programai, taip pat nustato, kuri programa rodoma ekrane, kad tas pats mygtukas TV programoje galėtų veikti kitaip. Klavišų paspaudimai niekada nesaugomi ir niekur nesiunčiami.</string>
+	<string name="accessibility_disclosure_title">Pritaikymo neįgaliesiems paslauga</string>
+	<string name="accessibility_disclosure_message">„MX3 Button Mapper“ naudoja „Android“ Accessibility Service API, kad iš naujo priskirtų nuotolinio valdymo pulto mygtukus.\n\nKai paslauga įjungta, ji:\n• Nuskaito nuotolinio valdymo pulto mygtukų paspaudimus, kad galėtų pakeisti tam tikrus mygtukus kitu klavišu, paspaudimų seka arba programos paleidimu\n• Nustato šiuo metu ekrane rodomos programos pavadinimą, kad mygtukas (pvz., Kanalas aukštyn / žemyn) TV programoje galėtų atlikti kitą veiksmą\n\nJi neskaito ekrano turinio, teksto ar slaptažodžių. Klavišų paspaudimai ir programų pavadinimai naudojami tik šiame įrenginyje ir tik tą akimirką, kai jie įvyksta. Jie niekada nesaugomi (nebent toliau įjungsite trikčių šalinimo žurnalus) ir niekada nebendrinami bei nesiunčiami už įrenginio ribų. Ši programa neturi prieigos prie interneto.\n\nJei sutinkate, programa naudos %1$s, kad pati įjungtų savo pritaikymo neįgaliesiems paslaugą. Ją galite bet kada išjungti skiltyje Nustatymai → Pritaikymas neįgaliesiems.</string>
+	<string name="agree">Sutinku</string>
+	<string name="no_thanks">Ne, ačiū</string>
 	<string name="app_not_installed_message">Programa, susieta su šiuo mygtuku (%1$s), neįdiegta</string>
 	<string name="app_not_installed_title">Programa neįdiegta</string>
 	<string name="language">Kalba</string>

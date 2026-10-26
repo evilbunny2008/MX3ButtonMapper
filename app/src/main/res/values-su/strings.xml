@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Dengekeun pikeun pencét tombol hardware husus sarta remaps aranjeunna ka keycode sejen</string>
+	<string name="accessibility_service_description">Ngadeteksi pencétan tombol tinangtu dina rémot anjeun sarta ngagantikeunana jadi tombol atawa aplikasi séjén, ogé nyatet aplikasi naon anu keur dipintonkeun dina layar sangkan tombol anu sarua bisa béda paripolahna dina aplikasi TV. Pencétan tombol teu kungsi disimpen atawa dikirim ka mana waé.</string>
+	<string name="accessibility_disclosure_title">Layanan aksésibilitas</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper ngagunakeun Accessibility Service API Android pikeun ngagantikeun tombol-tombol rémot anjeun.\n\nLamun diaktipkeun, layanan ieu:\n• Maca pencétan tombol tina rémot anjeun, sangkan bisa ngaganti tombol tinangtu ku tombol séjén, sababaraha pencétan beruntun, atawa muka aplikasi\n• Nyatet ngaran aplikasi anu keur dipintonkeun dina layar, sangkan hiji tombol (contona Saluran naék/turun) bisa ngalakukeun hal séjén di jero aplikasi TV\n\nLayanan ieu henteu maca eusi layar, téks, atawa kecap sandi. Pencétan tombol jeung ngaran aplikasi ngan dipaké dina alat ieu, dina waktu kajadianana. Éta teu kungsi disimpen (iwal anjeun ngaktipkeun log ngungkulan masalah di handap), sarta teu kungsi dibagikeun atawa dikirim kaluar ti alat. Aplikasi ieu teu boga aksés internét.\n\nLamun anjeun satuju, aplikasi bakal ngagunakeun %1$s pikeun ngaktipkeun layanan aksésibilitasna sorangan pikeun anjeun. Anjeun bisa mareuman iraha waé dina Setélan → Aksésibilitas.</string>
+	<string name="agree">Satuju</string>
+	<string name="no_thanks">Henteu, hatur nuhun</string>
 	<string name="app_not_installed_message">Aplikasi anu dipetakeun kana tombol ieu (%1$s) teu dipasang</string>
 	<string name="app_not_installed_title">App teu dipasang</string>
 	<string name="language">Basa</string>

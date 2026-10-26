@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Belirli donanım düğmelerine basılmasını dinler ve bunları başka bir tuş koduyla yeniden eşler</string>
+	<string name="accessibility_service_description">Kumandanızdaki belirli düğmelere basılmasını algılar ve bunları başka bir tuşa veya uygulamaya yeniden atar; ayrıca aynı düğmenin TV uygulamasında farklı davranabilmesi için ekranda hangi uygulamanın olduğunu not eder. Tuşa basmalar hiçbir zaman saklanmaz veya herhangi bir yere gönderilmez.</string>
+	<string name="accessibility_disclosure_title">Erişilebilirlik hizmeti</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper, kumandanızın düğmelerini yeniden atamak için Android’in Accessibility Service API’sini kullanır.\n\nEtkinleştirildiğinde:\n• Belirli düğmeleri farklı bir tuşla, art arda tuş basmalarıyla veya bir uygulamanın açılmasıyla değiştirebilmek için kumandanızdaki düğme basmalarını okur\n• Bir düğmenin (ör. Kanal yukarı/aşağı) TV uygulamasında farklı bir şey yapabilmesi için o anda ekranda olan uygulamanın adını not eder\n\nEkran içeriğini, metinleri veya şifreleri okumaz. Tuş basmaları ve uygulama adları yalnızca bu cihazda, gerçekleştikleri anda kullanılır. Hiçbir zaman saklanmaz (aşağıdaki sorun giderme günlüklerini açmadığınız sürece) ve hiçbir zaman paylaşılmaz veya cihaz dışına gönderilmez. Bu uygulamanın internet erişimi yoktur.\n\nKabul ederseniz uygulama, kendi erişilebilirlik hizmetini sizin için açmak üzere %1$s kullanacaktır. Bunu istediğiniz zaman Ayarlar → Erişilebilirlik bölümünden kapatabilirsiniz.</string>
+	<string name="agree">Kabul et</string>
+	<string name="no_thanks">Hayır, teşekkürler</string>
 	<string name="app_not_installed_message">Bu düğmeyle eşlenen uygulama (%1$s) yüklü değil</string>
 	<string name="app_not_installed_title">Uygulama yüklü değil</string>
 	<string name="language">Dil</string>

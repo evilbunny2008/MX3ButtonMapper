@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Sluša pritisak na određene hardverske tipke i preslikava ih na drugu šifru ključa</string>
+	<string name="accessibility_service_description">Prepoznaje pritiske određenih dugmadi na daljinskom upravljaču i mapira ih na drugu tipku ili aplikaciju, a bilježi i koja je aplikacija na ekranu kako bi isto dugme moglo raditi drugačije u TV aplikaciji. Pritisci tipki se nikada ne pohranjuju niti šalju bilo gdje.</string>
+	<string name="accessibility_disclosure_title">Usluga pristupačnosti</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper koristi Androidov Accessibility Service API za ponovno mapiranje dugmadi daljinskog upravljača.\n\nKada je omogućena:\n• Čita pritiske dugmadi s daljinskog upravljača kako bi određena dugmad mogla zamijeniti drugom tipkom, nizom pritisaka ili pokretanjem aplikacije\n• Bilježi naziv aplikacije koja je trenutno na ekranu kako bi dugme (npr. Kanal gore/dolje) moglo uraditi nešto drugo u TV aplikaciji\n\nNe čita sadržaj ekrana, tekst niti lozinke. Pritisci tipki i nazivi aplikacija koriste se samo na ovom uređaju, u trenutku kada se dese. Nikada se ne pohranjuju (osim ako ispod ne uključite zapisnike za rješavanje problema) i nikada se ne dijele niti šalju izvan uređaja. Ova aplikacija nema pristup internetu.\n\nAko se slažete, aplikacija će pomoću %1$s sama uključiti svoju uslugu pristupačnosti. Možete je isključiti u bilo kojem trenutku u Postavke → Pristupačnost.</string>
+	<string name="agree">Slažem se</string>
+	<string name="no_thanks">Ne, hvala</string>
 	<string name="app_not_installed_message">Aplikacija mapirana na ovo dugme (%1$s) nije instalirana</string>
 	<string name="app_not_installed_title">Aplikacija nije instalirana</string>
 	<string name="language">Jezik</string>

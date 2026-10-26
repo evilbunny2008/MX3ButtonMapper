@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Na-ege ntị maka ịpị bọtịnụ ngwaike akọwapụtara wee tinye ha na koodu igodo ọzọ</string>
+	<string name="accessibility_service_description">Na-achọpụta mgbe a pịrị bọtịnụ ụfọdụ na rimot gị ma na-ekenye ha ọzọ na igodo ma ọ bụ ngwa ọzọ, ma na-edekwa ngwa dị na ihuenyo ka otu bọtịnụ ahụ nwee ike ịrụ ọrụ n’ụzọ dị iche n’ime ngwa TV. A naghị echekwa ma ọ bụ ezigara mpịa igodo ebe ọ bụla.</string>
+	<string name="accessibility_disclosure_title">Ọrụ nnweta</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper na-eji Accessibility Service API nke Android ekenye bọtịnụ rimot gị ọzọ.\n\nMgbe agbanyere ya, ọ na-:\n• Agụ mpịa bọtịnụ sitere na rimot gị, ka o nwee ike iji igodo ọzọ, usoro mpịa, ma ọ bụ mmepe ngwa dochie bọtịnụ ụfọdụ\n• Edeba aha ngwa dị ugbu a na ihuenyo, ka bọtịnụ (dịka Ọwa elu/ala) nwee ike ime ihe dị iche n’ime ngwa TV\n\nỌ naghị agụ ihe dị na ihuenyo, ederede, ma ọ bụ okwuntughe. A na-eji mpịa igodo na aha ngwa naanị na ngwaọrụ a, n’oge ha mere. A naghị echekwa ha (ọ gwụla ma ị gbanye ndekọ nchọpụta nsogbu dị n’okpuru), a naghịkwa ekesa ha ma ọ bụ ezipụ ha na ngwaọrụ ahụ. Ngwa a enweghị ohere ịntanetị.\n\nỌ bụrụ na ị kwenye, ngwa ahụ ga-eji %1$s gbanye ọrụ nnweta nke ya maka gị. Ị nwere ike gbanyụọ ya oge ọ bụla na Ntọala → Nnweta.</string>
+	<string name="agree">Ekwenyere m</string>
+	<string name="no_thanks">Mba, daalụ</string>
 	<string name="app_not_installed_message">Ngwa etinyere na bọtịnụ a (%1$s) etinyeghị</string>
 	<string name="app_not_installed_title">Ewụnyeghị ngwa</string>
 	<string name="language">Asụsụ</string>

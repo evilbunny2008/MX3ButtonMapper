@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Nasłuchuje naciśnięć konkretnych przycisków sprzętowych i przypisuje je do innego kodu klawisza</string>
+	<string name="accessibility_service_description">Wykrywa naciśnięcia określonych przycisków pilota i przypisuje je do innego klawisza lub aplikacji, a także rozpoznaje, która aplikacja jest na ekranie, aby ten sam przycisk mógł działać inaczej w aplikacji TV. Naciśnięcia klawiszy nigdy nie są zapisywane ani nigdzie wysyłane.</string>
+	<string name="accessibility_disclosure_title">Usługa ułatwień dostępu</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper korzysta z interfejsu Accessibility Service API systemu Android, aby zmieniać przypisanie przycisków pilota.\n\nGdy usługa jest włączona:\n• Odczytuje naciśnięcia przycisków pilota, aby zastąpić określone przyciski innym klawiszem, serią naciśnięć lub uruchomieniem aplikacji\n• Rozpoznaje nazwę aplikacji wyświetlanej na ekranie, aby przycisk (np. Kanał w górę/w dół) mógł działać inaczej w aplikacji TV\n\nNie odczytuje zawartości ekranu, tekstu ani haseł. Naciśnięcia klawiszy i nazwy aplikacji są używane wyłącznie na tym urządzeniu, w chwili ich wystąpienia. Nigdy nie są zapisywane (chyba że włączysz poniżej dzienniki rozwiązywania problemów) ani udostępniane czy wysyłane poza urządzenie. Ta aplikacja nie ma dostępu do internetu.\n\nJeśli się zgodzisz, aplikacja użyje %1$s, aby samodzielnie włączyć swoją usługę ułatwień dostępu. Możesz ją w każdej chwili wyłączyć w Ustawienia → Ułatwienia dostępu.</string>
+	<string name="agree">Zgadzam się</string>
+	<string name="no_thanks">Nie, dziękuję</string>
 	<string name="app_not_installed_message">Aplikacja przypisana do tego przycisku (%1$s) nie jest zainstalowana</string>
 	<string name="app_not_installed_title">Aplikacja nie jest zainstalowana</string>
 	<string name="language">Język</string>

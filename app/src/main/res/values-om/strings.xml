@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Dhiibbaa qaree haardwaaraa murtaa’e dhaggeeffatee gara koodii furtuu biraatti irra deebi’ee kaartaa</string>
+	<string name="accessibility_service_description">Qabduuwwan murtaa’oo to’annoo fagootiirratti tuqamuu adda baasee gara furtuu ykn appii biraatti irra deebiin ramada, akkasumas qabduun tokko appii TV keessatti haala addaan akka hojjetuuf appii iskiriinii irra jiru ni galmeessa. Tuqaaleen furtuu gonkumaa hin kuufaman ykn bakka kamittuu hin ergaman.</string>
+	<string name="accessibility_disclosure_title">Tajaajila dhaqqabummaa</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper qabduuwwan to’annoo fagoo keessanii irra deebiin ramaduuf Accessibility Service API Android fayyadama.\n\nYeroo dandeessifamu:\n• Qabduuwwan murtaa’oo furtuu biraatiin, tuqaalee walduraa duubaatiin ykn appii banuun bakka buusuu akka danda’uuf tuqaalee qabduu to’annoo fagoo keessanii ni dubbisa\n• Qabduun (fkn. Chaanaalii ol/gadi) appii TV keessatti waan biraa akka hojjetuuf maqaa appii amma iskiriinii irra jiruu ni galmeessa\n\nQabiyyee iskiriinii, barreeffama ykn jecha icciitii hin dubbisu. Tuqaaleen furtuu fi maqaaleen appii meeshaa kana qofa irratti, yeroo raawwataman qofa itti fayyadamu. Gonkumaa hin kuufaman (yoo galmeewwan rakkoo furuu armaan gadii hin banne malee), akkasumas gonkumaa hin qoodaman ykn meeshaa alatti hin ergaman. Appiin kun interneetii hin qabu.\n\nYoo walii galtan, appiin tajaajila dhaqqabummaa ofii isaa isiniif banuuf %1$s fayyadama. Yeroo barbaaddan Qindaa’ina → Dhaqqabummaa keessatti cufuu dandeessu.</string>
+	<string name="agree">Walii galeera</string>
+	<string name="no_thanks">Lakki, galatoomi</string>
 	<string name="app_not_installed_message">Appiin gara qaree kanaatti kaartaan (%1$s) hin fe’amne</string>
 	<string name="app_not_installed_title">Appiin hin fe’amne</string>
 	<string name="language">Afaan</string>

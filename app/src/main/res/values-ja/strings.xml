@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">特定のハードウェア ボタンの押下をリッスンし、別のキーコードに再マッピングします。</string>
+	<string name="accessibility_service_description">リモコンの特定のボタン操作を検出して別のキーやアプリに割り当て直します。また、同じボタンでもテレビアプリ内では異なる動作をさせるため、画面に表示中のアプリを確認します。キー操作が保存されたり、どこかに送信されたりすることは一切ありません。</string>
+	<string name="accessibility_disclosure_title">ユーザー補助サービス</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper は、リモコンのボタンを割り当て直すために Android のユーザー補助サービス（Accessibility Service）API を使用します。\n\n有効にすると、次のことを行います：\n• リモコンのボタン操作を読み取り、特定のボタンを別のキー、連続したキー操作、またはアプリの起動に置き換えます\n• 現在画面に表示されているアプリの名前を確認し、ボタン（例：チャンネル上/下）がテレビアプリ内で別の動作をできるようにします\n\n画面の内容、テキスト、パスワードは読み取りません。キー操作とアプリ名は、このデバイス上で、その操作が行われた瞬間にのみ使用されます。保存されることはなく（下のトラブルシューティング用ログを有効にした場合を除く）、共有されたりデバイス外に送信されたりすることもありません。このアプリはインターネットにアクセスできません。\n\n同意すると、アプリは %1$s を使用して自身のユーザー補助サービスを有効にします。このサービスは、［設定］→［ユーザー補助］からいつでも無効にできます。</string>
+	<string name="agree">同意する</string>
+	<string name="no_thanks">同意しない</string>
 	<string name="app_not_installed_message">このボタンにマップされたアプリ (%1$s) はインストールされていません</string>
 	<string name="app_not_installed_title">アプリがインストールされていません</string>
 	<string name="language">言語</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Klausās konkrētu aparatūras pogu nospiešanu un pārveido tos ar citu taustiņu</string>
+	<string name="accessibility_service_description">Atpazīst noteiktu tālvadības pults pogu nospiešanu un piešķir tās citam taustiņam vai lietotnei, kā arī nosaka, kura lietotne ir redzama ekrānā, lai tā pati poga TV lietotnē varētu darboties citādi. Taustiņu nospiešana nekad netiek saglabāta vai kaut kur nosūtīta.</string>
+	<string name="accessibility_disclosure_title">Pieejamības pakalpojums</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper izmanto Android Accessibility Service API, lai pārpiešķirtu jūsu tālvadības pults pogas.\n\nKad pakalpojums ir iespējots, tas:\n• Nolasa tālvadības pults pogu nospiešanu, lai noteiktas pogas varētu aizstāt ar citu taustiņu, nospiešanu virkni vai lietotnes palaišanu\n• Nosaka ekrānā pašlaik redzamās lietotnes nosaukumu, lai poga (piem., Kanāls uz augšu/uz leju) TV lietotnē varētu darīt ko citu\n\nTas nenolasa ekrāna saturu, tekstu vai paroles. Taustiņu nospiešana un lietotņu nosaukumi tiek izmantoti tikai šajā ierīcē un tikai brīdī, kad tie notiek. Tie nekad netiek saglabāti (ja vien neieslēdzat tālāk esošos problēmu novēršanas žurnālus) un nekad netiek kopīgoti vai nosūtīti ārpus ierīces. Šai lietotnei nav piekļuves internetam.\n\nJa piekrītat, lietotne izmantos %1$s, lai pati ieslēgtu savu pieejamības pakalpojumu. Jūs to varat jebkurā laikā izslēgt sadaļā Iestatījumi → Pieejamība.</string>
+	<string name="agree">Piekrītu</string>
+	<string name="no_thanks">Nē, paldies</string>
 	<string name="app_not_installed_message">Ar šo pogu (%1$s) piesaistītā lietotne nav instalēta</string>
 	<string name="app_not_installed_title">Lietotne nav instalēta</string>
 	<string name="language">Valoda</string>

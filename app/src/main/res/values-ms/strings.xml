@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Mendengar untuk menekan butang perkakasan tertentu dan memetakannya semula ke kod kekunci lain</string>
+	<string name="accessibility_service_description">Mengesan tekanan butang tertentu pada alat kawalan jauh anda dan memetakannya semula kepada kekunci atau apl lain, serta mencatat apl yang sedang dipaparkan pada skrin supaya butang yang sama boleh berfungsi secara berbeza dalam apl TV. Tekanan kekunci tidak sekali-kali disimpan atau dihantar ke mana-mana.</string>
+	<string name="accessibility_disclosure_title">Perkhidmatan kebolehaksesan</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper menggunakan Accessibility Service API Android untuk memetakan semula butang alat kawalan jauh anda.\n\nApabila didayakan, ia:\n• Membaca tekanan butang daripada alat kawalan jauh anda, supaya ia boleh menggantikan butang tertentu dengan kekunci lain, siri tekanan kekunci atau pelancaran apl\n• Mencatat nama apl yang sedang dipaparkan pada skrin, supaya butang (cth. Saluran naik/turun) boleh melakukan sesuatu yang berbeza di dalam apl TV\n\nIa tidak membaca kandungan skrin, teks atau kata laluan. Tekanan kekunci dan nama apl hanya digunakan pada peranti ini, pada saat ia berlaku. Ia tidak sekali-kali disimpan (melainkan anda menghidupkan log penyelesaian masalah di bawah), dan tidak sekali-kali dikongsi atau dihantar keluar dari peranti. Apl ini tiada akses Internet.\n\nJika anda bersetuju, apl akan menggunakan %1$s untuk menghidupkan perkhidmatan kebolehaksesannya sendiri untuk anda. Anda boleh mematikannya pada bila-bila masa dalam Tetapan → Kebolehaksesan.</string>
+	<string name="agree">Setuju</string>
+	<string name="no_thanks">Tidak, terima kasih</string>
 	<string name="app_not_installed_message">Apl yang dipetakan pada butang ini (%1$s) tidak dipasang</string>
 	<string name="app_not_installed_title">Apl tidak dipasang</string>
 	<string name="language">Bahasa</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Figyeli az adott hardver gombnyomásait, és átmásolja őket egy másik billentyűkódra</string>
+	<string name="accessibility_service_description">Érzékeli a távirányító bizonyos gombjainak megnyomását, és azokat egy másik billentyűhöz vagy alkalmazáshoz rendeli, valamint figyeli, melyik alkalmazás van a képernyőn, hogy ugyanaz a gomb a TV-alkalmazásban másképp működhessen. A gombnyomásokat soha nem tárolja és nem küldi el sehová.</string>
+	<string name="accessibility_disclosure_title">Kisegítő szolgáltatás</string>
+	<string name="accessibility_disclosure_message">Az MX3 Button Mapper az Android Accessibility Service API-ját használja a távirányító gombjainak újrakiosztásához.\n\nHa be van kapcsolva:\n• Beolvassa a távirányító gombnyomásait, hogy bizonyos gombokat egy másik billentyűre, gombnyomások sorozatára vagy egy alkalmazás indítására cserélhessen\n• Figyeli a képernyőn éppen látható alkalmazás nevét, hogy egy gomb (pl. Csatorna fel/le) a TV-alkalmazásban mást csinálhasson\n\nNem olvassa a képernyő tartalmát, szöveget vagy jelszavakat. A gombnyomásokat és az alkalmazásneveket csak ezen az eszközön, az adott pillanatban használja. Soha nem tárolja őket (kivéve, ha bekapcsolja az alábbi hibaelhárítási naplókat), és soha nem osztja meg vagy küldi el őket az eszközről. Ennek az alkalmazásnak nincs internet-hozzáférése.\n\nHa elfogadja, az alkalmazás a(z) %1$s segítségével maga kapcsolja be saját kisegítő szolgáltatását. Bármikor kikapcsolhatja a Beállítások → Kisegítő lehetőségek menüben.</string>
+	<string name="agree">Elfogadom</string>
+	<string name="no_thanks">Nem, köszönöm</string>
 	<string name="app_not_installed_message">Az ehhez a gombhoz (%1$s) társított alkalmazás nincs telepítve</string>
 	<string name="app_not_installed_title">Az alkalmazás nincs telepítve</string>
 	<string name="language">Nyelv</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Lắng nghe các lần nhấn nút phần cứng cụ thể và ánh xạ lại chúng sang mã khóa khác</string>
+	<string name="accessibility_service_description">Phát hiện thao tác nhấn một số nút cụ thể trên điều khiển từ xa và gán lại chúng thành phím hoặc ứng dụng khác, đồng thời ghi nhận ứng dụng đang hiển thị trên màn hình để cùng một nút có thể hoạt động khác đi trong ứng dụng TV. Thao tác nhấn phím không bao giờ được lưu trữ hoặc gửi đi bất cứ đâu.</string>
+	<string name="accessibility_disclosure_title">Dịch vụ hỗ trợ tiếp cận</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper sử dụng Accessibility Service API của Android để gán lại các nút trên điều khiển từ xa của bạn.\n\nKhi được bật, ứng dụng sẽ:\n• Đọc các thao tác nhấn nút từ điều khiển từ xa, để có thể thay thế một số nút bằng một phím khác, một loạt thao tác nhấn phím hoặc việc mở một ứng dụng\n• Ghi nhận tên ứng dụng đang hiển thị trên màn hình, để một nút (ví dụ: Kênh lên/xuống) có thể thực hiện chức năng khác bên trong ứng dụng TV\n\nỨng dụng không đọc nội dung màn hình, văn bản hay mật khẩu. Thao tác nhấn phím và tên ứng dụng chỉ được sử dụng trên thiết bị này, tại thời điểm chúng xảy ra. Chúng không bao giờ được lưu trữ (trừ khi bạn bật nhật ký khắc phục sự cố bên dưới) và không bao giờ được chia sẻ hoặc gửi ra khỏi thiết bị. Ứng dụng này không có quyền truy cập Internet.\n\nNếu bạn đồng ý, ứng dụng sẽ dùng %1$s để tự bật dịch vụ hỗ trợ tiếp cận của mình cho bạn. Bạn có thể tắt dịch vụ này bất cứ lúc nào trong Cài đặt → Hỗ trợ tiếp cận.</string>
+	<string name="agree">Đồng ý</string>
+	<string name="no_thanks">Không, cảm ơn</string>
 	<string name="app_not_installed_message">Ứng dụng được ánh xạ tới nút này (%1$s) chưa được cài đặt</string>
 	<string name="app_not_installed_title">Ứng dụng chưa được cài đặt</string>
 	<string name="language">Ngôn ngữ</string>

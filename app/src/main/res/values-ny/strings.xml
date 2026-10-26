@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Imamvera makiyi achinsinsi akanikizidwira ndikuziyikanso ku kiyibodi ina</string>
+	<string name="accessibility_service_description">Imazindikira kukanikizidwa kwa mabatani ena pa rimoti yanu ndipo imawapatsa ntchito ya kiyi kapena pulogalamu ina, komanso imaona pulogalamu yomwe ili pa sikirini kuti batani lomwelo lizitha kugwira ntchito mosiyana mu pulogalamu ya TV. Makanikizidwe a makiyi sasungidwa kapena kutumizidwa kwina kulikonse.</string>
+	<string name="accessibility_disclosure_title">Ntchito yothandizira kufikika</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper imagwiritsa ntchito Accessibility Service API ya Android kuti isinthe ntchito za mabatani a rimoti yanu.\n\nIkayatsidwa, imachita izi:\n• Imawerenga makanikizidwe a mabatani kuchokera pa rimoti yanu, kuti izitha kusintha mabatani ena ndi kiyi ina, makanikizidwe angapo motsatana, kapena kutsegula pulogalamu\n• Imaona dzina la pulogalamu yomwe ili pa sikirini pakadali pano, kuti batani (mwachitsanzo Chaneli mmwamba/pansi) lizitha kuchita chinthu china mu pulogalamu ya TV\n\nSiiwerenga zomwe zili pa sikirini, mawu, kapena mawu achinsinsi. Makanikizidwe a makiyi ndi mayina a mapulogalamu amagwiritsidwa ntchito pa chipangizochi chokha, panthawi yomwe zikuchitika. Sasungidwa konse (pokhapokha mutayatsa zolemba zothetsera mavuto zomwe zili pansipa), ndipo sagawidwa kapena kutumizidwa kunja kwa chipangizochi. Pulogalamuyi ilibe intaneti.\n\nMukavomera, pulogalamuyi idzagwiritsa ntchito %1$s kuti iyatse yokha ntchito yake yothandizira kufikika. Mutha kuizimitsa nthawi iliyonse mu Zokonda → Kufikika.</string>
+	<string name="agree">Ndikuvomera</string>
+	<string name="no_thanks">Ayi, zikomo</string>
 	<string name="app_not_installed_message">Pulogalamu yojambulidwa ku batani ili (%1$s) sinayikepo</string>
 	<string name="app_not_installed_title">Pulogalamu sinayikidwe</string>
 	<string name="language">Chilankhulo</string>

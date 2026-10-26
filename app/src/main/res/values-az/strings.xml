@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Müəyyən aparat düymələrinin basılmasını dinləyir və onları başqa bir açar koduna dəyişdirir</string>
+	<string name="accessibility_service_description">Pultunuzdakı müəyyən düymələrin basılmasını aşkarlayır və onları başqa düyməyə və ya tətbiqə yenidən təyin edir, həmçinin eyni düymənin TV tətbiqində fərqli işləyə bilməsi üçün ekranda hansı tətbiqin olduğunu qeyd edir. Düymə basmaları heç vaxt saxlanılmır və heç yerə göndərilmir.</string>
+	<string name="accessibility_disclosure_title">Əlçatımlılıq xidməti</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper pultunuzun düymələrini yenidən təyin etmək üçün Android-in Accessibility Service API-sindən istifadə edir.\n\nAktiv olduqda:\n• Müəyyən düymələri başqa düymə, ardıcıl basmalar və ya tətbiqin açılması ilə əvəz edə bilmək üçün pultunuzdakı düymə basmalarını oxuyur\n• Düymənin (məs. Kanal yuxarı/aşağı) TV tətbiqində fərqli bir şey edə bilməsi üçün hazırda ekranda olan tətbiqin adını qeyd edir\n\nEkran məzmununu, mətni və ya parolları oxumur. Düymə basmaları və tətbiq adları yalnız bu cihazda, baş verdikləri anda istifadə olunur. Onlar heç vaxt saxlanılmır (aşağıdakı problemlərin aradan qaldırılması jurnallarını aktivləşdirməsəniz) və heç vaxt paylaşılmır və ya cihazdan kənara göndərilmir. Bu tətbiqin internetə çıxışı yoxdur.\n\nRazılaşsanız, tətbiq öz əlçatımlılıq xidmətini sizin üçün aktivləşdirmək üçün %1$s istifadə edəcək. Onu istənilən vaxt Ayarlar → Əlçatımlılıq bölməsində deaktiv edə bilərsiniz.</string>
+	<string name="agree">Razıyam</string>
+	<string name="no_thanks">Xeyr, təşəkkürlər</string>
 	<string name="app_not_installed_message">Bu düyməyə uyğunlaşdırılmış proqram (%1$s) quraşdırılmayıb</string>
 	<string name="app_not_installed_title">Proqram quraşdırılmayıb</string>
 	<string name="language">Dil</string>

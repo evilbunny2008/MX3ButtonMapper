@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Nakikinig para sa mga partikular na pagpindot sa pindutan ng hardware at inilalagay muli ang mga ito sa isa pang keycode</string>
+	<string name="accessibility_service_description">Nakikita ang pagpindot sa mga partikular na button ng iyong remote at ini-remap ang mga ito sa ibang key o app, at tinatandaan din kung aling app ang nasa screen para maaaring kumilos nang iba ang parehong button sa TV app. Hindi kailanman iniimbak o ipinapadala kahit saan ang mga pagpindot sa key.</string>
+	<string name="accessibility_disclosure_title">Serbisyo sa accessibility</string>
+	<string name="accessibility_disclosure_message">Ginagamit ng MX3 Button Mapper ang Accessibility Service API ng Android para i-remap ang mga button ng iyong remote.\n\nKapag naka-enable, ito ay:\n• Nagbabasa ng mga pagpindot sa button mula sa iyong remote, para mapalitan ang mga partikular na button ng ibang key, sunud-sunod na pagpindot, o pagbukas ng app\n• Tinatandaan ang pangalan ng app na kasalukuyang nasa screen, para may ibang magawa ang isang button (hal. Channel pataas/pababa) sa loob ng TV app\n\nHindi nito binabasa ang nilalaman ng screen, text, o mga password. Ginagamit lang ang mga pagpindot sa key at pangalan ng app sa device na ito, sa mismong sandaling nangyayari ang mga ito. Hindi kailanman iniimbak ang mga ito (maliban kung i-on mo ang mga log para sa pag-troubleshoot sa ibaba), at hindi kailanman ibinabahagi o ipinapadala palabas ng device. Walang internet access ang app na ito.\n\nKung sasang-ayon ka, gagamitin ng app ang %1$s para i-on ang sarili nitong serbisyo sa accessibility para sa iyo. Puwede mo itong i-off anumang oras sa Mga Setting → Accessibility.</string>
+	<string name="agree">Sang-ayon</string>
+	<string name="no_thanks">Huwag na lang</string>
 	<string name="app_not_installed_message">Hindi naka-install ang app na naka-map sa button na ito (%1$s)</string>
 	<string name="app_not_installed_title">Hindi naka-install ang app</string>
 	<string name="language">Wika</string>
