@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Hardware-botoi zehatzen sakatzeak entzuten ditu eta beste gako-kode batera mapeatzen ditu</string>
+	<string name="accessibility_service_description">Urruneko agintearen botoi jakin batzuen sakaketak hautematen ditu eta beste tekla edo aplikazio bati esleitzen dizkie; gainera, pantailan zein aplikazio dagoen hautematen du, botoi berak telebista-aplikazioan beste modu batera joka dezan. Tekla-sakaketak ez dira inoiz gordetzen ezta inora bidaltzen ere.</string>
+	<string name="accessibility_disclosure_title">Erabilerraztasun-zerbitzua</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper-ek Android-en Accessibility Service APIa erabiltzen du urruneko agintearen botoiak berriro esleitzeko.\n\nGaituta dagoenean:\n• Urruneko agintearen botoi-sakaketak irakurtzen ditu, botoi jakin batzuk beste tekla batekin, sakaketa-segida batekin edo aplikazio bat abiaraztearekin ordezteko\n• Pantailan dagoen aplikazioaren izena hautematen du, botoi batek (adib. Kanala gora/behera) telebista-aplikazioaren barruan beste zerbait egin dezan\n\nEz du pantailako edukia, testurik edo pasahitzik irakurtzen. Tekla-sakaketak eta aplikazioen izenak gailu honetan bakarrik erabiltzen dira, gertatzen diren unean. Ez dira inoiz gordetzen (behean dauden arazoak konpontzeko erregistroak aktibatzen ez badituzu behintzat), eta ez dira inoiz partekatzen ezta gailutik kanpora bidaltzen ere. Aplikazio honek ez du Interneterako sarbiderik.\n\nAdos bazaude, aplikazioak %1$s erabiliko du bere erabilerraztasun-zerbitzua zuretzat aktibatzeko. Edozein unetan desaktiba dezakezu Ezarpenak → Erabilerraztasuna atalean.</string>
+	<string name="agree">Ados</string>
+	<string name="no_thanks">Ez, eskerrik asko</string>
 	<string name="app_not_installed_message">Botoi honi mapatutako aplikazioa (%1$s) ez dago instalatuta</string>
 	<string name="app_not_installed_title">Aplikazioa ez dago instalatuta</string>
 	<string name="language">Hizkuntza</string>

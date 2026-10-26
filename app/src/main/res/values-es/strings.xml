@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Escucha las pulsaciones de botones de hardware específicos y los reasigna a otro código clave</string>
+	<string name="accessibility_service_description">Detecta pulsaciones de botones concretos de tu mando a distancia y los reasigna a otra tecla o aplicación, y detecta qué aplicación está en pantalla para que el mismo botón pueda comportarse de forma distinta en la aplicación de TV. Las pulsaciones nunca se guardan ni se envían a ningún sitio.</string>
+	<string name="accessibility_disclosure_title">Servicio de accesibilidad</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper utiliza la API Accessibility Service de Android para reasignar los botones de tu mando a distancia.\n\nCuando está activado:\n• Lee las pulsaciones de los botones de tu mando para poder sustituir botones concretos por otra tecla, una ráfaga de pulsaciones o la apertura de una aplicación\n• Detecta el nombre de la aplicación que está en pantalla para que un botón (p. ej., Canal arriba/abajo) pueda hacer algo distinto dentro de la aplicación de TV\n\nNo lee el contenido de la pantalla, ni textos ni contraseñas. Las pulsaciones y los nombres de las aplicaciones solo se usan en este dispositivo en el momento en que se producen. Nunca se guardan (salvo que actives los registros de diagnóstico que aparecen más abajo) y nunca se comparten ni se envían fuera del dispositivo. Esta aplicación no tiene acceso a Internet.\n\nSi aceptas, la aplicación usará %1$s para activar su propio servicio de accesibilidad por ti. Puedes desactivarlo en cualquier momento en Ajustes → Accesibilidad.</string>
+	<string name="agree">Aceptar</string>
+	<string name="no_thanks">No, gracias</string>
 	<string name="app_not_installed_message">La aplicación asignada a este botón (%1$s) no está instalada</string>
 	<string name="app_not_installed_title">Aplicación no instalada</string>
 	<string name="language">Idioma</string>

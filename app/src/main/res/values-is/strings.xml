@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Hlustar eftir því að ýta á sérstakar vélbúnaðarhnappa og endurvarpar þeim í annan lyklakóða</string>
+	<string name="accessibility_service_description">Greinir tiltekna hnappa á fjarstýringunni og endurvarpar þeim á annan takka eða forrit, og greinir hvaða forrit er á skjánum svo sami hnappurinn geti virkað öðruvísi í sjónvarpsforritinu. Ýtingar á takka eru aldrei vistaðar eða sendar neitt.</string>
+	<string name="accessibility_disclosure_title">Aðgengisþjónusta</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper notar Accessibility Service-viðmót Android til að endurvarpa hnöppum fjarstýringarinnar.\n\nÞegar kveikt er á henni:\n• Les hún hnappaýtingar frá fjarstýringunni svo hægt sé að skipta tilteknum hnöppum út fyrir annan takka, röð af ýtingum eða opnun forrits\n• Skráir hún heiti forritsins sem er á skjánum svo hnappur (t.d. Rás upp/niður) geti gert eitthvað annað inni í sjónvarpsforritinu\n\nHún les ekki efni skjásins, texta eða aðgangsorð. Ýtingar á takka og heiti forrita eru aðeins notuð í þessu tæki á því augnabliki sem þær gerast. Þær eru aldrei vistaðar (nema þú kveikir á bilanaleitarskránum hér fyrir neðan) og aldrei deilt eða sendar úr tækinu. Þetta forrit hefur engan netaðgang.\n\nEf þú samþykkir mun forritið nota %1$s til að kveikja sjálft á aðgengisþjónustu sinni fyrir þig. Þú getur slökkt á henni hvenær sem er í Stillingar → Aðgengi.</string>
+	<string name="agree">Samþykkja</string>
+	<string name="no_thanks">Nei takk</string>
 	<string name="app_not_installed_message">Forritið sem var varpað á þennan hnapp (%1$s) er ekki uppsett</string>
 	<string name="app_not_installed_title">App ekki uppsett</string>
 	<string name="language">Tungumál</string>

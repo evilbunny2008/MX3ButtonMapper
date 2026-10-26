@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Lytter etter spesifikke maskinvareknapptrykk og tilordner dem til en annen nøkkelkode</string>
+	<string name="accessibility_service_description">Registrerer bestemte knappetrykk på fjernkontrollen og tilordner dem til en annen tast eller app, og registrerer hvilken app som vises på skjermen, slik at den samme knappen kan oppføre seg annerledes i TV-appen. Tastetrykk blir aldri lagret eller sendt noe sted.</string>
+	<string name="accessibility_disclosure_title">Tilgjengelighetstjeneste</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper bruker Androids Accessibility Service-API for å tilordne knappene på fjernkontrollen på nytt.\n\nNår den er slått på:\n• Leser den knappetrykkene fra fjernkontrollen, slik at bestemte knapper kan erstattes med en annen tast, en serie med tastetrykk eller åpning av en app\n• Registrerer den navnet på appen som vises på skjermen, slik at en knapp (f.eks. Kanal opp/ned) kan gjøre noe annet i TV-appen\n\nDen leser ikke skjerminnhold, tekst eller passord. Tastetrykk og appnavn brukes bare på denne enheten i det øyeblikket de skjer. De lagres aldri (med mindre du slår på feilsøkingsloggene nedenfor), og de deles eller sendes aldri ut fra enheten. Denne appen har ikke tilgang til internett.\n\nHvis du godtar, bruker appen %1$s til å slå på sin egen tilgjengelighetstjeneste for deg. Du kan slå den av når som helst under Innstillinger → Tilgjengelighet.</string>
+	<string name="agree">Godta</string>
+	<string name="no_thanks">Nei takk</string>
 	<string name="app_not_installed_message">Appen som er tilordnet denne knappen (%1$s) er ikke installert</string>
 	<string name="app_not_installed_title">Appen er ikke installert</string>
 	<string name="language">Språk</string>

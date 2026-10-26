@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Escuta pressionamentos de botões de hardware específicos e os remapeia para outro código-chave</string>
+	<string name="accessibility_service_description">Deteta toques em botões específicos do seu controlo remoto e reatribui-os a outra tecla ou aplicação, e identifica a aplicação que está no ecrã para que o mesmo botão possa funcionar de forma diferente na aplicação de TV. Os toques nas teclas nunca são guardados nem enviados para lado nenhum.</string>
+	<string name="accessibility_disclosure_title">Serviço de acessibilidade</string>
+	<string name="accessibility_disclosure_message">O MX3 Button Mapper utiliza a API Accessibility Service do Android para reatribuir os botões do seu controlo remoto.\n\nQuando ativado:\n• Lê os toques nos botões do seu controlo remoto, para poder substituir botões específicos por outra tecla, uma sequência de toques ou a abertura de uma aplicação\n• Identifica o nome da aplicação que está no ecrã, para que um botão (p. ex., Canal +/-) possa fazer algo diferente dentro da aplicação de TV\n\nNão lê o conteúdo do ecrã, texto nem palavras-passe. Os toques nas teclas e os nomes das aplicações só são utilizados neste dispositivo, no momento em que ocorrem. Nunca são guardados (a menos que ative os registos de resolução de problemas abaixo) e nunca são partilhados nem enviados para fora do dispositivo. Esta aplicação não tem acesso à Internet.\n\nSe concordar, a aplicação utilizará o %1$s para ativar o seu próprio serviço de acessibilidade por si. Pode desativá-lo a qualquer momento em Definições → Acessibilidade.</string>
+	<string name="agree">Concordo</string>
+	<string name="no_thanks">Não, obrigado</string>
 	<string name="app_not_installed_message">O aplicativo mapeado para este botão (%1$s) não está instalado</string>
 	<string name="app_not_installed_title">Aplicativo não instalado</string>
 	<string name="language">Idioma</string>

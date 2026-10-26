@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Éisteann le haghaidh brúnna cnaipe crua-earraí ar leith agus athmhaálann sé iad chuig eochairchód eile</string>
+	<string name="accessibility_service_description">Aithníonn sé brúnna cnaipí áirithe ar do chianrialtán agus athmhapálann sé iad chuig eochair nó aip eile, agus tugann sé faoi deara cén aip atá ar an scáileán ionas gur féidir leis an gcnaipe céanna feidhmiú ar bhealach difriúil san aip teilifíse. Ní stóráiltear ná ní sheoltar brúnna eochrach áit ar bith riamh.</string>
+	<string name="accessibility_disclosure_title">Seirbhís inrochtaineachta</string>
+	<string name="accessibility_disclosure_message">Úsáideann MX3 Button Mapper API Accessibility Service Android chun cnaipí do chianrialtáin a athmhapáil.\n\nNuair atá sé cumasaithe:\n• Léann sé brúnna cnaipí ó do chianrialtán, ionas gur féidir eochair eile, sraith brúnna nó tosú aipe a chur in ionad cnaipí áirithe\n• Tugann sé faoi deara ainm na haipe atá ar an scáileán faoi láthair, ionas gur féidir le cnaipe (m.sh. Cainéal suas/síos) rud éigin difriúil a dhéanamh san aip teilifíse\n\nNí léann sé ábhar an scáileáin, téacs ná pasfhocail. Ní úsáidtear brúnna eochrach agus ainmneacha aipeanna ach ar an ngléas seo, ag an nóiméad a tharlaíonn siad. Ní stóráiltear iad riamh (mura gcasann tú air na logaí fabhtcheartúcháin thíos), agus ní roinntear ná ní sheoltar amach ón ngléas iad riamh. Níl rochtain idirlín ag an aip seo.\n\nMá aontaíonn tú, úsáidfidh an aip %1$s chun a seirbhís inrochtaineachta féin a chasadh air duit. Is féidir leat é a mhúchadh am ar bith i Socruithe → Inrochtaineacht.</string>
+	<string name="agree">Aontaím</string>
+	<string name="no_thanks">Níl, go raibh maith agat</string>
 	<string name="app_not_installed_message">Níl an aip atá mapáilte chuig an gcnaipe seo (%1$s) suiteáilte</string>
 	<string name="app_not_installed_title">App gan a bheith suiteáilte</string>
 	<string name="language">Teanga</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Écoute les pressions sur des boutons matériels spécifiques et les remappe sur un autre code clé</string>
+	<string name="accessibility_service_description">Détecte certains appuis sur les boutons de votre télécommande et les réaffecte à une autre touche ou application, et repère l’application affichée à l’écran afin qu’un même bouton puisse se comporter différemment dans l’application TV. Les appuis sur les touches ne sont jamais enregistrés ni envoyés nulle part.</string>
+	<string name="accessibility_disclosure_title">Service d’accessibilité</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper utilise l’API Accessibility Service d’Android pour réaffecter les boutons de votre télécommande.\n\nUne fois activé, il :\n• Lit les appuis sur les boutons de votre télécommande, afin de remplacer certains boutons par une autre touche, une série d’appuis ou le lancement d’une application\n• Repère le nom de l’application affichée à l’écran, afin qu’un bouton (par ex. Chaîne +/-) puisse agir différemment dans l’application TV\n\nIl ne lit ni le contenu de l’écran, ni le texte, ni les mots de passe. Les appuis sur les touches et les noms d’applications ne sont utilisés que sur cet appareil, au moment où ils se produisent. Ils ne sont jamais enregistrés (sauf si vous activez les journaux de dépannage ci-dessous), ni partagés, ni envoyés hors de l’appareil. Cette application n’a pas accès à Internet.\n\nSi vous acceptez, l’application utilisera %1$s pour activer elle-même son service d’accessibilité. Vous pouvez le désactiver à tout moment dans Paramètres → Accessibilité.</string>
+	<string name="agree">Accepter</string>
+	<string name="no_thanks">Non merci</string>
 	<string name="app_not_installed_message">L’application mappée à ce bouton (%1$s) n’est pas installée</string>
 	<string name="app_not_installed_title">Application non installée</string>
 	<string name="language">Langue</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Kuulab konkreetseid riistvaranuppude vajutusi ja ühendab need ümber teise klahvikoodiga</string>
+	<string name="accessibility_service_description">Tuvastab kaugjuhtimispuldi teatud nuppude vajutused ja määrab need ümber teisele klahvile või rakendusele ning tuvastab, milline rakendus on ekraanil, et sama nupp saaks teleri rakenduses teisiti toimida. Klahvivajutusi ei salvestata ega saadeta kunagi kuhugi.</string>
+	<string name="accessibility_disclosure_title">Juurdepääsetavusteenus</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper kasutab Androidi Accessibility Service API-t, et kaugjuhtimispuldi nuppe ümber määrata.\n\nKui see on lubatud, siis see:\n• Loeb kaugjuhtimispuldi nupuvajutusi, et asendada teatud nupud teise klahvi, klahvivajutuste jada või rakenduse käivitamisega\n• Tuvastab ekraanil oleva rakenduse nime, et nupp (nt Kanal üles/alla) saaks teleri rakenduses midagi muud teha\n\nSee ei loe ekraani sisu, teksti ega paroole. Klahvivajutusi ja rakenduste nimesid kasutatakse ainult selles seadmes nende toimumise hetkel. Neid ei salvestata kunagi (välja arvatud juhul, kui lülitate allpool sisse veaotsingulogid) ning neid ei jagata ega saadeta seadmest kunagi välja. Sellel rakendusel puudub juurdepääs internetile.\n\nKui nõustute, kasutab rakendus %1$s-i, et lülitada teie eest sisse oma juurdepääsetavusteenus. Saate selle igal ajal välja lülitada jaotises Seaded → Juurdepääsetavus.</string>
+	<string name="agree">Nõustun</string>
+	<string name="no_thanks">Ei, aitäh</string>
 	<string name="app_not_installed_message">Selle nupuga seotud rakendust (%1$s) pole installitud</string>
 	<string name="app_not_installed_title">Rakendus pole installitud</string>
 	<string name="language">Keel</string>

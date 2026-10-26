@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Escolta les pressions específiques de botons de maquinari i les reasigna a un altre codi de tecla</string>
+	<string name="accessibility_service_description">Detecta pulsacions de botons concrets del comandament a distància i els reassigna a una altra tecla o aplicació, i detecta quina aplicació hi ha a la pantalla perquè el mateix botó es pugui comportar de manera diferent a l’aplicació de TV. Les pulsacions no es desen ni s’envien mai enlloc.</string>
+	<string name="accessibility_disclosure_title">Servei d’accessibilitat</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper utilitza l’API Accessibility Service d’Android per reassignar els botons del comandament a distància.\n\nQuan està activat:\n• Llegeix les pulsacions dels botons del comandament perquè pugui substituir botons concrets per una altra tecla, una ràfega de pulsacions o l’obertura d’una aplicació\n• Detecta el nom de l’aplicació que hi ha a la pantalla perquè un botó (p. ex., Canal amunt/avall) pugui fer una altra cosa dins l’aplicació de TV\n\nNo llegeix el contingut de la pantalla, ni textos ni contrasenyes. Les pulsacions i els noms de les aplicacions només s’utilitzen en aquest dispositiu en el moment en què es produeixen. No es desen mai (tret que activis els registres de diagnòstic que hi ha més avall) i no es comparteixen ni s’envien mai fora del dispositiu. Aquesta aplicació no té accés a Internet.\n\nSi hi estàs d’acord, l’aplicació utilitzarà %1$s per activar el seu propi servei d’accessibilitat. Pots desactivar-lo en qualsevol moment a Configuració → Accessibilitat.</string>
+	<string name="agree">Accepto</string>
+	<string name="no_thanks">No, gràcies</string>
 	<string name="app_not_installed_message">L’aplicació assignada a aquest botó (%1$s) no està instal·lada</string>
 	<string name="app_not_installed_title">L’aplicació no està instal·lada</string>
 	<string name="language">Idioma</string>

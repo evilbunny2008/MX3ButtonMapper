@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Ascolta la pressione di pulsanti hardware specifici e li riassocia a un altro codice chiave</string>
+	<string name="accessibility_service_description">Rileva la pressione di specifici tasti del telecomando e li riassegna a un altro tasto o a un’app, e rileva quale app è sullo schermo in modo che lo stesso tasto possa comportarsi diversamente nell’app TV. Le pressioni dei tasti non vengono mai memorizzate né inviate altrove.</string>
+	<string name="accessibility_disclosure_title">Servizio di accessibilità</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper utilizza l’API Accessibility Service di Android per riassegnare i tasti del telecomando.\n\nQuando è attivo:\n• Legge la pressione dei tasti del telecomando, per poter sostituire tasti specifici con un altro tasto, una raffica di pressioni o l’avvio di un’app\n• Rileva il nome dell’app attualmente sullo schermo, in modo che un tasto (ad es. Canale su/giù) possa fare qualcosa di diverso all’interno dell’app TV\n\nNon legge il contenuto dello schermo, testi o password. Le pressioni dei tasti e i nomi delle app vengono usati solo su questo dispositivo, nel momento in cui avvengono. Non vengono mai memorizzati (a meno che tu non attivi i log di risoluzione dei problemi qui sotto) e non vengono mai condivisi né inviati fuori dal dispositivo. Questa app non ha accesso a Internet.\n\nSe accetti, l’app utilizzerà %1$s per attivare automaticamente il proprio servizio di accessibilità. Puoi disattivarlo in qualsiasi momento da Impostazioni → Accessibilità.</string>
+	<string name="agree">Accetto</string>
+	<string name="no_thanks">No, grazie</string>
 	<string name="app_not_installed_message">L’app associata a questo pulsante (%1$s) non è installata</string>
 	<string name="app_not_installed_title">Applicazione non installata</string>
 	<string name="language">Lingua</string>

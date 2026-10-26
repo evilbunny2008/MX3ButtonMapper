@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Kuuntelee tiettyjä laitteiston painikkeiden painalluksia ja yhdistää ne uudelleen toiseen näppäinkoodiin</string>
+	<string name="accessibility_service_description">Tunnistaa tiettyjen kaukosäätimen painikkeiden painallukset ja määrittää ne toiselle näppäimelle tai sovellukselle, sekä tunnistaa, mikä sovellus on näytöllä, jotta sama painike voi toimia eri tavalla TV-sovelluksessa. Näppäinpainalluksia ei koskaan tallenneta eikä lähetetä minnekään.</string>
+	<string name="accessibility_disclosure_title">Saavutettavuuspalvelu</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper käyttää Androidin Accessibility Service -rajapintaa kaukosäätimen painikkeiden uudelleenmäärittämiseen.\n\nKun palvelu on käytössä, se:\n• Lukee kaukosäätimen painikkeiden painallukset, jotta tietyt painikkeet voidaan korvata toisella näppäimellä, painallussarjalla tai sovelluksen käynnistämisellä\n• Tunnistaa näytöllä olevan sovelluksen nimen, jotta painike (esim. Kanava ylös/alas) voi tehdä jotain muuta TV-sovelluksessa\n\nSe ei lue näytön sisältöä, tekstiä tai salasanoja. Näppäinpainalluksia ja sovellusten nimiä käytetään vain tällä laitteella sillä hetkellä, kun ne tapahtuvat. Niitä ei koskaan tallenneta (ellet ota alla olevia vianmäärityslokeja käyttöön), eikä niitä koskaan jaeta tai lähetetä laitteen ulkopuolelle. Tällä sovelluksella ei ole internetyhteyttä.\n\nJos hyväksyt, sovellus käyttää %1$s-sovellusta ottaakseen oman saavutettavuuspalvelunsa käyttöön puolestasi. Voit poistaa sen käytöstä milloin tahansa kohdassa Asetukset → Saavutettavuus.</string>
+	<string name="agree">Hyväksy</string>
+	<string name="no_thanks">Ei kiitos</string>
 	<string name="app_not_installed_message">Tähän painikkeeseen (%1$s) yhdistettyä sovellusta ei ole asennettu</string>
 	<string name="app_not_installed_title">Sovellusta ei ole asennettu</string>
 	<string name="language">Kieli</string>

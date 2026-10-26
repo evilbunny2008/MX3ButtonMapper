@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Hört auf bestimmte Hardware-Tastendrücke und ordnet sie einem anderen Tastencode zu</string>
+	<string name="accessibility_service_description">Erkennt bestimmte Tastendrücke auf Ihrer Fernbedienung und belegt sie mit einer anderen Taste oder App neu. Außerdem erkennt der Dienst, welche App gerade angezeigt wird, damit dieselbe Taste in der TV-App anders funktionieren kann. Tastendrücke werden niemals gespeichert oder irgendwohin gesendet.</string>
+	<string name="accessibility_disclosure_title">Bedienungshilfe-Dienst</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper verwendet die Accessibility-Service-API von Android, um die Tasten Ihrer Fernbedienung neu zu belegen.\n\nWenn aktiviert, wird Folgendes ausgeführt:\n• Die Tastendrücke Ihrer Fernbedienung werden gelesen, damit bestimmte Tasten durch eine andere Taste, eine Folge von Tastendrücken oder den Start einer App ersetzt werden können\n• Der Name der aktuell angezeigten App wird erfasst, damit eine Taste (z. B. Kanal auf/ab) in der TV-App etwas anderes tun kann\n\nBildschirminhalte, Texte oder Passwörter werden nicht gelesen. Tastendrücke und App-Namen werden nur auf diesem Gerät und nur in dem Moment verwendet, in dem sie auftreten. Sie werden niemals gespeichert (es sei denn, Sie aktivieren unten die Protokolle zur Fehlerbehebung) und niemals weitergegeben oder vom Gerät gesendet. Diese App hat keinen Internetzugriff.\n\nWenn Sie zustimmen, verwendet die App %1$s, um ihren eigenen Bedienungshilfe-Dienst für Sie zu aktivieren. Sie können ihn jederzeit unter Einstellungen → Bedienungshilfen deaktivieren.</string>
+	<string name="agree">Zustimmen</string>
+	<string name="no_thanks">Nein danke</string>
 	<string name="app_not_installed_message">Die dieser Schaltfläche zugeordnete App (%1$s) ist nicht installiert</string>
 	<string name="app_not_installed_title">App nicht installiert</string>
 	<string name="language">Sprache</string>

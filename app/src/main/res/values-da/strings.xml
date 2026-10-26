@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_service_description">Lytter efter specifikke hardware-knaptryk og omformer dem til en anden nøglekode</string>
+	<string name="accessibility_service_description">Registrerer bestemte knaptryk på din fjernbetjening og tildeler dem til en anden tast eller app, og registrerer, hvilken app der vises på skærmen, så den samme knap kan fungere anderledes i tv-appen. Tastetryk bliver aldrig gemt eller sendt nogen steder hen.</string>
+	<string name="accessibility_disclosure_title">Hjælpefunktionstjeneste</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper bruger Androids Accessibility Service-API til at omtildele knapperne på din fjernbetjening.\n\nNår den er aktiveret:\n• Læser den knaptrykkene fra din fjernbetjening, så bestemte knapper kan erstattes med en anden tast, en række tastetryk eller åbning af en app\n• Registrerer den navnet på den app, der i øjeblikket vises på skærmen, så en knap (f.eks. Kanal op/ned) kan gøre noget andet i tv-appen\n\nDen læser ikke skærmindhold, tekst eller adgangskoder. Tastetryk og appnavne bruges kun på denne enhed i det øjeblik, de sker. De gemmes aldrig (medmindre du slår fejlfindingslogfilerne nedenfor til), og de deles eller sendes aldrig fra enheden. Denne app har ikke adgang til internettet.\n\nHvis du accepterer, bruger appen %1$s til selv at aktivere sin hjælpefunktionstjeneste for dig. Du kan til enhver tid slå den fra under Indstillinger → Hjælpefunktioner.</string>
+	<string name="agree">Accepter</string>
+	<string name="no_thanks">Nej tak</string>
 	<string name="app_not_installed_message">Den app, der er knyttet til denne knap (%1$s), er ikke installeret</string>
 	<string name="app_not_installed_title">App ikke installeret</string>
 	<string name="language">Sprog</string>
