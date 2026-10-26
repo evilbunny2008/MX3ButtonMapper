@@ -1,0 +1,12 @@
+Settings:   01:09:28.759 Butt...vice com...ps.mx3buttonmapper  D  keyCode=83 scanCode=240 repeatCount=0 device=BT_RC833A_B2 Consumer Control
+Info:       01:10:12.880 Butt...vice com...ps.mx3buttonmapper  D  keyCode=165 scanCode=240 repeatCount=0 device=BT_RC833A_B2 Consumer Control
+Channels:   01:10:58.657 Butt...vice com...ps.mx3buttonmapper  D  keyCode=178 scanCode=240 repeatCount=0 device=BT_RC833A_B2 Consumer Control
+TC App:     01:12:48.979 Butt...vice com...ps.mx3buttonmapper  D  keyCode=4020 scanCode=240 repeatCount=0 device=BT_RC833A_B2 Consumer Control
+
+
+Top White:  01:19:43.610 Butt...vice com...ps.mx3buttonmapper  D  keyCode=169 scanCode=419 repeatCount=0 device=2.4G Composite Devic Mouse
+Top Pink:   01:20:22.978 Butt...vice com...ps.mx3buttonmapper  D  keyCode=168 scanCode=418 repeatCount=0 device=2.4G Composite Devic Mouse
+Bottom White01:20:52.185 Butt...vice com...ps.mx3buttonmapper  D  keyCode=209 scanCode=171 repeatCount=0 device=2.4G Composite Devic Mouse
+Bottom Pink:01:21:18.165 Butt...vice com...ps.mx3buttonmapper  D  keyCode=65 scanCode=155 repeatCount=0 device=2.4G Composite Devic Mouse
+Menu:       01:22:34.178 Butt...vice com...ps.mx3buttonmapper  D  keyCode=4514 scanCode=127 repeatCount=0 device=2.4G Composite Devic
+Browser:    01:23:04.770 Butt...vice com...ps.mx3buttonmapper  D  keyCode=64 scanCode=150 repeatCount=0 device=2.4G Composite Devic Mouse
