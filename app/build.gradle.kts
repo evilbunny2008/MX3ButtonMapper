@@ -67,8 +67,8 @@ android {
         applicationId = "com.odiousapps.mx3buttonmapper"
         minSdk = 26
         targetSdk = 37
-        versionCode = 55
-        versionName = "0.0.55"
+        versionCode = 56
+        versionName = "0.0.56"
 
         buildConfigField("String[]", "APP_LOCALES", appLocalesField)
     }

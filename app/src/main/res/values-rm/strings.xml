@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="accessibility_service_description">Percorscha cura che tschertas tastas da Vossa telecumanda vegnan smatgadas e las attribuescha ad ina autra tasta u applicaziun, e nota tge applicaziun che sa chatta sin il visur, uschia che la medema tasta po funcziunar autramain en l’applicaziun TV. Las smatgadas da tastas na vegnan mai memorisadas u tramessas en insanua.</string>
+	<string name="accessibility_disclosure_title">Servetsch d’accessibladad</string>
+	<string name="accessibility_disclosure_message">MX3 Button Mapper utilisescha l’API Accessibility Service dad Android per attribuir da nov las tastas da Vossa telecumanda.\n\nSch’el è activà:\n• Legia el las smatgadas da tastas da Vossa telecumanda, per pudair remplazzar tschertas tastas cun ina autra tasta, ina seria da smatgadas u l’avertura d’ina applicaziun\n• Nota el il num da l’applicaziun che sa chatta actualmain sin il visur, uschia ch’ina tasta (p.ex. Chanal ensi/engiu) po far insatge auter en l’applicaziun TV\n\nEl na legia betg il cuntegn dal visur, texts u pleds-clav. Las smatgadas da tastas ed ils nums da las applicaziuns vegnan utilisads mo sin quest apparat, en il mument ch’els capitan. Els na vegnan mai memorisads (nun che Vus activeis ils protocols per la tschertga d’errurs qua sutvart) e mai cundividids u tramess or da l’apparat. Questa applicaziun n’ha nagin access a l’internet.\n\nSche Vus essas d’accord, utilisescha l’applicaziun %1$s per activar sez ses servetsch d’accessibladad. Vus pudais al deactivar da tut temp sut Parameters → Accessibladad.</string>
+	<string name="agree">D’accord</string>
+	<string name="no_thanks">Na, grazia</string>
+	<string name="app_not_installed_message">L’applicaziun attribuida a questa tasta (%1$s) n’è betg installada</string>
+	<string name="app_not_installed_title">Applicaziun betg installada</string>
+	<string name="language">Lingua</string>
+	<string name="log_key_events_label">Protocollar mintga smatgada da tasta (mo per la tschertga d’errurs)</string>
+	<string name="log_remaps_label">Protocollar las smatgadas da tastas attribuidas da nov (mo per la tschertga d’errurs)</string>
+	<string name="open_accessibility_settings">Avrir ils parameters d’accessibladad</string>
+	<string name="paste">Encollar</string>
+	<string name="save">Memorisar</string>
+	<string name="shizuku_auth_token_label">Token d’autentificaziun per l’intent da start/stop da %1$s (encollai l’entira lingia ‘auth: XXXX’ dal visur «View intents» da %1$s)</string>
+	<string name="status_placeholder">Concedi la permissiun %1$s ed activai lura quest servetsch sut Accessibladad</string>
+	<string name="system_default">Standard dal sistem</string>
+	<string name="tv_brand_label">Marca dal televisur (pertutga spezialmain la tasta TV da %1$s)</string>
+</resources>

@@ -1,0 +1,4 @@
+* The accessibility disclosure and service description are now
+  translated into every supported language.
+* The app's language list now matches the languages Google Play
+  supports.
