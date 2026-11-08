@@ -3,7 +3,7 @@
 # already live-verified for the sibling MX3 Launcher project (same
 # developer, same toolchain) -- see that project's README "Version
 # notes" section for how those were originally confirmed.
-agp = "9.4.1"
+agp = "9.5.1"
 kotlin = "2.4.21"
 composeBom = "2026.09.00"
 tvMaterial = "1.1.0"
@@ -56,6 +56,11 @@ commonsLang3 = "3.21.0"
 # AGP's play-policy/SDK-index tooling pulls in jose4j 0.9.5, which has a
 # denial-of-service advisory (compressed JWE) fixed in 0.9.6.
 jose4j = "0.9.7"
+# AGP and the lint tool pull in Guava 33.4.0-jre (the APK itself only gets
+# the separate listenablefuture artifact), which falls inside an advisory
+# covering everything up to 33.7.1. Pinned onto both the plugin classpath
+# and the androidLintTool configuration.
+guava = "33.8.0-jre"
 
 [libraries]
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -79,6 +84,7 @@ bouncycastle-bcpkix = { group = "org.bouncycastle", name = "bcpkix-jdk18on", ver
 bouncycastle-bcutil = { group = "org.bouncycastle", name = "bcutil-jdk18on", version.ref = "bouncycastle" }
 apache-commons-lang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commonsLang3" }
 jose4j = { group = "org.bitbucket.b_c", name = "jose4j", version.ref = "jose4j" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

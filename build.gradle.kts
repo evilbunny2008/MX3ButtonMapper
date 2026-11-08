@@ -23,6 +23,7 @@ buildscript {
             classpath(libs.bouncycastle.bcutil)
             classpath(libs.apache.commons.lang3)
             classpath(libs.jose4j)
+            classpath(libs.guava)
         }
     }
 }

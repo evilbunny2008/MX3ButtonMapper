@@ -259,6 +259,11 @@ androidComponents {
 }
 
 dependencies {
+    // Lint tool only, never packaged -- see the guava entry in
+    // gradle/libs.versions.toml.
+    constraints {
+        add("androidLintTool", libs.guava)
+    }
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
